@@ -1,0 +1,6 @@
+# Keep source camera dumps local; site serves optimized web/ assets only.
+*.JPG
+*.JPEG
+*.jpg
+*.jpeg
+!web/**

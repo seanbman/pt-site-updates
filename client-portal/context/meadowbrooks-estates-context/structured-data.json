@@ -1,0 +1,23 @@
+[
+  {
+    "index": 1,
+    "data": {
+      "url": "https://www.plumbingtrack.com",
+      "name": "Plumbing Track",
+      "description": "",
+      "image": "//images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/f7bfd391-bd8d-4e00-8c0f-67d1690a1981/Screenshot+from+2026-01-27+12-38-25.png",
+      "@context": "http://schema.org",
+      "@type": "WebSite"
+    }
+  },
+  {
+    "index": 2,
+    "data": {
+      "address": "",
+      "image": "https://static1.squarespace.com/static/695fd6c07abd624c99ab4ad0/t/6979144f12503f77c2660617/1785041920824/",
+      "openingHours": "",
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness"
+    }
+  }
+]

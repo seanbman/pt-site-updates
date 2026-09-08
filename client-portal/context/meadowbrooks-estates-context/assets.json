@@ -1,0 +1,1135 @@
+{
+  "images": [
+    {
+      "index": 1,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/f7bfd391-bd8d-4e00-8c0f-67d1690a1981/Screenshot+from+2026-01-27+12-38-25.png?format=1500w",
+      "alt": "Plumbing Track",
+      "width": 504,
+      "height": 96,
+      "context": "Global Calendar\nMEADOWBROOKS ESTATES\nClient Portal",
+      "contextConfidence": "medium",
+      "contextCandidates": [
+        {
+          "text": "Global Calendar",
+          "score": 964,
+          "reason": "spatial"
+        },
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 922,
+          "reason": "spatial"
+        },
+        {
+          "text": "Client Portal",
+          "score": 287,
+          "reason": "spatial"
+        }
+      ],
+      "discoveredFrom": [
+        "img",
+        "img.src"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "div.header-title-nav-wrapper > div.header-title > div.header-title-logo > a > img",
+        "rect": {
+          "x": 37,
+          "y": 101,
+          "width": 263,
+          "height": 50
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-27+12-38-25.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-27+12-38-25.png",
+        "bytes": 4338,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 2,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png?format=1000w",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "img",
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24.png",
+        "bytes": 361896,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 3,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "img.src"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24-2.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24-2.png",
+        "bytes": 383032,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 4,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png?format=100w",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24-3.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24-3.png",
+        "bytes": 7068,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 5,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png?format=300w",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24-4.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24-4.png",
+        "bytes": 46662,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 6,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png?format=500w",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24-5.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24-5.png",
+        "bytes": 108912,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 7,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png?format=750w",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24-6.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24-6.png",
+        "bytes": 222058,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 8,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png?format=1500w",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24-7.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24-7.png",
+        "bytes": 383032,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 9,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png?format=2500w",
+      "alt": null,
+      "width": 926,
+      "height": 350,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [
+          "background-image-fx"
+        ],
+        "selector": "section.page-section.full-bleed-section > div.section-border > div.section-background > div.section-background-content > img.background-image-fx",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 912,
+          "height": 404
+        }
+      },
+      "localFile": "assets/images/Screenshot+from+2026-01-23+17-50-24-8.png",
+      "download": {
+        "success": true,
+        "filename": "Screenshot+from+2026-01-23+17-50-24-8.png",
+        "bytes": 383032,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 10,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg?format=1000w",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "img",
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA.jpg",
+        "bytes": 27046,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 11,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "img.src"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA-2.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA-2.jpg",
+        "bytes": 130896,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 12,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg?format=100w",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA-3.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA-3.jpg",
+        "bytes": 4522,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 13,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg?format=300w",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA-4.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA-4.jpg",
+        "bytes": 8300,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 14,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg?format=500w",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA-5.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA-5.jpg",
+        "bytes": 12414,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 15,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg?format=750w",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA-6.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA-6.jpg",
+        "bytes": 19094,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 16,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg?format=1500w",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA-7.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA-7.jpg",
+        "bytes": 48204,
+        "contentType": "image/webp"
+      }
+    },
+    {
+      "index": 17,
+      "url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg?format=2500w",
+      "alt": null,
+      "width": 926,
+      "height": 618,
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "contextCandidates": [
+        {
+          "text": "MEADOWBROOKS ESTATES",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Client Portal",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Global Calendar",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Townhall Power Point Presentation",
+          "score": 5000,
+          "reason": "same-container"
+        },
+        {
+          "text": "Contact a Representative About Your Project",
+          "score": 5000,
+          "reason": "same-container"
+        }
+      ],
+      "discoveredFrom": [
+        "srcset"
+      ],
+      "element": {
+        "tag": "img",
+        "id": null,
+        "classes": [],
+        "selector": "article.sections > section.page-section.full-bleed-section > div.section-border > div.section-background > img",
+        "rect": {
+          "x": 0,
+          "y": 404,
+          "width": 912,
+          "height": 947
+        }
+      },
+      "localFile": "assets/images/unsplash-image-_XXNjSziZuA-8.jpg",
+      "download": {
+        "success": true,
+        "filename": "unsplash-image-_XXNjSziZuA-8.jpg",
+        "bytes": 130896,
+        "contentType": "image/webp"
+      }
+    }
+  ],
+  "videos": [],
+  "audio": [],
+  "embeds": [
+    {
+      "index": 1,
+      "type": "iframe",
+      "url": "https://console.plumbingtrack.com/embed/jobs/6a1b0f88388e16ad1209606a/calendar",
+      "title": "PlumbingTrack schedule",
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "attributes": {
+        "width": "100%",
+        "height": "800",
+        "allow": null
+      },
+      "element": {
+        "tag": "iframe",
+        "id": null,
+        "classes": [],
+        "selector": "div.fe-block.fe-block-yui_3_17_2_1_1780158183730_10523 > div.sqs-block.website-component-block > div.sqs-block-content > div.sqs-embed-container > iframe",
+        "rect": {
+          "x": 72,
+          "y": 551,
+          "width": 767,
+          "height": 800
+        }
+      }
+    },
+    {
+      "index": 2,
+      "type": "youtube",
+      "url": "https://www.youtube.com/embed/X1RChFksmYw?feature=oembed",
+      "title": "Plumbing Track - A modern solution to Repipe Multifamily Buildings",
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "attributes": {
+        "width": "200",
+        "height": "113",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      },
+      "element": {
+        "tag": "iframe",
+        "id": null,
+        "classes": [],
+        "selector": "div.sqs-block-content > div.intrinsic > div.embed-block-wrapper > div.sqs-video-wrapper > iframe",
+        "rect": {
+          "x": 37,
+          "y": 1527,
+          "width": 378,
+          "height": 214
+        }
+      }
+    },
+    {
+      "index": 3,
+      "type": "youtube",
+      "url": "https://www.youtube.com/embed/ulqntD64GC8?feature=oembed",
+      "title": "Plumbing Track - Our Re-piping process",
+      "context": "MEADOWBROOKS ESTATES\nClient Portal\nGlobal Calendar\nTownhall Power Point Presentation\nContact a Representative About Your Project",
+      "contextConfidence": "high",
+      "attributes": {
+        "width": "200",
+        "height": "113",
+        "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      },
+      "element": {
+        "tag": "iframe",
+        "id": null,
+        "classes": [],
+        "selector": "div.sqs-block-content > div.intrinsic > div.embed-block-wrapper > div.sqs-video-wrapper > iframe",
+        "rect": {
+          "x": 497,
+          "y": 1527,
+          "width": 378,
+          "height": 214
+        }
+      }
+    },
+    {
+      "index": 4,
+      "type": "iframe",
+      "url": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv&co=aHR0cHM6Ly9tYXJsaW4taG9yc2UtOHRqOS5zcXVhcmVzcGFjZS5jb206NDQz&hl=en&v=XOqlk8PL_yVx6IdpLbpXdiLy&size=invisible&anchor-ms=20000&execute-ms=30000&cb=ddb5obfzmisl",
+      "title": "reCAPTCHA",
+      "context": "Global Calendar\nClient Portal",
+      "contextConfidence": "low",
+      "attributes": {
+        "width": "256",
+        "height": "60",
+        "allow": null
+      },
+      "element": {
+        "tag": "iframe",
+        "id": null,
+        "classes": [],
+        "selector": "body.tweak-blog-alternating-side-by-side-width-full.tweak-blog-alternating-side-by-side-image-aspect-ratio-11-square > div > div.grecaptcha-badge > div.grecaptcha-logo > iframe",
+        "rect": {
+          "x": 842,
+          "y": 982,
+          "width": 256,
+          "height": 60
+        }
+      }
+    },
+    {
+      "index": 5,
+      "type": "unknown",
+      "url": null,
+      "title": null,
+      "context": "MEADOWBROOKS ESTATES\nGlobal Calendar\nClient Portal",
+      "contextConfidence": "medium",
+      "attributes": {
+        "width": null,
+        "height": null,
+        "allow": null
+      },
+      "element": {
+        "tag": "iframe",
+        "id": null,
+        "classes": [],
+        "selector": "html.yui3-js-enabled.js > body.tweak-blog-alternating-side-by-side-width-full.tweak-blog-alternating-side-by-side-image-aspect-ratio-11-square > div > iframe",
+        "rect": {
+          "x": 0,
+          "y": 95,
+          "width": 0,
+          "height": 0
+        }
+      }
+    }
+  ],
+  "captureResults": {
+    "downloadedImages": 17,
+    "failedImages": 0,
+    "downloadedMedia": 0,
+    "failedMedia": 0,
+    "note": "Assets blocked by CORS or authentication remain recorded by source URL even when they could not be included in the ZIP."
+  }
+}

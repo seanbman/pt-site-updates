@@ -1,0 +1,823 @@
+{
+  "source": "https://www.plumbingtrack.com",
+  "pages": {
+    "home-root": {
+      "path": "/",
+      "url": "https://www.plumbingtrack.com",
+      "title": "Plumbing Track -  The Modern Solution to Poly-B  in Multifamily Buildings",
+      "text_file": "text/home-root.txt",
+      "text_chars": 174,
+      "image_count": 1,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        }
+      ]
+    },
+    "home": {
+      "path": "/home",
+      "url": "https://www.plumbingtrack.com/home",
+      "title": "Home | Ensure Reliable Plumbing Now \u2014 Plumbing Track",
+      "text_file": "text/home.txt",
+      "text_chars": 350,
+      "image_count": 11,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "image-asset__1769018269.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769018269146-YNNUFQM4CQU0G5Q62SMN/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603362.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603362023-FTNA56RNMV90KVWKJCCY/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603362_603c5f.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603362827-ZNTLWRVFCR8L7YYWOMIU/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603363.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603363648-48FUBIBB3YXL6QG8B6DN/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603364.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603364412-PXGIPO2SSGUCMPPKJCLR/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603365.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603365124-HYD1MSLHRD74YHGTAPY3/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603365_935918.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603365853-ZBION3J3KDAGV426ZWNX/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603366.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603366542-G223L6M66FN1QU8YP4VV/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603367.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603367285-9TWBU831R1K4A8JY0DZO/image-asset.jpeg"
+        },
+        {
+          "filename": "image-asset__1768603368.jpeg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1768603368081-XL1V5MRJ6WQIXHNQ0H6O/image-asset.jpeg"
+        }
+      ]
+    },
+    "about": {
+      "path": "/about",
+      "url": "https://www.plumbingtrack.com/about",
+      "title": "About | Experience a modern solution to repiping condos \u2014 Plumbing Track",
+      "text_file": "text/about.txt",
+      "text_chars": 1495,
+      "image_count": 3,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+10-57-59__b6b4a9d8a7.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/b6b4a9d8-a75e-49d1-a327-67a60367f15a/Screenshot+from+2026-01-18+10-57-59.png"
+        },
+        {
+          "filename": "paul_headshot_reverse__4405e019bf.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/4405e019-bf4d-4e0b-9fa4-0945d265b68e/paul_headshot_reverse.png"
+        }
+      ]
+    },
+    "references": {
+      "path": "/references",
+      "url": "https://www.plumbingtrack.com/references",
+      "title": "References | Request Service Today \u2014 Plumbing Track",
+      "text_file": "text/references.txt",
+      "text_chars": 4049,
+      "image_count": 29,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "unsplash-image--oSsbwqjaB4__1769203982.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769203982965-FFELTSCSKY1TMTC368E4/unsplash-image--oSsbwqjaB4.jpg"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-21+21-25-39__254ed1b3a1.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/254ed1b3-a1b3-4f19-9f5a-c5ba536a7817/Screenshot+from+2026-01-21+21-25-39.png"
+        },
+        {
+          "filename": "stellar_place_kelowna__46a1f7027b.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/46a1f702-7b77-405f-9ab6-02f41070e92d/stellar_place_kelowna.jpg"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-16+18-24-21__3b5ca43ab8.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/3b5ca43a-b8bc-4446-bcfc-5a4b85e34516/Screenshot+from+2026-01-16+18-24-21.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+10-57-59__b6b4a9d8a7.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/b6b4a9d8-a75e-49d1-a327-67a60367f15a/Screenshot+from+2026-01-18+10-57-59.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+11-02-25__fae46c9835.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fae46c98-3533-4701-9148-16da4d72c665/Screenshot+from+2026-01-18+11-02-25.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+14-44-29__a873c01f9b.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/a873c01f-9b39-4dde-b2a2-23997cd53cc4/Screenshot+from+2026-01-23+14-44-29.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-21+21-52-45__4289a1c5e1.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/4289a1c5-e137-4c75-a4df-fc515e0164dc/Screenshot+from+2026-01-21+21-52-45.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-26-04__67e564f8c7.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/67e564f8-c7c3-4fa4-8d92-6bb155f5f3c8/Screenshot+from+2026-01-20+20-26-04.png"
+        },
+        {
+          "filename": "peregrine_point__1ed8491900.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1ed84919-0072-4ab5-bd63-4dd879337098/peregrine_point.jpg"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+15-02-22__eef2061ea9.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/eef2061e-a952-4302-9431-4c1ce2957d83/Screenshot+from+2026-01-23+15-02-22.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+15-12-00__ac6ee487b0.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/ac6ee487-b0ac-4eb2-93c9-febe7db0d772/Screenshot+from+2026-01-23+15-12-00.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-27-40__ce46fc002d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/ce46fc00-2d6a-4ac0-b216-8538fa90e001/Screenshot+from+2026-01-20+20-27-40.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-18-32__86156c9e9b.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/86156c9e-9b4b-41b6-89a6-bc0eead3b8cf/Screenshot+from+2026-01-20+20-18-32.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-28-45__fa2ff1d7c1.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fa2ff1d7-c1ec-4347-8b79-35d1239eadaf/Screenshot+from+2026-01-20+20-28-45.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-29-01__b37ab4c54d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/b37ab4c5-4d00-4830-b4c9-12e1e68849c4/Screenshot+from+2026-01-20+20-29-01.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-29-16__0add4223dd.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/0add4223-dd7c-450b-b4ed-d2f7725aeafc/Screenshot+from+2026-01-20+20-29-16.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-02-56__e2eed9aae4.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/e2eed9aa-e4c5-4dd3-b22b-29f81ce9b9c4/Screenshot+from+2026-01-18+17-02-56.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-03-07__3c58c1b23d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/3c58c1b2-3d22-4777-b0ff-5d9d90de1232/Screenshot+from+2026-01-18+17-03-07.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-04-22__372bd57f2e.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/372bd57f-2ea1-4322-86a8-68d26e29a6ed/Screenshot+from+2026-01-18+17-04-22.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-03-19__c3861147e4.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/c3861147-e411-455c-ac44-49578bb4a80b/Screenshot+from+2026-01-18+17-03-19.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-04-31__b9e45ac67d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/b9e45ac6-7d4b-47be-8977-bb4f599c8954/Screenshot+from+2026-01-18+17-04-31.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-03-38__85ffe7b98c.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/85ffe7b9-8cba-4ed3-9a98-2ac2a057a215/Screenshot+from+2026-01-18+17-03-38.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-04-45__eb291ab4f7.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/eb291ab4-f7c0-4488-85dd-f573385c9da0/Screenshot+from+2026-01-18+17-04-45.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-03-51__35d4999fa5.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/35d4999f-a542-4ba8-a0c9-4c16618e84e6/Screenshot+from+2026-01-18+17-03-51.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+16-37-56__30dc5a5601.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/30dc5a56-01cc-48d0-8bf8-c8953e12404d/Screenshot+from+2026-01-23+16-37-56.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+16-37-42__80309cb650.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/80309cb6-5049-4f21-acf2-f222227bf12e/Screenshot+from+2026-01-23+16-37-42.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+17-04-57__28a7b9cda5.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/28a7b9cd-a502-463c-9d5f-00684722813f/Screenshot+from+2026-01-18+17-04-57.png"
+        }
+      ]
+    },
+    "contact": {
+      "path": "/contact",
+      "url": "https://www.plumbingtrack.com/contact",
+      "title": "Contact | Get Your Free Assessment - Expert Plumbing Solutions \u2014 Plumbing Track",
+      "text_file": "text/contact.txt",
+      "text_chars": 575,
+      "image_count": 2,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "ChatGPT+Image+Jan+25_+2026_+03_40_16+PM__a3a54ca7cf.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/a3a54ca7-cfb9-4ffc-8c8d-1527e5d361ae/ChatGPT+Image+Jan+25%2C+2026%2C+03_40_16+PM.png"
+        }
+      ]
+    },
+    "client-portal": {
+      "path": "/client-portal",
+      "url": "https://www.plumbingtrack.com/client-portal",
+      "title": "Client Portal | Manage Your Plumbing Needs Today \u2014 Plumbing Track",
+      "text_file": "text/client-portal.txt",
+      "text_chars": 2672,
+      "image_count": 19,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "unsplash-image-HtBlQdxfG9k__1769212831.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769212831377-GCV5T7NQBN7L6KBLMJ7Z/unsplash-image-HtBlQdxfG9k.jpg"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-25-36__ad1c90c940.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/ad1c90c9-4082-44d0-927f-49a19fc9d8e4/Screenshot+from+2026-01-20+20-25-36.png"
+        },
+        {
+          "filename": "3__d07301101a.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/d0730110-1a8b-49fc-b2ac-a3ae347644a6/3.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-26-04__67e564f8c7.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/67e564f8-c7c3-4fa4-8d92-6bb155f5f3c8/Screenshot+from+2026-01-20+20-26-04.png"
+        },
+        {
+          "filename": "peregrine_point__1ed8491900.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1ed84919-0072-4ab5-bd63-4dd879337098/peregrine_point.jpg"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+15-02-22__eef2061ea9.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/eef2061e-a952-4302-9431-4c1ce2957d83/Screenshot+from+2026-01-23+15-02-22.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-27-28__c643de933d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/c643de93-3dfe-487d-9957-ca747939cb48/Screenshot+from+2026-01-20+20-27-28.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-27-40__ce46fc002d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/ce46fc00-2d6a-4ac0-b216-8538fa90e001/Screenshot+from+2026-01-20+20-27-40.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-18-32__86156c9e9b.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/86156c9e-9b4b-41b6-89a6-bc0eead3b8cf/Screenshot+from+2026-01-20+20-18-32.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-28-45__fa2ff1d7c1.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fa2ff1d7-c1ec-4347-8b79-35d1239eadaf/Screenshot+from+2026-01-20+20-28-45.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-29-01__b37ab4c54d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/b37ab4c5-4d00-4830-b4c9-12e1e68849c4/Screenshot+from+2026-01-20+20-29-01.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-29-16__0add4223dd.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/0add4223-dd7c-450b-b4ed-d2f7725aeafc/Screenshot+from+2026-01-20+20-29-16.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-21+21-58-01__92e1242e87.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/92e1242e-877c-4ef7-b4da-c219b792399b/Screenshot+from+2026-01-21+21-58-01.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-21+21-23-39__a09786e81c.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/a09786e8-1ca6-4008-9bd1-19f42dc67798/Screenshot+from+2026-01-21+21-23-39.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+11-02-25__fae46c9835.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fae46c98-3533-4701-9148-16da4d72c665/Screenshot+from+2026-01-18+11-02-25.png"
+        },
+        {
+          "filename": "stellar_place_kelowna__46a1f7027b.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/46a1f702-7b77-405f-9ab6-02f41070e92d/stellar_place_kelowna.jpg"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-16+18-24-21__3b5ca43ab8.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/3b5ca43a-b8bc-4446-bcfc-5a4b85e34516/Screenshot+from+2026-01-16+18-24-21.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-21+21-52-45__4289a1c5e1.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/4289a1c5-e137-4c75-a4df-fc515e0164dc/Screenshot+from+2026-01-21+21-52-45.png"
+        }
+      ]
+    },
+    "information-package": {
+      "path": "/information-package",
+      "url": "https://www.plumbingtrack.com/information-package",
+      "title": "Information-Package | Discover Efficient Plumbing Solutions - Get Started Today \u2014 Plumbing Track",
+      "text_file": "text/information-package.txt",
+      "text_chars": 5844,
+      "image_count": 30,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "mission-meadows-hero__6a834f215e.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/6a834f21-5e67-4ec2-acb1-9ecb3225dee4/mission-meadows-hero.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-28+12-45-35__e6bfb34241.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/e6bfb342-41a1-40f2-983a-b97180f396b8/Screenshot+from+2026-01-28+12-45-35.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+12-38-25__f7bfd391bd.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/f7bfd391-bd8d-4e00-8c0f-67d1690a1981/Screenshot+from+2026-01-27+12-38-25.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-25-03__368b0f22e0.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/368b0f22-e038-4970-ae05-125bd322c031/Screenshot+from+2026-01-27+17-25-03.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-12-15__150033892b.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/15003389-2bbb-4a20-b353-dc59cd8e4ff5/Screenshot+from+2026-01-27+17-12-15.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+22-53-04__6a1f94a108.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/6a1f94a1-086c-41dd-b629-34fe2b286d8e/Screenshot+from+2026-02-02+22-53-04.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+22-53-21__08213c0850.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/08213c08-50c1-4382-bc80-39bca738ae3b/Screenshot+from+2026-02-02+22-53-21.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+23-04-33__25c7582ff6.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/25c7582f-f63a-459c-974f-97b69f8690e0/Screenshot+from+2026-02-02+23-04-33.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+22-53-43__2fb121fbfc.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/2fb121fb-fc65-4b6e-b992-caadaa8aff93/Screenshot+from+2026-02-02+22-53-43.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+23-08-55__3575865038.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/35758650-381a-4380-80ad-31ea496426a5/Screenshot+from+2026-02-02+23-08-55.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+23-09-06__f50bd884d2.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/f50bd884-d2a5-4714-9090-e58b4fb2776d/Screenshot+from+2026-02-02+23-09-06.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+23-09-44__ecfea60546.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/ecfea605-4646-43de-bf76-46264692ddc2/Screenshot+from+2026-02-02+23-09-44.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+23-09-21__094f252b54.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/094f252b-544d-4af7-8e58-7a57b596e23a/Screenshot+from+2026-02-02+23-09-21.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-02-02+23-16-12__3c8e75e56e.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/3c8e75e5-6e19-4562-8949-b381a5d577ea/Screenshot+from+2026-02-02+23-16-12.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-24-01__3fd5e387f6.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/3fd5e387-f693-48ff-9d81-109946a3f6b9/Screenshot+from+2026-01-27+17-24-01.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-21-36__2d08146d96.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/2d08146d-9630-4700-b652-d51593e0397c/Screenshot+from+2026-01-27+17-21-36.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-29-16__0add4223dd.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/0add4223-dd7c-450b-b4ed-d2f7725aeafc/Screenshot+from+2026-01-20+20-29-16.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-18-32__86156c9e9b.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/86156c9e-9b4b-41b6-89a6-bc0eead3b8cf/Screenshot+from+2026-01-20+20-18-32.png"
+        },
+        {
+          "filename": "stellar_place_kelowna__46a1f7027b.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/46a1f702-7b77-405f-9ab6-02f41070e92d/stellar_place_kelowna.jpg"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-21+21-23-39__a09786e81c.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/a09786e8-1ca6-4008-9bd1-19f42dc67798/Screenshot+from+2026-01-21+21-23-39.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-29-01__b37ab4c54d.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/b37ab4c5-4d00-4830-b4c9-12e1e68849c4/Screenshot+from+2026-01-20+20-29-01.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-18+11-02-25__fae46c9835.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fae46c98-3533-4701-9148-16da4d72c665/Screenshot+from+2026-01-18+11-02-25.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-16+18-24-21__3b5ca43ab8.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/3b5ca43a-b8bc-4446-bcfc-5a4b85e34516/Screenshot+from+2026-01-16+18-24-21.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-20+20-28-45__fa2ff1d7c1.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fa2ff1d7-c1ec-4347-8b79-35d1239eadaf/Screenshot+from+2026-01-20+20-28-45.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-21-05__8724db566a.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/8724db56-6a10-4000-88ee-8679c9756360/Screenshot+from+2026-01-27+17-21-05.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-13-07__f1c3a49e6f.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/f1c3a49e-6f9b-4804-8c27-352e72c74b72/Screenshot+from+2026-01-27+17-13-07.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-22-52__91d9394b02.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/91d9394b-02a2-4bd9-a3da-63191d886ad6/Screenshot+from+2026-01-27+17-22-52.png"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-27+17-24-22__0982bc751c.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/0982bc75-1c20-4602-892b-fc684615bcf0/Screenshot+from+2026-01-27+17-24-22.png"
+        },
+        {
+          "filename": "QrzxRk__1d4ee8ae76.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1d4ee8ae-766d-4795-9e2e-1b0935f6973c/QrzxRk.png"
+        }
+      ]
+    },
+    "thank-you": {
+      "path": "/thank-you",
+      "url": "https://www.plumbingtrack.com/thank-you",
+      "title": "Thank-You | Get Expert Plumbing Assistance Today \u2014 Plumbing Track",
+      "text_file": "text/thank-you.txt",
+      "text_chars": 156,
+      "image_count": 1,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        }
+      ]
+    },
+    "help": {
+      "path": "/help",
+      "url": "https://www.plumbingtrack.com/help",
+      "title": "Help | Schedule Your Plumbing Help Today \u2014 Plumbing Track",
+      "text_file": "text/help.txt",
+      "text_chars": 163,
+      "image_count": 2,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "unsplash-image-_XXNjSziZuA__1769390577.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769390577129-K8BC744J60TGKVXEO4X3/unsplash-image-_XXNjSziZuA.jpg"
+        }
+      ]
+    },
+    "project-complete": {
+      "path": "/project-complete",
+      "url": "https://www.plumbingtrack.com/project-complete",
+      "title": "Project-Complete | Ensure Your Plumbing Success \u2013 Get Expert Help \u2014 Plumbing Track",
+      "text_file": "text/project-complete.txt",
+      "text_chars": 288,
+      "image_count": 2,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "unsplash-image-_XXNjSziZuA__1769390577.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769390577129-K8BC744J60TGKVXEO4X3/unsplash-image-_XXNjSziZuA.jpg"
+        }
+      ]
+    },
+    "missionmeadows": {
+      "path": "/missionmeadows",
+      "url": "https://www.plumbingtrack.com/missionmeadows",
+      "title": "Mission-Meadows | Schedule Your Plumbing Solutions Today \u2014 Plumbing Track",
+      "text_file": "text/missionmeadows.txt",
+      "text_chars": 247,
+      "image_count": 3,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+17-50-24__bfe347745f.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png"
+        },
+        {
+          "filename": "unsplash-image-_XXNjSziZuA__1769219556.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg"
+        }
+      ]
+    },
+    "meadowbrooks": {
+      "path": "/meadowbrooks",
+      "url": "https://www.plumbingtrack.com/meadowbrooks",
+      "title": "Mission-Meadows | Schedule Your Plumbing Solutions Today \u2014 Plumbing Track",
+      "text_file": "text/meadowbrooks.txt",
+      "text_chars": 252,
+      "image_count": 3,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        },
+        {
+          "filename": "Screenshot+from+2026-01-23+17-50-24__bfe347745f.png",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/bfe34774-5f26-4c1c-b989-203ec48547ab/Screenshot+from+2026-01-23+17-50-24.png"
+        },
+        {
+          "filename": "unsplash-image-_XXNjSziZuA__1769219556.jpg",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/1769219556841-CHXQ7Y3U7M3RHCCK9VQH/unsplash-image-_XXNjSziZuA.jpg"
+        }
+      ]
+    },
+    "affordable-housing-and-non-profit": {
+      "path": "/affordable-housing-and-non-profit",
+      "url": "https://www.plumbingtrack.com/affordable-housing-and-non-profit",
+      "title": "Affordable Housing and Non-Profit \u2014 Plumbing Track",
+      "text_file": "text/affordable-housing-and-non-profit.txt",
+      "text_chars": 0,
+      "image_count": 1,
+      "images": [
+        {
+          "filename": "favicon__aa3cd737c0.ico",
+          "source_url": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/aa3cd737-c002-41d7-8ad6-29e52b15e3e8/favicon.ico"
+        }
+      ]
+    }
+  },
+  "images_to_pages": {
+    "favicon__aa3cd737c0.ico": [
+      "home-root",
+      "home",
+      "about",
+      "references",
+      "contact",
+      "client-portal",
+      "information-package",
+      "thank-you",
+      "help",
+      "project-complete",
+      "missionmeadows",
+      "meadowbrooks",
+      "affordable-housing-and-non-profit"
+    ],
+    "image-asset__1769018269.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603362.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603362_603c5f.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603363.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603364.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603365.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603365_935918.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603366.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603367.jpeg": [
+      "home"
+    ],
+    "image-asset__1768603368.jpeg": [
+      "home"
+    ],
+    "Screenshot+from+2026-01-18+10-57-59__b6b4a9d8a7.png": [
+      "about",
+      "references"
+    ],
+    "paul_headshot_reverse__4405e019bf.png": [
+      "about"
+    ],
+    "unsplash-image--oSsbwqjaB4__1769203982.jpg": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-21+21-25-39__254ed1b3a1.png": [
+      "references"
+    ],
+    "stellar_place_kelowna__46a1f7027b.jpg": [
+      "references",
+      "client-portal",
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-16+18-24-21__3b5ca43ab8.png": [
+      "references",
+      "client-portal",
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-18+11-02-25__fae46c9835.png": [
+      "references",
+      "client-portal",
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-23+14-44-29__a873c01f9b.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-21+21-52-45__4289a1c5e1.png": [
+      "references",
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-20+20-26-04__67e564f8c7.png": [
+      "references",
+      "client-portal"
+    ],
+    "peregrine_point__1ed8491900.jpg": [
+      "references",
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-23+15-02-22__eef2061ea9.png": [
+      "references",
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-23+15-12-00__ac6ee487b0.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-20+20-27-40__ce46fc002d.png": [
+      "references",
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-20+20-18-32__86156c9e9b.png": [
+      "references",
+      "client-portal",
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-20+20-28-45__fa2ff1d7c1.png": [
+      "references",
+      "client-portal",
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-20+20-29-01__b37ab4c54d.png": [
+      "references",
+      "client-portal",
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-20+20-29-16__0add4223dd.png": [
+      "references",
+      "client-portal",
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-18+17-02-56__e2eed9aae4.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-03-07__3c58c1b23d.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-04-22__372bd57f2e.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-03-19__c3861147e4.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-04-31__b9e45ac67d.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-03-38__85ffe7b98c.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-04-45__eb291ab4f7.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-03-51__35d4999fa5.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-23+16-37-56__30dc5a5601.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-23+16-37-42__80309cb650.png": [
+      "references"
+    ],
+    "Screenshot+from+2026-01-18+17-04-57__28a7b9cda5.png": [
+      "references"
+    ],
+    "ChatGPT+Image+Jan+25_+2026_+03_40_16+PM__a3a54ca7cf.png": [
+      "contact"
+    ],
+    "unsplash-image-HtBlQdxfG9k__1769212831.jpg": [
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-20+20-25-36__ad1c90c940.png": [
+      "client-portal"
+    ],
+    "3__d07301101a.png": [
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-20+20-27-28__c643de933d.png": [
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-21+21-58-01__92e1242e87.png": [
+      "client-portal"
+    ],
+    "Screenshot+from+2026-01-21+21-23-39__a09786e81c.png": [
+      "client-portal",
+      "information-package"
+    ],
+    "mission-meadows-hero__6a834f215e.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-28+12-45-35__e6bfb34241.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+12-38-25__f7bfd391bd.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-25-03__368b0f22e0.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-12-15__150033892b.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+22-53-04__6a1f94a108.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+22-53-21__08213c0850.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+23-04-33__25c7582ff6.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+22-53-43__2fb121fbfc.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+23-08-55__3575865038.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+23-09-06__f50bd884d2.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+23-09-44__ecfea60546.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+23-09-21__094f252b54.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-02-02+23-16-12__3c8e75e56e.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-24-01__3fd5e387f6.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-21-36__2d08146d96.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-21-05__8724db566a.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-13-07__f1c3a49e6f.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-22-52__91d9394b02.png": [
+      "information-package"
+    ],
+    "Screenshot+from+2026-01-27+17-24-22__0982bc751c.png": [
+      "information-package"
+    ],
+    "QrzxRk__1d4ee8ae76.png": [
+      "information-package"
+    ],
+    "unsplash-image-_XXNjSziZuA__1769390577.jpg": [
+      "help",
+      "project-complete"
+    ],
+    "Screenshot+from+2026-01-23+17-50-24__bfe347745f.png": [
+      "missionmeadows",
+      "meadowbrooks"
+    ],
+    "unsplash-image-_XXNjSziZuA__1769219556.jpg": [
+      "missionmeadows",
+      "meadowbrooks"
+    ]
+  },
+  "stats": {
+    "pages": 13,
+    "unique_images": 71,
+    "downloaded_now": 0,
+    "reused": 71,
+    "orphans_removed": 57,
+    "errors": 0
+  },
+  "errors": []
+}

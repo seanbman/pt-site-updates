@@ -1,0 +1,920 @@
+{
+  "page": {
+    "url": "https://marlin-horse-8tj9.squarespace.com/client-portal",
+    "title": "Client Portal | Manage Your Plumbing Needs Today — Plumbing Track",
+    "capturedAt": "2026-08-15T20:45:53.836Z"
+  },
+  "imageCount": 16,
+  "failedCount": 0,
+  "images": [
+    {
+      "filename": "Screenshot+from+2026-01-27+12-38-25.png",
+      "zipPath": "images/Screenshot+from+2026-01-27+12-38-25.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/f7bfd391-bd8d-4e00-8c0f-67d1690a1981/Screenshot+from+2026-01-27+12-38-25.png",
+      "altText": "Plumbing Track",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nMission Meadows\nPlease click on your building and enter the password to access.\nMeadowbrooks Estates",
+      "confidence": "medium",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "nearby-text",
+          "score": 1285
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "nearby-text",
+          "score": 749
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "nearby-text",
+          "score": 668
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "nearby-text",
+          "score": 400
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "nearby-text",
+          "score": 150
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src"
+      ],
+      "byteSize": 4338
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-25-36.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-25-36.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/ad1c90c9-4082-44d0-927f-49a19fc9d8e4/Screenshot+from+2026-01-20+20-25-36.png",
+      "altText": "Mission Meadows - A multi-story apartment complex with balconies and a central courtyard, surrounded by greenery and a paved driveway.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 91270
+    },
+    {
+      "filename": "3.png",
+      "zipPath": "images/3.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/d0730110-1a8b-49fc-b2ac-a3ae347644a6/3.png",
+      "altText": null,
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 1059810
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-26-04.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-26-04.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/67e564f8-c7c3-4fa4-8d92-6bb155f5f3c8/Screenshot+from+2026-01-20+20-26-04.png",
+      "altText": "A multi-story residential apartment building with a central entrance, balconies, and surrounded by leafless trees.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 105512
+    },
+    {
+      "filename": "Screenshot+from+2026-01-23+15-02-22.png",
+      "zipPath": "images/Screenshot+from+2026-01-23+15-02-22.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/eef2061e-a952-4302-9431-4c1ce2957d83/Screenshot+from+2026-01-23+15-02-22.png",
+      "altText": "A mid-rise apartment building with multiple balconies, large windows, and a well-maintained grassy lawn in front, under a bright blue sky with scattered clouds.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 381674
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-27-28.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-27-28.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/c643de93-3dfe-487d-9957-ca747939cb48/Screenshot+from+2026-01-20+20-27-28.png",
+      "altText": "A multi-story residential building with balconies, surrounded by trees and a parking area with cars, under a partly cloudy sky.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 86512
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-27-40.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-27-40.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/ce46fc00-2d6a-4ac0-b216-8538fa90e001/Screenshot+from+2026-01-20+20-27-40.png",
+      "altText": "Multi-story beige apartment building with outdoor stairs, balconies, and landscaped bushes under an overcast sky.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 94778
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-18-32.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-18-32.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/86156c9e-9b4b-41b6-89a6-bc0eead3b8cf/Screenshot+from+2026-01-20+20-18-32.png",
+      "altText": "A three-story residential apartment building with balconies, trees, and a paved parking area in front.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 230022
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-28-45.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-28-45.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fa2ff1d7-c1ec-4347-8b79-35d1239eadaf/Screenshot+from+2026-01-20+20-28-45.png",
+      "altText": "A covered parking area with several parked cars in front of a light gray building with white trim and windows.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 120748
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-29-01.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-29-01.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/b37ab4c5-4d00-4830-b4c9-12e1e68849c4/Screenshot+from+2026-01-20+20-29-01.png",
+      "altText": "Yellow multi-story apartment building with balconies, brick accents, and a covered entrance with stone pillars, surrounded by shrubbery.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 123144
+    },
+    {
+      "filename": "Screenshot+from+2026-01-20+20-29-16.png",
+      "zipPath": "images/Screenshot+from+2026-01-20+20-29-16.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/0add4223-dd7c-450b-b4ed-d2f7725aeafc/Screenshot+from+2026-01-20+20-29-16.png",
+      "altText": "Multistory residential apartment building with balconies and exterior landscaping.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 127986
+    },
+    {
+      "filename": "Screenshot+from+2026-01-21+21-58-01.png",
+      "zipPath": "images/Screenshot+from+2026-01-21+21-58-01.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/92e1242e-877c-4ef7-b4da-c219b792399b/Screenshot+from+2026-01-21+21-58-01.png",
+      "altText": "A multi-story apartment complex with stone and wood exterior, surrounded by autumn-colored trees, with cars parked in front and a clear blue sky.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 235500
+    },
+    {
+      "filename": "Screenshot+from+2026-01-21+21-23-39.png",
+      "zipPath": "images/Screenshot+from+2026-01-21+21-23-39.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/a09786e8-1ca6-4008-9bd1-19f42dc67798/Screenshot+from+2026-01-21+21-23-39.png",
+      "altText": "Exterior view of a multi-story apartment complex with balconies, surrounded by landscaping and a parking lot with a white van, under a clear blue sky.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 322770
+    },
+    {
+      "filename": "Screenshot+from+2026-01-18+11-02-25.png",
+      "zipPath": "images/Screenshot+from+2026-01-18+11-02-25.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/fae46c98-3533-4701-9148-16da4d72c665/Screenshot+from+2026-01-18+11-02-25.png",
+      "altText": "Multi-story apartment building with trees and parked cars in front, under a clear blue sky.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 597392
+    },
+    {
+      "filename": "Screenshot+from+2026-01-16+18-24-21.png",
+      "zipPath": "images/Screenshot+from+2026-01-16+18-24-21.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/3b5ca43a-b8bc-4446-bcfc-5a4b85e34516/Screenshot+from+2026-01-16+18-24-21.png",
+      "altText": "A multi-story apartment complex with green and beige exterior, featuring several balconies and windows, surrounded by trees and landscaped bushes.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.currentSrc",
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 336850
+    },
+    {
+      "filename": "Screenshot+from+2026-01-21+21-52-45.png",
+      "zipPath": "images/Screenshot+from+2026-01-21+21-52-45.png",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/695fd6c07abd624c99ab4ad0/4289a1c5-e137-4c75-a4df-fc515e0164dc/Screenshot+from+2026-01-21+21-52-45.png",
+      "altText": "Apartment building entrance with balconies, greenery, and sign reading 'Dover Point S.E. Point of View'.",
+      "associatedText": "CLIENT PORTAL\nWelcome to the Client Portal\nPlease click on your building and enter the password to access.\nMission Meadows\nMeadowbrooks Estates\nThe Newbury\nPeregrine Point\nRutland House",
+      "confidence": "high",
+      "textCandidates": [
+        {
+          "text": "CLIENT PORTAL",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Welcome to the Client Portal",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Please click on your building and enter the password to access.",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Mission Meadows",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Meadowbrooks Estates",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "The Newbury",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Peregrine Point",
+          "reason": "same-container",
+          "score": 5000
+        },
+        {
+          "text": "Rutland House",
+          "reason": "same-container",
+          "score": 5000
+        }
+      ],
+      "discoveredFrom": [
+        "img.src",
+        "data-src",
+        "data-image",
+        "srcset"
+      ],
+      "byteSize": 309068
+    }
+  ]
+}

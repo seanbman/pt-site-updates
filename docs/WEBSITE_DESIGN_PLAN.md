@@ -692,23 +692,218 @@ Patent/patent-pending, licensing, insurance, certification, performance percenta
 
 ---
 
-# 13. Book an Assessment
+# 13. Book an Assessment — Detailed Conversion Task
 
-This is the site's primary conversion endpoint and should be focused rather than content-heavy.
+The assessment is the site's **primary conversion endpoint**. It must be designed as a dedicated building-assessment experience, not a generic Contact Us form.
 
-Recommended fields:
+Every commercial CTA labeled **Book an Assessment**, **Get an Assessment**, **Find Out What Your Building Needs**, or equivalent should converge on the same assessment flow.
 
-1. Building/property name
-2. Location
-3. Number of units
-4. Known pipe material
-5. Known issue
-6. Project details/concerns
-7. Contact information
+## Objective
 
-Track successful submission as a primary GA4 website conversion.
+Create a focused `/assessment` or `/book-an-assessment` experience that gives Plumbing Track enough structured information to understand the building before the first conversation while keeping the form short enough that a property manager, strata representative, board member, or building owner can complete it easily on mobile or desktop.
 
-The assessment CTA should be reachable from every commercial page.
+The first step of Plumbing Track's project process is an assessment and proposal: evaluate the building, identify the plumbing risk, and establish a preliminary scope, timeline, and cost before work is committed. The form should support that real workflow.
+
+## UX direction
+
+Prefer a **progressive multi-step form** over one long wall of inputs.
+
+Suggested flow:
+
+```text
+Book an Assessment
+        │
+        ▼
+1. About the Building
+        │
+        ▼
+2. Plumbing / Project Situation
+        │
+        ▼
+3. Contact Information
+        │
+        ▼
+Review / Submit
+        │
+        ▼
+Confirmation + next-step expectation
+```
+
+Keep the existing `pt-site-updates` aesthetic. The form should feel like part of the current site, not a third-party embedded widget.
+
+## Step 1 — About the Building
+
+Capture structured property information:
+
+- **Building / property name**
+- **Street address or location**
+- **City / region**
+- **Building type** — condo/strata, apartment, affordable housing, other multifamily, unknown/other
+- **Approximate number of units**
+- **Is the building currently occupied?** — yes / no / partially / unsure
+
+Do not make every field mandatory. Required fields should be limited to what is actually necessary to follow up.
+
+## Step 2 — Plumbing / Project Situation
+
+Capture what the prospect already knows without forcing them to diagnose the building themselves:
+
+- **Known pipe material**
+  - Poly-B
+  - Kitec
+  - Copper
+  - Other
+  - Unsure
+- **Known issue / reason for assessment**
+  - known failing material
+  - leak/failure history
+  - insurance concern
+  - planned repipe
+  - renovation / capital planning
+  - other / unsure
+- **Project status / timing**, if known
+- **Brief description of concerns or project**
+- **Optional additional notes**
+
+The UI should make **“I don't know / unsure”** a normal answer. The form is for requesting an assessment, not passing a plumbing test.
+
+## Step 3 — Contact Information
+
+Capture:
+
+- **Name**
+- **Organization / property management company**, if applicable
+- **Role** — property manager, strata/condo board, owner, housing provider, consultant, other
+- **Email**
+- **Phone**
+- **Preferred contact method**, if useful
+
+## Submission and confirmation
+
+On successful submission:
+
+- show an immediate success state;
+- clearly explain what happens next;
+- do not leave the visitor wondering whether the request was received;
+- preserve submitted information through any server/API handoff;
+- prevent accidental duplicate submissions;
+- provide a sensible failure/retry state if submission fails.
+
+Any public promise such as **“no obligation”** or **“no drive-out fee”** must only appear after Plumbing Track confirms that wording as current policy.
+
+## CTA routing and attribution
+
+Assessment CTAs should appear throughout the site, including:
+
+- Home
+- Solutions pages
+- How It Works
+- Our Technology
+- Our Work / individual project pages
+- relevant Learn articles
+- About
+- service-area sections
+
+All should route to the same assessment flow while preserving **where the visitor came from**.
+
+Capture the originating page/context in the submission payload, for example:
+
+```text
+assessment_source_page: /solutions/poly-b
+assessment_source_cta: solution-footer
+```
+
+This allows the assessment form to remain unified while still showing which content is generating qualified leads.
+
+## GA4 measurement
+
+Treat assessment submission as a primary website conversion.
+
+At minimum track:
+
+- `assessment_cta_clicked`
+- `assessment_started`
+- `assessment_submitted`
+
+If the form is multi-step, also track useful funnel progress without creating noisy analytics, for example:
+
+- `assessment_step_completed`
+
+Useful parameters may include:
+
+- source page
+- CTA location/context
+- known pipe material
+- broad building type
+
+Do **not** send names, email addresses, phone numbers, street addresses, free-text notes, or other personally identifiable information to GA4.
+
+## CRM / backend readiness
+
+Structure the submitted data so the assessment can later feed the Plumbing Track CRM without redesigning the form.
+
+Conceptual payload:
+
+```text
+Building
+  name
+  location
+  type
+  unit_count
+  occupancy
+
+Project
+  pipe_material
+  issue_type
+  timing
+  concerns
+
+Contact
+  name
+  organization
+  role
+  email
+  phone
+
+Attribution
+  source_page
+  source_cta
+  submitted_at
+```
+
+The website does not need the full future CRM integration in order to launch the form, but the data model should not collapse everything into an unstructured email body.
+
+## Secondary lead capture — separate from the assessment
+
+Do not force visitors who are still researching to fake an assessment request.
+
+A future lower-commitment lead path can offer something like:
+
+> **Is Your Building at Risk From Poly-B or Kitec?**
+
+as a downloadable checklist / building-risk resource in exchange for an email address.
+
+This is a **secondary nurture funnel**, not a replacement for Book an Assessment, and belongs under the P1 lead-generation work unless launch scope expands.
+
+## Acceptance criteria
+
+The assessment task is complete when:
+
+- [ ] a dedicated assessment route/page exists;
+- [ ] the experience visually matches the existing `pt-site-updates` site;
+- [ ] it is easy to complete on phone and desktop;
+- [ ] building, plumbing/project, and contact information are captured in structured fields;
+- [ ] unknown/unsure states are supported instead of forcing guesses;
+- [ ] only genuinely necessary fields are required;
+- [ ] all major commercial CTAs route into the same assessment flow;
+- [ ] source page / CTA attribution is preserved;
+- [ ] successful submission has a clear confirmation state;
+- [ ] error, validation, duplicate-submit, and retry behavior are handled;
+- [ ] `assessment_cta_clicked`, `assessment_started`, and `assessment_submitted` are instrumented in GA4;
+- [ ] GA4 receives no PII;
+- [ ] submitted data is structured for later CRM integration;
+- [ ] accessibility basics are met: labels, keyboard flow, validation messaging, focus handling, and appropriate input types;
+- [ ] any marketing promise about cost, obligation, travel, response time, or assessment terms is source-verified before publication.
 
 ---
 

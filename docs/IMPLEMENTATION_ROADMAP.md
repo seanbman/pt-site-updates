@@ -4,58 +4,81 @@
 
 This roadmap is the living execution/status companion to `docs/WEBSITE_DESIGN_PLAN.md` and `docs/INSTRUCTIONS.md`.
 
-The design plan remains the target architecture. This document reflects the actual state of `dev/updates` as of the current first draft and accepts the operator's manual adjustments as the working baseline.
+The design plan remains the target architecture. This document reflects the actual state of `dev/updates` and accepts the operator's manual adjustments as the current implementation baseline.
 
-**Important scope rule:** pages intentionally omitted from the first-draft menu are **not cancelled**. They move to **Wave 2** unless explicitly removed later.
+## Scope rule
+
+**Menu clickability does not define wave membership.**
+
+Grapher records the current navigation architecture as:
+
+```text
+About
+Our Work
+Solutions
+How It Works
+Our Technology
+Resources
+[ Book an Assessment ]
+```
+
+That architecture is already part of the current implementation. A section can therefore be **Wave 1** even when its menu item is currently a label/flyout rather than a standalone routed page.
+
+Wave 2 is primarily the expansion of these already-established sections into additional dedicated, indexable pages and deeper content.
+
+The one explicit current scope reduction recorded in Grapher is **Resources**: the menu was intentionally limited to FAQ and Client Portal until the remaining guides are ready. That reduction does not remove Resources from Wave 1.
 
 ---
 
-# Wave 1 — First Draft / Current Branch
+# Wave 1 — Current First Draft
 
-Wave 1 is the smaller, launch-oriented slice represented by the current `dev/updates` branch.
+Wave 1 is the current implemented site experience and the architecture already expressed through the homepage, navigation, existing public pages, shared components, and conversion flow.
 
 ## Completed or substantially implemented
 
 - ~~Preserve the existing Plumbing Track visual identity rather than rebrand the site.~~
 - ~~Preserve the homepage video/hero experience.~~
-- ~~Restructure the Home page around the newer positioning and current visual system.~~
-- ~~Create a shared header/navigation implementation and shared footer scaffolding.~~
-- ~~Implement responsive menu behaviour and reduced-motion handling in the shared front-end code.~~
-- ~~Rework **Our Work** into a stronger first-draft proof/portfolio page.~~
-- ~~Retain the existing Client Portal and align it with the shared site shell where practical.~~
+- ~~Restructure Home into a compact conversion journey rather than an epic-scroll copy dump.~~
+- ~~Introduce accessible-plumbing/product explanation on Home.~~
+- ~~Introduce routing/exploration cards on Home to represent the broader site architecture.~~
+- ~~Establish the primary navigation hierarchy: About, Our Work, Solutions, How It Works, Our Technology, Resources.~~
+- ~~Create shared header/navigation and footer fragments.~~
+- ~~Implement responsive navigation, click-away behaviour, mobile menu corrections, scroll-state behaviour, and reduced-motion handling.~~
+- ~~Rework **Our Work** into a stronger responsive proof/portfolio page.~~
+- ~~Retain the Client Portal and align it with the shared site shell.~~
 - ~~Create the dedicated **Book an Assessment** route.~~
-- ~~Implement the multi-step assessment form, review step, API submission, success state, and source attribution.~~
-- ~~Instrument assessment CTA clicks, assessment starts, step completion, and successful submissions at the event-emission level.~~
-- ~~Build/revise the Affordable Housing / BC Housing page as a dedicated audience page.~~
+- ~~Implement the multi-step assessment form, review step, API submission, success state, source attribution, and duplicate-submission protection.~~
+- ~~Instrument assessment CTA clicks, starts, step completion, and successful submissions at the event-emission level.~~
+- ~~Build/revise the Affordable Housing / BC Housing audience page.~~
+- ~~Apply current visual hygiene across Home, Our Work, BC Housing, Assessment, and Client Portal surfaces.~~
 - ~~Add initial SEO metadata/canonical/schema treatment to major Wave 1 pages.~~
-- ~~Add initial reusable templates for future How It Works, Technology, header/footer, and project-proof content.~~
-- ~~Initialize/synchronize Grapher state for the branch.~~
+- ~~Create reusable templates/scaffolding for future How It Works, Technology, project-proof, header, and footer work.~~
+- ~~Reduce Resources intentionally to FAQ + Client Portal until remaining guides are ready.~~
+- ~~Initialize and synchronize Grapher implementation/test records for the branch.~~
 
-## Wave 1 still needs hardening before it should be treated as production-complete
+## Wave 1 still needs hardening
 
-- [ ] Verify the homepage video on desktop, tablet, and mobile, including reduced-motion behaviour and fallback behaviour.
-- [ ] Perform responsive QA across Home, Our Work, Affordable Housing, Assessment, and Client Portal.
-- [ ] Verify the shared header/footer is used consistently across all Wave 1 public pages where appropriate.
-- [ ] Ensure first-draft navigation contains no misleading dead links. Wave 2 destinations may remain labels/placeholders until their pages exist.
-- [ ] Verify all Wave 1 internal links, anchors, asset paths, and CTA destinations.
+- [ ] Verify homepage video behaviour on desktop, tablet, and mobile, including reduced-motion/fallback behaviour.
+- [ ] Perform final responsive QA across Home, Our Work, Affordable Housing, Assessment, and Client Portal.
+- [ ] Verify the shared header/footer is consistently applied to all intended Wave 1 public pages.
+- [ ] Verify non-clickable navigation labels/flyouts are intentional and visually understandable rather than appearing broken.
+- [ ] Verify all active Wave 1 links, anchors, asset paths, and CTA destinations.
 - [ ] Verify the production assessment API end-to-end, including error handling and confirmation state.
-- [ ] Verify GA4 initialization itself is present exactly once on intended public pages; event-emission code alone does not complete analytics.
-- [ ] Verify the assessment event taxonomy in GA4 DebugView/production-equivalent testing and confirm no sensitive form values are transmitted.
-- [ ] Add/verify page-view, primary navigation, contact/phone, Our Work engagement, and other intentional Wave 1 events where required by `INSTRUCTIONS.md`.
-- [ ] Verify canonical URLs, titles, meta descriptions, OG metadata, structured data, alt text, sitemap, and robots behaviour for all Wave 1 indexable pages.
+- [ ] Verify GA4 initialization exactly once on intended public pages; event-emission code alone does not complete analytics.
+- [ ] Verify assessment events in GA4 DebugView/production-equivalent testing and confirm no sensitive form values are transmitted.
+- [ ] Add/verify page-view, primary-navigation, contact/phone, Our Work engagement, and other intentional Wave 1 events required by `INSTRUCTIONS.md`.
+- [ ] Verify canonical URLs, titles, meta descriptions, OG metadata, structured data, alt text, sitemap, and robots behaviour for Wave 1 indexable pages.
 - [ ] Review Affordable Housing claims against authoritative source material, especially displacement, asbestos, dust, cost, and regulatory language.
 - [ ] Review project facts/testimonials displayed in Our Work against verified source evidence.
-- [ ] Run a final broken-link, console-error, accessibility-basics, performance, and static-serving regression pass.
+- [ ] Run final broken-link, console-error, accessibility-basics, performance, and static-serving regression checks.
 
 ---
 
-# Wave 2 — Core Pages Intentionally Omitted From the First-Draft Menu
+# Wave 2 — Dedicated Page Expansion
 
-These pages remain important parts of the target architecture. Their absence from the current menu is treated as first-draft scope reduction, **not removal from the site plan**.
+Wave 2 does **not** introduce the missing concepts from scratch. It expands the Wave 1 architecture into the fuller set of dedicated, indexable pages set out in the design plan.
 
-## Wave 2A — Restore the complete primary information architecture
-
-Highest priority because these are first-class destinations from the intended main navigation.
+## Wave 2A — Standalone destinations for established Wave 1 sections
 
 ### About
 
@@ -71,29 +94,29 @@ Highest priority because these are first-class destinations from the intended ma
 - [ ] `/solutions/poly-b/`
 - [ ] `/solutions/kitec/`
 - [ ] `/solutions/occupied-building-repiping/`
-- [ ] Integrate the existing Affordable Housing / BC Housing work into the Solutions architecture without discarding the current page content
+- [ ] Integrate the existing Affordable Housing / BC Housing work into the Solutions architecture without discarding the current page
 
 ### How It Works
 
 - [ ] `/how-it-works/` five-phase project overview
 - [ ] `/how-it-works/installation/` detailed installation process
-- [ ] Reuse/refine the existing project-process template rather than duplicating markup unnecessarily
+- [ ] Reuse/refine the existing project-process template
 
 ### Our Technology
 
-- [ ] `/technology/` or equivalent primary Technology landing page
+- [ ] `/technology/` or equivalent Technology landing page
 - [ ] Accessible Plumbing page
 - [ ] Conventional vs Plumbing Track comparison page
 - [ ] Reuse/refine the existing accessible-plumbing template
 
-### Learn / Resources
+### Resources / Learn
 
 - [ ] `/learn/` or `/resources/` crawlable hub
-- [ ] FAQ
+- [ ] Expand FAQ
 - [ ] Problem Guides
 - [ ] Decision Guides
 - [ ] Project Guides
-- [ ] Keep Client Portal discoverable within this architecture
+- [ ] Keep Client Portal integrated into this architecture
 
 ## Wave 2B — Commercial and decision child pages
 
@@ -102,12 +125,12 @@ Highest priority because these are first-class destinations from the intended ma
 - [ ] Occupied-building repiping page
 - [ ] Conventional vs Plumbing Track buying comparison
 - [ ] Detailed installation page
-- [ ] FAQ
-- [ ] Relevant internal links from Home, Affordable Housing, Our Work, and Assessment completion state
+- [ ] Full FAQ destination
+- [ ] Deep internal linking from Home, Affordable Housing, Our Work, and Assessment completion state
 
 ## Wave 2C — SEO / educational funnel pages
 
-These retain the original plan's compositional SEO strategy: multiple useful pages that link into deeper technical/commercial material rather than one giant article.
+Retain the compositional SEO strategy: multiple focused articles that act as landing/funnel points and link into deeper technical, proof, and commercial pages.
 
 - [ ] What Is Poly-B?
 - [ ] What Is Kitec?
@@ -125,9 +148,9 @@ These retain the original plan's compositional SEO strategy: multiple useful pag
 
 ## Wave 2D — Our Work expansion
 
-The current Our Work page is a Wave 1 first draft. The deeper proof architecture remains Wave 2.
+The current Our Work page remains Wave 1. Wave 2 deepens it into a project-proof library.
 
-- [ ] Create a reusable individual project-page implementation from the existing project-proof template
+- [ ] Create reusable individual project-page implementation from the existing project-proof template
 - [ ] Initial verified project detail pages
 - [ ] Project gallery treatment using real completed Plumbing Track photography
 - [ ] Project-to-solution and project-to-technology internal linking
@@ -136,8 +159,6 @@ The current Our Work page is a Wave 1 first draft. The deeper proof architecture
 ---
 
 # Wave 3 — Expansion After Core Architecture
-
-These remain useful but should not delay Wave 1 hardening or Wave 2 restoration of the intentionally omitted main-menu architecture.
 
 - [ ] Remaining verified project pages
 - [ ] Deeper educational/editorial content after review and approval
@@ -148,32 +169,33 @@ These remain useful but should not delay Wave 1 hardening or Wave 2 restoration 
 
 ---
 
-# Re-evaluated navigation rollout
+# Navigation rollout
 
-## Wave 1 navigation
+## Wave 1
 
-The current first draft may expose only destinations that are actually ready, while preserving placeholders/labels for planned sections where useful to communicate future hierarchy.
-
-Primary working destinations:
+The current navigation hierarchy itself is already implemented:
 
 ```text
-HOME
+ABOUT
 OUR WORK
-RESOURCES / CLIENT PORTAL
-BOOK AN ASSESSMENT
+SOLUTIONS
+HOW IT WORKS
+OUR TECHNOLOGY
+RESOURCES
+[ BOOK AN ASSESSMENT ]
 ```
 
-Affordable Housing may continue to be reached through contextual links/CTAs while the full Solutions tree is deferred.
+Some entries currently function as labels/flyouts rather than standalone routes. That is a current implementation choice, not evidence that the section is outside Wave 1.
 
-Do not fabricate empty destination pages just to make every planned menu label clickable.
+Resources is deliberately narrowed to the ready subset while maintaining its place in the architecture.
 
-## Wave 2 target navigation
+Do not fabricate thin/empty pages simply to make every label clickable.
 
-Once the omitted pages are built, restore the fuller intended architecture:
+## Wave 2
+
+Wave 2 makes more of the established hierarchy independently routable and indexable:
 
 ```text
-HOME
-
 SOLUTIONS
   Poly-B Replacement
   Kitec Replacement
@@ -200,8 +222,6 @@ LEARN / RESOURCES
   Client Portal
 
 ABOUT
-
-[ BOOK AN ASSESSMENT ]
 ```
 
 ---
@@ -210,24 +230,23 @@ ABOUT
 
 The current branch is the implementation baseline. Future work should **extend it rather than restart it**.
 
-For each wave:
-
 1. Preserve the current visual language and homepage video.
-2. Reuse shared components/templates where they are actually useful.
-3. Keep pages focused and indexable rather than returning to epic-scroll architecture.
-4. Treat verified current implementation as truth unless a concrete defect is found.
-5. Treat omitted first-draft menu destinations as deferred scope, not abandoned scope.
-6. Keep Grapher synchronized with material implementation decisions and verification results.
-7. Do not mark analytics, SEO, accessibility, or responsive work complete without verification.
+2. Preserve the established Wave 1 navigation architecture unless a deliberate later decision changes it.
+3. Do not infer scope solely from whether a menu item currently has an `href`.
+4. Reuse shared components/templates where useful.
+5. Keep pages focused and indexable rather than returning to epic-scroll architecture.
+6. Treat verified current implementation as truth unless a concrete defect is found.
+7. Keep Grapher synchronized with implementation decisions and verification results.
+8. Do not mark analytics, SEO, accessibility, or responsive work complete without verification.
 
-The practical order is now:
+Practical order:
 
 ```text
-Wave 1: harden what exists
+Wave 1: finish and harden current first draft
         ↓
-Wave 2A: restore omitted primary menu architecture
+Wave 2A: add dedicated routes for established sections
         ↓
-Wave 2B: build commercial/decision child pages
+Wave 2B: deepen commercial/decision pages
         ↓
 Wave 2C: expand SEO/education funnels
         ↓

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 GRAPH=".grapher/knowledge.json"
-OP="docs-sync-2026-09-09"
+OP="docs-sync-${GITHUB_SHA:-$(date -u +%Y%m%dT%H%M%SZ)}"
 
 common_agent=(
   --graph "$GRAPH"
@@ -29,6 +29,18 @@ grapher add "${common_agent[@]}" \
   --workflow-state completed \
   --verification not_applicable \
   --reason "Make the docs directory explicitly navigable in Grapher"
+
+grapher add "${common_agent[@]}" \
+  --id agents-instructions \
+  --type document \
+  --title "Plumbing Track agent operating instructions" \
+  --content "Repository agent policy requiring continuous Grapher use during documentation work, semantic capture as decisions become durable, history-preserving updates, and validate/audit before documentation tasks are considered complete." \
+  --path AGENTS.md \
+  --tags plumbing-track,agents,grapher,documentation,governance \
+  --status canonical_spec \
+  --workflow-state active \
+  --verification not_applicable \
+  --reason "Index the repository-level agent operating policy in Grapher"
 
 grapher add "${common_agent[@]}" \
   --id docs-instructions \
@@ -102,7 +114,40 @@ grapher add "${common_agent[@]}" \
   --verification not_applicable \
   --reason "Represent archived site material in the documentation graph"
 
-# Explicit semantic decision and requirement records.
+# Explicit semantic decisions and requirements.
+grapher add \
+  --graph "$GRAPH" \
+  --id decision-continuous-documentation-grapher \
+  --type decision \
+  --title "Use Grapher continuously for documentation" \
+  --content '{"decision":"Agents must use Grapher continuously while creating, changing, reorganizing, or interpreting project documentation.","rationale":"Documentation and durable project knowledge must evolve together; a one-time or end-of-session sync can miss decisions, supersession, relationships, and verification state."}' \
+  --path AGENTS.md \
+  --tags plumbing-track,grapher,documentation,agents,decision \
+  --stage developing \
+  --status current \
+  --workflow-state completed \
+  --verification verified \
+  --actor operator \
+  --actor-kind human \
+  --role operator \
+  --source chatgpt \
+  --provenance-integrity declared \
+  --operation-id "$OP" \
+  --phase canonical \
+  --reason "Operator explicitly required continuous Grapher use for documentation"
+
+grapher add "${common_agent[@]}" \
+  --id requirement-continuous-documentation-grapher \
+  --type requirement \
+  --title "Documentation work must stay synchronized with Grapher" \
+  --content '{"requirement":"Before material documentation edits, agents must search Grapher; during the work they must record durable decisions, requirements, scope changes, relationships, supersession, and verification as they become known; before completion they must validate and audit the graph.","acceptance_condition":"Documentation changes and corresponding Grapher semantic state are updated in the same work cycle; direct hand-editing of Grapher state files is avoided; CI sync is treated as a backstop rather than a substitute for agent semantic capture."}' \
+  --path AGENTS.md \
+  --tags plumbing-track,requirement,grapher,documentation,continuous \
+  --status canonical_spec \
+  --workflow-state active \
+  --verification not_applicable \
+  --reason "Make continuous documentation graphing an ongoing acceptance requirement"
+
 grapher add \
   --graph "$GRAPH" \
   --id decision-how-it-works-routing \
@@ -149,6 +194,7 @@ grapher add "${common_agent[@]}" \
   --reason "Record the new explanatory route implementation"
 
 # Documentation map.
+grapher link --graph "$GRAPH" docs-index agents-instructions --rel references --note "Repository agent operating policy"
 grapher link --graph "$GRAPH" docs-index docs-instructions --rel references --note "Governing instructions"
 grapher link --graph "$GRAPH" docs-index docs-website-design-plan --rel references --note "Target design architecture"
 grapher link --graph "$GRAPH" docs-index docs-implementation-roadmap --rel references --note "Living execution status"
@@ -156,7 +202,14 @@ grapher link --graph "$GRAPH" docs-index docs-decision-how-it-works-routing --re
 grapher link --graph "$GRAPH" docs-index docs-web-work-sheet --rel references --note "Supporting source evidence"
 grapher link --graph "$GRAPH" docs-index docs-site-export --rel references --note "Archived source evidence"
 
-grapher link --graph "$GRAPH" docs-website-design-plan docs-instructions --rel constrained_by 2>/dev/null || \
+grapher link --graph "$GRAPH" agents-instructions docs-index --rel references --note "Agents use the documentation index as the human-readable map"
+grapher link --graph "$GRAPH" agents-instructions docs-instructions --rel references --note "Agent policy defers project authority and source precedence to governing instructions"
+grapher link --graph "$GRAPH" decision-continuous-documentation-grapher agents-instructions --rel evidenced_by --note "The repository agent policy records the operator decision"
+grapher link --graph "$GRAPH" requirement-continuous-documentation-grapher decision-continuous-documentation-grapher --rel decided_by --note "Ongoing documentation requirement follows the operator decision"
+grapher link --graph "$GRAPH" requirement-continuous-documentation-grapher agents-instructions --rel evidenced_by --note "Acceptance rule is written in AGENTS.md"
+grapher link --graph "$GRAPH" requirement-continuous-documentation-grapher docs-index --rel applies_to --note "Continuous Grapher discipline applies to the tracked documentation set"
+
+grapher link --graph "$GRAPH" docs-website-design-plan docs-instructions --rel constrains 2>/dev/null || \
   grapher link --graph "$GRAPH" docs-website-design-plan docs-instructions --rel applies_to --note "Design plan operates under governing instructions"
 grapher link --graph "$GRAPH" docs-implementation-roadmap docs-website-design-plan --rel derived_from --note "Roadmap applies target architecture to current implementation state"
 grapher link --graph "$GRAPH" docs-decision-how-it-works-routing docs-website-design-plan --rel deviates_from --note "Refines the earlier direct-to-assessment process routing without discarding the wider design plan"

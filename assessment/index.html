@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book an Assessment | Plumbing Track</title>
+    <meta name="description" content="Tell Plumbing Track about your multifamily building and repiping project.">
+    <link rel="icon" href="/favicons/favicon.ico" sizes="any">
+    <style>
+      :root { --ink:#061015; --panel:#0b171d; --panel-soft:#10242d; --cyan:#d2b985; --cyan-soft:#e0c99a; --paper:#f1f5f6; --steel:#a8b5ba; --line:rgba(157,170,176,.3); }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { background:var(--ink); color:#fff; font-family:Arial,Helvetica,sans-serif; margin:0; }
+      a { color:inherit; text-decoration:none; }
+      .site-header { align-items:center; display:flex; height:80px; justify-content:space-between; padding:0 clamp(1.2rem,4vw,4.5rem); }
+      .brand { display:block; line-height:0; max-width:min(300px,52vw); }
+      .brand img { height:auto; width:100%; }
+      .back-link { border-bottom:1px solid rgba(255,255,255,.55); color:var(--cyan-soft); font-size:.9rem; font-weight:700; padding-bottom:.3rem; }
+      .assessment-page { min-height:100vh; padding:clamp(2rem,5vw,5rem) clamp(1.2rem,7vw,8rem) clamp(5rem,10vw,8rem); }
+      .assessment-shell { display:grid; gap:clamp(2.5rem,8vw,9rem); grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr); margin:0 auto; max-width:1240px; }
+      .eyebrow { color:var(--cyan-soft); font-size:.72rem; font-weight:750; letter-spacing:.15em; margin:0 0 1.2rem; text-transform:uppercase; }
+      h1 { font-size:clamp(2.7rem,5.2vw,5.6rem); letter-spacing:-.07em; line-height:.92; margin:0; max-width:9ch; }
+      .intro { color:var(--steel); font-size:1.08rem; line-height:1.6; margin:1.5rem 0 0; max-width:37ch; }
+      .assessment-form { background:var(--paper); color:var(--ink); padding:clamp(1.2rem,2.2vw,2rem); }
+      .progress { display:grid; gap:.45rem; grid-template-columns:repeat(4,minmax(0,1fr)); list-style:none; margin:0 0 1.25rem; padding:0; }
+      .progress li { border-top:2px solid #becbd0; color:#697b82; font-size:.7rem; font-weight:700; letter-spacing:.04em; padding-top:.7rem; text-transform:uppercase; }
+      .progress li.is-active { border-color:#00516f; color:#00516f; }
+      .progress li.is-complete { border-color:var(--cyan); color:#254650; }
+      .step-panel { border:0; margin:0; min-width:0; padding:0; }
+      .step-panel[hidden] { display:none; }
+      .step-panel legend { font-size:clamp(1.7rem,3vw,2.5rem); font-weight:750; letter-spacing:-.055em; line-height:1; margin:0 0 .7rem; padding:0; }
+      .step-help { color:#53666e; font-size:.96rem; line-height:1.45; margin:0 0 1.15rem; max-width:54ch; }
+      .field-grid { display:grid; gap:.75rem 1rem; grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .field { display:grid; gap:.45rem; }
+      .field--full { grid-column:1 / -1; }
+      label, .field-label { color:#254650; font-size:.77rem; font-weight:750; letter-spacing:.045em; text-transform:uppercase; }
+      input, select, textarea { appearance:none; background:#fff; border:1px solid #aebdc2; border-radius:0; color:var(--ink); font:inherit; font-size:1rem; min-height:48px; padding:.75rem; width:100%; }
+      textarea { min-height:78px; resize:vertical; }
+      input:focus, select:focus, textarea:focus { border-color:#00516f; box-shadow:0 0 0 3px rgba(0, 81, 111,.22); outline:0; }
+      .choice-grid { display:grid; gap:.55rem; grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .choice-grid--two { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .choice { cursor:pointer; position:relative; }
+      .choice input { height:1px; opacity:0; position:absolute; width:1px; }
+      .choice span { align-items:center; background:#fff; border:1px solid #aebdc2; color:#36505a; display:flex; font-size:.88rem; min-height:48px; padding:.7rem; }
+      .choice input:checked + span { background:#f4ead8; border-color:#00516f; color:#003d58; }
+      .choice input:focus-visible + span { box-shadow:0 0 0 3px rgba(0, 81, 111,.35); }
+      .actions { align-items:center; display:flex; gap:.8rem; justify-content:space-between; margin-top:1.25rem; }
+      button { border-radius:0; cursor:pointer; font:inherit; font-size:.9rem; font-weight:750; min-height:50px; padding:.75rem 1.1rem; }
+      .button-primary { background:var(--ink); border:1px solid var(--ink); color:#fff; margin-left:auto; }
+      .button-primary:hover, .button-primary:focus-visible { background:#00516f; border-color:#00516f; }
+      .button-secondary { background:transparent; border:1px solid #8fa2a8; color:#26434e; }
+      .button-secondary:hover, .button-secondary:focus-visible { border-color:#00516f; color:#00516f; }
+      button:disabled { cursor:wait; opacity:.55; }
+      .review-list { border-top:1px solid #b5c3c8; margin:0; }
+      .review-list div { border-bottom:1px solid #c7d1d4; display:grid; gap:1rem; grid-template-columns:minmax(140px,.45fr) 1fr; padding:.85rem 0; }
+      .review-list dt { color:#587078; font-size:.72rem; font-weight:750; letter-spacing:.08em; text-transform:uppercase; }
+      .review-list dd { margin:0; overflow-wrap:anywhere; }
+      .status { font-size:.94rem; line-height:1.45; margin:1.2rem 0 0; min-height:1.4em; }
+      .status.is-error { color:#a71d31; }
+      .status.is-success { color:#006f4f; }
+      .success-state { background:var(--paper); color:var(--ink); padding:clamp(2rem,5vw,4rem); }
+      .success-state[hidden] { display:none; }
+      .success-state h2 { font-size:clamp(2rem,4vw,3.5rem); letter-spacing:-.06em; line-height:.95; margin:0; max-width:12ch; }
+      .success-state p { color:#48616b; line-height:1.6; max-width:48ch; }
+      @media (max-width:800px) { .assessment-shell { grid-template-columns:1fr; } h1 { max-width:12ch; } }
+      @media (max-width:560px) { .site-header { height:72px; } .assessment-page { padding-inline:1rem; } .field-grid, .choice-grid, .choice-grid--two { grid-template-columns:1fr; } .progress { gap:.25rem; } .progress li { font-size:.58rem; line-height:1.25; } .review-list div { grid-template-columns:1fr; gap:.3rem; } .actions { align-items:stretch; flex-direction:column-reverse; } .button-primary { margin-left:0; } }
+    :where(h1, h2, h3) { text-wrap: pretty; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Plumbing Track home"><img src="/logo-white.png" alt="Plumbing Track, ReThink RePipe" width="490" height="91"></a>
+      <a class="back-link" href="/">Back to site</a>
+    </header>
+    <main class="assessment-page">
+      <div class="assessment-shell">
+        <section>
+          <p class="eyebrow">Book an Assessment</p>
+          <h1>Tell us about your building.</h1>
+          <p class="intro">A few details help us understand your building and project before the first conversation. If you are unsure, that is useful to know too.</p>
+        </section>
+        <section>
+          <form class="assessment-form" data-assessment-flow novalidate>
+            <ol class="progress" aria-label="Assessment progress"><li class="is-active">Building</li><li>Project</li><li>Contact</li><li>Review</li></ol>
+            <fieldset class="step-panel" data-step="0">
+              <legend tabindex="-1">About the building</legend><p class="step-help">Share whatever you know. All building details are optional.</p>
+              <div class="field-grid">
+                <label class="field field--full">Building or property name<input name="building_name" autocomplete="organization"></label>
+                <label class="field">Street address or location<input name="building_location" autocomplete="street-address"></label>
+                <label class="field">City or region<input name="building_region" autocomplete="address-level2"></label>
+                <label class="field">Building type<select name="building_type"><option value="">Select if known</option><option>Condo/strata</option><option>Apartment</option><option>Affordable housing</option><option>Other multifamily</option><option>Other/unknown</option></select></label>
+                <label class="field">Approximate units<input name="unit_count" inputmode="numeric"></label>
+                <div class="field field--full"><span class="field-label">Occupancy</span><div class="choice-grid choice-grid--two"><label class="choice"><input type="radio" name="occupancy" value="Occupied"><span>Occupied</span></label><label class="choice"><input type="radio" name="occupancy" value="Unoccupied"><span>Unoccupied</span></label><label class="choice"><input type="radio" name="occupancy" value="Partially occupied"><span>Partially occupied</span></label><label class="choice"><input type="radio" name="occupancy" value="Unsure"><span>Unsure</span></label></div></div>
+              </div><div class="actions"><button class="button-primary" type="button" data-next>Continue</button></div>
+            </fieldset>
+            <fieldset class="step-panel" data-step="1" hidden>
+              <legend tabindex="-1">Plumbing &amp; project</legend><p class="step-help">You do not need to diagnose the building to request an assessment.</p>
+              <div class="field-grid">
+                <div class="field field--full"><span class="field-label">Known pipe material</span><div class="choice-grid"><label class="choice"><input type="radio" name="pipe_material" value="Poly-B"><span>Poly-B</span></label><label class="choice"><input type="radio" name="pipe_material" value="Kitec"><span>Kitec</span></label><label class="choice"><input type="radio" name="pipe_material" value="Copper"><span>Copper</span></label><label class="choice"><input type="radio" name="pipe_material" value="Other"><span>Other</span></label><label class="choice"><input type="radio" name="pipe_material" value="Unsure"><span>Unsure</span></label></div></div>
+                <label class="field field--full">Reason for assessment<select name="issue_type"><option value="">Select if known</option><option>Known failing material</option><option>Leak/failure history</option><option>Insurance concern</option><option>Planned repipe</option><option>Renovation/capital planning</option><option>Other</option><option>Unsure</option></select></label>
+                <label class="field field--full">Project status or timing<input name="project_timing" placeholder="For example: researching, planning, or timing unknown"></label>
+                <label class="field">Brief project concerns<textarea name="project_concerns"></textarea></label>
+                <label class="field">Additional notes <span aria-hidden="true">(optional)</span><textarea name="project_notes"></textarea></label>
+              </div><div class="actions"><button class="button-secondary" type="button" data-back>Back</button><button class="button-primary" type="button" data-next>Continue</button></div>
+            </fieldset>
+            <fieldset class="step-panel" data-step="2" hidden>
+              <legend tabindex="-1">Contact information</legend><p class="step-help">We need a name and email to follow up. Everything else is optional.</p>
+              <div class="field-grid">
+                <label class="field">Name<input name="contact_name" autocomplete="name" required></label>
+                <label class="field">Organization or property manager<input name="contact_organization" autocomplete="organization"></label>
+                <label class="field">Role<select name="contact_role"><option value="">Select if useful</option><option>Property manager</option><option>Strata/condo board</option><option>Owner</option><option>Housing provider</option><option>Consultant</option><option>Other</option></select></label>
+                <label class="field">Email<input name="contact_email" autocomplete="email" type="email" required></label>
+                <label class="field">Phone<input name="contact_phone" autocomplete="tel" inputmode="tel" type="tel"></label>
+                <label class="field">Preferred contact<select name="preferred_contact"><option value="">No preference</option><option>Email</option><option>Phone</option></select></label>
+              </div><div class="actions"><button class="button-secondary" type="button" data-back>Back</button><button class="button-primary" type="button" data-next>Review request</button></div>
+            </fieldset>
+            <fieldset class="step-panel" data-step="3" hidden>
+              <legend tabindex="-1">Review your request</legend><p class="step-help">Check the details below, then send your assessment request.</p><dl class="review-list" data-review></dl>
+              <div class="actions"><button class="button-secondary" type="button" data-back>Back</button><button class="button-primary" type="submit">Send assessment request</button></div><p class="status" aria-live="polite" data-status></p>
+            </fieldset>
+          </form>
+          <section class="success-state" data-success hidden tabindex="-1"><p class="eyebrow">Request received</p><h2>Thank you. We have your assessment request.</h2><p>Our team will review the building and project details you shared, then follow up using the contact information provided.</p><a class="button-primary" href="/" style="display:inline-block;margin-top:1rem">Return to Plumbing Track</a></section>
+        </section>
+      </div>
+    </main>
+    <script src="/assessment.js" defer></script>
+  </body>
+</html>

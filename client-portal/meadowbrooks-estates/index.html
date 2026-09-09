@@ -58,8 +58,8 @@
 :root {
   --font-geist-sans: "Geist", Arial, Helvetica, sans-serif;
   --font-geist-mono: "Geist Mono", "Courier New", monospace;
-  --cyan: #00b2ff;
-  --cyan-soft: #55ccff;
+  --cyan: #d2b985;
+  --cyan-soft: #e0c99a;
   --ink: #061015;
   --ink-deep: #030a0e;
   --panel: #0b171d;
@@ -179,7 +179,7 @@ a { color: inherit; text-decoration: none; }
 .site-header.is-scrolled .header-nav-link:hover,
 .site-header.is-scrolled .header-nav-link:focus-visible,
 .site-header.is-scrolled .header-nav-link[aria-current="page"] {
-  color: #0077ad;
+  color: #00516f;
 }
 
 .header-cta {
@@ -213,7 +213,7 @@ a { color: inherit; text-decoration: none; }
 
 .site-header.is-scrolled .header-cta {
   border-color: var(--cyan);
-  color: #0077ad;
+  color: #00516f;
 }
 
 .site-header.is-scrolled .header-cta:hover,
@@ -256,7 +256,7 @@ a { color: inherit; text-decoration: none; }
 .site-header.is-scrolled .header-menu-toggle:hover,
 .site-header.is-scrolled .header-menu-toggle:focus-visible {
   border-color: var(--cyan);
-  color: #0077ad;
+  color: #00516f;
 }
 
 .header-menu-toggle__bars,
@@ -437,7 +437,7 @@ a { color: inherit; text-decoration: none; }
 .primary-cta:hover,
 .primary-cta:focus-visible {
   background: var(--cyan-soft);
-  box-shadow: 0 10px 28px rgba(0, 178, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 81, 111, 0.22);
   transform: translateY(-1px);
 }
 
@@ -1091,7 +1091,7 @@ footer.site-footer .brand-logo {
 }
 
 .portal-tile.is-unlocked {
-  border-color: rgba(0, 178, 255, 0.55);
+  border-color: rgba(0, 81, 111, 0.55);
 }
 
 .portal-tile__media {
@@ -1551,55 +1551,13 @@ body.portal-modal-open {
   }
 }
 
+    :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
+    <link rel="stylesheet" href="/shared-navigation.css">
   </head>
     <body>
     <main class="pt-page portal-page" data-pt-page>
-      <header class="site-header" data-pt-header>
-        <a class="brand" href="/" aria-label="Plumbing Track">
-          <img
-            class="brand-logo brand-logo--light"
-            src="/logo-white.png"
-            alt="Plumbing Track, ReThink RePipe"
-            width="490"
-            height="91"
-          >
-          <img
-            class="brand-logo brand-logo--dark"
-            src="/logo.png"
-            alt=""
-            width="490"
-            height="91"
-            aria-hidden="true"
-          >
-        </a>
-        <div class="header-actions">
-          <nav class="header-nav" id="site-nav">
-            <a class="header-nav-link" href="/our-work/">Our Work</a>
-            <a class="header-nav-link" href="/client-portal/">
-              <span class="header-nav-link__full">Client Portal</span>
-              <span class="header-nav-link__short">Portal</span>
-            </a>
-            <a class="header-cta header-nav-cta" href="/#assessment" aria-label="Book an Assessment">
-              <span class="header-cta__full">Book an Assessment</span>
-              <span class="header-cta__short">Book Assessment</span>
-            </a>
-          </nav>
-          <a class="header-cta" href="/#assessment" aria-label="Book an Assessment">
-            <span class="header-cta__full">Book an Assessment</span>
-            <span class="header-cta__short">Book Assessment</span>
-          </a>
-          <button
-            type="button"
-            class="header-menu-toggle"
-            aria-controls="site-nav"
-            aria-expanded="false"
-            aria-label="Menu"
-          >
-            <span class="header-menu-toggle__bars" aria-hidden="true"></span>
-          </button>
-        </div>
-      </header>
+      <div data-pt-header-fragment></div>
 
       <div class="building-gate" data-building-gate hidden>
         <section class="building-hero" id="top" data-pt-hero>
@@ -1692,6 +1650,7 @@ body.portal-modal-open {
       </div>
     </div>
 
+    <script src="/site-header.js" defer></script>
     <script src="/app.js" defer></script>
     <script>
 (() => {

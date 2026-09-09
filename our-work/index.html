@@ -58,8 +58,8 @@
 :root {
   --font-geist-sans: "Geist", Arial, Helvetica, sans-serif;
   --font-geist-mono: "Geist Mono", "Courier New", monospace;
-  --cyan: #00b2ff;
-  --cyan-soft: #55ccff;
+  --cyan: #d2b985;
+  --cyan-soft: #e0c99a;
   --ink: #061015;
   --ink-deep: #030a0e;
   --panel: #0b171d;
@@ -88,7 +88,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .site-header {
-  --header-swap-duration: 490ms;
+  --header-swap-duration: 0ms;
   align-items: center;
   background: transparent;
   border-bottom: 1px solid transparent;
@@ -181,7 +181,7 @@ a { color: inherit; text-decoration: none; }
 .site-header.is-scrolled .header-nav-link:hover,
 .site-header.is-scrolled .header-nav-link:focus-visible,
 .site-header.is-scrolled .header-nav-link[aria-current="page"] {
-  color: #0077ad;
+  color: #00516f;
 }
 
 .header-cta {
@@ -215,7 +215,7 @@ a { color: inherit; text-decoration: none; }
 
 .site-header.is-scrolled .header-cta {
   border-color: var(--cyan);
-  color: #0077ad;
+  color: #00516f;
 }
 
 .site-header.is-scrolled .header-cta:hover,
@@ -258,7 +258,7 @@ a { color: inherit; text-decoration: none; }
 .site-header.is-scrolled .header-menu-toggle:hover,
 .site-header.is-scrolled .header-menu-toggle:focus-visible {
   border-color: var(--cyan);
-  color: #0077ad;
+  color: #00516f;
 }
 
 .header-menu-toggle__bars,
@@ -439,7 +439,7 @@ a { color: inherit; text-decoration: none; }
 .primary-cta:hover,
 .primary-cta:focus-visible {
   background: var(--cyan-soft);
-  box-shadow: 0 10px 28px rgba(0, 178, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 81, 111, 0.22);
   transform: translateY(-1px);
 }
 
@@ -756,7 +756,21 @@ footer.site-footer p {
 }
 
 footer.site-footer .brand-logo {
-  width: clamp(180px, 18vw, 240px);
+  width: clamp(154px, 15.4vw, 210px);
+}
+
+.social-links { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; }
+.social-links a { align-items: center; border: 1px solid rgba(8, 19, 25, .25); color: #35515b; display: inline-flex; height: 2.35rem; justify-content: center; transition: border-color 160ms ease, color 160ms ease, transform 160ms ease; width: 2.35rem; }
+.social-links svg { fill: currentColor; height: 1rem; width: 1rem; }
+.social-links a:hover, .social-links a:focus-visible { border-color: #00516f; color: #00516f; transform: translateY(-2px); }
+
+:is(a, button, .project-card-link):not(.header-menu-toggle) > span[aria-hidden="true"] {
+  display: inline-block;
+  margin-left: .35em;
+  line-height: 1;
+  vertical-align: baseline;
+  position: relative;
+  top: -.08em;
 }
 
 .pt-js .hero-load {
@@ -1048,55 +1062,384 @@ footer.site-footer .brand-logo {
   }
 }
 
+/* Our Work: compact proof-led layout */
+.work-content {
+  width: min(1240px, 100%);
+  margin-inline: auto;
+}
+
+/* The hero is the only panel in this wrapper. Flatten it so sticky positioning
+   is constrained by the page, just like the homepage hero. */
+.pt-page--our-work .panel-stack {
+  display: contents;
+}
+
+.work-hero.stack-panel {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 70svh;
+  min-height: 0;
+}
+
+.work-hero__media {
+  inset: -4vh 0;
+  transform: translate3d(0, var(--pt-stack-media-shift, 0px), 0);
+  will-change: transform;
+}
+
+.work-hero__media img {
+  transform: scale(1.06);
+}
+
+.work-hero__content {
+  box-sizing: border-box;
+  justify-content: center;
+  width: min(42rem, 100%);
+  height: 70svh;
+  min-height: 0;
+  padding: clamp(5.75rem, 10vh, 7.5rem) clamp(1.5rem, 6vw, 7rem) clamp(1.75rem, 4vh, 3rem);
+}
+
+.work-hero h1 {
+  max-width: 11ch;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: .96;
+  text-wrap: balance;
+}
+
+.work-hero .hero-introduction {
+  max-width: 48ch;
+}
+
+.work-testimonials {
+  position: relative;
+  z-index: 2;
+  padding: clamp(3rem, 6vh, 5rem) clamp(1.5rem, 6vw, 7rem);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.work-testimonials__heading {
+  display: block;
+}
+
+.work-testimonials__heading h2 {
+  max-width: 10ch;
+  margin: .35rem 0 0;
+  font-size: clamp(2.25rem, 4.1vw, 4rem);
+  line-height: .98;
+  text-wrap: balance;
+}
+
+.work-testimonials .section-label {
+  color: #00516f;
+}
+
+.work-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: clamp(1.75rem, 4vh, 2.75rem);
+}
+
+.work-testimonial {
+  display: flex;
+  flex-direction: column;
+  min-height: 13.5rem;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border-top: 2px solid var(--cyan);
+  background: #10242d;
+}
+
+.work-testimonial > span {
+  color: var(--cyan);
+  font-size: 2.5rem;
+  line-height: .8;
+}
+
+.work-testimonial blockquote {
+  margin: 1.25rem 0 1.5rem;
+  color: #fff;
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  line-height: 1.45;
+}
+
+.work-testimonial cite {
+  display: block;
+  margin-top: auto;
+  color: var(--cyan-soft);
+  font-size: .82rem;
+  font-style: normal;
+}
+
+.work-testimonial cite small {
+  display: block;
+  margin-top: .35rem;
+  color: #b9c7cc;
+  font-size: .76rem;
+}
+
+#featured-projects {
+  padding-block: clamp(3rem, 6vh, 5rem);
+  background: #10242d;
+  color: #fff;
+}
+
+#featured-projects .work-section__intro {
+  max-width: 42rem;
+  margin-bottom: clamp(1.75rem, 4vh, 2.75rem);
+}
+
+#featured-projects .work-section__intro h2 {
+  max-width: 16ch;
+  text-wrap: balance;
+}
+
+#featured-projects .work-section__intro p:not(.section-label) {
+  color: #c3d0d4;
+}
+
+#featured-projects .work-section__intro .section-label {
+  color: var(--cyan);
+}
+
+.pt-js #featured-projects .project-item.reveal {
+  transition-duration: 420ms, 340ms, 420ms;
+}
+
+:where(h1, h2, h3) {
+  text-wrap: pretty;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  max-width: 1240px;
+}
+
+.project-item,
+.project-item:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: #fff;
+}
+
+.project-item:nth-child(even) .project-item__media,
+.project-item:nth-child(even) .project-item__copy {
+  order: initial;
+}
+
+.project-item__media {
+  aspect-ratio: 1.55 / 1;
+}
+
+.project-item__copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1.1rem 1rem 1.15rem;
+}
+
+.project-item__copy .section-label,
+.project-item__copy .project-kicker,
+.project-item__copy a {
+  color: #00516f;
+}
+
+/* The shared header remains white on this photographic hero from first paint. */
+.pt-page--our-work .site-header {
+  background: #fff;
+  border-bottom-color: rgba(8, 19, 25, .1);
+  box-shadow: 0 10px 28px rgba(8, 19, 25, .08);
+}
+
+.pt-page--our-work .brand-logo--light { opacity: 0; }
+.pt-page--our-work .brand-logo--dark { opacity: 1; }
+.pt-page--our-work .header-nav-link,
+.pt-page--our-work .nav-section summary { color: #314149; }
+.pt-page--our-work .header-nav-link:hover,
+.pt-page--our-work .header-nav-link:focus-visible,
+.pt-page--our-work .header-nav-link[aria-current="page"],
+.pt-page--our-work .nav-section summary::after { color: #00516f; }
+.pt-page--our-work .header-cta {
+  border-color: var(--cyan);
+  color: #00516f;
+}
+.pt-page--our-work .header-menu-toggle {
+  border-color: rgba(8, 19, 25, .22);
+  color: var(--ink);
+}
+
+.nav-section { position: relative; }
+.nav-section summary {
+  color: rgba(255, 255, 255, .88);
+  cursor: pointer;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-size: .88rem;
+  font-weight: 520;
+  letter-spacing: -.01em;
+  line-height: 1.25;
+  list-style: none;
+  white-space: nowrap;
+}
+.nav-section summary::-webkit-details-marker { display: none; }
+.nav-section summary::after { color: var(--cyan-soft); content: "⌄"; display: inline-block; line-height: 1; margin-left: .4rem; position: relative; top: -.22em; vertical-align: baseline; }
+.nav-section[open] summary::after { content: "⌃"; }
+.nav-flyout {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: -1rem;
+  display: grid;
+  gap: .3rem;
+  min-width: 218px;
+  padding: 1rem;
+  color: var(--ink);
+  background: #fff;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, .2);
+}
+.nav-flyout span { padding: .32rem 0; color: #53636a; font-size: .84rem; line-height: 1.35; }
+.nav-flyout a { padding: .32rem 0; color: #00516f; font-size: .84rem; font-weight: 700; line-height: 1.35; }
+.nav-flyout span:first-child { padding-bottom: .55rem; color: #00516f; font-size: .68rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+
+@media (max-width: 980px) {
+  .pt-page--our-work .header-nav {
+    background: #fff;
+    border-bottom-color: rgba(8, 19, 25, .1);
+    box-shadow: 0 16px 32px rgba(8, 19, 25, .1);
+  }
+  .pt-page--our-work .header-nav .header-nav-link,
+  .pt-page--our-work .nav-section summary { color: #314149; }
+  .pt-page--our-work .header-nav .header-nav-link { border-bottom-color: rgba(8, 19, 25, .08); }
+  .pt-page--our-work .nav-flyout span { color: #53636a; }
+  .pt-page--our-work .nav-flyout a,
+  .pt-page--our-work .nav-flyout span:first-child { color: #00516f; }
+  .pt-page--our-work .nav-section { width: 100%; }
+  .pt-page--our-work .nav-section summary { padding: .45rem 0; font-size: 1rem; }
+  .pt-page--our-work .nav-flyout {
+    position: static;
+    gap: .1rem;
+    padding: .2rem 0 .55rem 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .pt-page--our-work .nav-flyout span,
+  .pt-page--our-work .nav-flyout a { padding: .2rem 0; font-size: .82rem; }
+  .pt-page--our-work .nav-flyout span:first-child { padding-bottom: .25rem; }
+}
+
+@media (min-width: 981px) and (max-width: 1240px) {
+  .pt-page--our-work .site-header { gap:.85rem; height:68px; padding:0 1.1rem; }
+  .pt-page--our-work .brand { min-width:0; }
+  .pt-page--our-work .brand-logo { width:min(168px,42vw); }
+  .pt-page--our-work .header-actions { flex-shrink:0; gap:.85rem; }
+  .pt-page--our-work .header-menu-toggle { display:inline-flex; }
+  .pt-page--our-work .header-nav { background:#fff; border-bottom:1px solid rgba(8,19,25,.1); box-shadow:0 16px 32px rgba(8,19,25,.1); display:none; flex-direction:column; gap:0; left:0; padding:.85rem 1.1rem 1.1rem; position:absolute; right:0; top:100%; }
+  .pt-page--our-work .site-header.is-nav-open .header-nav { display:flex; }
+  .pt-page--our-work .header-nav .header-nav-link, .pt-page--our-work .nav-section summary { border-bottom:1px solid rgba(8,19,25,.08); color:#314149; font-size:1rem; padding:.85rem 0; width:100%; }
+  .pt-page--our-work .nav-section { width:100%; }
+  .pt-page--our-work .nav-flyout { background:transparent; box-shadow:none; gap:.1rem; padding:.2rem 0 .55rem 1rem; position:static; }
+  .pt-page--our-work .nav-flyout span { color:#53666e; font-size:.82rem; padding:.2rem 0; }
+  .pt-page--our-work .nav-flyout a, .pt-page--our-work .nav-flyout span:first-child { color:#00516f; font-size:.82rem; padding:.2rem 0; }
+  .pt-page--our-work .nav-flyout span:first-child { padding-bottom:.25rem; }
+  .pt-page--our-work .header-nav-cta { display:inline-flex; justify-content:center; margin-top:.85rem; text-align:center; width:100%; }
+  .pt-page--our-work .header-actions > .header-cta { padding:.62rem .8rem; }
+}
+
+.project-item__copy h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  line-height: 1;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .65rem;
+  margin: .1rem 0 0;
+  padding-top: .75rem;
+  border-top: 1px solid #d8dfe2;
+  color: #00516f;
+  font-size: .79rem;
+  line-height: 1.3;
+}
+
+.project-meta li {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.project-meta li + li::before {
+  width: .22rem;
+  height: .22rem;
+  margin-right: .65rem;
+  border-radius: 999px;
+  background: var(--cyan);
+  content: "";
+}
+
+.project-item__copy a {
+  margin-top: auto;
+  font-size: .78rem;
+}
+
+@media (max-width: 980px) {
+  .work-testimonials__grid,
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .work-testimonials__heading {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .work-hero.stack-panel,
+  .work-hero__content {
+    height: 70svh;
+  }
+
+  .work-hero__content {
+    padding-inline: 1.25rem;
+  }
+
+  .work-testimonials,
+  #featured-projects {
+    padding-inline: 1.25rem;
+  }
+
+  .work-testimonials__grid,
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-hero.stack-panel {
+    position: relative;
+    top: auto;
+  }
+
+  .work-hero__media,
+  .work-hero__media img,
+  .work-hero__content {
+    transform: none;
+  }
+}
     </style>
   </head>
   <body>
-    <main class="pt-page" data-pt-page data-pt-early-lazy>
-      <header class="site-header" data-pt-header>
-        <a class="brand" href="/" aria-label="Plumbing Track">
-          <img
-            class="brand-logo brand-logo--light"
-            src="/logo-white.png"
-            alt="Plumbing Track, ReThink RePipe"
-            width="490"
-            height="91"
-          >
-          <img
-            class="brand-logo brand-logo--dark"
-            src="/logo.png"
-            alt=""
-            width="490"
-            height="91"
-            aria-hidden="true"
-          >
-        </a>
-        <div class="header-actions">
-          <nav class="header-nav" id="site-nav">
-            <a class="header-nav-link" href="/our-work/" aria-current="page">Our Work</a>
-            <a class="header-nav-link" href="/client-portal/">
-              <span class="header-nav-link__full">Client Portal</span>
-              <span class="header-nav-link__short">Portal</span>
-            </a>
-            <a class="header-cta header-nav-cta" href="/#assessment" aria-label="Book an Assessment">
-              <span class="header-cta__full">Book an Assessment</span>
-              <span class="header-cta__short">Book Assessment</span>
-            </a>
-          </nav>
-          <a class="header-cta" href="/#assessment" aria-label="Book an Assessment">
-            <span class="header-cta__full">Book an Assessment</span>
-            <span class="header-cta__short">Book Assessment</span>
-          </a>
-          <button
-            type="button"
-            class="header-menu-toggle"
-            aria-controls="site-nav"
-            aria-expanded="false"
-            aria-label="Menu"
-          >
-            <span class="header-menu-toggle__bars" aria-hidden="true"></span>
-          </button>
-        </div>
-      </header>
+    <main class="pt-page pt-page--our-work" data-pt-page data-pt-early-lazy>
+      <div data-pt-header-fragment></div>
 
       <div class="panel-stack" data-pt-panel-stack>
         <section class="work-hero stack-panel stack-panel--ink" style="--stack-index: 0" id="top" data-pt-hero data-pt-stack-panel>
@@ -1110,72 +1453,17 @@ footer.site-footer .brand-logo {
           <div class="hero-introduction hero-load">
             <p>Featured projects, client references, and the property partners who trust our turnkey repiping system.</p>
           </div>
-          <a class="primary-cta hero-load" href="/#assessment">Book an Assessment</a>
+          <a class="primary-cta hero-load" href="/assessment/?source_page=%2Four-work%2F&amp;source_cta=hero" data-assessment-cta="hero">Book an Assessment</a>
         </div>
         </section>
 
-        <section class="trust-section stack-panel stack-panel--cover" style="--stack-index: 1" data-pt-proof data-pt-parallax-row data-pt-testimonials data-pt-stack-panel id="testimonials">
-        <div class="proof-media reveal" data-pt-parallax-media>
-          <div class="media-stack" data-pt-media-layer>
-            <div class="testimonial-media" data-pt-testimonial-media aria-hidden="true">
-              <img class="is-active" src="/img/mosaic.webp" alt="The Mosaic" width="1200" height="800" loading="eager">
-              <img src="/img/stellar-place.webp" alt="Stellar Place" width="630" height="405" loading="lazy">
-              <img src="/img/wildwood-ii.webp" alt="Wildwood II" width="1200" height="800" loading="lazy">
-              <img src="/img/wildwood-iii.webp" alt="Wildwood III" width="1200" height="800" loading="lazy">
-              <img src="/img/the-bench.webp" alt="The Bench" width="1200" height="800" loading="lazy">
-            </div>
-          </div>
-        </div>
-        <div class="trust-copy reveal" data-pt-parallax-copy>
-          <p class="section-label">References</p>
-          <h2>Client Testimonials</h2>
-          <h3>What our clients say</h3>
-          <div class="testimonial-stage" data-pt-testimonial-stage aria-live="polite">
-            <blockquote class="testimonial-quote is-active" data-pt-testimonial-quote>
-              <p>“They truly went above and beyond with the final post-construction clean, leaving the building in excellent condition. I would highly recommend Paul and his team for any major re-plumbing work!”</p>
-              <div class="testimonial-meta">
-                <cite>Elaine, Strata President</cite>
-                <span class="testimonial-building">The Mosaic</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“We could not have picked a better company to take care of this problem for us and we would highly recommend them.”</p>
-              <div class="testimonial-meta">
-                <cite>Stellar Place Strata Council</cite>
-                <span class="testimonial-building">Stellar Place</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“I have full confidence in Paul Jahn and Kitrax Restoration Group, and would highly recommend them as the first and best option for any Repiping Projects.”</p>
-              <div class="testimonial-meta">
-                <cite>Caroline Lenarduzzi, Licensed Strata Manager<br>Associated Property Management</cite>
-                <span class="testimonial-building">Wildwood II</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“We were impressed with their commitment throughout the project and were very satisfied with the high quality of craftsmanship. The on-site staff was always respectful and willing to adapt to the needs of the project.”</p>
-              <div class="testimonial-meta">
-                <cite>Keith Boyle, Wildwood III Strata Council</cite>
-                <span class="testimonial-building">Wildwood III</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“Paul’s organizational and leadership skills are highly commendable, and as the President of the Strata, I cannot say enough about that.”</p>
-              <div class="testimonial-meta">
-                <cite>Colleen J Dyson<br>President KAS2473, Bench I</cite>
-                <span class="testimonial-building">The Bench</span>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-        </section>
       </div>
 
-      <section class="work-section work-section--ink" id="featured-projects" data-pt-stagger>
+      <section class="work-section work-section--paper" id="featured-projects" data-pt-stagger data-pt-stagger-fast>
         <div class="work-section__intro reveal">
           <p class="section-label">Portfolio</p>
-          <h2>Featured Projects</h2>
-          <p>Multifamily buildings where Plumbing Track delivered cleaner, faster, less disruptive repiping.</p>
+          <h2>Completed&nbsp;buildings.</h2>
+          <p>Verified project facts, organized by property.</p>
         </div>
         <div class="project-list">
 
@@ -1341,10 +1629,21 @@ footer.site-footer .brand-logo {
         </div>
       </section>
 
+      <section class="work-testimonials" aria-labelledby="testimonials-heading">
+        <div class="work-content">
+          <div class="work-testimonials__heading"><p class="section-label">Project references</p><h2 id="testimonials-heading">What clients say after the&nbsp;work is done.</h2></div>
+          <div class="work-testimonials__grid">
+            <article class="work-testimonial"><span aria-hidden="true">“</span><blockquote>They truly went above and beyond with the final post-construction clean, leaving the building in excellent condition.</blockquote><cite>Elaine <small>Strata President · The Mosaic</small></cite></article>
+            <article class="work-testimonial"><span aria-hidden="true">“</span><blockquote>We could not have picked a better company to take care of this problem for us and we would highly recommend them.</blockquote><cite>Stellar Place Strata Council <small>Stellar Place</small></cite></article>
+            <article class="work-testimonial"><span aria-hidden="true">“</span><blockquote>We were impressed with their commitment throughout the project and were very satisfied with the high quality of craftsmanship.</blockquote><cite>Keith Boyle <small>Wildwood III Strata Council</small></cite></article>
+          </div>
+        </div>
+      </section>
+
 <section class="work-section work-section--paper" id="clients-partners">
         <div class="work-section__intro reveal">
           <p class="section-label">Network</p>
-          <h2>Clients &amp; Partners</h2>
+          <h2>Clients&nbsp;&amp; Partners</h2>
           <p>Property managers and partners who work with Plumbing Track across British Columbia and Alberta.</p>
         </div>
         <ul class="partner-grid" data-pt-stagger data-pt-stagger-fast aria-label="Clients and partners">
@@ -1384,20 +1683,10 @@ footer.site-footer .brand-logo {
         </ul>
       </section>
 
-      <footer class="site-footer">
-        <a class="brand" href="/" aria-label="Plumbing Track">
-          <img
-            class="brand-logo"
-            src="/logo.png"
-            alt="Plumbing Track, ReThink RePipe"
-            width="490"
-            height="91"
-          >
-        </a>
-        <p>The Modern Standard for Multifamily Repiping</p>
-      </footer>
+      <div data-pt-footer-fragment></div>
     </main>
 
+    <script src="/site-header.js" defer></script>
     <script src="/app.js" defer></script>
   </body>
 </html>

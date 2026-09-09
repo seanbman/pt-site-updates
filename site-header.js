@@ -1,4 +1,16 @@
 (() => {
+  const routeHowItWorks = () => {
+    const heroLink = document.querySelector('.hero-actions a[href="#how-it-works"]');
+    if (heroLink) heroLink.href = "/how-it-works/";
+
+    const previewLink = document.querySelector('a[data-assessment-cta="how-it-works-preview"]');
+    if (previewLink) {
+      previewLink.href = "/how-it-works/";
+      previewLink.removeAttribute("data-assessment-cta");
+      previewLink.innerHTML = 'See how it works <span aria-hidden="true">›</span>';
+    }
+  };
+
   const loadFragment = (mount, path) => {
     if (!mount) return Promise.resolve();
     return fetch(path)
@@ -9,6 +21,8 @@
       .then((markup) => { mount.outerHTML = markup; })
       .catch((error) => { console.error(error); });
   };
+
+  routeHowItWorks();
 
   const headerMount = document.querySelector("[data-pt-header-fragment]");
   const footerMount = document.querySelector("[data-pt-footer-fragment]");

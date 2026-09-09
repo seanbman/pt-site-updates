@@ -518,7 +518,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:31+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -533,7 +533,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:31+00:00"
+        "recorded_at": "2026-09-09T10:58:18+00:00"
       }
     },
     "docs-instructions": {
@@ -550,7 +550,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:31+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "completed",
@@ -565,7 +565,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:31+00:00"
+        "recorded_at": "2026-09-09T10:58:18+00:00"
       }
     },
     "docs-website-design-plan": {
@@ -582,7 +582,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:31+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -597,7 +597,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:31+00:00"
+        "recorded_at": "2026-09-09T10:58:18+00:00"
       }
     },
     "docs-implementation-roadmap": {
@@ -614,7 +614,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:31+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -629,7 +629,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:31+00:00"
+        "recorded_at": "2026-09-09T10:58:18+00:00"
       }
     },
     "docs-decision-how-it-works-routing": {
@@ -647,7 +647,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:31+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -662,7 +662,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:31+00:00"
+        "recorded_at": "2026-09-09T10:58:18+00:00"
       }
     },
     "docs-web-work-sheet": {
@@ -679,7 +679,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:31+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -694,7 +694,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:31+00:00"
+        "recorded_at": "2026-09-09T10:58:18+00:00"
       }
     },
     "docs-site-export": {
@@ -711,7 +711,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:31+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -726,7 +726,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:31+00:00"
+        "recorded_at": "2026-09-09T10:58:18+00:00"
       }
     },
     "decision-how-it-works-routing": {
@@ -743,7 +743,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:32+00:00",
+      "updated_at": "2026-09-09T10:58:19+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -758,7 +758,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:32+00:00"
+        "recorded_at": "2026-09-09T10:58:19+00:00"
       }
     },
     "requirement-explain-before-assessment": {
@@ -775,7 +775,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:32+00:00",
+      "updated_at": "2026-09-09T10:58:19+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -790,7 +790,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:32+00:00"
+        "recorded_at": "2026-09-09T10:58:19+00:00"
       }
     },
     "component-how-it-works-page": {
@@ -807,7 +807,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:57:32+00:00",
+      "updated_at": "2026-09-09T10:58:19+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -822,8 +822,107 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:57:32+00:00"
+        "recorded_at": "2026-09-09T10:58:19+00:00"
       }
+    },
+    "agents-instructions": {
+      "id": "agents-instructions",
+      "type": "document",
+      "title": "Plumbing Track agent operating instructions",
+      "content": "Repository agent policy requiring continuous Grapher use during documentation work, semantic capture as decisions become durable, history-preserving updates, and validate/audit before documentation tasks are considered complete.",
+      "path": "AGENTS.md",
+      "tags": [
+        "plumbing-track",
+        "agents",
+        "grapher",
+        "documentation",
+        "governance"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:58:18+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
+      "stage": "developing",
+      "status": "canonical_spec",
+      "workflow_state": "active",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T10:58:18+00:00"
+      },
+      "scope": {}
+    },
+    "decision-continuous-documentation-grapher": {
+      "id": "decision-continuous-documentation-grapher",
+      "type": "decision",
+      "title": "Use Grapher continuously for documentation",
+      "content": "{\"decision\":\"Agents must use Grapher continuously while creating, changing, reorganizing, or interpreting project documentation.\",\"rationale\":\"Documentation and durable project knowledge must evolve together; a one-time or end-of-session sync can miss decisions, supersession, relationships, and verification state.\"}",
+      "path": "AGENTS.md",
+      "tags": [
+        "plumbing-track",
+        "grapher",
+        "documentation",
+        "agents",
+        "decision"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:58:18+00:00",
+      "updated_at": "2026-09-09T10:58:18+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "operator",
+        "actor_kind": "human",
+        "actor_role": "operator",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T10:58:18+00:00"
+      },
+      "scope": {}
+    },
+    "requirement-continuous-documentation-grapher": {
+      "id": "requirement-continuous-documentation-grapher",
+      "type": "requirement",
+      "title": "Documentation work must stay synchronized with Grapher",
+      "content": "{\"requirement\":\"Before material documentation edits, agents must search Grapher; during the work they must record durable decisions, requirements, scope changes, relationships, supersession, and verification as they become known; before completion they must validate and audit the graph.\",\"acceptance_condition\":\"Documentation changes and corresponding Grapher semantic state are updated in the same work cycle; direct hand-editing of Grapher state files is avoided; CI sync is treated as a backstop rather than a substitute for agent semantic capture.\"}",
+      "path": "AGENTS.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "grapher",
+        "documentation",
+        "continuous"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:58:19+00:00",
+      "updated_at": "2026-09-09T10:58:19+00:00",
+      "stage": "developing",
+      "status": "canonical_spec",
+      "workflow_state": "active",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T10:58:19+00:00"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -1008,6 +1107,61 @@
       "rel": "references",
       "created_at": "2026-09-09T10:09:57+00:00",
       "note": "Tracked design document behind the existing implementation requirement"
+    },
+    {
+      "from": "docs-index",
+      "to": "agents-instructions",
+      "rel": "references",
+      "created_at": "2026-09-09T10:58:19+00:00",
+      "note": "Repository agent operating policy"
+    },
+    {
+      "from": "agents-instructions",
+      "to": "docs-index",
+      "rel": "references",
+      "created_at": "2026-09-09T10:58:19+00:00",
+      "note": "Agents use the documentation index as the human-readable map"
+    },
+    {
+      "from": "agents-instructions",
+      "to": "docs-instructions",
+      "rel": "references",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Agent policy defers project authority and source precedence to governing instructions"
+    },
+    {
+      "from": "decision-continuous-documentation-grapher",
+      "to": "agents-instructions",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "The repository agent policy records the operator decision"
+    },
+    {
+      "from": "requirement-continuous-documentation-grapher",
+      "to": "decision-continuous-documentation-grapher",
+      "rel": "decided_by",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Ongoing documentation requirement follows the operator decision"
+    },
+    {
+      "from": "requirement-continuous-documentation-grapher",
+      "to": "agents-instructions",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Acceptance rule is written in AGENTS.md"
+    },
+    {
+      "from": "requirement-continuous-documentation-grapher",
+      "to": "docs-index",
+      "rel": "applies_to",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Continuous Grapher discipline applies to the tracked documentation set"
+    },
+    {
+      "from": "docs-website-design-plan",
+      "to": "docs-instructions",
+      "rel": "constrains",
+      "created_at": "2026-09-09T10:58:20+00:00"
     }
   ]
 }

@@ -167,41 +167,58 @@
       "id": "implementation-shared-chrome",
       "type": "implementation",
       "title": "Centralized navigation and footer as shared fragments",
-      "content": "{\"change\":\"Created fetched header and footer fragments, routed assessment CTAs through the shared header, added icon-only social links, implemented click-away menu dismissal, standardized navigation order as About, Our Work, Solutions, How It Works, Our Technology, Resources, applied the same header fragment to homepage, Our Work, BC Housing, Client Portal, and Meadowbrooks portal page, placed the zero-duration header swap in the fragment, kept transparency through scrollY 50, corrected scrolled white mobile-menu labels to dark navy, and limited Resources to FAQ plus Client Portal until the remaining guides are ready.\",\"component\":\"templates/site-header.html, templates/site-footer.html, shared-navigation.css, site-header.js, app.js\"}",
-      "path": "templates/site-header.html",
+      "content": "{\"change\":\"All public page shells now consume the same header fragment and canonical shared-navigation.css. How It Works no longer lets its page-local header styles diverge from the shared menu shell; the shared stylesheet loads after the page style block so header geometry, logo swap, CTA behavior, responsive menu, and menu ordering match the rest of the site.\",\"component\":\"templates/site-header.html, shared-navigation.css, how-it-works/index.html, bchousing/index.html, client-portal/index.html, and client-portal/meadowbrooks-estates/index.html\"}",
+      "path": "shared-navigation.css",
       "tags": [
         "plumbing-track",
         "navigation",
         "footer",
         "shared-fragment",
-        "client-portal",
-        "scroll-state",
-        "mobile",
-        "resources"
+        "header-cta",
+        "responsive",
+        "how-it-works",
+        "canonical-shell"
       ],
       "meta": {},
       "created_at": "2026-09-09T06:36:47+00:00",
-      "updated_at": "2026-09-09T09:41:23+00:00",
+      "updated_at": "2026-09-09T22:10:14+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
       "verification": "verified",
-      "evidence": [],
-      "source_refs": [],
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live DOM check for /how-it-works/#process",
+          "summary": "How It Works renders the shared header fragment with the canonical menu labels and a single visually active desktop/mobile CTA variant."
+        },
+        {
+          "type": "test",
+          "ref": "git diff --check",
+          "summary": "Source formatting check passed."
+        }
+      ],
+      "source_refs": [
+        "templates/site-header.html",
+        "shared-navigation.css",
+        "how-it-works/index.html",
+        "bchousing/index.html",
+        "client-portal/index.html",
+        "client-portal/meadowbrooks-estates/index.html"
+      ],
       "owners": [],
       "scope": {},
       "provenance": {
-        "actor_id": "Codex",
+        "actor_id": "codex",
         "actor_kind": "agent",
-        "actor_role": "implementer",
-        "session_id": "session-2026-09-09-plumbing-track",
+        "actor_role": "implementation",
         "source": "cli",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T09:41:23+00:00"
+        "recorded_at": "2026-09-09T22:10:14+00:00"
       },
       "semantic": {
-        "change": "Created fetched header and footer fragments, routed assessment CTAs through the shared header, added icon-only social links, implemented click-away menu dismissal, standardized navigation order as About, Our Work, Solutions, How It Works, Our Technology, Resources, applied the same header fragment to homepage, Our Work, BC Housing, Client Portal, and Meadowbrooks portal page, placed the zero-duration header swap in the fragment, kept transparency through scrollY 50, corrected scrolled white mobile-menu labels to dark navy, and limited Resources to FAQ plus Client Portal until the remaining guides are ready.",
-        "component": "templates/site-header.html, templates/site-footer.html, shared-navigation.css, site-header.js, app.js"
+        "change": "All public page shells now consume the same header fragment and canonical shared-navigation.css. How It Works no longer lets its page-local header styles diverge from the shared menu shell; the shared stylesheet loads after the page style block so header geometry, logo swap, CTA behavior, responsive menu, and menu ordering match the rest of the site.",
+        "component": "templates/site-header.html, shared-navigation.css, how-it-works/index.html, bchousing/index.html, client-portal/index.html, and client-portal/meadowbrooks-estates/index.html"
       }
     },
     "implementation-our-work": {
@@ -246,8 +263,8 @@
       "id": "implementation-visual-hygiene",
       "type": "implementation",
       "title": "Applied visual hygiene across site pages",
-      "content": "{\"change\":\"Replaced rejected light cyan with gold and dark navy, removed numbered labels and commentary copy, reduced footer logo, compacted sections, standardized chevrons, applied orphan-aware wrapping, built aligned Explore Plumbing Track buttons and Completed Buildings CTA, removed small-breakpoint height caps, locked button typography to #10242d, fixed mobile menu contrast, bolded testimonial author names, and made homepage Completed Buildings card shadows slightly more visible while retaining a soft layered treatment and hover lift.\",\"component\":\"index.html, our-work/index.html, bchousing/index.html, templates/our-work/project-proof.html, assessment/index.html, client-portal/index.html, client-portal/meadowbrooks-estates/index.html\"}",
-      "path": "index.html",
+      "content": "{\"change\":\"Consolidated the Home and Our Work testimonial card grids into the shared templates/testimonial-cards.html fragment, loaded by site-header.js and styled by testimonial-cards.css. Both sections now render identical card markup, image treatment, typography, spacing, and 3/2/1 responsive layout while retaining their section-specific heading and background.\",\"component\":\"templates/testimonial-cards.html, testimonial-cards.css, site-header.js, index.html, and our-work/index.html\"}",
+      "path": "templates/testimonial-cards.html",
       "tags": [
         "plumbing-track",
         "typography",
@@ -255,31 +272,50 @@
         "accessibility",
         "visual-design",
         "testimonials",
-        "card-shadow"
+        "card-shadow",
+        "building-images",
+        "responsive",
+        "shared-fragment"
       ],
       "meta": {},
       "created_at": "2026-09-09T06:36:51+00:00",
-      "updated_at": "2026-09-09T09:47:33+00:00",
+      "updated_at": "2026-09-09T20:54:41+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
-      "verification": "partially_verified",
-      "evidence": [],
-      "source_refs": [],
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live DOM checks for / and /our-work/",
+          "summary": "Both pages load the same shared fragment, render three pt-testimonial-card elements, and produce equal 16:9 image boxes within each grid."
+        },
+        {
+          "type": "test",
+          "ref": "git diff --check",
+          "summary": "Source formatting check passed."
+        }
+      ],
+      "source_refs": [
+        "templates/testimonial-cards.html",
+        "testimonial-cards.css",
+        "site-header.js",
+        "index.html",
+        "our-work/index.html"
+      ],
       "owners": [],
       "scope": {},
       "provenance": {
-        "actor_id": "Codex",
+        "actor_id": "codex",
         "actor_kind": "agent",
-        "actor_role": "implementer",
-        "session_id": "session-2026-09-09-plumbing-track",
+        "actor_role": "implementation",
         "source": "cli",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T09:47:33+00:00"
+        "recorded_at": "2026-09-09T20:54:41+00:00"
       },
       "semantic": {
-        "change": "Replaced rejected light cyan with gold and dark navy, removed numbered labels and commentary copy, reduced footer logo, compacted sections, standardized chevrons, applied orphan-aware wrapping, built aligned Explore Plumbing Track buttons and Completed Buildings CTA, removed small-breakpoint height caps, locked button typography to #10242d, fixed mobile menu contrast, bolded testimonial author names, and made homepage Completed Buildings card shadows slightly more visible while retaining a soft layered treatment and hover lift.",
-        "component": "index.html, our-work/index.html, bchousing/index.html, templates/our-work/project-proof.html, assessment/index.html, client-portal/index.html, client-portal/meadowbrooks-estates/index.html"
+        "change": "Consolidated the Home and Our Work testimonial card grids into the shared templates/testimonial-cards.html fragment, loaded by site-header.js and styled by testimonial-cards.css. Both sections now render identical card markup, image treatment, typography, spacing, and 3/2/1 responsive layout while retaining their section-specific heading and background.",
+        "component": "templates/testimonial-cards.html, testimonial-cards.css, site-header.js, index.html, and our-work/index.html"
       }
     },
     "failure-visual-implementation-corrections": {
@@ -921,6 +957,55 @@
         "source": "chatgpt",
         "integrity": "declared",
         "recorded_at": "2026-09-09T10:58:19+00:00"
+      },
+      "scope": {}
+    },
+    "implementation-client-portal": {
+      "id": "implementation-client-portal",
+      "type": "implementation",
+      "title": "Client portal building access cards",
+      "content": "{\"change\":\"Removed the Newbury building card from the Client Portal listing while preserving the remaining building access flow and shared footer fragment.\",\"component\":\"client-portal/index.html building card grid\"}",
+      "path": "client-portal/index.html",
+      "tags": [
+        "plumbing-track",
+        "client-portal",
+        "portal-cards",
+        "newbury"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T20:44:38+00:00",
+      "updated_at": "2026-09-09T20:44:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live DOM check for /client-portal/",
+          "summary": "Newbury is absent from rendered body text and remaining portal tiles render normally."
+        },
+        {
+          "type": "test",
+          "ref": "rg -n -i newbury client-portal",
+          "summary": "No Newbury references remain in client portal source files."
+        }
+      ],
+      "source_refs": [
+        "client-portal/index.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T20:44:38+00:00"
+      },
+      "semantic": {
+        "change": "Removed the Newbury building card from the Client Portal listing while preserving the remaining building access flow and shared footer fragment.",
+        "component": "client-portal/index.html building card grid"
       },
       "scope": {}
     }

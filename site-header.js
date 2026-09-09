@@ -26,6 +26,7 @@
 
   const headerMount = document.querySelector("[data-pt-header-fragment]");
   const footerMount = document.querySelector("[data-pt-footer-fragment]");
+  const testimonialMounts = Array.from(document.querySelectorAll("[data-pt-testimonial-cards-fragment]"));
 
   window.ptHeaderReady = loadFragment(headerMount, "/templates/site-header.html")
     .then(() => {
@@ -37,4 +38,7 @@
     });
 
   window.ptFooterReady = loadFragment(footerMount, "/templates/site-footer.html");
+  window.ptTestimonialCardsReady = Promise.all(
+    testimonialMounts.map((mount) => loadFragment(mount, "/templates/testimonial-cards.html"))
+  );
 })();

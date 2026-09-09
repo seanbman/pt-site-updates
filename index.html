@@ -37,6 +37,7 @@
     >
 
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/testimonial-cards.css">
     <meta name="twitter:title" content="Plumbing Track: The Modern Standard for Multifamily Repiping">
     <meta
       name="twitter:description"
@@ -2639,16 +2640,11 @@ footer.site-footer .brand-logo {
 .proof-strip blockquote { background: var(--panel); border-left: 3px solid var(--cyan); color: #fff; font-size: 0.98rem; letter-spacing: -0.02em; line-height: 1.45; margin: 0; min-height: 0; padding: 1.35rem; }
 .proof-strip cite { color: var(--cyan-soft); display: block; font-size: 0.78rem; font-style: normal; line-height: 1.45; margin-top: 1.1rem; }
 
-.testimonials-section { align-items:center; background: var(--panel); display:grid; max-height:70svh; padding:clamp(2rem, 4vh, 3.5rem) clamp(1.2rem, 7vw, 8rem); position:relative; z-index:2; }
+.testimonials-section { align-items:center; background: var(--panel); display:grid; min-height:0; padding:clamp(2rem, 4vh, 3.5rem) clamp(1.2rem, 7vw, 8rem) clamp(3rem, 6vh, 5rem); position:relative; z-index:2; }
 .testimonials-inner { margin:0 auto; max-width:1240px; }
 .testimonials-heading { align-items:end; display:flex; gap:2rem; justify-content:space-between; }
 .testimonials-heading h2 { font-size:clamp(2rem,3.35vw,3.85rem); letter-spacing:-.06em; line-height:.96; margin:0; max-width:12ch; text-wrap:balance; }
 .testimonials-heading p { color:var(--steel); font-size:1rem; line-height:1.55; margin:0; max-width:34ch; }
-.testimonials-grid { display:grid; gap:1rem; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:clamp(1.5rem,3vh,2.5rem); }
-.testimonial-card { background:#10242d; border-top:2px solid var(--cyan); display:flex; flex-direction:column; min-height:210px; padding:clamp(1rem,1.8vw,1.35rem); }
-.testimonial-mark { color:var(--cyan); font-family:Georgia,serif; font-size:3rem; height:2.2rem; line-height:1; }
-.testimonial-card blockquote { color:#fff; font-size:clamp(1.06rem,1.45vw,1.28rem); letter-spacing:-.025em; line-height:1.38; margin:1.3rem 0 0; }
-.testimonial-card cite { color:var(--cyan-soft); font-size:.8rem; font-style:normal; line-height:1.45; margin-top:auto; padding-top:0.9rem; }
 
 /* Every homepage panel is intentionally a compact viewport slice. */
 #top.stack-panel {
@@ -2664,7 +2660,6 @@ footer.site-footer .brand-logo {
   min-height: 0;
   padding: calc(74px + clamp(1rem, 2vh, 1.5rem)) clamp(1.5rem, 4vw, 4rem) clamp(1.5rem, 3vh, 2.5rem);
 }
-.testimonial-card cite span { color:#9fb1b7; display:block; margin-top:.22rem; }
 
 .site-menu { position:relative; }
 .nav-section { position:relative; }
@@ -2683,6 +2678,10 @@ footer.site-footer .brand-logo {
 .social-links { display:flex; flex-wrap:wrap; gap:.55rem; justify-content:center; }
 .social-links a { align-items:center; border:1px solid rgba(8,19,25,.25); color:#35515b; display:inline-flex; height:2.35rem; justify-content:center; transition:border-color 160ms ease, color 160ms ease, transform 160ms ease; width:2.35rem; }
 .social-links svg { fill:currentColor; height:1rem; width:1rem; }
+.social-links span { font-family:Arial,Helvetica,sans-serif; font-size:.9rem; font-weight:700; line-height:1; }
+.social-links .social-icon--instagram { border:1.5px solid currentColor; border-radius:.28rem; height:.9rem; position:relative; width:.9rem; }
+.social-links .social-icon--instagram::before { border:1.5px solid currentColor; border-radius:50%; content:""; height:.36rem; left:50%; position:absolute; top:50%; transform:translate(-50%,-50%); width:.36rem; }
+.social-links .social-icon--instagram::after { background:currentColor; border-radius:50%; content:""; height:.13rem; position:absolute; right:.1rem; top:.1rem; width:.13rem; }
 .social-links a:hover, .social-links a:focus-visible { border-color:#00516f; color:#00516f; transform:translateY(-2px); }
 
 :is(a, button, .project-card-link):not(.header-menu-toggle) > span[aria-hidden="true"] {
@@ -2701,8 +2700,6 @@ footer.site-footer .brand-logo {
   .route-card { min-height: 0; }
   .proof-strip { grid-template-columns: 1fr; }
   .testimonials-heading { align-items:start; flex-direction:column; }
-  .testimonials-grid { grid-template-columns:1fr; }
-  .testimonial-card { min-height:0; }
   .nav-section { width:100%; }
   .nav-section summary { color:#f4fbfd; font-size:1rem; padding:.45rem 0; }
   .site-header.is-scrolled .nav-section summary { color:#314149; }
@@ -3088,11 +3085,7 @@ footer.site-footer .brand-logo {
       <section class="testimonials-section" aria-labelledby="testimonials-heading">
         <div class="testimonials-inner">
           <div class="testimonials-heading"><div><p class="section-kicker">Project references</p><h2 id="testimonials-heading">What clients say after the&nbsp;work is done.</h2></div></div>
-          <div class="testimonials-grid">
-            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>They truly went above and beyond with the final post-construction clean, leaving the building in excellent condition.</blockquote><cite><strong>Elaine</strong> <span>Strata President · The Mosaic</span></cite></article>
-            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>We could not have picked a better company to take care of this problem for us and we would highly recommend them.</blockquote><cite><strong>Stellar Place Strata Council</strong> <span>Stellar Place</span></cite></article>
-            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>We were impressed with their commitment throughout the project and were very satisfied with the high quality of craftsmanship.</blockquote><cite><strong>Keith Boyle</strong> <span>Wildwood III Strata Council</span></cite></article>
-          </div>
+          <div data-pt-testimonial-cards-fragment></div>
         </div>
       </section>
 

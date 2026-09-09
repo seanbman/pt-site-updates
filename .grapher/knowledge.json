@@ -518,7 +518,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:51+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -526,15 +526,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:51+00:00"
+      }
     },
     "docs-instructions": {
       "id": "docs-instructions",
@@ -550,7 +550,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:51+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "completed",
@@ -558,15 +558,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:51+00:00"
+      }
     },
     "docs-website-design-plan": {
       "id": "docs-website-design-plan",
@@ -582,7 +582,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:51+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -590,15 +590,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:51+00:00"
+      }
     },
     "docs-implementation-roadmap": {
       "id": "docs-implementation-roadmap",
@@ -614,7 +614,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:51+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -622,15 +622,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:51+00:00"
+      }
     },
     "docs-decision-how-it-works-routing": {
       "id": "docs-decision-how-it-works-routing",
@@ -647,7 +647,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:51+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -655,15 +655,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:51+00:00"
+      }
     },
     "docs-web-work-sheet": {
       "id": "docs-web-work-sheet",
@@ -679,7 +679,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:52+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -687,15 +687,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:52+00:00"
+      }
     },
     "docs-site-export": {
       "id": "docs-site-export",
@@ -711,7 +711,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:52+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -719,15 +719,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:52+00:00"
+      }
     },
     "decision-how-it-works-routing": {
       "id": "decision-how-it-works-routing",
@@ -743,7 +743,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:52+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -751,15 +751,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "operator",
         "actor_kind": "human",
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:52+00:00"
+      }
     },
     "requirement-explain-before-assessment": {
       "id": "requirement-explain-before-assessment",
@@ -775,7 +775,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:52+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -783,15 +783,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:52+00:00"
+      }
     },
     "component-how-it-works-page": {
       "id": "component-how-it-works-page",
@@ -807,7 +807,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T10:10:52+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -815,15 +815,15 @@
       "evidence": [],
       "source_refs": [],
       "owners": [],
+      "scope": {},
       "provenance": {
         "actor_id": "ChatGPT",
         "actor_kind": "agent",
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T10:09:55+00:00"
-      },
-      "scope": {}
+        "recorded_at": "2026-09-09T10:10:52+00:00"
+      }
     }
   },
   "edges": [

@@ -28,6 +28,28 @@ Wave 2 is primarily the expansion of these already-established sections into add
 
 The one explicit current scope reduction recorded in Grapher is **Resources**: the menu was intentionally limited to FAQ and Client Portal until the remaining guides are ready. That reduction does not remove Resources from Wave 1.
 
+## Current How It Works routing decision
+
+`How It Works` is a Wave 1 explanatory destination, not a shortcut to the assessment form.
+
+The intended first-draft flow is now:
+
+```text
+Home
+  ↓
+How It Works
+  ↓
+Accessible plumbing explanation
+  ↓
+Five-phase project process
+  ↓
+Our Work / proof
+  ↓
+Book an Assessment when the visitor is ready
+```
+
+The standalone `/how-it-works/` page should explain both the project sequence and why accessible routing matters. Assessment remains available as a downstream CTA, but it must not replace the explanatory step.
+
 ---
 
 # Wave 1 — Current First Draft
@@ -44,6 +66,11 @@ Wave 1 is the current implemented site experience and the architecture already e
 - ~~Establish the primary navigation hierarchy: About, Our Work, Solutions, How It Works, Our Technology, Resources.~~
 - ~~Create shared header/navigation and footer fragments.~~
 - ~~Implement responsive navigation, click-away behaviour, mobile menu corrections, scroll-state behaviour, and reduced-motion handling.~~
+- ~~Create `/how-it-works/` as a standalone explanatory page.~~
+- ~~Route the homepage How It Works entry points to `/how-it-works/` rather than directly to Assessment.~~
+- ~~Explain accessible plumbing as part of How It Works: deliberate enclosed routing, reduced unnecessary demolition, and future service access.~~
+- ~~Present the five-phase project process on the How It Works page.~~
+- ~~Keep Assessment as a downstream CTA after explanation/proof rather than the explanation itself.~~
 - ~~Rework **Our Work** into a stronger responsive proof/portfolio page.~~
 - ~~Retain the Client Portal and align it with the shared site shell.~~
 - ~~Create the dedicated **Book an Assessment** route.~~
@@ -52,21 +79,22 @@ Wave 1 is the current implemented site experience and the architecture already e
 - ~~Build/revise the Affordable Housing / BC Housing audience page.~~
 - ~~Apply current visual hygiene across Home, Our Work, BC Housing, Assessment, and Client Portal surfaces.~~
 - ~~Add initial SEO metadata/canonical/schema treatment to major Wave 1 pages.~~
-- ~~Create reusable templates/scaffolding for future How It Works, Technology, project-proof, header, and footer work.~~
+- ~~Create reusable templates/scaffolding for future detailed installation, Technology, project-proof, header, and footer work.~~
 - ~~Reduce Resources intentionally to FAQ + Client Portal until remaining guides are ready.~~
 - ~~Initialize and synchronize Grapher implementation/test records for the branch.~~
 
 ## Wave 1 still needs hardening
 
 - [ ] Verify homepage video behaviour on desktop, tablet, and mobile, including reduced-motion/fallback behaviour.
-- [ ] Perform final responsive QA across Home, Our Work, Affordable Housing, Assessment, and Client Portal.
+- [ ] Perform final responsive QA across Home, How It Works, Our Work, Affordable Housing, Assessment, and Client Portal.
+- [ ] Verify `/how-it-works/` at desktop, tablet, and mobile widths and confirm no broken shared-header/footer behavior.
 - [ ] Verify the shared header/footer is consistently applied to all intended Wave 1 public pages.
 - [ ] Verify non-clickable navigation labels/flyouts are intentional and visually understandable rather than appearing broken.
 - [ ] Verify all active Wave 1 links, anchors, asset paths, and CTA destinations.
 - [ ] Verify the production assessment API end-to-end, including error handling and confirmation state.
 - [ ] Verify GA4 initialization exactly once on intended public pages; event-emission code alone does not complete analytics.
 - [ ] Verify assessment events in GA4 DebugView/production-equivalent testing and confirm no sensitive form values are transmitted.
-- [ ] Add/verify page-view, primary-navigation, contact/phone, Our Work engagement, and other intentional Wave 1 events required by `INSTRUCTIONS.md`.
+- [ ] Add/verify page-view, primary-navigation, How It Works engagement, contact/phone, Our Work engagement, and other intentional Wave 1 events required by `INSTRUCTIONS.md`.
 - [ ] Verify canonical URLs, titles, meta descriptions, OG metadata, structured data, alt text, sitemap, and robots behaviour for Wave 1 indexable pages.
 - [ ] Review Affordable Housing claims against authoritative source material, especially displacement, asbestos, dust, cost, and regulatory language.
 - [ ] Review project facts/testimonials displayed in Our Work against verified source evidence.
@@ -96,16 +124,16 @@ Wave 2 does **not** introduce the missing concepts from scratch. It expands the 
 - [ ] `/solutions/occupied-building-repiping/`
 - [ ] Integrate the existing Affordable Housing / BC Housing work into the Solutions architecture without discarding the current page
 
-### How It Works
+### How It Works expansion
 
-- [ ] `/how-it-works/` five-phase project overview
+- ~~`/how-it-works/` high-level explanation and five-phase process — promoted into Wave 1.~~
 - [ ] `/how-it-works/installation/` detailed installation process
-- [ ] Reuse/refine the existing project-process template
+- [ ] Reuse/refine the existing project-process template for the detailed child page where useful
 
 ### Our Technology
 
 - [ ] `/technology/` or equivalent Technology landing page
-- [ ] Accessible Plumbing page
+- [ ] Accessible Plumbing deep-dive page
 - [ ] Conventional vs Plumbing Track comparison page
 - [ ] Reuse/refine the existing accessible-plumbing template
 
@@ -126,7 +154,7 @@ Wave 2 does **not** introduce the missing concepts from scratch. It expands the 
 - [ ] Conventional vs Plumbing Track buying comparison
 - [ ] Detailed installation page
 - [ ] Full FAQ destination
-- [ ] Deep internal linking from Home, Affordable Housing, Our Work, and Assessment completion state
+- [ ] Deep internal linking from Home, How It Works, Affordable Housing, Our Work, and Assessment completion state
 
 ## Wave 2C — SEO / educational funnel pages
 
@@ -179,13 +207,15 @@ The current navigation hierarchy itself is already implemented:
 ABOUT
 OUR WORK
 SOLUTIONS
-HOW IT WORKS
+HOW IT WORKS → /how-it-works/
 OUR TECHNOLOGY
 RESOURCES
 [ BOOK AN ASSESSMENT ]
 ```
 
 Some entries currently function as labels/flyouts rather than standalone routes. That is a current implementation choice, not evidence that the section is outside Wave 1.
+
+`How It Works` is now an active standalone destination because it carries explanatory content that should precede conversion.
 
 Resources is deliberately narrowed to the ready subset while maintaining its place in the architecture.
 
@@ -203,11 +233,11 @@ SOLUTIONS
   Affordable Housing
 
 HOW IT WORKS
-  Project Process
-  Detailed Installation
+  How It Works / Accessible Plumbing overview   [Wave 1]
+  Detailed Installation                         [Wave 2]
 
 OUR TECHNOLOGY
-  Accessible Plumbing
+  Accessible Plumbing deep dive
   Conventional vs Plumbing Track
 
 OUR WORK
@@ -233,18 +263,19 @@ The current branch is the implementation baseline. Future work should **extend i
 1. Preserve the current visual language and homepage video.
 2. Preserve the established Wave 1 navigation architecture unless a deliberate later decision changes it.
 3. Do not infer scope solely from whether a menu item currently has an `href`.
-4. Reuse shared components/templates where useful.
-5. Keep pages focused and indexable rather than returning to epic-scroll architecture.
-6. Treat verified current implementation as truth unless a concrete defect is found.
-7. Keep Grapher synchronized with implementation decisions and verification results.
-8. Do not mark analytics, SEO, accessibility, or responsive work complete without verification.
+4. Route explanation before conversion when the visitor is still learning how Plumbing Track works.
+5. Reuse shared components/templates where useful.
+6. Keep pages focused and indexable rather than returning to epic-scroll architecture.
+7. Treat verified current implementation as truth unless a concrete defect is found.
+8. Keep Grapher synchronized with implementation decisions and verification results.
+9. Do not mark analytics, SEO, accessibility, or responsive work complete without verification.
 
 Practical order:
 
 ```text
-Wave 1: finish and harden current first draft
+Wave 1: finish and harden current first draft, including /how-it-works/
         ↓
-Wave 2A: add dedicated routes for established sections
+Wave 2A: add dedicated routes for the remaining established sections
         ↓
 Wave 2B: deepen commercial/decision pages
         ↓

@@ -5,6 +5,7 @@ on:
     branches:
       - dev/updates
     paths:
+      - "AGENTS.md"
       - "docs/**"
       - "how-it-works/**"
       - "index.html"
@@ -42,16 +43,16 @@ jobs:
       - name: Synchronize docs and routing state into Grapher
         run: bash scripts/grapher-docs-sync.sh
 
-      - name: Commit routed site, docs, and Grapher state if changed
+      - name: Commit routed site, agent policy, docs, and Grapher state if changed
         shell: bash
         run: |
-          if git diff --quiet -- index.html docs .grapher; then
-            echo "Site routing, docs, and Grapher state already current."
+          if git diff --quiet -- AGENTS.md index.html docs .grapher; then
+            echo "Agent policy, site routing, docs, and Grapher state already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html docs .grapher
-          git commit -m "grapher: sync docs and How It Works [skip ci]"
+          git add AGENTS.md index.html docs .grapher
+          git commit -m "grapher: sync docs and agent policy [skip ci]"
           git push origin HEAD:dev/updates

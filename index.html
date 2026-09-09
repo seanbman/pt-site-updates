@@ -2415,7 +2415,7 @@ footer.site-footer .brand-logo {
 
 .comparison-route li::before {
   color: #6f8289;
-  content: "↓";
+  content: "⌄";
   font-size: 1.2rem;
 }
 
@@ -2532,11 +2532,14 @@ footer.site-footer .brand-logo {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  box-shadow: 0 14px 32px rgba(8, 19, 25, 0.14), 0 3px 9px rgba(8, 19, 25, 0.08);
+  transition: box-shadow 220ms ease, transform 220ms ease;
 }
 
 .home-project__image { aspect-ratio: 1.7 / 1; background: #b5c3c8; overflow: hidden; }
 .home-project__image img { display: block; height: 100%; object-fit: cover; transition: transform 360ms ease; width: 100%; }
 .home-project:hover .home-project__image img { transform: scale(1.04); }
+.home-project:hover { box-shadow: 0 18px 38px rgba(8, 19, 25, 0.19), 0 4px 11px rgba(8, 19, 25, 0.11); transform: translateY(-2px); }
 .home-project__body { display: flex; flex: 1; flex-direction: column; padding: 1rem; }
 .home-project__body h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); letter-spacing: -0.05em; line-height: 1; margin: 0; }
 .project-facts { color: #5a6b72; font-family: var(--font-geist-mono); font-size: 0.78rem; line-height: 1.5; margin: 0.9rem 0 0; }
@@ -2596,10 +2599,14 @@ footer.site-footer .brand-logo {
    treatments live in templates/ until their focused routes are implemented. */
 .home-routing { background: #10242d; }
 .route-grid { display: grid; gap: 1px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(1.5rem, 3vh, 2.5rem); }
-.route-card { background: var(--panel); display: flex; flex-direction: column; min-height: 0; padding: clamp(1rem, 1.8vw, 1.4rem); }
+.route-card { --route-card-pad: clamp(1rem, 1.8vw, 1.4rem); background: var(--panel); display: flex; flex-direction: column; min-height: 0; padding: var(--route-card-pad); }
 .route-card h3 { font-size: clamp(1.35rem, 2vw, 1.8rem); letter-spacing: -0.05em; line-height: 1; margin: 0; }
 .route-card p { color: var(--steel); font-size: 0.93rem; line-height: 1.55; margin: 0.85rem 0 0; }
-.route-card .text-link { margin-top: auto; padding-top: 1rem; }
+.route-card__action { align-items: flex-end; display: flex; justify-content: flex-end; margin-bottom: calc(var(--route-card-pad) * -1); margin-right: calc(var(--route-card-pad) * -1); margin-top: auto; padding-top: 1.25rem; }
+.route-card .text-link { align-items: center; background: var(--cyan); border: 0; border-radius: 0; color: #10242d !important; display: flex; font-size: clamp(.76rem, 1vw, .88rem); justify-content: space-between; margin: 0; min-height: 3rem; min-width: calc(60% + (var(--route-card-pad) * 1.2)); max-width: calc(70% + (var(--route-card-pad) * 1.4)); padding: .8rem 1rem; width: calc(65% + (var(--route-card-pad) * 1.3)); }
+.route-card .text-link > span[aria-hidden="true"] { color: #10242d !important; }
+.route-card .text-link:hover,
+.route-card .text-link:focus-visible { background: var(--cyan-soft); color: #10242d !important; }
 .home-work h2 { font-size: clamp(1.9rem, 2.9vw, 3.2rem); }
 .home-work .section-kicker,
 .home-work .project-kicker,
@@ -2608,6 +2615,10 @@ footer.site-footer .brand-logo {
 .home-work .text-link:hover,
 .home-work .text-link:focus-visible,
 .home-work .project-card-link:hover { color: #003d55; }
+.home-work .home-section__inner > .text-link { align-items:center; background:#10242d; border:0; color:#fff; display:inline-flex; gap:.5rem; margin-top:1.5rem; padding:.8rem 1.1rem; }
+.home-work .home-section__inner > .text-link > span[aria-hidden="true"] { color:#fff; }
+.home-work .home-section__inner > .text-link:hover,
+.home-work .home-section__inner > .text-link:focus-visible { background:#193845; color:#fff; }
 .home-work .project-grid { margin-top: clamp(1rem, 2vh, 1.5rem); }
 .home-work .home-project__image { aspect-ratio: 1.9 / 1; }
 .home-work .home-project__body { padding: 0.85rem 1rem; }
@@ -2694,7 +2705,7 @@ footer.site-footer .brand-logo {
   .testimonial-card { min-height:0; }
   .nav-section { width:100%; }
   .nav-section summary { color:#f4fbfd; font-size:1rem; padding:.45rem 0; }
-  .site-header.is-scrolled .nav-section summary { color:#f4fbfd; }
+  .site-header.is-scrolled .nav-section summary { color:#314149; }
   .nav-flyout { background:transparent; box-shadow:none; gap:.1rem; padding:.2rem 0 .55rem 1rem; position:static; }
   .nav-flyout span { color:#b9cbd1; font-size:.82rem; padding:.2rem 0; }
   .nav-flyout a { color:var(--cyan-soft); font-size:.82rem; padding:.2rem 0; }
@@ -2747,7 +2758,30 @@ footer.site-footer .brand-logo {
   .assessment-layout, .home-service { grid-template-columns: 1fr; }
 }
 
+/* Tablet cards need a little more vertical room before the single-column
+   mobile layout takes over. */
+@media (min-width: 621px) and (max-width: 980px) {
+  .home-section,
+  .testimonials-section {
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    overflow: visible;
+    padding-bottom: clamp(2.75rem, 7vh, 4rem);
+  }
+  #top.stack-panel,
+  #top.stack-panel .stack-panel__content { height: 80svh; max-height: 80svh; }
+}
+
 @media (max-width: 620px) {
+  .home-section,
+  .testimonials-section {
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    overflow: visible;
+    padding-bottom: 2.75rem;
+  }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 0.8rem; }
   .home-section h2 { max-width: 13ch; }
   .plumbing-comparison, .project-grid, .proof-grid, .benefit-grid, .phase-grid, .home-assessment .assessment-form { grid-template-columns: 1fr; }
@@ -3055,9 +3089,9 @@ footer.site-footer .brand-logo {
         <div class="testimonials-inner">
           <div class="testimonials-heading"><div><p class="section-kicker">Project references</p><h2 id="testimonials-heading">What clients say after the&nbsp;work is done.</h2></div></div>
           <div class="testimonials-grid">
-            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>They truly went above and beyond with the final post-construction clean, leaving the building in excellent condition.</blockquote><cite>Elaine <span>Strata President · The Mosaic</span></cite></article>
-            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>We could not have picked a better company to take care of this problem for us and we would highly recommend them.</blockquote><cite>Stellar Place Strata Council <span>Stellar Place</span></cite></article>
-            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>We were impressed with their commitment throughout the project and were very satisfied with the high quality of craftsmanship.</blockquote><cite>Keith Boyle <span>Wildwood III Strata Council</span></cite></article>
+            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>They truly went above and beyond with the final post-construction clean, leaving the building in excellent condition.</blockquote><cite><strong>Elaine</strong> <span>Strata President · The Mosaic</span></cite></article>
+            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>We could not have picked a better company to take care of this problem for us and we would highly recommend them.</blockquote><cite><strong>Stellar Place Strata Council</strong> <span>Stellar Place</span></cite></article>
+            <article class="testimonial-card"><span class="testimonial-mark" aria-hidden="true">“</span><blockquote>We were impressed with their commitment throughout the project and were very satisfied with the high quality of craftsmanship.</blockquote><cite><strong>Keith Boyle</strong> <span>Wildwood III Strata Council</span></cite></article>
           </div>
         </div>
       </section>
@@ -3087,9 +3121,9 @@ footer.site-footer .brand-logo {
           <p class="section-kicker reveal">Explore Plumbing Track</p>
           <h2 class="reveal">Start with the question your building needs&nbsp;answered.</h2>
           <div class="route-grid" data-pt-stagger>
-            <article class="route-card reveal"><h3>How it works</h3><p>Assessment, resident preparation, installation, finished result, and future access.</p><a class="text-link" href="/assessment/?source_page=%2F&amp;source_cta=how-it-works-preview" data-assessment-cta="how-it-works-preview">Talk through your project <span aria-hidden="true">→</span></a></article>
-            <article class="route-card reveal"><h3>Our technology</h3><p>See why accessible plumbing changes the life of the building after installation.</p><a class="text-link" href="#technology">See the core idea <span aria-hidden="true">→</span></a></article>
-            <article class="route-card reveal"><h3>Our work</h3><p>Review real multifamily projects and verified project facts.</p><a class="text-link" href="/our-work/">Explore projects <span aria-hidden="true">→</span></a></article>
+            <article class="route-card reveal"><h3>How it works</h3><p>Assessment, resident preparation, installation, finished result, and future access.</p><div class="route-card__action"><a class="text-link" href="/assessment/?source_page=%2F&amp;source_cta=how-it-works-preview" data-assessment-cta="how-it-works-preview">Talk through your project <span aria-hidden="true">›</span></a></div></article>
+            <article class="route-card reveal"><h3>Our technology</h3><p>See why accessible plumbing changes the life of the building after installation.</p><div class="route-card__action"><a class="text-link" href="#technology">See the core idea <span aria-hidden="true">›</span></a></div></article>
+            <article class="route-card reveal"><h3>Our work</h3><p>Review real multifamily projects and verified project facts.</p><div class="route-card__action"><a class="text-link" href="/our-work/">Explore projects <span aria-hidden="true">›</span></a></div></article>
           </div>
         </div>
       </section>
@@ -3101,18 +3135,18 @@ footer.site-footer .brand-logo {
           <div class="project-grid" data-pt-stagger>
             <a class="home-project reveal" href="/our-work/">
               <div class="home-project__image"><img src="/img/our-work/mission-meadows.webp" alt="Mission Meadows residential complex" width="611" height="340" loading="lazy"></div>
-              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>Mission Meadows</h3><dl class="project-details"><div><dt>Building</dt><dd>148 units</dd></div><div><dt>Pipe</dt><dd>Poly-B</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">→</span></span></div>
+              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>Mission Meadows</h3><dl class="project-details"><div><dt>Building</dt><dd>148 units</dd></div><div><dt>Pipe</dt><dd>Poly-B</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">›</span></span></div>
             </a>
             <a class="home-project reveal" href="/our-work/">
               <div class="home-project__image"><img src="/img/the-bench.webp" alt="The Bench residential building" width="1011" height="618" loading="lazy"></div>
-              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>The Bench</h3><dl class="project-details"><div><dt>Building</dt><dd>61 units</dd></div><div><dt>Pipe</dt><dd>Kitec</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">→</span></span></div>
+              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>The Bench</h3><dl class="project-details"><div><dt>Building</dt><dd>61 units</dd></div><div><dt>Pipe</dt><dd>Kitec</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">›</span></span></div>
             </a>
             <a class="home-project reveal" href="/our-work/">
               <div class="home-project__image"><img src="/img/our-work/peregrine-point.webp" alt="Peregrine Point multifamily building" width="1024" height="666" loading="lazy"></div>
-              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>Peregrine Point</h3><dl class="project-details"><div><dt>Building</dt><dd>56 units</dd></div><div><dt>Pipe</dt><dd>Aged copper</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">→</span></span></div>
+              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>Peregrine Point</h3><dl class="project-details"><div><dt>Building</dt><dd>56 units</dd></div><div><dt>Pipe</dt><dd>Aged copper</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">›</span></span></div>
             </a>
           </div>
-          <a class="text-link reveal" href="/our-work/">Explore our work <span aria-hidden="true">→</span></a>
+          <a class="text-link reveal" href="/our-work/">Explore our work <span aria-hidden="true">›</span></a>
         </div>
       </section>
 
@@ -3124,7 +3158,7 @@ footer.site-footer .brand-logo {
               <article class="office-location"><p class="office-location__label">Kelowna office</p><address>1449 St. Paul Street #20<br>Kelowna, BC</address><a href="tel:+12508634168">250-863-4168</a></article>
               <article class="office-location"><p class="office-location__label">Calgary office</p><address>11124 36 St NE #3000<br>Calgary, AB</address><a href="tel:+14037089028">403-708-9028</a></article>
             </div>
-            <a class="primary-cta" href="/assessment/?source_page=%2F&amp;source_cta=footer-assessment" data-assessment-cta="footer-assessment">Book an Assessment <span aria-hidden="true">→</span></a>
+            <a class="primary-cta" href="/assessment/?source_page=%2F&amp;source_cta=footer-assessment" data-assessment-cta="footer-assessment">Book an Assessment <span aria-hidden="true">›</span></a>
           </div>
         </div>
       </section>

@@ -238,15 +238,9 @@
   };
 
   const updateHeaderState = () => {
-    const headerHeight = header?.offsetHeight || 72;
-    // Sticky hero stays full-viewport under the cover sheet, so use the
-    // next panel's top edge (or scroll fallback) to swap header styles.
-    const coverTop = heroCover?.getBoundingClientRect().top;
-    const coveredBySheet =
-      typeof coverTop === "number"
-        ? coverTop <= headerHeight + 8
-        : window.scrollY > headerHeight;
-    header?.classList.toggle("is-scrolled", coveredBySheet);
+    // Keep the transparent treatment through the first 50px, then switch to
+    // the solid, readable header state.
+    header?.classList.toggle("is-scrolled", window.scrollY > 50);
   };
 
   const updateMotion = () => {

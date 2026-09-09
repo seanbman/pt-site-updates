@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How Plumbing Track Works | Accessible Multifamily Repiping</title>
+    <meta name="description" content="See how Plumbing Track plans and installs accessible plumbing in occupied multifamily buildings, from assessment through installation, finished result, and future access.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#061015">
+    <link rel="canonical" href="https://www.plumbingtrack.com/how-it-works/">
+    <link rel="icon" href="/favicons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="stylesheet" href="/shared-navigation.css">
+    <style>
+      :root {
+        --ink:#061015;
+        --ink-deep:#031118;
+        --panel:#10242d;
+        --paper:#eef3f4;
+        --steel:#a8b5ba;
+        --cyan:#d2b985;
+        --cyan-soft:#e0c99a;
+        --line:rgba(255,255,255,.15);
+        --font-geist-sans:Arial,Helvetica,sans-serif;
+        --font-geist-mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+      }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { background:var(--ink); color:#fff; font-family:var(--font-geist-sans); margin:0; }
+      a { color:inherit; text-decoration:none; }
+      .site-header { align-items:center; display:flex; height:80px; justify-content:space-between; left:0; padding:0 clamp(1.2rem,4vw,4.5rem); position:fixed; right:0; top:0; transition:background var(--header-swap-duration,180ms) ease,border-color var(--header-swap-duration,180ms) ease; z-index:50; }
+      .site-header.is-scrolled { background:#fff; border-bottom:1px solid rgba(8,19,25,.1); }
+      .brand { display:block; line-height:0; max-width:min(300px,52vw); }
+      .brand-logo { height:auto; width:100%; }
+      .brand-logo--dark { display:none; }
+      .site-header.is-scrolled .brand-logo--light { display:none; }
+      .site-header.is-scrolled .brand-logo--dark { display:block; }
+      .header-cta { align-items:center; background:var(--cyan); color:#10242d; display:inline-flex; font-size:.84rem; font-weight:750; min-height:42px; padding:.75rem 1rem; }
+      .header-menu-toggle { display:none; }
+      main { overflow:hidden; }
+      .hero { align-items:end; background:linear-gradient(135deg,#071318 0%,#10242d 68%,#183845 100%); display:grid; min-height:72vh; padding:clamp(8.5rem,14vw,12rem) clamp(1.25rem,7vw,8rem) clamp(4rem,8vw,7rem); position:relative; }
+      .hero::after { background:linear-gradient(90deg,transparent,rgba(210,185,133,.15)); content:""; height:1px; left:clamp(1.25rem,7vw,8rem); position:absolute; right:0; top:44%; }
+      .hero-inner { max-width:1180px; }
+      .kicker { color:var(--cyan-soft); font-family:var(--font-geist-mono); font-size:.72rem; font-weight:700; letter-spacing:.13em; margin:0 0 1.3rem; text-transform:uppercase; }
+      h1,h2,h3 { text-wrap:pretty; }
+      h1 { font-size:clamp(3.2rem,7vw,7rem); letter-spacing:-.075em; line-height:.9; margin:0; max-width:10ch; }
+      .hero-copy { color:#c3d0d4; font-size:clamp(1.05rem,1.6vw,1.3rem); line-height:1.6; margin:1.6rem 0 0; max-width:52ch; }
+      .section { padding:clamp(4.8rem,9vw,8rem) clamp(1.25rem,7vw,8rem); }
+      .section-inner { margin:0 auto; max-width:1240px; }
+      .intro-grid { display:grid; gap:clamp(2rem,6vw,7rem); grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); }
+      h2 { font-size:clamp(2.4rem,4.5vw,4.8rem); letter-spacing:-.06em; line-height:.95; margin:0; }
+      .lead { color:#52656d; font-size:clamp(1.05rem,1.35vw,1.2rem); line-height:1.7; margin:0; max-width:58ch; }
+      .accessible { background:var(--paper); color:var(--ink); }
+      .comparison { border-top:1px solid rgba(8,19,25,.16); display:grid; grid-template-columns:1fr 1fr; margin-top:clamp(3rem,6vw,5.5rem); }
+      .comparison article { min-height:340px; padding:clamp(1.4rem,3vw,2.5rem); }
+      .comparison article + article { background:var(--panel); color:#fff; }
+      .comparison-label { color:#00516f; font-family:var(--font-geist-mono); font-size:.7rem; font-weight:760; letter-spacing:.12em; text-transform:uppercase; }
+      .comparison article + article .comparison-label { color:var(--cyan-soft); }
+      .comparison h3 { font-size:clamp(1.55rem,2.5vw,2.4rem); letter-spacing:-.05em; line-height:1; margin:3rem 0 1.2rem; max-width:13ch; }
+      .comparison p { color:#5c6e75; line-height:1.65; margin:0; max-width:38ch; }
+      .comparison article + article p { color:#bfd0d5; }
+      .route-note { border-left:2px solid var(--cyan); color:#354b54; font-size:1rem; line-height:1.65; margin:2.4rem 0 0; max-width:70ch; padding-left:1.2rem; }
+      .process { background:var(--panel); }
+      .process .lead { color:#bdccd1; }
+      .phase-list { border-top:1px solid var(--line); margin-top:clamp(3rem,7vw,6rem); }
+      .phase { align-items:start; border-bottom:1px solid var(--line); display:grid; gap:1.5rem; grid-template-columns:90px minmax(180px,.7fr) minmax(0,1.3fr); padding:1.5rem 0; }
+      .phase-number { color:var(--cyan); font-family:var(--font-geist-mono); font-size:.78rem; }
+      .phase h3 { font-size:clamp(1.2rem,1.9vw,1.7rem); letter-spacing:-.045em; line-height:1.05; margin:0; }
+      .phase p { color:#aebec4; line-height:1.6; margin:0; max-width:58ch; }
+      .why-route { background:#fff; color:var(--ink); }
+      .points { display:grid; gap:1px; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:clamp(3rem,6vw,5rem); }
+      .point { background:#f1f5f6; min-height:250px; padding:1.5rem; }
+      .point span { color:#00516f; font-family:var(--font-geist-mono); font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; }
+      .point h3 { font-size:clamp(1.25rem,2vw,1.8rem); letter-spacing:-.045em; line-height:1.05; margin:2.8rem 0 1rem; }
+      .point p { color:#566970; line-height:1.6; margin:0; }
+      .next { background:var(--cyan); color:#061015; }
+      .next-grid { align-items:end; display:grid; gap:2rem; grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr); }
+      .next h2 { max-width:12ch; }
+      .next p { color:#173945; line-height:1.65; margin:1.2rem 0 0; max-width:46ch; }
+      .actions { align-items:stretch; display:flex; flex-wrap:wrap; gap:.75rem; justify-content:flex-end; }
+      .button { align-items:center; display:inline-flex; font-weight:760; justify-content:center; min-height:50px; padding:.85rem 1.1rem; }
+      .button-primary { background:#061015; color:#fff; }
+      .button-secondary { border:1px solid rgba(6,16,21,.42); color:#061015; }
+      footer.site-footer { align-items:center; background:#fff; color:#53636a; display:flex; justify-content:space-between; padding:2.5rem clamp(1.25rem,7vw,8rem); }
+      @media (max-width:900px) {
+        .intro-grid,.next-grid { grid-template-columns:1fr; }
+        .comparison,.points { grid-template-columns:1fr; }
+        .comparison article + article { border-top:1px solid rgba(255,255,255,.14); }
+        .phase { grid-template-columns:54px 1fr; }
+        .phase p { grid-column:2; }
+        .actions { justify-content:flex-start; }
+      }
+      @media (max-width:560px) {
+        .hero { min-height:64vh; }
+        .phase { gap:1rem; grid-template-columns:38px 1fr; }
+        .point { min-height:0; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="pt-page" data-pt-page>
+      <div data-pt-header-fragment></div>
+
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="kicker">How It Works</p>
+          <h1>A repipe designed around the building.</h1>
+          <p class="hero-copy">Plumbing Track is more than a way to replace failing pipe. The route, the installation method, and future access are planned as part of the finished plumbing system.</p>
+        </div>
+      </section>
+
+      <section class="section accessible" id="accessible-plumbing">
+        <div class="section-inner">
+          <div class="intro-grid">
+            <div>
+              <p class="kicker">Accessible plumbing</p>
+              <h2>The route is part of how the system works.</h2>
+            </div>
+            <div>
+              <p class="lead">Conventional repiping can solve the immediate material problem while placing the replacement pipe back behind finished surfaces. Plumbing Track plans an enclosed, accessible route so inspection and future service do not automatically begin with opening the building again.</p>
+              <p class="route-note">Accessible does not mean exposed. The pipe is enclosed within the Plumbing Track system; the difference is that access is deliberately designed into the finished building.</p>
+            </div>
+          </div>
+
+          <div class="comparison" aria-label="Conventional repiping compared with Plumbing Track">
+            <article>
+              <span class="comparison-label">Conventional repipe</span>
+              <h3>Replace the pipe, then close the building around it.</h3>
+              <p>Routing is constrained by walls, ceilings, and cavities. Future inspection or service can require reopening finished surfaces.</p>
+            </article>
+            <article>
+              <span class="comparison-label">Plumbing Track</span>
+              <h3>Plan the route and keep service access in the system.</h3>
+              <p>The new pipe follows a deliberate enclosed route intended to reduce unnecessary demolition during installation and make future access more straightforward.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="section-inner">
+          <div class="intro-grid">
+            <div>
+              <p class="kicker">Project process</p>
+              <h2>From assessment to a finished, accessible system.</h2>
+            </div>
+            <p class="lead">The project sequence is designed around occupied multifamily buildings. The point is not simply to get new pipe into the building, but to manage the work, the residents, the finished condition, and the system that remains afterward.</p>
+          </div>
+
+          <div class="phase-list">
+            <article class="phase"><span class="phase-number">01</span><h3>Assessment &amp; Proposal</h3><p>Understand the building, existing pipe, constraints, occupancy, and the route that will support the replacement system.</p></article>
+            <article class="phase"><span class="phase-number">02</span><h3>Prepare the Building &amp; Residents</h3><p>Coordinate access, communication, protection, staging, and the practical details required to work in occupied homes.</p></article>
+            <article class="phase"><span class="phase-number">03</span><h3>Install Around Occupied Homes</h3><p>Install the replacement system using the planned accessible route while limiting the amount of finished building that needs to be opened.</p></article>
+            <article class="phase"><span class="phase-number">04</span><h3>Finish the Building</h3><p>Complete the visible architectural treatment and leave the property as a finished building rather than an ongoing construction zone.</p></article>
+            <article class="phase"><span class="phase-number">05</span><h3>Keep Future Access</h3><p>The project ends with a plumbing system designed so future inspection and service can reach the route without repeating the original demolition.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why-route">
+        <div class="section-inner">
+          <div class="intro-grid">
+            <div>
+              <p class="kicker">Why this matters</p>
+              <h2>Installation day is only part of the decision.</h2>
+            </div>
+            <p class="lead">The accessible-plumbing idea connects the installation method to the life of the building afterward. Reduced opening during the repipe is useful now; deliberate access is useful the next time the system needs attention.</p>
+          </div>
+          <div class="points">
+            <article class="point"><span>During the project</span><h3>Less of the building needs to become the work area.</h3><p>Planned routing is intended to reduce unnecessary wall and ceiling disturbance compared with repeatedly chasing concealed pipe.</p></article>
+            <article class="point"><span>At completion</span><h3>The track is part of the finished architecture.</h3><p>The replacement route is enclosed and deliberately integrated into the building rather than left as exposed piping.</p></article>
+            <article class="point"><span>Years later</span><h3>Access remains part of what the building owns.</h3><p>Future service can begin at the accessible system instead of automatically beginning with demolition of finished surfaces.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section next">
+        <div class="section-inner next-grid">
+          <div>
+            <p class="kicker">Next step</p>
+            <h2>See the method proven in real buildings.</h2>
+            <p>Project examples show how the system has been applied across occupied multifamily properties. When you are ready to talk about a specific building, the assessment form is there as the conversion step—not the explanation.</p>
+          </div>
+          <div class="actions">
+            <a class="button button-primary" href="/our-work/">Explore Our Work&nbsp;›</a>
+            <a class="button button-secondary" href="/assessment/?source_page=%2Fhow-it-works%2F&amp;source_cta=how-it-works-page" data-assessment-cta="how-it-works-page">Book an Assessment&nbsp;›</a>
+          </div>
+        </div>
+      </section>
+
+      <div data-pt-footer-fragment></div>
+    </main>
+    <script src="/site-header.js" defer></script>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

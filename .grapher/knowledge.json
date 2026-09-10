@@ -554,7 +554,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:29+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -569,7 +569,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:29+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "docs-instructions": {
@@ -586,7 +586,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:29+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "completed",
@@ -601,7 +601,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:29+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "docs-website-design-plan": {
@@ -618,7 +618,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:29+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -633,7 +633,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:29+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "docs-implementation-roadmap": {
@@ -650,7 +650,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:29+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -665,7 +665,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:29+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "docs-decision-how-it-works-routing": {
@@ -683,7 +683,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:29+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -698,7 +698,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:29+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "docs-web-work-sheet": {
@@ -715,7 +715,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:30+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -730,7 +730,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:30+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "docs-site-export": {
@@ -747,7 +747,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:30+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -762,7 +762,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:30+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "decision-how-it-works-routing": {
@@ -779,7 +779,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:30+00:00",
+      "updated_at": "2026-09-10T00:34:36+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -794,7 +794,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:30+00:00"
+        "recorded_at": "2026-09-10T00:34:36+00:00"
       }
     },
     "requirement-explain-before-assessment": {
@@ -811,7 +811,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:30+00:00",
+      "updated_at": "2026-09-10T00:34:36+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -826,7 +826,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:30+00:00"
+        "recorded_at": "2026-09-10T00:34:36+00:00"
       }
     },
     "component-how-it-works-page": {
@@ -843,7 +843,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-09T22:22:30+00:00",
+      "updated_at": "2026-09-10T00:34:36+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -858,7 +858,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:30+00:00"
+        "recorded_at": "2026-09-10T00:34:36+00:00"
       }
     },
     "agents-instructions": {
@@ -876,7 +876,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-09T22:22:29+00:00",
+      "updated_at": "2026-09-10T00:34:35+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -891,7 +891,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:29+00:00"
+        "recorded_at": "2026-09-10T00:34:35+00:00"
       }
     },
     "decision-continuous-documentation-grapher": {
@@ -909,7 +909,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-09T22:22:30+00:00",
+      "updated_at": "2026-09-10T00:34:36+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -924,7 +924,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:30+00:00"
+        "recorded_at": "2026-09-10T00:34:36+00:00"
       }
     },
     "requirement-continuous-documentation-grapher": {
@@ -942,7 +942,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:19+00:00",
-      "updated_at": "2026-09-09T22:22:30+00:00",
+      "updated_at": "2026-09-10T00:34:36+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -957,7 +957,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-09T22:22:30+00:00"
+        "recorded_at": "2026-09-10T00:34:36+00:00"
       }
     },
     "implementation-client-portal": {

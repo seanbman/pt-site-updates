@@ -554,7 +554,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:29+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -569,7 +569,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:29+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "docs-instructions": {
@@ -586,7 +586,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:29+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "completed",
@@ -601,7 +601,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:29+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "docs-website-design-plan": {
@@ -619,7 +619,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:29+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -634,7 +634,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:29+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "docs-implementation-roadmap": {
@@ -653,7 +653,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:29+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -668,7 +668,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:29+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "docs-decision-how-it-works-routing": {
@@ -686,7 +686,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:29+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -701,7 +701,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:29+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "docs-web-work-sheet": {
@@ -718,7 +718,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:29+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -733,7 +733,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:29+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "docs-site-export": {
@@ -750,7 +750,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -765,7 +765,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "decision-how-it-works-routing": {
@@ -782,7 +782,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -797,7 +797,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "requirement-explain-before-assessment": {
@@ -814,7 +814,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -829,7 +829,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:35+00:00"
       }
     },
     "component-how-it-works-page": {
@@ -846,7 +846,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -861,7 +861,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:35+00:00"
       }
     },
     "agents-instructions": {
@@ -879,7 +879,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T06:04:29+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -894,7 +894,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:29+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "decision-continuous-documentation-grapher": {
@@ -912,7 +912,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -927,7 +927,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "requirement-continuous-documentation-grapher": {
@@ -945,7 +945,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:19+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:34+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -960,7 +960,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:34+00:00"
       }
     },
     "implementation-client-portal": {
@@ -1028,7 +1028,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -1043,7 +1043,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:35+00:00"
       }
     },
     "decision-assessment-hardening-not-rebuild": {
@@ -1061,7 +1061,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -1076,7 +1076,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:35+00:00"
       }
     },
     "requirement-shared-fragment-reuse": {
@@ -1094,7 +1094,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T06:04:30+00:00",
+      "updated_at": "2026-09-10T06:13:35+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -1109,7 +1109,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:04:30+00:00"
+        "recorded_at": "2026-09-10T06:13:35+00:00"
       }
     },
     "session-2026-09-09-dev-updates-roadmap-ack": {
@@ -2027,6 +2027,209 @@
       "stage": null,
       "scope": {},
       "provenance": {}
+    },
+    "docs-dev-updates-review": {
+      "id": "docs-dev-updates-review",
+      "type": "document",
+      "title": "dev/updates branch review 2026-09-10",
+      "content": "Source-level review of dev/updates covering strengths, concrete production defects, route-by-route status, launch/production acceptance gates, and Wave 1/Wave 2 re-evaluation.",
+      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "review",
+        "dev-updates",
+        "roadmap",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:13:38+00:00",
+      "updated_at": "2026-09-10T06:13:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:13:38+00:00"
+      },
+      "scope": {}
+    },
+    "decision-page-family-rebaseline": {
+      "id": "decision-page-family-rebaseline",
+      "type": "decision",
+      "title": "Rebaseline dedicated page family from unbuilt to implemented draft",
+      "content": "{\"decision\":\"About, Solutions and its initial child pages, Detailed Installation, Technology and its initial child pages, Resources, and FAQ are now classified as implemented first drafts rather than unbuilt Wave 2 routes.\",\"rationale\":\"The current dev/updates branch contains real routed pages with page-specific content, canonical metadata, internal links, shared-shell integration, and conversion CTAs. Remaining work is hardening, source reconciliation, content depth, proof, accessibility, SEO consistency, and production verification.\"}",
+      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "tags": [
+        "plumbing-track",
+        "decision",
+        "waves",
+        "rebaseline",
+        "page-family"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:13:38+00:00",
+      "updated_at": "2026-09-10T06:13:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:13:38+00:00"
+      },
+      "scope": {}
+    },
+    "requirement-static-crawlable-shared-shell": {
+      "id": "requirement-static-crawlable-shared-shell",
+      "type": "requirement",
+      "title": "Deployable primary navigation must not depend exclusively on client JavaScript",
+      "content": "{\"requirement\":\"Canonical shared fragment files may remain the source of truth, but deployable public HTML must expose primary navigation and important shared content without requiring client JavaScript to create it.\",\"acceptance_condition\":\"Production/static output contains crawlable primary navigation and footer content through build/export injection or an equivalent static fallback; JavaScript enhances interaction rather than being the sole source of the menu; direct routes remain usable when fragment fetch fails or JavaScript is unavailable.\"}",
+      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "seo",
+        "crawlability",
+        "fragments",
+        "static"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:13:38+00:00",
+      "updated_at": "2026-09-10T06:13:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "unverified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:13:38+00:00"
+      },
+      "scope": {}
+    },
+    "requirement-seo-discovery-files": {
+      "id": "requirement-seo-discovery-files",
+      "type": "requirement",
+      "title": "Public route set requires deliberate sitemap and robots files",
+      "content": "{\"requirement\":\"The production site must include a root sitemap.xml matching intended indexable canonical routes and a deliberate root robots.txt that references the sitemap and handles non-public/utility routes intentionally.\",\"acceptance_condition\":\"Both files exist in deployable output, validate, match production canonical URLs, and are verified against the actual route/indexing policy.\"}",
+      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "seo",
+        "sitemap",
+        "robots",
+        "crawlability"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:13:38+00:00",
+      "updated_at": "2026-09-10T06:13:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "failed",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:13:38+00:00"
+      },
+      "scope": {}
+    },
+    "requirement-page-family-design-parity": {
+      "id": "requirement-page-family-design-parity",
+      "type": "requirement",
+      "title": "New page family must consume the canonical visual token and typography contract",
+      "content": "{\"requirement\":\"New page-family routes must preserve the established Plumbing Track visual identity by using compatible shared color tokens and typography rather than relying on undefined custom properties or an unrelated primary fallback font.\",\"acceptance_condition\":\"All variables used by shared-navigation.css are defined through a canonical token source or explicit fallbacks; page-family routes use the intended shared typography; normal/hover/focus/scrolled/mobile states are visually verified across page families.\"}",
+      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "design-system",
+        "tokens",
+        "typography",
+        "css"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:13:38+00:00",
+      "updated_at": "2026-09-10T06:13:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "failed",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:13:38+00:00"
+      },
+      "scope": {}
+    },
+    "requirement-implemented-page-depth-and-proof": {
+      "id": "requirement-implemented-page-depth-and-proof",
+      "type": "requirement",
+      "title": "Implemented commercial routes still require source-backed depth and proof",
+      "content": "{\"requirement\":\"Existing first-draft About, Solutions, Technology, FAQ and related routes must be deepened only with verified source-backed facts, customer questions, project proof, and useful internal links before being treated as mature SEO/commercial destinations.\",\"acceptance_condition\":\"Route existence is not used as evidence of content completion; claims are reconciled against authoritative sources; relevant proof is linked; intentionally thin or unready routes receive an explicit indexing decision.\"}",
+      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "content",
+        "seo",
+        "proof",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:13:38+00:00",
+      "updated_at": "2026-09-10T06:13:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:13:38+00:00"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -2546,6 +2749,104 @@
       "rel": "references",
       "created_at": "2026-09-10T06:04:03+00:00",
       "note": "Roadmap records the initial logo alignment mistake and correction"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-dev-updates-review",
+      "rel": "references",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Current branch review and re-evaluation evidence"
+    },
+    {
+      "from": "docs-dev-updates-review",
+      "to": "docs-instructions",
+      "rel": "references",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Review evaluates the branch against governing implementation requirements"
+    },
+    {
+      "from": "docs-dev-updates-review",
+      "to": "docs-website-design-plan",
+      "rel": "references",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Review evaluates current implementation against target architecture and visual/SEO direction"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "docs-dev-updates-review",
+      "rel": "derived_from",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Current roadmap rebaseline incorporates the 2026-09-10 branch review"
+    },
+    {
+      "from": "decision-page-family-rebaseline",
+      "to": "docs-dev-updates-review",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Route-by-route source review supports the reclassification"
+    },
+    {
+      "from": "decision-page-family-rebaseline",
+      "to": "docs-implementation-roadmap",
+      "rel": "applies_to",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Reclassification updates the Wave 1/Wave 2 roadmap"
+    },
+    {
+      "from": "requirement-static-crawlable-shared-shell",
+      "to": "docs-dev-updates-review",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Review documents runtime-only shared-shell creation as a source-confirmed production issue"
+    },
+    {
+      "from": "requirement-static-crawlable-shared-shell",
+      "to": "docs-instructions",
+      "rel": "applies_to",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Governing instructions require crawlable navigation and no important content exclusively behind JavaScript"
+    },
+    {
+      "from": "requirement-seo-discovery-files",
+      "to": "docs-dev-updates-review",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Review records absence of sitemap.xml and robots.txt"
+    },
+    {
+      "from": "requirement-seo-discovery-files",
+      "to": "docs-instructions",
+      "rel": "applies_to",
+      "created_at": "2026-09-10T06:13:39+00:00",
+      "note": "Governing SEO requirements include sitemap and robots support where applicable"
+    },
+    {
+      "from": "requirement-page-family-design-parity",
+      "to": "docs-dev-updates-review",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:13:40+00:00",
+      "note": "Review records token and typography drift in the new page-family CSS"
+    },
+    {
+      "from": "requirement-page-family-design-parity",
+      "to": "docs-website-design-plan",
+      "rel": "applies_to",
+      "created_at": "2026-09-10T06:13:40+00:00",
+      "note": "Design plan requires new pages to preserve and extend the current visual identity"
+    },
+    {
+      "from": "requirement-implemented-page-depth-and-proof",
+      "to": "docs-dev-updates-review",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:13:40+00:00",
+      "note": "Route review distinguishes meaningful first drafts from mature content completion"
+    },
+    {
+      "from": "requirement-implemented-page-depth-and-proof",
+      "to": "docs-website-design-plan",
+      "rel": "applies_to",
+      "created_at": "2026-09-10T06:13:40+00:00",
+      "note": "Design plan specifies deeper source-backed commercial, educational, proof, and internal-linking content"
     }
   ]
 }

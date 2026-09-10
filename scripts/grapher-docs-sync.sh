@@ -58,25 +58,25 @@ grapher add "${common_agent[@]}" \
   --id docs-website-design-plan \
   --type document \
   --title "Plumbing Track website design plan" \
-  --content "Target information architecture and design plan: preserve the existing visual identity and homepage video while expanding into focused, indexable pages." \
+  --content "Target information architecture and design plan: preserve the existing visual identity and homepage video while expanding into focused, indexable pages. The current plan includes the detailed Book an Assessment conversion specification." \
   --path docs/WEBSITE_DESIGN_PLAN.md \
-  --tags plumbing-track,docs,design,architecture \
+  --tags plumbing-track,docs,design,architecture,assessment \
   --status current \
   --workflow-state completed \
   --verification not_applicable \
-  --reason "Index target architecture in Grapher"
+  --reason "Index target architecture and current assessment specification in Grapher"
 
 grapher add "${common_agent[@]}" \
   --id docs-implementation-roadmap \
   --type document \
   --title "Plumbing Track implementation roadmap" \
-  --content "Living Wave 1/Wave 2 status companion to the design plan. Menu clickability does not define wave membership; current implementation is the baseline." \
+  --content "Living Wave 1/Wave 2 status companion to the design plan. Current implementation is the baseline; the expanded Assessment specification is treated as verification/hardening for the existing flow, and shared fragments are the preferred synchronization mechanism for repeated cross-page markup." \
   --path docs/IMPLEMENTATION_ROADMAP.md \
-  --tags plumbing-track,docs,roadmap,waves \
+  --tags plumbing-track,docs,roadmap,waves,assessment,fragments \
   --status current \
   --workflow-state active \
   --verification partially_verified \
-  --reason "Index current execution status in Grapher"
+  --reason "Index current execution status and post-main-sync plan evaluation in Grapher"
 
 grapher add "${common_agent[@]}" \
   --id docs-decision-how-it-works-routing \
@@ -193,6 +193,43 @@ grapher add "${common_agent[@]}" \
   --verification partially_verified \
   --reason "Record the new explanatory route implementation"
 
+# Post-main-sync assessment plan evaluation.
+grapher add "${common_agent[@]}" \
+  --id requirement-assessment-detailed-conversion \
+  --type requirement \
+  --title "Assessment flow must be a structured building conversion experience" \
+  --content '{"requirement":"The unified assessment route must progressively capture building, project, contact, review, attribution, submission, confirmation, and CRM-ready structured data without forcing visitors to diagnose unknown plumbing conditions.","acceptance_condition":"Current assessment flow satisfies the source-level structure; production API behavior, GA4 initialization and no-PII behavior, CTA attribution coverage, cross-device usability, and accessibility remain explicitly verified before launch."}' \
+  --path docs/WEBSITE_DESIGN_PLAN.md \
+  --tags plumbing-track,requirement,assessment,conversion,crm,ga4 \
+  --status current \
+  --workflow-state active \
+  --verification partially_verified \
+  --reason "Capture the detailed assessment conversion specification added on main"
+
+grapher add "${common_agent[@]}" \
+  --id decision-assessment-hardening-not-rebuild \
+  --type decision \
+  --title "Treat expanded Assessment plan as hardening, not a rebuild" \
+  --content '{"decision":"The expanded Book an Assessment design section is a verification and hardening specification for the existing assessment implementation, not a greenfield rebuild instruction.","rationale":"Source review confirms the dedicated route, four-step flow, structured payload, unsure states, minimal required contact fields, attribution support, review/success/error handling, duplicate-submit guard, and assessment event emission already exist."}' \
+  --path docs/IMPLEMENTATION_ROADMAP.md \
+  --tags plumbing-track,assessment,roadmap,hardening,decision \
+  --status current \
+  --workflow-state completed \
+  --verification partially_verified \
+  --reason "Reconcile the newly expanded design-plan task with the implementation already present after the main sync"
+
+grapher add "${common_agent[@]}" \
+  --id requirement-shared-fragment-reuse \
+  --type requirement \
+  --title "Use shared fragments for synchronized cross-page markup" \
+  --content '{"requirement":"When identical markup and behavior must stay synchronized across multiple pages, extend or create a shared fragment instead of maintaining divergent copies; genuinely page-specific content should remain local.","acceptance_condition":"Shared header, footer, and testimonial-card patterns remain canonical; future repeated cross-page components reuse the fragment approach where it reduces drift without creating unnecessary coupling."}' \
+  --path docs/IMPLEMENTATION_ROADMAP.md \
+  --tags plumbing-track,requirement,fragments,shared-components,maintenance \
+  --status current \
+  --workflow-state active \
+  --verification partially_verified \
+  --reason "Record the fragment reuse rule established by the current implementation"
+
 # Documentation map.
 grapher link --graph "$GRAPH" docs-index agents-instructions --rel references --note "Repository agent operating policy"
 grapher link --graph "$GRAPH" docs-index docs-instructions --rel references --note "Governing instructions"
@@ -223,7 +260,26 @@ grapher link --graph "$GRAPH" requirement-explain-before-assessment decision-how
 grapher link --graph "$GRAPH" component-how-it-works-page requirement-explain-before-assessment --rel satisfies --note "Standalone page fulfills the explanatory routing requirement"
 grapher link --graph "$GRAPH" component-how-it-works-page decision-how-it-works-routing --rel implements --note "Implementation realizes the routing decision"
 
-# Tie the new docs map back to the pre-existing plan requirement when present.
+# Post-main-sync plan relationships.
+grapher link --graph "$GRAPH" requirement-assessment-detailed-conversion docs-website-design-plan --rel evidenced_by --note "Detailed conversion requirement is specified in the design plan"
+grapher link --graph "$GRAPH" decision-assessment-hardening-not-rebuild requirement-assessment-detailed-conversion --rel applies_to --note "Roadmap evaluation classifies the existing implementation against the expanded requirement"
+grapher link --graph "$GRAPH" decision-assessment-hardening-not-rebuild docs-implementation-roadmap --rel evidenced_by --note "The post-main-sync evaluation is recorded in the roadmap"
+grapher link --graph "$GRAPH" requirement-shared-fragment-reuse docs-implementation-roadmap --rel evidenced_by --note "Fragment reuse rule is recorded in the roadmap"
+
+if grapher get --graph "$GRAPH" implementation-assessment-flow >/dev/null 2>&1; then
+  grapher link --graph "$GRAPH" implementation-assessment-flow requirement-assessment-detailed-conversion --rel satisfies --note "Existing assessment implementation satisfies the source-level structure; launch verification remains open"
+  grapher link --graph "$GRAPH" implementation-assessment-flow decision-assessment-hardening-not-rebuild --rel applies_to --note "Existing implementation is the baseline to harden rather than rebuild"
+fi
+
+if grapher get --graph "$GRAPH" implementation-shared-chrome >/dev/null 2>&1; then
+  grapher link --graph "$GRAPH" implementation-shared-chrome requirement-shared-fragment-reuse --rel satisfies --note "Shared header/footer implementation establishes the fragment pattern"
+fi
+
+if grapher get --graph "$GRAPH" implementation-visual-hygiene >/dev/null 2>&1; then
+  grapher link --graph "$GRAPH" implementation-visual-hygiene requirement-shared-fragment-reuse --rel satisfies --note "Shared testimonial-card implementation extends the fragment pattern beyond chrome"
+fi
+
+# Tie the docs map back to the pre-existing plan requirement when present.
 if grapher get --graph "$GRAPH" requirement-website-design-plan >/dev/null 2>&1; then
   grapher link --graph "$GRAPH" docs-website-design-plan requirement-website-design-plan --rel references --note "Tracked design document behind the existing implementation requirement"
 fi

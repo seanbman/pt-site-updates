@@ -203,10 +203,12 @@ main[data-pt-page] .site-header.is-nav-open .header-menu-toggle { border-color: 
   }
   main[data-pt-page] .site-header.is-nav-open .header-nav { display: flex; }
   main[data-pt-page] .header-nav .header-nav-link,
-  main[data-pt-page] .nav-section summary {
+  main[data-pt-page] .nav-section summary,
+  main[data-pt-page] .nav-flyout a {
     border-bottom: 1px solid rgba(8, 19, 25, .08);
     color: #314149;
     font-size: 1rem;
+    margin-block: .5em;
     padding: .85rem 0;
     width: 100%;
   }

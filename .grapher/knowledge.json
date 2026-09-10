@@ -1564,6 +1564,98 @@
       },
       "stage": null,
       "scope": {}
+    },
+    "decision-wave1-copy-review-flags": {
+      "id": "decision-wave1-copy-review-flags",
+      "type": "decision",
+      "title": "Wave 1 copy review flags remain outside live copy",
+      "content": "{\"decision\":\"Retain the implemented Wave 1 page copy as provided for this pass, while flagging selected statements for later source/editorial review in Grapher only. Review flags include the About wording around faster, cleaner, less disruptive work and consistent high-quality results; the FAQ answers describing occupied-home coordination and future service; and comparative statements such as fewer openings or reduced restoration where project-specific evidence may be required.\",\"rationale\":\"The operator explicitly directed that copy revisions be flagged in Grapher rather than edited on the live website. These flags preserve the current implementation while separating editorial/source review from route completion.\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "wave-1",
+        "copy-review",
+        "source-review",
+        "operator-decision"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:09:04+00:00",
+      "updated_at": "2026-09-10T01:09:04+00:00",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "unverified",
+      "evidence": [],
+      "source_refs": [
+        "docs/IMPLEMENTATION_ROADMAP.md",
+        "docs/WEBSITE_DESIGN_PLAN.md",
+        "docs/site-export/text/about.txt",
+        "resources/faq/index.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "reviewer",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:09:04+00:00"
+      },
+      "semantic": {
+        "decision": "Retain the implemented Wave 1 page copy as provided for this pass, while flagging selected statements for later source/editorial review in Grapher only. Review flags include the About wording around faster, cleaner, less disruptive work and consistent high-quality results; the FAQ answers describing occupied-home coordination and future service; and comparative statements such as fewer openings or reduced restoration where project-specific evidence may be required.",
+        "rationale": "The operator explicitly directed that copy revisions be flagged in Grapher rather than edited on the live website. These flags preserve the current implementation while separating editorial/source review from route completion."
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "test-wave1-route-hardening": {
+      "id": "test-wave1-route-hardening",
+      "type": "test",
+      "title": "Verified Wave 1 route and shared-shell hardening",
+      "content": "{\"test\":\"Checked all current public routes over a local static server, verified shared header/footer loading and menu links in a live browser, checked no horizontal overflow at 880 by 888, and ran JavaScript syntax and whitespace checks.\",\"method\":\"curl HTTP status loop; terminal-browser live DOM evaluation; node --check app.js; node --check site-header.js; git diff --check\",\"outcome\":\"pass\"}",
+      "path": "templates/site-header.html",
+      "tags": [
+        "plumbing-track",
+        "wave-1",
+        "hardening",
+        "test",
+        "routing",
+        "responsive"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:09:14+00:00",
+      "updated_at": "2026-09-10T01:09:14+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "curl http://127.0.0.1:4173/; terminal-browser action -- eval",
+          "summary": "All 17 current public routes returned 200; shared shell loaded with 14 menu links and no overflow at 880x888."
+        }
+      ],
+      "source_refs": [
+        "templates/site-header.html",
+        "shared-navigation.css",
+        "site-header.js",
+        "docs/IMPLEMENTATION_ROADMAP.md"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verifier",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:09:14+00:00"
+      },
+      "semantic": {
+        "test": "Checked all current public routes over a local static server, verified shared header/footer loading and menu links in a live browser, checked no horizontal overflow at 880 by 888, and ran JavaScript syntax and whitespace checks.",
+        "method": "curl HTTP status loop; terminal-browser live DOM evaluation; node --check app.js; node --check site-header.js; git diff --check",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {}
     }
   },
   "edges": [
@@ -1929,6 +2021,20 @@
       "rel": "related",
       "created_at": "2026-09-10T01:07:35+00:00",
       "note": "Deterministic static checks for the About and Resources family."
+    },
+    {
+      "from": "test-wave1-route-hardening",
+      "to": "decision-wave1-complete-placeholder-destinations",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T01:09:20+00:00",
+      "note": "Verifies the promoted Wave 1 routes and shared navigation are reachable and rendered."
+    },
+    {
+      "from": "test-wave1-route-hardening",
+      "to": "implementation-technology-family",
+      "rel": "related",
+      "created_at": "2026-09-10T01:09:20+00:00",
+      "note": "Includes live shared-shell verification after Technology family implementation."
     }
   ]
 }

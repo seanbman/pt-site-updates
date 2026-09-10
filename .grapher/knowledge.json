@@ -1471,6 +1471,99 @@
       },
       "stage": null,
       "scope": {}
+    },
+    "implementation-about-resources-family": {
+      "id": "implementation-about-resources-family",
+      "type": "implementation",
+      "title": "Built the Wave 1 About and Resources page family",
+      "content": "{\"change\":\"Created /about/, /resources/, and /resources/faq/ as coherent indexable routes using provided About copy, existing project/process language, shared page styling, canonical metadata, client-portal/process links, and assessment attribution hooks.\",\"component\":\"about/index.html, resources/index.html, resources/faq/index.html, page-family.css, templates/site-header.html\"}",
+      "path": "about/index.html",
+      "tags": [
+        "plumbing-track",
+        "about",
+        "resources",
+        "faq",
+        "wave-1"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:07:20+00:00",
+      "updated_at": "2026-09-10T01:07:20+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/site-export/text/about.txt",
+        "docs/WEBSITE_DESIGN_PLAN.md",
+        "docs/IMPLEMENTATION_ROADMAP.md",
+        "templates/site-header.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:07:20+00:00"
+      },
+      "semantic": {
+        "change": "Created /about/, /resources/, and /resources/faq/ as coherent indexable routes using provided About copy, existing project/process language, shared page styling, canonical metadata, client-portal/process links, and assessment attribution hooks.",
+        "component": "about/index.html, resources/index.html, resources/faq/index.html, page-family.css, templates/site-header.html"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "test-about-resources-family-static-integrity": {
+      "id": "test-about-resources-family-static-integrity",
+      "type": "test",
+      "title": "Verified About and Resources family static integrity",
+      "content": "{\"test\":\"Checked the About and Resources family routes, shared runtime syntax, navigation targets, and patch whitespace after implementation.\",\"method\":\"git diff --check; node --check app.js; node --check site-header.js; filesystem route existence checks\",\"outcome\":\"pass\"}",
+      "path": "about/index.html",
+      "tags": [
+        "plumbing-track",
+        "about",
+        "resources",
+        "faq",
+        "wave-1",
+        "test",
+        "static-integrity"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:07:28+00:00",
+      "updated_at": "2026-09-10T01:07:28+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "git diff --check; node --check app.js; node --check site-header.js",
+          "summary": "About and Resources family and shared navigation pass deterministic static checks."
+        }
+      ],
+      "source_refs": [
+        "about/index.html",
+        "resources/index.html",
+        "resources/faq/index.html",
+        "templates/site-header.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verifier",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:07:28+00:00"
+      },
+      "semantic": {
+        "test": "Checked the About and Resources family routes, shared runtime syntax, navigation targets, and patch whitespace after implementation.",
+        "method": "git diff --check; node --check app.js; node --check site-header.js; filesystem route existence checks",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {}
     }
   },
   "edges": [
@@ -1822,6 +1915,20 @@
       "rel": "related",
       "created_at": "2026-09-10T01:05:41+00:00",
       "note": "Deterministic static checks for the Solutions family."
+    },
+    {
+      "from": "implementation-about-resources-family",
+      "to": "decision-wave1-complete-placeholder-destinations",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T01:07:35+00:00",
+      "note": "Implements the promoted About and Resources destinations in current Wave 1 scope."
+    },
+    {
+      "from": "implementation-about-resources-family",
+      "to": "test-about-resources-family-static-integrity",
+      "rel": "related",
+      "created_at": "2026-09-10T01:07:35+00:00",
+      "note": "Deterministic static checks for the About and Resources family."
     }
   ]
 }

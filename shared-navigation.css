@@ -115,6 +115,16 @@
 [data-pt-page] :is(h1,h2,h3) { text-wrap:balance; }
 [data-pt-page] p { text-wrap:pretty; }
 
+/* Keep the two canonical logo variants in the same box. Visibility is
+   controlled with opacity so page contrast states cannot accidentally hide
+   the active logo with a competing display rule. */
+[data-pt-page] .site-header .brand { align-items:center !important; display:inline-grid !important; line-height:0 !important; }
+[data-pt-page] .site-header .brand-logo { grid-area:1 / 1 !important; }
+[data-pt-page] .site-header .brand-logo--light { display:block !important; opacity:1 !important; }
+[data-pt-page] .site-header .brand-logo--dark { display:block !important; opacity:0 !important; }
+[data-pt-page] .site-header.is-scrolled .brand-logo--light { opacity:0 !important; }
+[data-pt-page] .site-header.is-scrolled .brand-logo--dark { opacity:1 !important; }
+
 /* Our Work uses a photographic hero, so the canonical menu remains in its
    readable solid-header state from first paint at every viewport. */
 [data-pt-page].pt-page--our-work .site-header { background:#fff !important; border-bottom-color:rgba(8,19,25,.1) !important; box-shadow:0 10px 28px rgba(8,19,25,.08) !important; }
@@ -153,6 +163,7 @@
 @media (max-width:1240px) {
   [data-pt-page] .site-header { gap:.85rem !important; height:68px !important; padding:0 1.1rem !important; }
   [data-pt-page] .site-header .brand-logo { width:min(168px,42vw) !important; }
+  [data-pt-page] .site-header .brand { left:50% !important; position:absolute !important; transform:translateX(-50%) !important; }
   [data-pt-page] .header-actions { flex-shrink:0 !important; gap:.85rem !important; }
   [data-pt-page] .header-menu-toggle { align-items:center !important; display:inline-flex !important; flex-shrink:0 !important; height:2.4rem !important; justify-content:center !important; padding:0 !important; width:2.4rem !important; }
   [data-pt-page] .header-nav { align-items:stretch !important; background:var(--ink) !important; border-bottom:1px solid rgba(255,255,255,.12) !important; box-shadow:0 16px 32px rgba(0,0,0,.28) !important; display:none !important; flex-direction:column !important; gap:0 !important; left:0 !important; padding:.85rem 1.1rem 1.1rem !important; position:absolute !important; right:0 !important; top:100% !important; }

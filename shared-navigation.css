@@ -1,0 +1,88 @@
+/* Canonical shell styling for every page that consumes templates/site-header.html.
+   The fragment remains the single menu source; this file keeps its visual and
+   responsive behavior consistent on page shells that do not carry homepage CSS. */
+.site-header { align-items:center; background:transparent; border-bottom:1px solid transparent; display:flex; height:80px; justify-content:space-between; left:0; padding:0 clamp(1.2rem,4vw,4.5rem); position:fixed; right:0; top:0; transition:background var(--header-swap-duration,0ms) ease,border-color var(--header-swap-duration,0ms) ease; z-index:50; }
+.site-header.is-scrolled { background:#fff; border-bottom-color:rgba(8,19,25,.1); }
+.brand { display:block; line-height:0; max-width:min(300px,52vw); }
+.brand-logo { height:auto; width:100%; }
+.brand-logo--light { display:block; }
+.brand-logo--dark { display:none; }
+.site-header.is-scrolled .brand-logo--light { display:none; }
+.site-header.is-scrolled .brand-logo--dark { display:block; }
+.header-cta { align-items:center; background:transparent; border:1px solid rgba(255,255,255,.55); color:#fff; display:inline-flex; flex-shrink:0; font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif; font-size:.84rem; font-weight:750; justify-content:center; min-height:42px; padding:.75rem 1rem; white-space:nowrap; }
+.header-cta:hover,.header-cta:focus-visible { background:var(--cyan); border-color:var(--cyan); color:#10242d; }
+.site-header.is-scrolled .header-cta { border-color:var(--cyan); color:#00516f; }
+.site-header.is-scrolled .header-cta:hover,.site-header.is-scrolled .header-cta:focus-visible { background:var(--cyan); border-color:var(--cyan); color:#10242d; }
+.header-menu-toggle { display:none; }
+.header-actions { align-items:center; display:flex; gap:clamp(1rem,2.5vw,1.75rem); }
+.header-nav { align-items:center; display:flex; gap:clamp(1rem,2.5vw,1.75rem); }
+.header-nav-link,
+.nav-section summary { color:rgba(255,255,255,.88); cursor:pointer; flex-shrink:0; font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif; font-size:.88rem; font-weight:520; letter-spacing:-.01em; line-height:1.25; list-style:none; text-decoration:none; white-space:nowrap; }
+.nav-section { position:relative; }
+.nav-section summary::-webkit-details-marker { display:none; }
+.nav-section summary::after { color:var(--cyan-soft); content:"⌄"; display:inline-block; line-height:1; margin-left:.4rem; position:relative; top:-.22em; vertical-align:baseline; }
+.nav-section[open] summary::after { content:"⌃"; }
+.header-nav-link:hover,
+.header-nav-link:focus-visible,
+.nav-section summary:hover,
+.nav-section summary:focus-visible { color:var(--cyan-soft); outline:none; }
+.nav-flyout { background:#fff; box-shadow:0 16px 36px rgba(0,0,0,.2); color:var(--ink); display:grid; gap:.3rem; left:-1rem; min-width:218px; padding:1rem; position:absolute; top:calc(100% + 1rem); }
+.nav-flyout span { color:#53666e; font-size:.84rem; line-height:1.35; padding:.32rem 0; }
+.nav-flyout a { color:#00516f; font-size:.84rem; font-weight:700; line-height:1.35; padding:.32rem 0; }
+.nav-flyout span:first-child { color:#00516f; font-size:.68rem; font-weight:750; letter-spacing:.11em; padding-bottom:.55rem; text-transform:uppercase; }
+.header-nav .header-nav-cta { display:none; }
+.site-header.is-scrolled .header-nav-link,
+.site-header.is-scrolled .nav-section summary { color:#314149; }
+.site-header.is-scrolled .header-nav-link:hover,
+.site-header.is-scrolled .header-nav-link:focus-visible,
+.site-header.is-scrolled .nav-section summary:hover,
+.site-header.is-scrolled .nav-section summary:focus-visible { color:#00516f; }
+.site-header.is-scrolled .nav-section summary::after { color:#00516f; }
+
+/* The footer is loaded from the same shared fragment as the header on
+   legacy page shells. Keep its social controls consistent with the homepage
+   footer without duplicating markup in each page. */
+.site-footer .social-links { align-items:center; display:flex; flex-wrap:wrap; gap:.55rem; justify-content:center; }
+.site-footer .social-links a { align-items:center; border:1px solid rgba(8,19,25,.22); color:#35515b; display:inline-flex; height:2.35rem; justify-content:center; width:2.35rem; }
+.site-footer .social-links span { font-family:Arial,Helvetica,sans-serif; font-size:.9rem; font-weight:700; line-height:1; }
+.site-footer .social-icon--instagram { border:1.5px solid currentColor; border-radius:.28rem; height:.9rem; position:relative; width:.9rem; }
+.site-footer .social-icon--instagram::before { border:1.5px solid currentColor; border-radius:50%; content:""; height:.36rem; left:50%; position:absolute; top:50%; transform:translate(-50%,-50%); width:.36rem; }
+.site-footer .social-icon--instagram::after { background:currentColor; border-radius:50%; content:""; height:.13rem; position:absolute; right:.1rem; top:.1rem; width:.13rem; }
+.site-footer .social-links a:hover,
+.site-footer .social-links a:focus-visible { border-color:#00516f; color:#00516f; outline:2px solid rgba(0,81,111,.2); outline-offset:2px; }
+
+@media (max-width:1240px) {
+  .site-header { gap:.85rem; height:68px; padding:0 1.1rem; }
+  .brand { min-width:0; }
+  .brand-logo { width:min(168px,42vw); }
+  .header-actions { flex-shrink:0; gap:.85rem; }
+  .header-menu-toggle { align-items:center; background:transparent; border:1px solid rgba(255,255,255,.45); color:#fff; cursor:pointer; display:inline-flex; flex-shrink:0; height:2.4rem; justify-content:center; padding:0; width:2.4rem; }
+  .site-header.is-scrolled .header-menu-toggle { border-color:rgba(8,19,25,.22); color:#061015; }
+  .header-menu-toggle__bars,
+  .header-menu-toggle__bars::before,
+  .header-menu-toggle__bars::after { background:currentColor; content:""; display:block; height:1.5px; position:relative; transition:transform 180ms ease,opacity 180ms ease,top 180ms ease; width:1rem; }
+  .header-menu-toggle__bars::before { position:absolute; top:-5px; }
+  .header-menu-toggle__bars::after { position:absolute; top:5px; }
+  .site-header.is-nav-open .header-menu-toggle__bars { background:transparent; }
+  .site-header.is-nav-open .header-menu-toggle__bars::before { top:0; transform:rotate(45deg); }
+  .site-header.is-nav-open .header-menu-toggle__bars::after { top:0; transform:rotate(-45deg); }
+  .header-nav { background:var(--ink); border-bottom:1px solid rgba(255,255,255,.12); box-shadow:0 16px 32px rgba(0,0,0,.28); display:none; flex-direction:column; gap:0; left:0; padding:.85rem 1.1rem 1.1rem; position:absolute; right:0; top:100%; }
+  .site-header.is-nav-open .header-nav { display:flex; }
+  .site-header.is-scrolled .header-nav { background:#fff; border-bottom-color:rgba(8,19,25,.1); box-shadow:0 16px 32px rgba(8,19,25,.1); }
+  .header-nav .header-nav-link,
+  .nav-section summary { border-bottom:1px solid rgba(255,255,255,.1); font-size:1rem; padding:.85rem 0; width:100%; }
+  .site-header.is-scrolled .header-nav .header-nav-link,
+  .site-header.is-scrolled .nav-section summary { border-bottom-color:rgba(8,19,25,.08); }
+  .nav-section { width:100%; }
+  .nav-section summary { color:#f4fbfd; }
+  .site-header.is-scrolled .nav-section summary { color:#314149; }
+  .nav-flyout { background:transparent; box-shadow:none; gap:.1rem; padding:.2rem 0 .55rem 1rem; position:static; }
+  .nav-flyout span { color:#b9cbd1; font-size:.82rem; padding:.2rem 0; }
+  .nav-flyout a { color:var(--cyan-soft); font-size:.82rem; padding:.2rem 0; }
+  .nav-flyout span:first-child { color:var(--cyan-soft); padding-bottom:.25rem; }
+  .site-header.is-scrolled .nav-flyout span { color:#53666e; }
+  .site-header.is-scrolled .nav-flyout a,
+  .site-header.is-scrolled .nav-flyout span:first-child { color:#00516f; }
+  .header-nav .header-nav-cta { display:inline-flex; justify-content:center; margin-top:.85rem; text-align:center; width:100%; }
+  .site-footer .social-links { justify-content:flex-start; }
+}

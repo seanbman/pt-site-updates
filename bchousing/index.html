@@ -86,8 +86,8 @@
 :root {
   --font-geist-sans: "Geist", Arial, Helvetica, sans-serif;
   --font-geist-mono: "Geist Mono", "Courier New", monospace;
-  --cyan: #00b2ff;
-  --cyan-soft: #55ccff;
+  --cyan: #d2b985;
+  --cyan-soft: #e0c99a;
   --ink: #061015;
   --ink-deep: #030a0e;
   --panel: #0b171d;
@@ -212,7 +212,7 @@ a {
 
 .site-header.is-scrolled .header-cta {
   border-color: var(--cyan);
-  color: #0077ad;
+  color: #00516f;
 }
 
 .site-header.is-scrolled .header-cta:hover,
@@ -499,7 +499,7 @@ a {
 .primary-cta:hover,
 .primary-cta:focus-visible {
   background: var(--cyan-soft);
-  box-shadow: 0 10px 28px rgba(0, 178, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 81, 111, 0.22);
   transform: translateY(-1px);
 }
 
@@ -522,7 +522,7 @@ a {
 .building-glow {
   background: radial-gradient(
     ellipse 55% 45% at 62% 38%,
-    rgba(0, 178, 255, 0.22),
+    rgba(0, 81, 111, 0.22),
     transparent 70%
   );
   inset: 0;
@@ -572,12 +572,12 @@ a {
 
 .window.lit {
   background:
-    linear-gradient(160deg, rgba(255, 236, 196, 0.55), rgba(0, 178, 255, 0.12));
+    linear-gradient(160deg, rgba(255, 236, 196, 0.55), rgba(0, 81, 111, 0.12));
   box-shadow: inset 0 0 24px rgba(255, 220, 150, 0.15);
 }
 
 .window.soft {
-  background: rgba(0, 178, 255, 0.08);
+  background: rgba(0, 81, 111, 0.08);
 }
 
 .ceiling-band {
@@ -638,7 +638,7 @@ a {
 
 .track-cap {
   background: #f4f7f8;
-  border: 1px solid rgba(0, 178, 255, 0.45);
+  border: 1px solid rgba(0, 81, 111, 0.45);
   height: 14px;
   margin-left: -1px;
   width: 42px;
@@ -769,7 +769,7 @@ a {
 }
 
 .advantage-card:hover {
-  border-color: rgba(0, 178, 255, 0.2);
+  border-color: rgba(0, 81, 111, 0.2);
   box-shadow:
     0 18px 36px rgba(8, 19, 25, 0.1),
     0 3px 10px rgba(8, 19, 25, 0.05);
@@ -838,7 +838,7 @@ a {
 .visual-scene::before {
   background: radial-gradient(
     circle at 70% 30%,
-    rgba(0, 178, 255, 0.22),
+    rgba(0, 81, 111, 0.22),
     transparent 42%
   );
   content: "";
@@ -857,7 +857,7 @@ a {
 }
 
 .scene-stay .unit-window {
-  background: linear-gradient(145deg, rgba(255, 232, 180, 0.7), rgba(0, 178, 255, 0.2));
+  background: linear-gradient(145deg, rgba(255, 232, 180, 0.7), rgba(0, 81, 111, 0.2));
   height: 42%;
   left: 14%;
   position: absolute;
@@ -973,7 +973,7 @@ a {
 }
 
 .card-number {
-  color: #0088c7;
+  color: #00516f;
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.72rem;
   font-weight: 650;
@@ -1409,9 +1409,9 @@ a {
 }
 
 .assessment-form input:focus {
-  background: rgba(0, 178, 255, 0.06);
+  background: rgba(0, 81, 111, 0.06);
   border-color: var(--cyan);
-  box-shadow: 0 0 0 3px rgba(0, 178, 255, 0.18);
+  box-shadow: 0 0 0 3px rgba(0, 81, 111, 0.18);
 }
 
 .assessment-form button {
@@ -1440,7 +1440,7 @@ a {
 .assessment-form button:hover,
 .assessment-form button:focus-visible {
   background: var(--cyan-soft);
-  box-shadow: 0 10px 28px rgba(0, 178, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 81, 111, 0.22);
   transform: translateY(-1px);
 }
 
@@ -1967,33 +1967,21 @@ footer.site-footer p {
   }
 }
 
+    :is(a, button, .project-card-link):not(.header-menu-toggle) > span[aria-hidden="true"] {
+      display: inline-block;
+      margin-left: .35em;
+      line-height: 1;
+      vertical-align: baseline;
+      position: relative;
+      top: -.08em;
+    }
+    :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
+    <link rel="stylesheet" href="/shared-navigation.css">
   </head>
   <body>
     <main class="pt-page" data-pt-page>
-      <header class="site-header" data-pt-header>
-        <a class="brand" href="#top" aria-label="Plumbing Track">
-          <img
-            class="brand-logo brand-logo--light"
-            src="/logo-white.png"
-            alt="Plumbing Track, ReThink RePipe"
-            width="490"
-            height="91"
-          >
-          <img
-            class="brand-logo brand-logo--dark"
-            src="/logo.png"
-            alt=""
-            width="490"
-            height="91"
-            aria-hidden="true"
-          >
-        </a>
-        <a class="header-cta" href="#assessment" aria-label="Get Your Free Assessment">
-          <span class="header-cta__full">Get Your Free Assessment</span>
-          <span class="header-cta__short">Free Assessment</span>
-        </a>
-      </header>
+      <div data-pt-header-fragment></div>
 
       <div class="panel-stack" data-pt-panel-stack>
         <section
@@ -2016,7 +2004,7 @@ footer.site-footer p {
               <p>At Plumbing Track, we understand the unique pressures facing BC Housing Authorities and non-profit providers: aging Poly B and Kitec systems, tight budgets, tenant safety, and the constant challenge of minimizing disruption.</p>
               <p>Our patented Plumbing Track System delivers modern, code-compliant repiping with zero need for tenants to move out, making it the smartest choice for occupied affordable housing across British Columbia.</p>
             </div>
-            <a class="primary-cta hero-load" href="#assessment">Book a Free Building Assessment Today</a>
+            <a class="primary-cta hero-load" href="/assessment/?source_page=%2Fbchousing%2F&amp;source_cta=hero" data-assessment-cta="hero">Book an Assessment</a>
           </div>
         </section>
 
@@ -2120,35 +2108,35 @@ footer.site-footer p {
             <blockquote class="testimonial-quote is-active" data-pt-testimonial-quote>
               <p>“They truly went above and beyond with the final post-construction clean, leaving the building in excellent condition. I would highly recommend Paul and his team for any major re-plumbing work!”</p>
               <div class="testimonial-meta">
-                <cite>Elaine, Strata President</cite>
+                <cite><strong>Elaine</strong>, Strata President</cite>
                 <span class="testimonial-building">The Mosaic</span>
               </div>
             </blockquote>
             <blockquote class="testimonial-quote" data-pt-testimonial-quote>
               <p>“We could not have picked a better company to take care of this problem for us and we would highly recommend them.”</p>
               <div class="testimonial-meta">
-                <cite>Stellar Place Strata Council</cite>
+                <cite><strong>Stellar Place Strata Council</strong></cite>
                 <span class="testimonial-building">Stellar Place</span>
               </div>
             </blockquote>
             <blockquote class="testimonial-quote" data-pt-testimonial-quote>
               <p>“I have full confidence in Paul Jahn and Kitrax Restoration Group, and would highly recommend them as the first and best option for any Repiping Projects.”</p>
               <div class="testimonial-meta">
-                <cite>Caroline Lenarduzzi, Licensed Strata Manager<br>Associated Property Management</cite>
+                <cite><strong>Caroline Lenarduzzi</strong>, Licensed Strata Manager<br>Associated Property Management</cite>
                 <span class="testimonial-building">Wildwood II</span>
               </div>
             </blockquote>
             <blockquote class="testimonial-quote" data-pt-testimonial-quote>
               <p>“We were impressed with their commitment throughout the project and were very satisfied with the high quality of craftsmanship. The on-site staff was always respectful and willing to adapt to the needs of the project.”</p>
               <div class="testimonial-meta">
-                <cite>Keith Boyle, Wildwood III Strata Council</cite>
+                <cite><strong>Keith Boyle</strong>, Wildwood III Strata Council</cite>
                 <span class="testimonial-building">Wildwood III</span>
               </div>
             </blockquote>
             <blockquote class="testimonial-quote" data-pt-testimonial-quote>
               <p>“Paul’s organizational and leadership skills are highly commendable, and as the President of the Strata, I cannot say enough about that.”</p>
               <div class="testimonial-meta">
-                <cite>Colleen J Dyson<br>President KAS2473, Bench I</cite>
+                <cite><strong>Colleen J Dyson</strong><br>President KAS2473, Bench I</cite>
                 <span class="testimonial-building">The Bench</span>
               </div>
             </blockquote>
@@ -2168,33 +2156,17 @@ footer.site-footer p {
       <section class="contact-section" id="assessment">
         <div class="contact-copy reveal">
           <h2>Ready to Protect Your Properties Without Displacing Tenants?</h2>
-          <p>Contact us today for a no-obligation assessment tailored to affordable housing needs.</p>
-          <a href="https://www.plumbingtrack.com/about" target="_blank" rel="noreferrer">Learn More About the Plumbing Track System <span aria-hidden="true">→</span></a>
+          <p>Tell us about the property and project so we can understand the assessment need.</p>
+          <a href="https://www.plumbingtrack.com/about" target="_blank" rel="noreferrer">Learn More About the Plumbing Track System <span aria-hidden="true">›</span></a>
         </div>
 
-        <form class="assessment-form reveal" data-assessment-form>
-          <label>Building Size<input name="buildingSize" type="text" autocomplete="organization"></label>
-          <label>Number of Units<input name="units" inputmode="numeric" type="text"></label>
-          <label>Location<input name="location" type="text" autocomplete="address-level2"></label>
-          <label>Contact Info<input name="contactInfo" type="text" autocomplete="email"></label>
-          <button type="submit">Get Your Free Assessment</button>
-        </form>
+        <a class="primary-cta reveal" href="/assessment/?source_page=%2Fbchousing%2F&amp;source_cta=assessment-section" data-assessment-cta="assessment-section">Book an Assessment</a>
       </section>
 
-      <footer class="site-footer">
-        <a class="brand" href="#top" aria-label="Plumbing Track">
-          <img
-            class="brand-logo"
-            src="/logo.png"
-            alt="Plumbing Track, ReThink RePipe"
-            width="490"
-            height="91"
-          >
-        </a>
-        <p>Modern Plumbing. Zero Displacement.</p>
-      </footer>
+      <div data-pt-footer-fragment></div>
     </main>
 
+    <script src="/site-header.js" defer></script>
     <script src="/app.js" defer></script>
   </body>
 </html>

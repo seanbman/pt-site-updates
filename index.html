@@ -37,6 +37,7 @@
     >
 
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/testimonial-cards.css">
     <meta name="twitter:title" content="Plumbing Track: The Modern Standard for Multifamily Repiping">
     <meta
       name="twitter:description"
@@ -79,8 +80,8 @@
 :root {
   --font-geist-sans: "Geist", Arial, Helvetica, sans-serif;
   --font-geist-mono: "Geist Mono", "Courier New", monospace;
-  --cyan: #00b2ff;
-  --cyan-soft: #55ccff;
+  --cyan: #d2b985;
+  --cyan-soft: #e0c99a;
   --ink: #061015;
   --ink-deep: #030a0e;
   --panel: #0b171d;
@@ -119,7 +120,7 @@ a {
 }
 
 .site-header {
-  --header-swap-duration: 490ms;
+  --header-swap-duration: 0ms;
   align-items: center;
   background: transparent;
   border-bottom: 1px solid transparent;
@@ -217,7 +218,7 @@ a {
 .site-header.is-scrolled .header-nav-link:hover,
 .site-header.is-scrolled .header-nav-link:focus-visible,
 .site-header.is-scrolled .header-nav-link[aria-current="page"] {
-  color: #0077ad;
+  color: #00516f;
 }
 
 .header-cta {
@@ -253,7 +254,7 @@ a {
 
 .site-header.is-scrolled .header-cta {
   border-color: var(--cyan);
-  color: #0077ad;
+  color: #00516f;
 }
 
 .site-header.is-scrolled .header-cta:hover,
@@ -296,7 +297,7 @@ a {
 .site-header.is-scrolled .header-menu-toggle:hover,
 .site-header.is-scrolled .header-menu-toggle:focus-visible {
   border-color: var(--cyan);
-  color: #0077ad;
+  color: #00516f;
 }
 
 .header-menu-toggle__bars,
@@ -547,6 +548,14 @@ a {
   line-height: 0.98;
   margin: 0;
   max-width: 16ch;
+  text-wrap: balance;
+}
+
+.hero-title-line { display: block; }
+
+@media (min-width: 621px) {
+  .stack-panel--ink h1 { font-size: clamp(2.15rem, 3.2vw, 3.25rem); max-width: none; }
+  .hero-title-line { white-space: nowrap; }
 }
 
 .stack-panel--ink .hero-statement {
@@ -615,7 +624,7 @@ a {
 .primary-cta:hover,
 .primary-cta:focus-visible {
   background: var(--cyan-soft);
-  box-shadow: 0 10px 28px rgba(0, 178, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 81, 111, 0.22);
   transform: translateY(-1px);
 }
 
@@ -638,7 +647,7 @@ a {
 .building-glow {
   background: radial-gradient(
     ellipse 55% 45% at 62% 38%,
-    rgba(0, 178, 255, 0.22),
+    rgba(0, 81, 111, 0.22),
     transparent 70%
   );
   inset: 0;
@@ -688,12 +697,12 @@ a {
 
 .window.lit {
   background:
-    linear-gradient(160deg, rgba(255, 236, 196, 0.55), rgba(0, 178, 255, 0.12));
+    linear-gradient(160deg, rgba(255, 236, 196, 0.55), rgba(0, 81, 111, 0.12));
   box-shadow: inset 0 0 24px rgba(255, 220, 150, 0.15);
 }
 
 .window.soft {
-  background: rgba(0, 178, 255, 0.08);
+  background: rgba(0, 81, 111, 0.08);
 }
 
 .ceiling-band {
@@ -754,7 +763,7 @@ a {
 
 .track-cap {
   background: #f4f7f8;
-  border: 1px solid rgba(0, 178, 255, 0.45);
+  border: 1px solid rgba(0, 81, 111, 0.45);
   height: 14px;
   margin-left: -1px;
   width: 42px;
@@ -885,7 +894,7 @@ a {
 }
 
 .advantage-card:hover {
-  border-color: rgba(0, 178, 255, 0.2);
+  border-color: rgba(0, 81, 111, 0.2);
   box-shadow:
     0 18px 36px rgba(8, 19, 25, 0.1),
     0 3px 10px rgba(8, 19, 25, 0.05);
@@ -954,7 +963,7 @@ a {
 .visual-scene::before {
   background: radial-gradient(
     circle at 70% 30%,
-    rgba(0, 178, 255, 0.22),
+    rgba(0, 81, 111, 0.22),
     transparent 42%
   );
   content: "";
@@ -973,7 +982,7 @@ a {
 }
 
 .scene-stay .unit-window {
-  background: linear-gradient(145deg, rgba(255, 232, 180, 0.7), rgba(0, 178, 255, 0.2));
+  background: linear-gradient(145deg, rgba(255, 232, 180, 0.7), rgba(0, 81, 111, 0.2));
   height: 42%;
   left: 14%;
   position: absolute;
@@ -1089,7 +1098,7 @@ a {
 }
 
 .card-number {
-  color: #0088c7;
+  color: #00516f;
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.72rem;
   font-weight: 650;
@@ -1361,7 +1370,7 @@ a {
 
 .process-section {
   background:
-    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(0, 178, 255, 0.08), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(0, 81, 111, 0.08), transparent 55%),
     linear-gradient(180deg, #07131a 0%, var(--ink-deep) 42%, #050e13 100%);
   border-top: 1px solid var(--line);
   padding: clamp(5.5rem, 9vw, 9rem) clamp(1.5rem, 6vw, 7rem);
@@ -1508,7 +1517,7 @@ a {
 
 .process-nav button:hover,
 .process-nav button:focus-visible {
-  background: rgba(0, 178, 255, 0.12);
+  background: rgba(0, 81, 111, 0.12);
   border-color: var(--cyan);
   color: var(--cyan-soft);
   outline: none;
@@ -1545,7 +1554,7 @@ a {
 }
 
 .process-section:focus-visible {
-  outline: 1px solid rgba(0, 178, 255, 0.55);
+  outline: 1px solid rgba(0, 81, 111, 0.55);
   outline-offset: -1px;
 }
 
@@ -1721,9 +1730,9 @@ a {
 }
 
 .assessment-form input:focus {
-  background: rgba(0, 178, 255, 0.06);
+  background: rgba(0, 81, 111, 0.06);
   border-color: var(--cyan);
-  box-shadow: 0 0 0 3px rgba(0, 178, 255, 0.18);
+  box-shadow: 0 0 0 3px rgba(0, 81, 111, 0.18);
 }
 
 .assessment-form button {
@@ -1752,7 +1761,7 @@ a {
 .assessment-form button:hover,
 .assessment-form button:focus-visible {
   background: var(--cyan-soft);
-  box-shadow: 0 10px 28px rgba(0, 178, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 81, 111, 0.22);
   transform: translateY(-1px);
 }
 
@@ -1763,6 +1772,8 @@ footer.site-footer {
   display: flex;
   justify-content: space-between;
   padding: 2.6rem clamp(1.5rem, 6vw, 7rem);
+  position: relative;
+  z-index: 2;
 }
 
 footer.site-footer p {
@@ -1771,6 +1782,10 @@ footer.site-footer p {
   font-size: 0.66rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+footer.site-footer .brand-logo {
+  width: clamp(154px, 15.4vw, 210px);
 }
 
 .pt-js .hero-load {
@@ -2244,8 +2259,542 @@ footer.site-footer p {
   }
 
   footer.site-footer .brand-logo {
-    width: min(180px, 55vw);
+    width: min(126px, 38.5vw);
   }
+}
+
+/* Homepage architecture: preserve the existing visual system while making the
+   page a clear problem → system → proof → assessment journey. */
+.home-section {
+  align-items: center;
+  display: grid;
+  max-height: 70svh;
+  padding: clamp(2rem, 4vh, 3.5rem) clamp(1.2rem, 7vw, 8rem);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+}
+
+#how-it-works {
+  scroll-margin-top: calc(80px + clamp(1rem, 3vh, 2rem));
+}
+
+.secondary-cta {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 0.94rem;
+  font-weight: 650;
+  padding: 0.7rem 0 0.58rem;
+}
+
+.secondary-cta:hover,
+.secondary-cta:focus-visible { border-color: var(--cyan); color: var(--cyan-soft); }
+
+.home-section__inner {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.section-kicker {
+  color: var(--cyan-soft);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin: 0 0 1.2rem;
+  text-transform: uppercase;
+}
+
+.home-section h2 {
+  font-size: clamp(2rem, 3.35vw, 3.85rem);
+  letter-spacing: -0.06em;
+  line-height: 0.98;
+  margin: 0;
+  max-width: 15ch;
+  text-wrap: balance;
+}
+
+.home-section__intro {
+  color: #586a72;
+  font-size: clamp(1rem, 1.45vw, 1.22rem);
+  line-height: 1.5;
+  margin: 0.85rem 0 0;
+  max-width: 56ch;
+}
+
+.home-thesis {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.home-thesis h2 {
+  font-size: clamp(1.9rem, 2.95vw, 3.35rem);
+}
+
+.home-thesis .home-section__intro {
+  font-size: clamp(0.95rem, 1.15vw, 1.08rem);
+  line-height: 1.42;
+  margin-top: 0.65rem;
+}
+
+.home-thesis .plumbing-comparison {
+  margin-top: clamp(1rem, 2vh, 1.5rem);
+}
+
+.home-thesis .comparison-column {
+  padding: clamp(0.8rem, 1.4vw, 1.15rem);
+}
+
+.home-thesis .comparison-column__label {
+  margin-bottom: 0.55rem;
+}
+
+.home-thesis .comparison-route li {
+  min-height: 36px;
+}
+
+.home-thesis .section-kicker,
+.home-benefits .section-kicker,
+.home-work .section-kicker {
+  color: #00516f;
+}
+
+.plumbing-comparison {
+  border-top: 1px solid rgba(8, 19, 25, 0.16);
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.comparison-column {
+  background: #dce5e8;
+  min-height: 0;
+  padding: clamp(1rem, 1.8vw, 1.5rem);
+}
+
+.comparison-column--track {
+  background: #0b2029;
+  color: #fff;
+}
+
+.comparison-column__label {
+  color: #60727a;
+  display: block;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.comparison-column--track .comparison-column__label { color: var(--cyan-soft); }
+
+.comparison-route {
+  display: grid;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comparison-route li {
+  align-items: center;
+  border-top: 1px solid rgba(8, 19, 25, 0.16);
+  display: grid;
+  font-size: clamp(0.98rem, 1.4vw, 1.2rem);
+  font-weight: 560;
+  gap: 1rem;
+  grid-template-columns: 1.1rem 1fr;
+  min-height: 42px;
+}
+
+.comparison-route li::before {
+  color: #6f8289;
+  content: "⌄";
+  font-size: 1.2rem;
+}
+
+.comparison-route li:first-child::before { content: "•"; }
+.comparison-column--track .comparison-route li { border-color: rgba(255, 255, 255, 0.16); }
+.comparison-column--track .comparison-route li::before { color: var(--cyan); }
+
+.comparison-close {
+  color: #60727a;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  margin: 1.75rem 0 0;
+  max-width: 25ch;
+}
+
+.comparison-column--track .comparison-close { color: #c2d2d7; }
+
+.home-benefits {
+  background: var(--ink-deep);
+}
+
+.home-benefits .home-section__intro { color: #a8b5ba; }
+
+.benefit-grid {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: clamp(3rem, 7vw, 6rem);
+}
+
+.benefit-item {
+  border-right: 1px solid var(--line);
+  min-height: 250px;
+  padding: 1.5rem clamp(1rem, 2vw, 2rem) 1rem 0;
+}
+
+.benefit-item + .benefit-item { padding-left: clamp(1rem, 2vw, 2rem); }
+.benefit-item:last-child { border-right: 0; }
+
+.benefit-index {
+  color: var(--cyan);
+  display: block;
+  font-family: var(--font-geist-mono);
+  font-size: 0.72rem;
+  margin-bottom: clamp(2.3rem, 6vw, 5rem);
+}
+
+.benefit-item h3 {
+  font-size: clamp(1.15rem, 1.7vw, 1.55rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.benefit-item p {
+  color: var(--steel);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin: 1rem 0 0;
+}
+
+.text-link {
+  border-bottom: 1px solid currentColor;
+  color: var(--cyan-soft);
+  display: inline-block;
+  font-size: 0.94rem;
+  font-weight: 650;
+  margin-top: 2.4rem;
+  padding-bottom: 0.28rem;
+}
+
+.text-link:hover,
+.text-link:focus-visible { color: #fff; }
+
+.home-process {
+  background: #10242d;
+}
+
+.home-process .home-section__intro { color: #c2d2d7; }
+
+.phase-grid {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: clamp(3rem, 7vw, 6rem);
+}
+
+.phase {
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+  min-height: 210px;
+  padding: 1.4rem clamp(0.75rem, 1.8vw, 1.6rem);
+}
+
+.phase:first-child { padding-left: 0; }
+.phase:last-child { border-right: 0; }
+.phase span { color: var(--cyan); font-family: var(--font-geist-mono); font-size: 0.74rem; }
+.phase h3 { font-size: clamp(1.05rem, 1.45vw, 1.35rem); letter-spacing: -0.035em; line-height: 1.05; margin: 1.1rem 0 0; }
+.phase p { color: #a8b5ba; font-size: 0.88rem; line-height: 1.5; margin: 0.85rem 0 0; }
+
+.home-work {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.project-grid {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.home-project {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  box-shadow: 0 14px 32px rgba(8, 19, 25, 0.14), 0 3px 9px rgba(8, 19, 25, 0.08);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+.home-project__image { aspect-ratio: 1.7 / 1; background: #b5c3c8; overflow: hidden; }
+.home-project__image img { display: block; height: 100%; object-fit: cover; transition: transform 360ms ease; width: 100%; }
+.home-project:hover .home-project__image img { transform: scale(1.04); }
+.home-project:hover { box-shadow: 0 18px 38px rgba(8, 19, 25, 0.19), 0 4px 11px rgba(8, 19, 25, 0.11); transform: translateY(-2px); }
+.home-project__body { display: flex; flex: 1; flex-direction: column; padding: 1rem; }
+.home-project__body h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); letter-spacing: -0.05em; line-height: 1; margin: 0; }
+.project-facts { color: #5a6b72; font-family: var(--font-geist-mono); font-size: 0.78rem; line-height: 1.5; margin: 0.9rem 0 0; }
+.project-tag { color: #00516f; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.1em; margin-top: auto; padding-top: 2.2rem; text-transform: uppercase; }
+
+.home-proof { background: var(--ink); }
+.home-proof .home-section__intro { color: #a8b5ba; }
+
+.proof-grid {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(3rem, 7vw, 6rem);
+}
+
+.proof-card { background: var(--panel); display: flex; flex-direction: column; min-height: 290px; padding: clamp(1.35rem, 2.5vw, 2.25rem); }
+.proof-card blockquote { font-size: clamp(1.05rem, 1.5vw, 1.28rem); letter-spacing: -0.025em; line-height: 1.35; margin: 0; }
+.proof-card cite { color: var(--cyan-soft); font-size: 0.83rem; font-style: normal; line-height: 1.45; margin-top: auto; padding-top: 2rem; }
+
+.home-service {
+  background: #dce5e8;
+  color: var(--ink);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+}
+
+.home-service h2 { font-size: clamp(1.8rem, 3.4vw, 3.4rem); max-width: 13ch; }
+.service-locations { align-self: end; border-top: 1px solid rgba(8, 19, 25, 0.18); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.service-locations div { border-right: 1px solid rgba(8, 19, 25, 0.18); padding: 1rem 1.25rem; }
+.service-locations div:last-child { border-right: 0; }
+.service-locations strong { display: block; font-size: 1rem; letter-spacing: -0.025em; }
+.service-locations span { color: #63747b; display: block; font-size: 0.85rem; margin-top: 0.45rem; }
+
+.home-assessment { background: var(--cyan); color: #001118; }
+.assessment-layout { align-items: end; display: grid; gap: clamp(2rem, 6vw, 6rem); grid-template-columns: minmax(0, 0.85fr) minmax(360px, 1.15fr); }
+.home-assessment .section-kicker { color: #00516f; }
+.home-assessment h2 { max-width: 11ch; }
+.home-assessment .home-section__intro { color: #083748; }
+.assessment-contact { border-top: 1px solid rgba(0, 17, 24, 0.3); display: grid; gap: 1.35rem; padding-top: 1.15rem; }
+.office-locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.office-location { min-width: 0; padding: 0 1.35rem; }
+.office-location:first-child { border-right: 1px solid rgba(0, 17, 24, 0.24); padding-left: 0; }
+.office-location__label { color: #00516f; font-size: 0.68rem; font-weight: 760; letter-spacing: 0.12em; margin: 0; text-transform: uppercase; }
+.office-location address { color: #08232d; font-size: 0.94rem; font-style: normal; line-height: 1.45; margin-top: 0.7rem; }
+.office-location a { color: #001118; display: inline-block; font-family: var(--font-geist-mono); font-size: 0.95rem; font-weight: 700; margin-top: 0.8rem; text-decoration: underline; text-decoration-color: rgba(0, 17, 24, 0.45); text-underline-offset: 0.3rem; }
+.office-location a:hover, .office-location a:focus-visible { color: #00516f; outline: none; text-decoration-color: currentColor; }
+.assessment-contact .primary-cta { justify-self: start; }
+.home-assessment .assessment-form { background: rgba(255, 255, 255, 0.18); border: 1px solid rgba(0, 17, 24, 0.28); color: #001118; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; padding: clamp(1.2rem, 3vw, 2rem); }
+.home-assessment .assessment-form label { color: #063548; }
+.home-assessment .assessment-form input { background: rgba(255, 255, 255, 0.68); border-color: rgba(0, 17, 24, 0.32); color: #001118; }
+.home-assessment .assessment-form input:focus { border-color: #001118; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.55); }
+.home-assessment .assessment-form button { background: #001118; border-color: #001118; color: #fff; grid-column: 1 / -1; }
+.home-assessment .assessment-form button:hover, .home-assessment .assessment-form button:focus-visible { background: #fff; color: #001118; }
+
+/* Compact on-home previews. The complete technology, process, and proof
+   treatments live in templates/ until their focused routes are implemented. */
+.home-routing { background: #10242d; }
+.route-grid { display: grid; gap: 1px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(1.5rem, 3vh, 2.5rem); }
+.route-card { --route-card-pad: clamp(1rem, 1.8vw, 1.4rem); background: var(--panel); display: flex; flex-direction: column; min-height: 0; padding: var(--route-card-pad); }
+.route-card h3 { font-size: clamp(1.35rem, 2vw, 1.8rem); letter-spacing: -0.05em; line-height: 1; margin: 0; }
+.route-card p { color: var(--steel); font-size: 0.93rem; line-height: 1.55; margin: 0.85rem 0 0; }
+.route-card__action { align-items: flex-end; display: flex; justify-content: flex-end; margin-bottom: calc(var(--route-card-pad) * -1); margin-right: calc(var(--route-card-pad) * -1); margin-top: auto; padding-top: 1.25rem; }
+.route-card .text-link { align-items: center; background: var(--cyan); border: 0; border-radius: 0; color: #10242d !important; display: flex; font-size: clamp(.76rem, 1vw, .88rem); justify-content: space-between; margin: 0; min-height: 3rem; min-width: calc(60% + (var(--route-card-pad) * 1.2)); max-width: calc(70% + (var(--route-card-pad) * 1.4)); padding: .8rem 1rem; width: calc(65% + (var(--route-card-pad) * 1.3)); }
+.route-card .text-link > span[aria-hidden="true"] { color: #10242d !important; }
+.route-card .text-link:hover,
+.route-card .text-link:focus-visible { background: var(--cyan-soft); color: #10242d !important; }
+.home-work h2 { font-size: clamp(1.9rem, 2.9vw, 3.2rem); }
+.home-work .section-kicker,
+.home-work .project-kicker,
+.home-work .project-card-link,
+.home-work .text-link { color: #00516f; }
+.home-work .text-link:hover,
+.home-work .text-link:focus-visible,
+.home-work .project-card-link:hover { color: #003d55; }
+.home-work .home-section__inner > .text-link { align-items:center; background:#10242d; border:0; color:#fff; display:inline-flex; gap:.5rem; margin-top:1.5rem; padding:.8rem 1.1rem; }
+.home-work .home-section__inner > .text-link > span[aria-hidden="true"] { color:#fff; }
+.home-work .home-section__inner > .text-link:hover,
+.home-work .home-section__inner > .text-link:focus-visible { background:#193845; color:#fff; }
+.home-work .project-grid { margin-top: clamp(1rem, 2vh, 1.5rem); }
+.home-work .home-project__image { aspect-ratio: 1.9 / 1; }
+.home-work .home-project__body { padding: 0.85rem 1rem; }
+.home-work .project-kicker { margin-bottom: 0.55rem; }
+.home-work .project-details { margin-top: 0.65rem; }
+.home-work .project-card-link { padding-top: 0.7rem; }
+.home-project:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
+.home-project__image { aspect-ratio: 1.45 / 1; }
+.project-kicker { color: #00516f; font-size: 0.7rem; font-weight: 720; letter-spacing: 0.12em; margin: 0 0 0.8rem; text-transform: uppercase; }
+.project-details { border-top: 1px solid rgba(8, 19, 25, 0.12); display: grid; gap: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0.8rem 0 0; padding: 0; }
+.project-details div { padding: 0.55rem 0.55rem 0 0; }
+.project-details div + div { border-left: 1px solid rgba(8, 19, 25, 0.12); padding-left: 0.75rem; }
+.project-details dt { color: #63747b; font-size: 0.68rem; font-weight: 650; letter-spacing: 0.09em; text-transform: uppercase; }
+.project-details dd { color: var(--ink); font-family: var(--font-geist-mono); font-size: 0.82rem; margin: 0.35rem 0 0; }
+.project-card-link { color: #00516f; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; margin-top: auto; padding-top: 0.9rem; text-transform: uppercase; }
+.home-project:hover .project-card-link { color: #005d87; }
+.proof-strip { border-top: 1px solid rgba(8, 19, 25, 0.16); display: grid; gap: 1px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(2.5rem, 5vw, 4rem); }
+.proof-strip blockquote { background: var(--panel); border-left: 3px solid var(--cyan); color: #fff; font-size: 0.98rem; letter-spacing: -0.02em; line-height: 1.45; margin: 0; min-height: 0; padding: 1.35rem; }
+.proof-strip cite { color: var(--cyan-soft); display: block; font-size: 0.78rem; font-style: normal; line-height: 1.45; margin-top: 1.1rem; }
+
+.testimonials-section { align-items:center; background: var(--panel); display:grid; min-height:0; padding:clamp(2rem, 4vh, 3.5rem) clamp(1.2rem, 7vw, 8rem) clamp(3rem, 6vh, 5rem); position:relative; z-index:2; }
+.testimonials-inner { margin:0 auto; max-width:1240px; }
+.testimonials-heading { align-items:end; display:flex; gap:2rem; justify-content:space-between; }
+.testimonials-heading h2 { font-size:clamp(2rem,3.35vw,3.85rem); letter-spacing:-.06em; line-height:.96; margin:0; max-width:12ch; text-wrap:balance; }
+.testimonials-heading p { color:var(--steel); font-size:1rem; line-height:1.55; margin:0; max-width:34ch; }
+
+/* Every homepage panel is intentionally a compact viewport slice. */
+#top.stack-panel {
+  height: 70svh;
+  max-height: 70svh;
+  min-height: 0;
+}
+
+#top.stack-panel .stack-panel__content {
+  box-sizing: border-box;
+  height: 70svh;
+  max-height: 70svh;
+  min-height: 0;
+  padding: calc(74px + clamp(1rem, 2vh, 1.5rem)) clamp(1.5rem, 4vw, 4rem) clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.site-menu { position:relative; }
+.nav-section { position:relative; }
+.nav-section summary { color:rgba(255,255,255,.88); cursor:pointer; font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif; font-size:.88rem; font-weight:520; letter-spacing:-.01em; line-height:1.25; list-style:none; white-space:nowrap; }
+.nav-section summary::-webkit-details-marker { display:none; }
+.nav-section summary::after { color:var(--cyan-soft); content:"⌄"; display:inline-block; line-height:1; margin-left:.4rem; position:relative; top:-.22em; vertical-align:baseline; }
+.nav-section[open] summary::after { content:"⌃"; }
+.nav-flyout { background:#fff; box-shadow:0 16px 36px rgba(0,0,0,.2); color:var(--ink); display:grid; gap:.3rem; left:-1rem; min-width:218px; padding:1rem; position:absolute; top:calc(100% + 1rem); }
+.nav-flyout span { color:#53666e; font-size:.84rem; line-height:1.35; padding:.32rem 0; }
+.nav-flyout a { color:#00516f; font-size:.84rem; font-weight:700; line-height:1.35; padding:.32rem 0; }
+.nav-flyout span:first-child { color:#00516f; font-size:.68rem; font-weight:750; letter-spacing:.11em; padding-bottom:.55rem; text-transform:uppercase; }
+.site-header.is-scrolled .nav-section summary { color:#314149; }
+.site-header.is-scrolled .nav-section summary::after { color:#00516f; }
+.home-assessment .primary-cta { background:#001118; border-color:#001118; color:#fff; }
+.home-assessment .primary-cta:hover, .home-assessment .primary-cta:focus-visible { background:#fff; color:#001118; }
+.social-links { display:flex; flex-wrap:wrap; gap:.55rem; justify-content:center; }
+.social-links a { align-items:center; border:1px solid rgba(8,19,25,.25); color:#35515b; display:inline-flex; height:2.35rem; justify-content:center; transition:border-color 160ms ease, color 160ms ease, transform 160ms ease; width:2.35rem; }
+.social-links svg { fill:currentColor; height:1rem; width:1rem; }
+.social-links span { font-family:Arial,Helvetica,sans-serif; font-size:.9rem; font-weight:700; line-height:1; }
+.social-links .social-icon--instagram { border:1.5px solid currentColor; border-radius:.28rem; height:.9rem; position:relative; width:.9rem; }
+.social-links .social-icon--instagram::before { border:1.5px solid currentColor; border-radius:50%; content:""; height:.36rem; left:50%; position:absolute; top:50%; transform:translate(-50%,-50%); width:.36rem; }
+.social-links .social-icon--instagram::after { background:currentColor; border-radius:50%; content:""; height:.13rem; position:absolute; right:.1rem; top:.1rem; width:.13rem; }
+.social-links a:hover, .social-links a:focus-visible { border-color:#00516f; color:#00516f; transform:translateY(-2px); }
+
+:is(a, button, .project-card-link):not(.header-menu-toggle) > span[aria-hidden="true"] {
+  display: inline-block;
+  margin-left: .35em;
+  line-height: 1;
+  vertical-align: baseline;
+  position: relative;
+  top: -.08em;
+}
+
+:where(h1, h2, h3) { text-wrap: pretty; }
+
+@media (max-width: 980px) {
+  .route-grid { grid-template-columns: 1fr; }
+  .route-card { min-height: 0; }
+  .proof-strip { grid-template-columns: 1fr; }
+  .testimonials-heading { align-items:start; flex-direction:column; }
+  .nav-section { width:100%; }
+  .nav-section summary { color:#f4fbfd; font-size:1rem; padding:.45rem 0; }
+  .site-header.is-scrolled .nav-section summary { color:#314149; }
+  .nav-flyout { background:transparent; box-shadow:none; gap:.1rem; padding:.2rem 0 .55rem 1rem; position:static; }
+  .nav-flyout span { color:#b9cbd1; font-size:.82rem; padding:.2rem 0; }
+  .nav-flyout a { color:var(--cyan-soft); font-size:.82rem; padding:.2rem 0; }
+  .nav-flyout span:first-child { color:var(--cyan-soft); padding-bottom:.25rem; }
+}
+
+@media (max-width: 1180px) {
+  .site-header { padding-inline: 1.2rem; }
+  .header-actions, .header-nav { gap: 1rem; }
+  .header-nav-link, .nav-section summary { font-size: 0.78rem; }
+  .header-cta { font-size: 0.75rem; padding: 0.64rem 0.78rem; }
+}
+
+/* The full row needs considerably more room now that its labels are explicit.
+   Collapse it before it can compete with the brand mark. */
+@media (min-width: 981px) and (max-width: 1240px) {
+  .site-header { gap:.85rem; height:68px; padding:0 1.1rem; }
+  .brand { min-width:0; }
+  .brand-logo { width:min(168px,42vw); }
+  .header-actions { flex-shrink:0; gap:.85rem; }
+  .header-menu-toggle { display:inline-flex; }
+  .header-nav { background:var(--ink); border-bottom:1px solid rgba(255,255,255,.12); box-shadow:0 16px 32px rgba(0,0,0,.28); display:none; flex-direction:column; gap:0; left:0; padding:.85rem 1.1rem 1.1rem; position:absolute; right:0; top:100%; }
+  .site-header.is-nav-open .header-nav { display:flex; }
+  .site-header.is-scrolled .header-nav { background:#fff; border-bottom-color:rgba(8,19,25,.1); box-shadow:0 16px 32px rgba(8,19,25,.1); }
+  .header-nav .header-nav-link, .nav-section summary { border-bottom:1px solid rgba(255,255,255,.1); font-size:1rem; padding:.85rem 0; width:100%; }
+  .site-header.is-scrolled .header-nav .header-nav-link, .site-header.is-scrolled .nav-section summary { border-bottom-color:rgba(8,19,25,.08); }
+  .nav-section { width:100%; }
+  .nav-section summary { color:#f4fbfd; }
+  .site-header.is-scrolled .nav-section summary { color:#314149; }
+  .nav-flyout { background:transparent; box-shadow:none; gap:.1rem; padding:.2rem 0 .55rem 1rem; position:static; }
+  .nav-flyout span { color:#b9cbd1; font-size:.82rem; padding:.2rem 0; }
+  .nav-flyout a { color:var(--cyan-soft); font-size:.82rem; padding:.2rem 0; }
+  .nav-flyout span:first-child { color:var(--cyan-soft); padding-bottom:.25rem; }
+  .site-header.is-scrolled .nav-flyout span { color:#53666e; }
+  .site-header.is-scrolled .nav-flyout a, .site-header.is-scrolled .nav-flyout span:first-child { color:#00516f; }
+  .header-nav-cta { display:inline-flex; justify-content:center; margin-top:.85rem; text-align:center; width:100%; }
+  .header-actions > .header-cta { padding:.62rem .78rem; }
+}
+
+@media (max-width: 980px) {
+  .home-section { padding-block: 2rem; }
+  .plumbing-comparison, .project-grid, .proof-grid, .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .benefit-item:nth-child(2) { border-right: 0; }
+  .benefit-item:nth-child(n + 3) { border-top: 1px solid var(--line); padding-top: 2rem; }
+  .phase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .phase { border-bottom: 1px solid rgba(255, 255, 255, 0.22); padding-left: 1.2rem; }
+  .phase:nth-child(2n) { border-right: 0; }
+  .phase:nth-child(5) { border-bottom: 0; }
+  .phase:first-child { padding-left: 0; }
+  .assessment-layout, .home-service { grid-template-columns: 1fr; }
+}
+
+/* Tablet cards need a little more vertical room before the single-column
+   mobile layout takes over. */
+@media (min-width: 621px) and (max-width: 980px) {
+  .home-section,
+  .testimonials-section {
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    overflow: visible;
+    padding-bottom: clamp(2.75rem, 7vh, 4rem);
+  }
+  #top.stack-panel,
+  #top.stack-panel .stack-panel__content { height: 80svh; max-height: 80svh; }
+}
+
+@media (max-width: 620px) {
+  .home-section,
+  .testimonials-section {
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    overflow: visible;
+    padding-bottom: 2.75rem;
+  }
+  .hero-actions { align-items: flex-start; flex-direction: column; gap: 0.8rem; }
+  .home-section h2 { max-width: 13ch; }
+  .plumbing-comparison, .project-grid, .proof-grid, .benefit-grid, .phase-grid, .home-assessment .assessment-form { grid-template-columns: 1fr; }
+  .office-locations { gap: 1.2rem; grid-template-columns: 1fr; }
+  .office-location { padding: 0; }
+  .office-location:first-child { border-bottom: 1px solid rgba(0, 17, 24, 0.24); border-right: 0; padding-bottom: 1.2rem; }
+  .comparison-column { min-height: 0; }
+  .benefit-item, .benefit-item + .benefit-item { border-bottom: 1px solid var(--line); border-right: 0; min-height: 0; padding: 1.55rem 0; }
+  .benefit-item:last-child { border-bottom: 0; }
+  .benefit-index { margin-bottom: 1.75rem; }
+  .phase, .phase:first-child { border-bottom: 1px solid rgba(255, 255, 255, 0.22); border-right: 0; min-height: 0; padding: 1.4rem 0; }
+  .phase:last-child { border-bottom: 0; }
+  .proof-card { min-height: 0; }
+  .service-locations { grid-template-columns: 1fr; }
+  .service-locations div { border-bottom: 1px solid rgba(8, 19, 25, 0.18); border-right: 0; padding-inline: 0; }
+  .service-locations div:last-child { border-bottom: 0; }
 }
 
 @media (max-width: 620px) {
@@ -2360,7 +2909,7 @@ footer.site-footer p {
 /* Main-site additions: founder + offices */
 .founder-banner {
   background:
-    radial-gradient(ellipse 70% 80% at 18% 40%, rgba(0, 178, 255, 0.1), transparent 55%),
+    radial-gradient(ellipse 70% 80% at 18% 40%, rgba(0, 81, 111, 0.1), transparent 55%),
     linear-gradient(160deg, #07141a 0%, var(--ink-deep) 48%, #02080c 100%);
   padding: clamp(3.5rem, 7vw, 6.5rem) clamp(1.5rem, 6vw, 7rem);
 }
@@ -2516,409 +3065,101 @@ footer.site-footer p {
   </head>
   <body>
     <main class="pt-page" data-pt-page>
-      <header class="site-header" data-pt-header>
-        <a class="brand" href="#top" aria-label="Plumbing Track">
-          <img
-            class="brand-logo brand-logo--light"
-            src="/logo-white.png"
-            alt="Plumbing Track, ReThink RePipe"
-            width="490"
-            height="91"
-          >
-          <img
-            class="brand-logo brand-logo--dark"
-            src="/logo.png"
-            alt=""
-            width="490"
-            height="91"
-            aria-hidden="true"
-          >
-        </a>
-        <div class="header-actions">
-          <nav class="header-nav" id="site-nav">
-            <a class="header-nav-link" href="/our-work/">Our Work</a>
-            <a class="header-nav-link" href="/client-portal/">
-              <span class="header-nav-link__full">Client Portal</span>
-              <span class="header-nav-link__short">Portal</span>
+      <div data-pt-header-fragment></div>
+
+      <section class="stack-panel stack-panel--ink" style="--stack-index: 0" id="top" data-pt-hero data-pt-stack-panel>
+        <div class="hero-video" aria-hidden="true">
+          <video autoplay muted loop playsinline preload="metadata"><source src="/img/home_page_shot.mp4" type="video/mp4"></video>
+        </div>
+        <div class="stack-panel__content" data-pt-stack-content>
+          <p class="hero-subtitle hero-load">Poly-B &amp; Kitec Repiping for Multifamily Buildings</p>
+          <h1 class="hero-load"><span class="hero-title-line">Repipe the building.</span><span class="hero-title-line">Leave the ceilings alone.</span></h1>
+          <p class="hero-statement hero-load">Accessible plumbing for occupied multifamily buildings.</p>
+          <div class="hero-introduction hero-load"><p>Plumbing Track makes a complete repipe possible with less demolition, residents at home, and future access designed into the finished building.</p></div>
+          <div class="hero-actions hero-load">
+            <a class="primary-cta" href="/how-it-works/">See How It Works<span aria-hidden="true">&nbsp;›</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section" aria-labelledby="testimonials-heading">
+        <div class="testimonials-inner">
+          <div class="testimonials-heading"><div><p class="section-kicker">Project references</p><h2 id="testimonials-heading">What clients say after the&nbsp;work is done.</h2></div></div>
+          <div data-pt-testimonial-cards-fragment></div>
+        </div>
+      </section>
+
+      <section class="home-section home-thesis" id="technology">
+        <div class="home-section__inner">
+          <p class="section-kicker reveal">Accessible plumbing</p>
+          <h2 class="reveal">Plumbing shouldn’t disappear just because the project&nbsp;is finished.</h2>
+          <p class="home-section__intro reveal">Conventional repiping replaces the pipe, then buries the replacement system in the building again. Plumbing Track plans an accessible route so future service does not begin by opening the building back up.</p>
+          <div class="plumbing-comparison reveal" aria-label="Conventional plumbing compared with Plumbing Track">
+            <article class="comparison-column">
+              <span class="comparison-column__label">Conventional</span>
+              <ol class="comparison-route"><li>New pipe</li><li>Buried in structure</li><li>Cannot readily inspect</li><li>Future problem</li><li>Open building again</li></ol>
+              <p class="comparison-close">The pipe is replaced. Access is not.</p>
+            </article>
+            <article class="comparison-column comparison-column--track">
+              <span class="comparison-column__label">Plumbing Track</span>
+              <ol class="comparison-route"><li>New pipe</li><li>Planned accessible route</li><li>Service access</li><li>Future problem</li><li>Access the system</li></ol>
+              <p class="comparison-close">The finished result is designed for the next service call, too.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section home-routing" id="how-it-works">
+        <div class="home-section__inner">
+          <p class="section-kicker reveal">Explore Plumbing Track</p>
+          <h2 class="reveal">Start with the question your building needs&nbsp;answered.</h2>
+          <div class="route-grid" data-pt-stagger>
+            <article class="route-card reveal"><h3>How it works</h3><p>Assessment, resident preparation, installation, finished result, and future access.</p><div class="route-card__action"><a class="text-link" href="/how-it-works/">See how it works <span aria-hidden="true">›</span></a></div></article>
+            <article class="route-card reveal"><h3>Our technology</h3><p>See why accessible plumbing changes the life of the building after installation.</p><div class="route-card__action"><a class="text-link" href="#technology">See the core idea <span aria-hidden="true">›</span></a></div></article>
+            <article class="route-card reveal"><h3>Our work</h3><p>Review real multifamily projects and verified project facts.</p><div class="route-card__action"><a class="text-link" href="/our-work/">Explore projects <span aria-hidden="true">›</span></a></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section home-work" id="our-work">
+        <div class="home-section__inner">
+          <p class="section-kicker reveal">Completed buildings</p>
+          <h2 class="reveal">Real work. The facts that matter.</h2>
+          <div class="project-grid" data-pt-stagger>
+            <a class="home-project reveal" href="/our-work/">
+              <div class="home-project__image"><img src="/img/our-work/mission-meadows.webp" alt="Mission Meadows residential complex" width="611" height="340" loading="lazy"></div>
+              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>Mission Meadows</h3><dl class="project-details"><div><dt>Building</dt><dd>148 units</dd></div><div><dt>Pipe</dt><dd>Poly-B</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">›</span></span></div>
             </a>
-            <a class="header-cta header-nav-cta" href="#assessment" aria-label="Book an Assessment">
-              <span class="header-cta__full">Book an Assessment</span>
-              <span class="header-cta__short">Book Assessment</span>
+            <a class="home-project reveal" href="/our-work/">
+              <div class="home-project__image"><img src="/img/the-bench.webp" alt="The Bench residential building" width="1011" height="618" loading="lazy"></div>
+              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>The Bench</h3><dl class="project-details"><div><dt>Building</dt><dd>61 units</dd></div><div><dt>Pipe</dt><dd>Kitec</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">›</span></span></div>
             </a>
-          </nav>
-          <a class="header-cta" href="#assessment" aria-label="Book an Assessment">
-            <span class="header-cta__full">Book an Assessment</span>
-            <span class="header-cta__short">Book Assessment</span>
-          </a>
-          <button
-            type="button"
-            class="header-menu-toggle"
-            aria-controls="site-nav"
-            aria-expanded="false"
-            aria-label="Menu"
-          >
-            <span class="header-menu-toggle__bars" aria-hidden="true"></span>
-          </button>
+            <a class="home-project reveal" href="/our-work/">
+              <div class="home-project__image"><img src="/img/our-work/peregrine-point.webp" alt="Peregrine Point multifamily building" width="1024" height="666" loading="lazy"></div>
+              <div class="home-project__body"><p class="project-kicker">Featured project</p><h3>Peregrine Point</h3><dl class="project-details"><div><dt>Building</dt><dd>56 units</dd></div><div><dt>Pipe</dt><dd>Aged copper</dd></div></dl><span class="project-card-link">View our work <span aria-hidden="true">›</span></span></div>
+            </a>
+          </div>
+          <a class="text-link reveal" href="/our-work/">Explore our work <span aria-hidden="true">›</span></a>
         </div>
-      </header>
+      </section>
 
-      <div class="panel-stack" data-pt-panel-stack>
-        <section
-          class="stack-panel stack-panel--ink"
-          style="--stack-index: 0"
-          id="top"
-          data-pt-hero
-          data-pt-stack-panel
-        >
-          <div class="hero-video" aria-hidden="true">
-            <video autoplay muted loop playsinline preload="metadata">
-              <source src="/img/home_page_shot.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="stack-panel__content" data-pt-stack-content>
-            <p class="hero-subtitle hero-load">Complete Full Service Solution for Poly-B and Kitec</p>
-            <h1 class="hero-load">Plumbing Track</h1>
-            <p class="hero-statement hero-load">The Modern Standard for Multifamily Repiping</p>
-            <div class="hero-introduction hero-load">
-              <p>A cleaner, faster, less disruptive way to repipe occupied condominiums, designed from real project experience and built as a complete turnkey system.</p>
+      <section class="home-section home-assessment" id="assessment">
+        <div class="home-section__inner assessment-layout">
+          <div><p class="section-kicker reveal">Calgary · Kelowna · Surrounding service areas</p><h2 class="reveal">Find out what your building&nbsp;needs.</h2><p class="home-section__intro reveal">Tell us a little about the property and we will help you understand the right next step.</p></div>
+          <div class="assessment-contact reveal">
+            <div class="office-locations" aria-label="Plumbing Track office contact details">
+              <article class="office-location"><p class="office-location__label">Kelowna office</p><address>1449 St. Paul Street #20<br>Kelowna, BC</address><a href="tel:+12508634168">250-863-4168</a></article>
+              <article class="office-location"><p class="office-location__label">Calgary office</p><address>11124 36 St NE #3000<br>Calgary, AB</address><a href="tel:+14037089028">403-708-9028</a></article>
             </div>
-            <a class="primary-cta hero-load" href="#assessment">Book an Assessment</a>
-          </div>
-        </section>
-
-        <section
-          class="stack-panel stack-panel--paper"
-          style="--stack-index: 1"
-          id="about"
-          data-pt-stack-panel
-        >
-          <div class="stack-panel__content">
-            <p class="section-label reveal">Who we are</p>
-            <h2 class="reveal">Built because conventional methods were not enough</h2>
-            <div class="advantage-grid" data-pt-stagger data-pt-stagger-fast>
-              <article class="advantage-card reveal">
-                <div class="advantage-card-copy">
-                  <h3>From frustration to a manufactured system</h3>
-                  <p>After completing two large multifamily condo repipe projects using conventional methods, it was clear the industry needed a faster, cleaner, less disruptive approach. The work got done, but the process felt outdated.</p>
-                  <p>That frustration sparked an idea. The concept was developed from real-world experience, brought to life with 3D modeling, then taken directly to manufacturing to create the first-generation extrusion dies.</p>
-                  <p>The result is Plumbing Track: a modern repiping system designed to reduce disruption, speed up installs, and deliver consistent, high-quality results in occupied buildings.</p>
-                </div>
-                <div class="advantage-card-visual">
-                  <img
-                    src="/img/about-building.png"
-                    alt="Multifamily building served by Plumbing Track"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                  >
-                </div>
-              </article>
-
-              <article class="advantage-card reveal">
-                <div class="advantage-card-copy">
-                  <h3>One system. One team. One complete solution.</h3>
-                  <p>From assessment and design to permits, engineering, plumbing, construction, and final finishes, we manage every step to keep repiping predictable, efficient, and clean, on schedule and on budget.</p>
-                </div>
-                <div class="advantage-card-visual">
-                  <img
-                    src="/img/track-system.png"
-                    alt="Plumbing Track surface-mounted system detail"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                  >
-                </div>
-              </article>
-
-              <article class="advantage-card reveal">
-                <div class="advantage-card-copy">
-                  <h3>Finished like it belongs in the building</h3>
-                  <p>The track installs along ceilings and corridors with an aesthetically refined profile: a long-term, future-ready solution for multifamily condominiums, not a temporary patch.</p>
-                </div>
-                <div class="advantage-card-visual">
-                  <img
-                    src="/img/track-installed.png"
-                    alt="Plumbing Track installed and painted in a finished corridor"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                  >
-                </div>
-              </article>
-            </div>
-
-          </div>
-        </section>
-      </div>
-
-      <section class="founder-banner" aria-label="Founder">
-        <div class="founder-banner__inner">
-          <figure class="founder-portrait reveal">
-            <img
-              src="/img/paul-jahn.png"
-              alt="Paul Jahn, Founder of Plumbing Track"
-              width="800"
-              height="1000"
-              loading="lazy"
-            >
-          </figure>
-          <div class="founder-copy reveal">
-            <p class="section-label">Founder</p>
-            <blockquote class="founder-quote">
-              <p>“Conventional methods are gone. We had to move on, so we built a better solution.”</p>
-              <cite>Paul Jahn, Founder</cite>
-            </blockquote>
+            <a class="primary-cta" href="/assessment/?source_page=%2F&amp;source_cta=footer-assessment" data-assessment-cta="footer-assessment">Book an Assessment <span aria-hidden="true">›</span></a>
           </div>
         </div>
       </section>
 
-      <section class="mission-band">
-        <p class="section-label reveal">Our mission</p>
-        <h2 class="reveal">Cleaner. More refined. Built for the long term.</h2>
-        <p class="reveal">To provide multifamily condominiums with a cleaner, aesthetically refined, and more efficient way to repipe their buildings, designed as a long-term, future-ready solution.</p>
-      </section>
-
-      <section class="benefits-section" data-pt-benefits>
-        <div class="benefits-heading reveal">
-          <h2>What you get with Plumbing Track</h2>
-        </div>
-        <ul class="feature-list" data-pt-stagger>
-          <li class="reveal"><span>01</span>Full turnkey delivery, assessment through final finishes</li>
-          <li class="reveal"><span>02</span>Less disruption in occupied multifamily buildings</li>
-          <li class="reveal"><span>03</span>Faster, cleaner installs with consistent quality</li>
-          <li class="reveal"><span>04</span>Future-ready piping that stays accessible for maintenance</li>
-          <li class="reveal"><span>05</span>Proven results across Western Canada strata projects</li>
-        </ul>
-      </section>
-
-      <section class="process-section" id="process" data-pt-process tabindex="0" aria-roledescription="carousel" aria-label="Plumbing Track process">
-        <div class="process-intro reveal">
-          <p class="section-label">The process</p>
-          <h2>From occupied unit to finished track</h2>
-          <p>A start-to-finish look at how Plumbing Track moves through a living multifamily home without opening the ceiling.</p>
-        </div>
-
-        <div class="process-deck reveal">
-          <div class="process-viewport" data-pt-process-viewport>
-            <figure class="process-slide is-active" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-01-occupied.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-01-occupied.jpg" alt="Plumbing Track installed above cabinets in an occupied kitchen" width="1600" height="787" loading="eager">
-              </picture>
-            </figure>
-            <figure class="process-slide" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-02-routing.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-02-routing.jpg" alt="Track routed around a structural column and kitchen walls" width="1600" height="984" loading="lazy">
-              </picture>
-            </figure>
-            <figure class="process-slide" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-03-ceiling.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-03-ceiling.jpg" alt="Finished track corner beneath an intact textured ceiling" width="1600" height="838" loading="lazy">
-              </picture>
-            </figure>
-            <figure class="process-slide" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-04-cabinets.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-04-cabinets.jpg" alt="Track running above existing kitchen cabinetry" width="1600" height="853" loading="lazy">
-              </picture>
-            </figure>
-            <figure class="process-slide" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-05-integrated.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-05-integrated.jpg" alt="Track integrated with cabinet crown molding" width="1600" height="948" loading="lazy">
-              </picture>
-            </figure>
-            <figure class="process-slide" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-06-bathroom.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-06-bathroom.jpg" alt="Track continuing through a bathroom below the ceiling vent" width="1600" height="997" loading="lazy">
-              </picture>
-            </figure>
-            <figure class="process-slide" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-07-access.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-07-access.jpg" alt="Flush wall access panel for future maintenance" width="1600" height="1107" loading="lazy">
-              </picture>
-            </figure>
-            <figure class="process-slide" data-pt-process-slide>
-              <picture>
-                <source srcset="/img/completed-work/web/step-08-finished.webp" type="image/webp">
-                <img src="/img/completed-work/web/step-08-finished.jpg" alt="Painted finished Plumbing Track detail at the wall and ceiling" width="1600" height="855" loading="lazy">
-              </picture>
-            </figure>
-          </div>
-
-          <div class="process-story">
-            <div data-pt-process-stage aria-live="polite">
-              <article class="process-step is-active" data-pt-process-step>
-                <span class="process-step__index">Step 01</span>
-                <h3>Start in occupied homes</h3>
-                <p>Work begins in furnished, lived-in units. The goal is a complete repipe without turning the home into a construction shell.</p>
-              </article>
-              <article class="process-step" data-pt-process-step>
-                <span class="process-step__index">Step 02</span>
-                <h3>Plan the route around the building</h3>
-                <p>Corners, columns, offsets, and fixed features shape the path. The system adapts to the architecture instead of cutting through it.</p>
-              </article>
-              <article class="process-step" data-pt-process-step>
-                <span class="process-step__index">Step 03</span>
-                <h3>Install beneath the intact ceiling</h3>
-                <p>The track mounts below the existing ceiling finish. Textured ceilings stay continuous: no open-up, no rematch.</p>
-              </article>
-              <article class="process-step" data-pt-process-step>
-                <span class="process-step__index">Step 04</span>
-                <h3>Work around what stays</h3>
-                <p>Cabinets, walls, and finishes remain in place. The route threads constrained spaces without a gut renovation.</p>
-              </article>
-              <article class="process-step" data-pt-process-step>
-                <span class="process-step__index">Step 05</span>
-                <h3>Integrate with the room</h3>
-                <p>Finished track lines up with crown and wall planes so the enclosure reads as intentional trim, not improvised cover.</p>
-              </article>
-              <article class="process-step" data-pt-process-step>
-                <span class="process-step__index">Step 06</span>
-                <h3>Continue through every room</h3>
-                <p>One planned route carries through kitchens, bathrooms, and corridors as a continuous system, not a patchwork of rooms.</p>
-              </article>
-              <article class="process-step" data-pt-process-step>
-                <span class="process-step__index">Step 07</span>
-                <h3>Leave access for the future</h3>
-                <p>Flush access panels keep service possible later without cutting finished walls open again.</p>
-              </article>
-              <article class="process-step" data-pt-process-step>
-                <span class="process-step__index">Step 08</span>
-                <h3>Hand over a painted finish</h3>
-                <p>Assessment through final finishes closes as a permanent, future-ready install that belongs in the building.</p>
-              </article>
-            </div>
-
-            <div class="process-controls">
-              <div class="process-nav">
-                <button type="button" data-pt-process-prev aria-label="Previous step">Prev</button>
-                <button type="button" data-pt-process-next aria-label="Next step">Next</button>
-              </div>
-              <div class="process-rail" role="tablist" aria-label="Process steps" data-pt-process-rail>
-                <button type="button" role="tab" aria-selected="true" class="is-active" data-pt-process-jump="0">01</button>
-                <button type="button" role="tab" aria-selected="false" data-pt-process-jump="1">02</button>
-                <button type="button" role="tab" aria-selected="false" data-pt-process-jump="2">03</button>
-                <button type="button" role="tab" aria-selected="false" data-pt-process-jump="3">04</button>
-                <button type="button" role="tab" aria-selected="false" data-pt-process-jump="4">05</button>
-                <button type="button" role="tab" aria-selected="false" data-pt-process-jump="5">06</button>
-                <button type="button" role="tab" aria-selected="false" data-pt-process-jump="6">07</button>
-                <button type="button" role="tab" aria-selected="false" data-pt-process-jump="7">08</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="trust-section" data-pt-proof data-pt-parallax-row data-pt-testimonials>
-        <div class="proof-media reveal" data-pt-parallax-media>
-          <div class="media-stack" data-pt-media-layer>
-            <div class="testimonial-media" data-pt-testimonial-media aria-hidden="true">
-              <img class="is-active" src="/img/mosaic.webp" alt="The Mosaic" width="1200" height="800" loading="eager">
-              <img src="/img/stellar-place.webp" alt="Stellar Place" width="630" height="405" loading="lazy">
-              <img src="/img/wildwood-ii.webp" alt="Wildwood II" width="1200" height="800" loading="lazy">
-              <img src="/img/wildwood-iii.webp" alt="Wildwood III" width="1013" height="543" loading="lazy">
-              <img src="/img/the-bench.webp" alt="The Bench" width="1011" height="618" loading="lazy">
-            </div>
-          </div>
-        </div>
-        <div class="trust-copy reveal" data-pt-parallax-copy>
-          <h2>What our clients say</h2>
-          <h3>Project references</h3>
-          <div class="testimonial-stage" data-pt-testimonial-stage aria-live="polite">
-            <blockquote class="testimonial-quote is-active" data-pt-testimonial-quote>
-              <p>“They truly went above and beyond with the final post-construction clean, leaving the building in excellent condition. I would highly recommend Paul and his team for any major re-plumbing work!”</p>
-              <div class="testimonial-meta">
-                <cite>Elaine, Strata President</cite>
-                <span class="testimonial-building">The Mosaic</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“We could not have picked a better company to take care of this problem for us and we would highly recommend them.”</p>
-              <div class="testimonial-meta">
-                <cite>Stellar Place Strata Council</cite>
-                <span class="testimonial-building">Stellar Place</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“I have full confidence in Paul Jahn and Kitrax Restoration Group, and would highly recommend them as the first and best option for any Repiping Projects.”</p>
-              <div class="testimonial-meta">
-                <cite>Caroline Lenarduzzi, Licensed Strata Manager<br>Associated Property Management</cite>
-                <span class="testimonial-building">Wildwood II</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“We were impressed with their commitment throughout the project and were very satisfied with the high quality of craftsmanship. The on-site staff was always respectful and willing to adapt to the needs of the project.”</p>
-              <div class="testimonial-meta">
-                <cite>Keith Boyle, Wildwood III Strata Council</cite>
-                <span class="testimonial-building">Wildwood III</span>
-              </div>
-            </blockquote>
-            <blockquote class="testimonial-quote" data-pt-testimonial-quote>
-              <p>“Paul’s organizational and leadership skills are highly commendable, and as the President of the Strata, I cannot say enough about that.”</p>
-              <div class="testimonial-meta">
-                <cite>Colleen J Dyson<br>President KAS2473, Bench I</cite>
-                <span class="testimonial-building">The Bench</span>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <section class="supporting-section">
-        <p class="supporting-quote reveal">Talk with our team about an efficient, turnkey plumbing solution for your building.</p>
-        <div class="taglines reveal" aria-label="Taglines">
-          <span>“One system. One team. One complete solution.”</span>
-          <span>“The Modern Standard for Multifamily Repiping”</span>
-          <span>“On schedule, on budget”</span>
-        </div>
-      </section>
-
-      <section class="contact-section" id="assessment">
-        <div class="contact-copy reveal">
-          <h2>A better way to repipe your building</h2>
-          <p>We handle everything from planning, permits, engineering, plumbing, and construction to final finishes, so projects run cleanly and efficiently with clear communication.</p>
-          <div class="office-grid">
-            <div class="office-card">
-              <h3>British Columbia</h3>
-              <a href="tel:+12508634168">250-863-4168</a>
-              <p>Kelowna Office<br>1449 St. Paul Street #20<br>Kelowna, BC</p>
-            </div>
-            <div class="office-card">
-              <h3>Alberta</h3>
-              <a href="tel:+14037089028">403-708-9028</a>
-              <p>Calgary Office<br>11124 36 St NE #3000<br>Calgary, AB</p>
-            </div>
-          </div>
-        </div>
-
-        <form class="assessment-form reveal" data-assessment-form>
-          <label>Building Size<input name="buildingSize" type="text" autocomplete="organization"></label>
-          <label>Number of Units<input name="units" inputmode="numeric" type="text"></label>
-          <label>Location<input name="location" type="text" autocomplete="address-level2"></label>
-          <label>Contact Info<input name="contactInfo" type="text" autocomplete="email"></label>
-          <button type="submit">Get Your Free Assessment</button>
-        </form>
-      </section>
-
-      <footer class="site-footer">
-        <a class="brand" href="#top" aria-label="Plumbing Track">
-          <img
-            class="brand-logo"
-            src="/logo.png"
-            alt="Plumbing Track, ReThink RePipe"
-            width="490"
-            height="91"
-          >
-        </a>
-        <p>The Modern Standard for Multifamily Repiping</p>
-      </footer>
+      <div data-pt-footer-fragment></div>
     </main>
 
+    <script src="/site-header.js" defer></script>
     <script src="/app.js" defer></script>
   </body>
 </html>

@@ -489,9 +489,10 @@ Keep the distinction between the high-level five-phase project story and the det
 How It Works
         │
         ▼
-5-phase project overview
+5-phase project overview + accessible plumbing context
         │
-        ├────► Book Assessment
+        ├────► Our Work / proof
+        ├────► Book Assessment (downstream)
         │
         ▼
 Detailed Installation Process
@@ -504,6 +505,8 @@ Detailed Installation Process
 ## `/how-it-works`
 
 Designed primarily for boards, owners, and property managers.
+
+The Wave 1 page must also explain enough of the **accessible plumbing** idea to make the project process intelligible before conversion: Plumbing Track plans an enclosed accessible route rather than simply replacing pipe and burying the replacement system again. The page should route onward to proof and only then treat Assessment as the conversion step.
 
 Five phases:
 

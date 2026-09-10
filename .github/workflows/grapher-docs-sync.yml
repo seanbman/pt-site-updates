@@ -1,0 +1,58 @@
+name: Grapher docs sync
+
+on:
+  push:
+    branches:
+      - dev/updates
+    paths:
+      - "AGENTS.md"
+      - "docs/**"
+      - "how-it-works/**"
+      - "index.html"
+      - "site-header.js"
+      - "templates/site-header.html"
+      - "scripts/apply-how-it-works-routing.py"
+      - "scripts/grapher-docs-sync.sh"
+      - ".github/workflows/grapher-docs-sync.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: dev/updates
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Apply How It Works routing decision
+        run: python scripts/apply-how-it-works-routing.py
+
+      - name: Install compatible Grapher
+        run: python -m pip install "git+https://github.com/seanbman/grapher.git@v0.4.1"
+
+      - name: Synchronize docs and routing state into Grapher
+        run: bash scripts/grapher-docs-sync.sh
+
+      - name: Commit routed site, agent policy, docs, and Grapher state if changed
+        shell: bash
+        run: |
+          if git diff --quiet -- AGENTS.md index.html docs .grapher; then
+            echo "Agent policy, site routing, docs, and Grapher state already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add AGENTS.md index.html docs .grapher
+          git commit -m "grapher: sync docs and agent policy [skip ci]"
+          git push origin HEAD:dev/updates

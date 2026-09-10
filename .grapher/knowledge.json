@@ -1,0 +1,1252 @@
+{
+  "version": 2,
+  "graph": {
+    "name": "pt-site-updates",
+    "domain": "agent-control-plane",
+    "kinds": [
+      "knowledge",
+      "implementation",
+      "decision"
+    ],
+    "stages": [
+      "ideation",
+      "designing",
+      "planning",
+      "developing",
+      "launching",
+      "maintaining"
+    ],
+    "profile": "software",
+    "created_at": "2026-09-08T05:43:50+00:00",
+    "updated_at": "2026-09-08T05:43:50+00:00"
+  },
+  "nodes": {
+    "session-2026-09-09-plumbing-track": {
+      "id": "session-2026-09-09-plumbing-track",
+      "type": "session",
+      "title": "Plumbing Track implementation ledger — 2026-09-09",
+      "content": "Comprehensive final record for the live pt-site-updates implementation session. Scope covered the docs-led homepage rebuild; dedicated Book an Assessment flow; shared header/footer and responsive menu across non-assessment pages; Our Work proof library; gold/navy palette corrections; section sizing; orphan-aware typography; testimonial contrast and author emphasis; card images, shadows, and animation; CTA button geometry, spacing, chevrons, and colors; scroll threshold behavior; Resources menu reduction to FAQ and Client Portal; tablet/mobile no-overflow corrections; and live browser verification. Grapher now includes implementation records, failure/hiccup records, and linked tests for assessment fit, pinned hero behavior, responsive navigation, and global card reveals.",
+      "path": ".",
+      "tags": [
+        "plumbing-track",
+        "session",
+        "implementation-ledger",
+        "final"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:29:30+00:00",
+      "updated_at": "2026-09-09T09:48:12+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T09:48:12+00:00"
+      }
+    },
+    "requirement-website-design-plan": {
+      "id": "requirement-website-design-plan",
+      "type": "requirement",
+      "title": "Implement the documented Plumbing Track web experience",
+      "content": "{\"requirement\":\"Follow docs/WEBSITE_DESIGN_PLAN.md for the Plumbing Track site redesign, with a focused homepage, shared chrome, Our Work page, and a dedicated assessment flow.\",\"acceptance_condition\":\"The live static site reflects the approved architecture, visual direction, CTA routing, responsive behavior, accessibility, and structured assessment capture.\"}",
+      "path": "docs/WEBSITE_DESIGN_PLAN.md",
+      "tags": [
+        "plumbing-track",
+        "website-design",
+        "requirement"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:36:41+00:00",
+      "updated_at": "2026-09-09T06:36:41+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:36:41+00:00"
+      },
+      "semantic": {
+        "requirement": "Follow docs/WEBSITE_DESIGN_PLAN.md for the Plumbing Track site redesign, with a focused homepage, shared chrome, Our Work page, and a dedicated assessment flow.",
+        "acceptance_condition": "The live static site reflects the approved architecture, visual direction, CTA routing, responsive behavior, accessibility, and structured assessment capture."
+      },
+      "scope": {}
+    },
+    "implementation-homepage": {
+      "id": "implementation-homepage",
+      "type": "implementation",
+      "title": "Rebuilt the homepage as a compact conversion journey",
+      "content": "{\"change\":\"Reorganized the homepage into a video-led hero, immediate testimonials, accessible plumbing explanation, routing cards, completed-building cards, location-informed assessment CTA, and shared footer.\",\"component\":\"index.html\"}",
+      "path": "index.html",
+      "tags": [
+        "plumbing-track",
+        "homepage",
+        "layout",
+        "cta"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:36:43+00:00",
+      "updated_at": "2026-09-09T06:36:43+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:36:43+00:00"
+      },
+      "semantic": {
+        "change": "Reorganized the homepage into a video-led hero, immediate testimonials, accessible plumbing explanation, routing cards, completed-building cards, location-informed assessment CTA, and shared footer.",
+        "component": "index.html"
+      },
+      "scope": {}
+    },
+    "implementation-assessment-flow": {
+      "id": "implementation-assessment-flow",
+      "type": "implementation",
+      "title": "Built the structured multi-step assessment flow",
+      "content": "{\"change\":\"Created a dedicated assessment page with building, project, contact, review, success, validation, duplicate-submission protection, attribution, and non-PII analytics hooks; tightened the desktop project step so all visible controls fit in one desktop panel.\",\"component\":\"assessment/index.html, assessment.js\"}",
+      "path": "assessment/index.html",
+      "tags": [
+        "plumbing-track",
+        "assessment",
+        "form",
+        "analytics"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:36:45+00:00",
+      "updated_at": "2026-09-09T06:36:45+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:36:45+00:00"
+      },
+      "semantic": {
+        "change": "Created a dedicated assessment page with building, project, contact, review, success, validation, duplicate-submission protection, attribution, and non-PII analytics hooks; tightened the desktop project step so all visible controls fit in one desktop panel.",
+        "component": "assessment/index.html, assessment.js"
+      },
+      "scope": {}
+    },
+    "implementation-shared-chrome": {
+      "id": "implementation-shared-chrome",
+      "type": "implementation",
+      "title": "Centralized navigation and footer as shared fragments",
+      "content": "{\"change\":\"All public page shells now consume the same header fragment and canonical shared-navigation.css. How It Works no longer lets its page-local header styles diverge from the shared menu shell; the shared stylesheet loads after the page style block so header geometry, logo swap, CTA behavior, responsive menu, and menu ordering match the rest of the site.\",\"component\":\"templates/site-header.html, shared-navigation.css, how-it-works/index.html, bchousing/index.html, client-portal/index.html, and client-portal/meadowbrooks-estates/index.html\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "navigation",
+        "footer",
+        "shared-fragment",
+        "header-cta",
+        "responsive",
+        "how-it-works",
+        "canonical-shell"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:36:47+00:00",
+      "updated_at": "2026-09-09T22:10:14+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live DOM check for /how-it-works/#process",
+          "summary": "How It Works renders the shared header fragment with the canonical menu labels and a single visually active desktop/mobile CTA variant."
+        },
+        {
+          "type": "test",
+          "ref": "git diff --check",
+          "summary": "Source formatting check passed."
+        }
+      ],
+      "source_refs": [
+        "templates/site-header.html",
+        "shared-navigation.css",
+        "how-it-works/index.html",
+        "bchousing/index.html",
+        "client-portal/index.html",
+        "client-portal/meadowbrooks-estates/index.html"
+      ],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:10:14+00:00"
+      },
+      "semantic": {
+        "change": "All public page shells now consume the same header fragment and canonical shared-navigation.css. How It Works no longer lets its page-local header styles diverge from the shared menu shell; the shared stylesheet loads after the page style block so header geometry, logo swap, CTA behavior, responsive menu, and menu ordering match the rest of the site.",
+        "component": "templates/site-header.html, shared-navigation.css, how-it-works/index.html, bchousing/index.html, client-portal/index.html, and client-portal/meadowbrooks-estates/index.html"
+      }
+    },
+    "implementation-our-work": {
+      "id": "implementation-our-work",
+      "type": "implementation",
+      "title": "Reworked Our Work as a responsive project card page",
+      "content": "{\"change\":\"Rebuilt Our Work with the homepage visual doctrine, a white header, 3/2/1 responsive project-card grid, dark-blue properties section, paper testimonials section before sponsors, faster card reveal, and a pinned parallax hero.\",\"component\":\"our-work/index.html\"}",
+      "path": "our-work/index.html",
+      "tags": [
+        "plumbing-track",
+        "our-work",
+        "portfolio",
+        "parallax",
+        "responsive"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:36:49+00:00",
+      "updated_at": "2026-09-09T06:36:49+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:36:49+00:00"
+      },
+      "semantic": {
+        "change": "Rebuilt Our Work with the homepage visual doctrine, a white header, 3/2/1 responsive project-card grid, dark-blue properties section, paper testimonials section before sponsors, faster card reveal, and a pinned parallax hero.",
+        "component": "our-work/index.html"
+      },
+      "scope": {}
+    },
+    "implementation-visual-hygiene": {
+      "id": "implementation-visual-hygiene",
+      "type": "implementation",
+      "title": "Applied visual hygiene across site pages",
+      "content": "{\"change\":\"Consolidated the Home and Our Work testimonial card grids into the shared templates/testimonial-cards.html fragment, loaded by site-header.js and styled by testimonial-cards.css. Both sections now render identical card markup, image treatment, typography, spacing, and 3/2/1 responsive layout while retaining their section-specific heading and background.\",\"component\":\"templates/testimonial-cards.html, testimonial-cards.css, site-header.js, index.html, and our-work/index.html\"}",
+      "path": "templates/testimonial-cards.html",
+      "tags": [
+        "plumbing-track",
+        "typography",
+        "color",
+        "accessibility",
+        "visual-design",
+        "testimonials",
+        "card-shadow",
+        "building-images",
+        "responsive",
+        "shared-fragment"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:36:51+00:00",
+      "updated_at": "2026-09-09T20:54:41+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live DOM checks for / and /our-work/",
+          "summary": "Both pages load the same shared fragment, render three pt-testimonial-card elements, and produce equal 16:9 image boxes within each grid."
+        },
+        {
+          "type": "test",
+          "ref": "git diff --check",
+          "summary": "Source formatting check passed."
+        }
+      ],
+      "source_refs": [
+        "templates/testimonial-cards.html",
+        "testimonial-cards.css",
+        "site-header.js",
+        "index.html",
+        "our-work/index.html"
+      ],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T20:54:41+00:00"
+      },
+      "semantic": {
+        "change": "Consolidated the Home and Our Work testimonial card grids into the shared templates/testimonial-cards.html fragment, loaded by site-header.js and styled by testimonial-cards.css. Both sections now render identical card markup, image treatment, typography, spacing, and 3/2/1 responsive layout while retaining their section-specific heading and background.",
+        "component": "templates/testimonial-cards.html, testimonial-cards.css, site-header.js, index.html, and our-work/index.html"
+      }
+    },
+    "failure-visual-implementation-corrections": {
+      "id": "failure-visual-implementation-corrections",
+      "type": "failure",
+      "title": "Visual and verification corrections encountered during implementation",
+      "content": "{\"failure\":\"Several first-pass visual outcomes were unacceptable: missing footer, incorrect testimonial contrast, residual light cyan, an Our Work hero that was not actually pinned, desktop assessment overflow, inconsistent menu arrows and type sizing, heading orphans, and header-logo collision at narrower desktop widths.\",\"observed_behavior\":\"Visual review screenshots and live layout measurements exposed each issue; source-only confidence was insufficient for the pinned hero and responsive header.\"}",
+      "path": "index.html",
+      "tags": [
+        "plumbing-track",
+        "visual-review",
+        "hiccup",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:40:12+00:00",
+      "updated_at": "2026-09-09T06:40:12+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:40:12+00:00"
+      },
+      "semantic": {
+        "failure": "Several first-pass visual outcomes were unacceptable: missing footer, incorrect testimonial contrast, residual light cyan, an Our Work hero that was not actually pinned, desktop assessment overflow, inconsistent menu arrows and type sizing, heading orphans, and header-logo collision at narrower desktop widths.",
+        "observed_behavior": "Visual review screenshots and live layout measurements exposed each issue; source-only confidence was insufficient for the pinned hero and responsive header."
+      },
+      "scope": {}
+    },
+    "failure-grapher-recording-contract": {
+      "id": "failure-grapher-recording-contract",
+      "type": "failure",
+      "title": "Grapher semantic-record authoring required contract corrections",
+      "content": "{\"failure\":\"Initial ledger additions used an invalid lifecycle stage and earlier graph attempts used an invalid node type or non-JSON semantic content.\",\"observed_behavior\":\"Grapher rejected stage executed because allowed lifecycle stages are planning through maintaining, and rejected semantic node content until supplied as the required JSON objects.\"}",
+      "path": ".grapher/knowledge.json",
+      "tags": [
+        "grapher",
+        "hiccup",
+        "documentation"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:40:14+00:00",
+      "updated_at": "2026-09-09T06:40:14+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:40:14+00:00"
+      },
+      "semantic": {
+        "failure": "Initial ledger additions used an invalid lifecycle stage and earlier graph attempts used an invalid node type or non-JSON semantic content.",
+        "observed_behavior": "Grapher rejected stage executed because allowed lifecycle stages are planning through maintaining, and rejected semantic node content until supplied as the required JSON objects."
+      },
+      "scope": {}
+    },
+    "failure-browser-verification-transport": {
+      "id": "failure-browser-verification-transport",
+      "type": "failure",
+      "title": "Raw browser verification transport was replaced with live terminal browser checks",
+      "content": "{\"failure\":\"The initial raw CDP route was unreliable because target selection and WebSocket access failed during setup.\",\"observed_behavior\":\"The implementation switched to the terminal-browser session and then obtained live DOM, computed-style, and scroll-position evidence.\"}",
+      "path": "app.js",
+      "tags": [
+        "browser",
+        "hiccup",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:40:16+00:00",
+      "updated_at": "2026-09-09T06:40:16+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:40:16+00:00"
+      },
+      "semantic": {
+        "failure": "The initial raw CDP route was unreliable because target selection and WebSocket access failed during setup.",
+        "observed_behavior": "The implementation switched to the terminal-browser session and then obtained live DOM, computed-style, and scroll-position evidence."
+      },
+      "scope": {}
+    },
+    "test-assessment-desktop-fit": {
+      "id": "test-assessment-desktop-fit",
+      "type": "test",
+      "title": "Verified assessment Project step fits in the desktop panel",
+      "content": "{\"test\":\"Open the assessment Project step in the live 1050 by 888 desktop viewport and measure its panel bounds.\",\"method\":\"terminal-browser live DOM measurement\",\"outcome\":\"pass\"}",
+      "path": "assessment/index.html",
+      "tags": [
+        "plumbing-track",
+        "assessment",
+        "test",
+        "desktop"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:40:17+00:00",
+      "updated_at": "2026-09-09T06:40:17+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:40:17+00:00"
+      },
+      "semantic": {
+        "test": "Open the assessment Project step in the live 1050 by 888 desktop viewport and measure its panel bounds.",
+        "method": "terminal-browser live DOM measurement",
+        "outcome": "pass"
+      },
+      "scope": {}
+    },
+    "test-our-work-pinned-hero": {
+      "id": "test-our-work-pinned-hero",
+      "type": "test",
+      "title": "Verified Our Work hero remains pinned while portfolio covers it",
+      "content": "{\"test\":\"Scroll the live Our Work page through the transition from hero to portfolio and inspect hero position and parallax transform.\",\"method\":\"terminal-browser live DOM measurement\",\"outcome\":\"pass\"}",
+      "path": "our-work/index.html",
+      "tags": [
+        "plumbing-track",
+        "our-work",
+        "parallax",
+        "test"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:40:18+00:00",
+      "updated_at": "2026-09-09T06:40:18+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:40:18+00:00"
+      },
+      "semantic": {
+        "test": "Scroll the live Our Work page through the transition from hero to portfolio and inspect hero position and parallax transform.",
+        "method": "terminal-browser live DOM measurement",
+        "outcome": "pass"
+      },
+      "scope": {}
+    },
+    "test-navigation-responsive-cards": {
+      "id": "test-navigation-responsive-cards",
+      "type": "test",
+      "title": "Verified responsive navigation and global card reveal rule",
+      "content": "{\"test\":\"Inspect live desktop-width header overlap, menu state, and computed card reveal values on Our Work and Client Portal.\",\"method\":\"terminal-browser live DOM and computed-style measurement\",\"outcome\":\"pass\"}",
+      "path": "app.js",
+      "tags": [
+        "plumbing-track",
+        "navigation",
+        "animation",
+        "test"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T06:40:20+00:00",
+      "updated_at": "2026-09-09T06:40:20+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "session_id": "session-2026-09-09-plumbing-track",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T06:40:20+00:00"
+      },
+      "semantic": {
+        "test": "Inspect live desktop-width header overlap, menu state, and computed card reveal values on Our Work and Client Portal.",
+        "method": "terminal-browser live DOM and computed-style measurement",
+        "outcome": "pass"
+      },
+      "scope": {}
+    },
+    "docs-index": {
+      "id": "docs-index",
+      "type": "document",
+      "title": "Plumbing Track documentation index",
+      "content": "Index of current project documentation, source roles, stable Grapher identities, and relationships for docs/.",
+      "path": "docs/INDEX.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "index"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:29+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:29+00:00"
+      }
+    },
+    "docs-instructions": {
+      "id": "docs-instructions",
+      "type": "document",
+      "title": "Plumbing Track implementation instructions",
+      "content": "Governing project instructions covering source precedence, site architecture, SEO, GA4, verification, and execution discipline.",
+      "path": "docs/INSTRUCTIONS.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "instructions",
+        "governance"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:29+00:00",
+      "stage": "developing",
+      "status": "canonical_spec",
+      "workflow_state": "completed",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:29+00:00"
+      }
+    },
+    "docs-website-design-plan": {
+      "id": "docs-website-design-plan",
+      "type": "document",
+      "title": "Plumbing Track website design plan",
+      "content": "Target information architecture and design plan: preserve the existing visual identity and homepage video while expanding into focused, indexable pages.",
+      "path": "docs/WEBSITE_DESIGN_PLAN.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "design",
+        "architecture"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:29+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:29+00:00"
+      }
+    },
+    "docs-implementation-roadmap": {
+      "id": "docs-implementation-roadmap",
+      "type": "document",
+      "title": "Plumbing Track implementation roadmap",
+      "content": "Living Wave 1/Wave 2 status companion to the design plan. Menu clickability does not define wave membership; current implementation is the baseline.",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "roadmap",
+        "waves"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:29+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:29+00:00"
+      }
+    },
+    "docs-decision-how-it-works-routing": {
+      "id": "docs-decision-how-it-works-routing",
+      "type": "document",
+      "title": "Decision document: How It Works routing",
+      "content": "Current operator decision: How It Works must explain the process and accessible plumbing before asking the visitor to complete the assessment form.",
+      "path": "docs/DECISION_HOW_IT_WORKS_ROUTING.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "decision",
+        "how-it-works",
+        "accessible-plumbing"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:29+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:29+00:00"
+      }
+    },
+    "docs-web-work-sheet": {
+      "id": "docs-web-work-sheet",
+      "type": "document",
+      "title": "Plumbing Track web work sheet",
+      "content": "Supporting website worksheet retained as lower-precedence source evidence under the current implementation instructions.",
+      "path": "docs/plumbing track web work sheet.pdf",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "source-evidence",
+        "worksheet"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:30+00:00",
+      "stage": "developing",
+      "status": "historical",
+      "workflow_state": "not_applicable",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:30+00:00"
+      }
+    },
+    "docs-site-export": {
+      "id": "docs-site-export",
+      "type": "document",
+      "title": "Archived Squarespace site export",
+      "content": "Archived Squarespace material retained for reference and source reconciliation; lower precedence than current operator decisions and tracked planning documents.",
+      "path": "docs/site-export/",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "archive",
+        "squarespace"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:30+00:00",
+      "stage": "developing",
+      "status": "historical",
+      "workflow_state": "not_applicable",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:30+00:00"
+      }
+    },
+    "decision-how-it-works-routing": {
+      "id": "decision-how-it-works-routing",
+      "type": "decision",
+      "title": "Explain How It Works before assessment",
+      "content": "{\"decision\":\"Route How It Works entry points to a standalone explanatory page before assessment conversion.\",\"rationale\":\"Visitors should understand the Plumbing Track process and accessible-plumbing approach before being asked for building details.\"}",
+      "path": "docs/DECISION_HOW_IT_WORKS_ROUTING.md",
+      "tags": [
+        "plumbing-track",
+        "how-it-works",
+        "accessible-plumbing",
+        "routing"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:30+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "operator",
+        "actor_kind": "human",
+        "actor_role": "operator",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:30+00:00"
+      }
+    },
+    "requirement-explain-before-assessment": {
+      "id": "requirement-explain-before-assessment",
+      "type": "requirement",
+      "title": "How It Works must explain before conversion",
+      "content": "{\"requirement\":\"How It Works must route to its own explanatory page containing accessible-plumbing context and the project process instead of directly to the assessment form.\",\"acceptance_condition\":\"Homepage and navigation How It Works entry points resolve to /how-it-works/; the page explains accessible plumbing and the five-phase process; Assessment remains a downstream CTA.\"}",
+      "path": "docs/DECISION_HOW_IT_WORKS_ROUTING.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "how-it-works",
+        "routing"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:30+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:30+00:00"
+      }
+    },
+    "component-how-it-works-page": {
+      "id": "component-how-it-works-page",
+      "type": "component",
+      "title": "Standalone How It Works page",
+      "content": "Wave 1 /how-it-works/ explanatory page combining accessible-plumbing context, the five-phase project process, proof routing, and downstream assessment CTA.",
+      "path": "how-it-works/index.html",
+      "tags": [
+        "plumbing-track",
+        "component",
+        "how-it-works",
+        "accessible-plumbing"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "updated_at": "2026-09-09T22:22:30+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:30+00:00"
+      }
+    },
+    "agents-instructions": {
+      "id": "agents-instructions",
+      "type": "document",
+      "title": "Plumbing Track agent operating instructions",
+      "content": "Repository agent policy requiring continuous Grapher use during documentation work, semantic capture as decisions become durable, history-preserving updates, and validate/audit before documentation tasks are considered complete.",
+      "path": "AGENTS.md",
+      "tags": [
+        "plumbing-track",
+        "agents",
+        "grapher",
+        "documentation",
+        "governance"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:58:18+00:00",
+      "updated_at": "2026-09-09T22:22:29+00:00",
+      "stage": "developing",
+      "status": "canonical_spec",
+      "workflow_state": "active",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:29+00:00"
+      }
+    },
+    "decision-continuous-documentation-grapher": {
+      "id": "decision-continuous-documentation-grapher",
+      "type": "decision",
+      "title": "Use Grapher continuously for documentation",
+      "content": "{\"decision\":\"Agents must use Grapher continuously while creating, changing, reorganizing, or interpreting project documentation.\",\"rationale\":\"Documentation and durable project knowledge must evolve together; a one-time or end-of-session sync can miss decisions, supersession, relationships, and verification state.\"}",
+      "path": "AGENTS.md",
+      "tags": [
+        "plumbing-track",
+        "grapher",
+        "documentation",
+        "agents",
+        "decision"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:58:18+00:00",
+      "updated_at": "2026-09-09T22:22:30+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "operator",
+        "actor_kind": "human",
+        "actor_role": "operator",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:30+00:00"
+      }
+    },
+    "requirement-continuous-documentation-grapher": {
+      "id": "requirement-continuous-documentation-grapher",
+      "type": "requirement",
+      "title": "Documentation work must stay synchronized with Grapher",
+      "content": "{\"requirement\":\"Before material documentation edits, agents must search Grapher; during the work they must record durable decisions, requirements, scope changes, relationships, supersession, and verification as they become known; before completion they must validate and audit the graph.\",\"acceptance_condition\":\"Documentation changes and corresponding Grapher semantic state are updated in the same work cycle; direct hand-editing of Grapher state files is avoided; CI sync is treated as a backstop rather than a substitute for agent semantic capture.\"}",
+      "path": "AGENTS.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "grapher",
+        "documentation",
+        "continuous"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T10:58:19+00:00",
+      "updated_at": "2026-09-09T22:22:30+00:00",
+      "stage": "developing",
+      "status": "canonical_spec",
+      "workflow_state": "active",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T22:22:30+00:00"
+      }
+    },
+    "implementation-client-portal": {
+      "id": "implementation-client-portal",
+      "type": "implementation",
+      "title": "Client portal building access cards",
+      "content": "{\"change\":\"Removed the Newbury building card from the Client Portal listing while preserving the remaining building access flow and shared footer fragment.\",\"component\":\"client-portal/index.html building card grid\"}",
+      "path": "client-portal/index.html",
+      "tags": [
+        "plumbing-track",
+        "client-portal",
+        "portal-cards",
+        "newbury"
+      ],
+      "meta": {},
+      "created_at": "2026-09-09T20:44:38+00:00",
+      "updated_at": "2026-09-09T20:44:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live DOM check for /client-portal/",
+          "summary": "Newbury is absent from rendered body text and remaining portal tiles render normally."
+        },
+        {
+          "type": "test",
+          "ref": "rg -n -i newbury client-portal",
+          "summary": "No Newbury references remain in client portal source files."
+        }
+      ],
+      "source_refs": [
+        "client-portal/index.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-09T20:44:38+00:00"
+      },
+      "semantic": {
+        "change": "Removed the Newbury building card from the Client Portal listing while preserving the remaining building access flow and shared footer fragment.",
+        "component": "client-portal/index.html building card grid"
+      },
+      "scope": {}
+    }
+  },
+  "edges": [
+    {
+      "from": "session-2026-09-09-plumbing-track",
+      "to": "requirement-website-design-plan",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:45+00:00",
+      "note": "Implementation authority"
+    },
+    {
+      "from": "requirement-website-design-plan",
+      "to": "implementation-homepage",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:45+00:00",
+      "note": "Homepage fulfills plan"
+    },
+    {
+      "from": "requirement-website-design-plan",
+      "to": "implementation-assessment-flow",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:45+00:00",
+      "note": "Assessment fulfills plan"
+    },
+    {
+      "from": "requirement-website-design-plan",
+      "to": "implementation-shared-chrome",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:45+00:00",
+      "note": "Shared chrome fulfills site architecture"
+    },
+    {
+      "from": "requirement-website-design-plan",
+      "to": "implementation-our-work",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:45+00:00",
+      "note": "Our Work fulfills plan"
+    },
+    {
+      "from": "implementation-visual-hygiene",
+      "to": "test-navigation-responsive-cards",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:45+00:00",
+      "note": "Live responsive check confirms latest hygiene work"
+    },
+    {
+      "from": "implementation-assessment-flow",
+      "to": "test-assessment-desktop-fit",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:46+00:00",
+      "note": "Live desktop measurement"
+    },
+    {
+      "from": "implementation-our-work",
+      "to": "test-our-work-pinned-hero",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:46+00:00",
+      "note": "Live pinning measurement"
+    },
+    {
+      "from": "implementation-homepage",
+      "to": "failure-visual-implementation-corrections",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:46+00:00",
+      "note": "Homepage visual fixes are captured as correction history"
+    },
+    {
+      "from": "implementation-shared-chrome",
+      "to": "test-navigation-responsive-cards",
+      "rel": "related",
+      "created_at": "2026-09-09T06:42:46+00:00",
+      "note": "Live shared-header verification"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-instructions",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "note": "Governing instructions"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-website-design-plan",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:55+00:00",
+      "note": "Target design architecture"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-implementation-roadmap",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Living execution status"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-decision-how-it-works-routing",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Current routing decision"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-web-work-sheet",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Supporting source evidence"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-site-export",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Archived source evidence"
+    },
+    {
+      "from": "docs-website-design-plan",
+      "to": "docs-instructions",
+      "rel": "applies_to",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Design plan operates under governing instructions"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "docs-website-design-plan",
+      "rel": "derived_from",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Roadmap applies target architecture to current implementation state"
+    },
+    {
+      "from": "docs-decision-how-it-works-routing",
+      "to": "docs-website-design-plan",
+      "rel": "deviates_from",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Refines the earlier direct-to-assessment process routing without discarding the wider design plan"
+    },
+    {
+      "from": "docs-website-design-plan",
+      "to": "docs-web-work-sheet",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Supporting website source"
+    },
+    {
+      "from": "docs-website-design-plan",
+      "to": "docs-site-export",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Archived legacy reference"
+    },
+    {
+      "from": "decision-how-it-works-routing",
+      "to": "docs-decision-how-it-works-routing",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Decision is documented in the tracked decision file"
+    },
+    {
+      "from": "requirement-explain-before-assessment",
+      "to": "decision-how-it-works-routing",
+      "rel": "decided_by",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Requirement follows the operator routing decision"
+    },
+    {
+      "from": "component-how-it-works-page",
+      "to": "requirement-explain-before-assessment",
+      "rel": "satisfies",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Standalone page fulfills the explanatory routing requirement"
+    },
+    {
+      "from": "component-how-it-works-page",
+      "to": "decision-how-it-works-routing",
+      "rel": "implements",
+      "created_at": "2026-09-09T10:09:56+00:00",
+      "note": "Implementation realizes the routing decision"
+    },
+    {
+      "from": "docs-website-design-plan",
+      "to": "requirement-website-design-plan",
+      "rel": "references",
+      "created_at": "2026-09-09T10:09:57+00:00",
+      "note": "Tracked design document behind the existing implementation requirement"
+    },
+    {
+      "from": "docs-index",
+      "to": "agents-instructions",
+      "rel": "references",
+      "created_at": "2026-09-09T10:58:19+00:00",
+      "note": "Repository agent operating policy"
+    },
+    {
+      "from": "agents-instructions",
+      "to": "docs-index",
+      "rel": "references",
+      "created_at": "2026-09-09T10:58:19+00:00",
+      "note": "Agents use the documentation index as the human-readable map"
+    },
+    {
+      "from": "agents-instructions",
+      "to": "docs-instructions",
+      "rel": "references",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Agent policy defers project authority and source precedence to governing instructions"
+    },
+    {
+      "from": "decision-continuous-documentation-grapher",
+      "to": "agents-instructions",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "The repository agent policy records the operator decision"
+    },
+    {
+      "from": "requirement-continuous-documentation-grapher",
+      "to": "decision-continuous-documentation-grapher",
+      "rel": "decided_by",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Ongoing documentation requirement follows the operator decision"
+    },
+    {
+      "from": "requirement-continuous-documentation-grapher",
+      "to": "agents-instructions",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Acceptance rule is written in AGENTS.md"
+    },
+    {
+      "from": "requirement-continuous-documentation-grapher",
+      "to": "docs-index",
+      "rel": "applies_to",
+      "created_at": "2026-09-09T10:58:20+00:00",
+      "note": "Continuous Grapher discipline applies to the tracked documentation set"
+    },
+    {
+      "from": "docs-website-design-plan",
+      "to": "docs-instructions",
+      "rel": "constrains",
+      "created_at": "2026-09-09T10:58:20+00:00"
+    }
+  ]
+}

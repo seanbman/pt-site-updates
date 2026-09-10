@@ -1,14 +1,33 @@
 (() => {
+  const startPage = () => {
   const root = document.querySelector("[data-pt-page]");
   if (!root || root.dataset.ptReady === "true") return;
 
   root.dataset.ptReady = "true";
   root.classList.add("pt-js");
 
+  root.querySelectorAll("[data-assessment-cta]").forEach((cta) => {
+    cta.addEventListener("click", () => {
+      const sourceCta = cta.getAttribute("data-assessment-cta") || "unknown";
+      sessionStorage.setItem("assessment_source_page", window.location.pathname);
+      sessionStorage.setItem("assessment_source_cta", sourceCta);
+      const eventParams = {
+        assessment_source_page: window.location.pathname,
+        assessment_source_cta: sourceCta,
+      };
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "assessment_cta_clicked", eventParams);
+      } else {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: "assessment_cta_clicked", ...eventParams });
+      }
+    });
+  });
+
   const reducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   );
-  const narrowViewport = window.matchMedia("(max-width: 980px)");
+  const narrowViewport = window.matchMedia("(max-width: 1240px)");
   const header = root.querySelector("[data-pt-header]");
   const menuToggle = header?.querySelector(".header-menu-toggle");
   const siteNav = header?.querySelector("#site-nav");
@@ -22,12 +41,22 @@
   const parallaxRows = Array.from(
     root.querySelectorAll("[data-pt-parallax-row]")
   );
+  const navSections = siteNav
+    ? Array.from(siteNav.querySelectorAll(".nav-section"))
+    : [];
+
+  const closeNavSections = (except = null) => {
+    navSections.forEach((section) => {
+      if (section !== except) section.open = false;
+    });
+  };
 
   const setNavOpen = (open) => {
     if (!header || !menuToggle) return;
     header.classList.toggle("is-nav-open", open);
     menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
     menuToggle.setAttribute("aria-label", open ? "Close menu" : "Menu");
+    if (!open) closeNavSections();
   };
 
   if (menuToggle && siteNav && header) {
@@ -40,11 +69,17 @@
       link.addEventListener("click", () => setNavOpen(false));
     });
 
-    document.addEventListener("click", (event) => {
-      if (!header.classList.contains("is-nav-open")) return;
-      if (header.contains(event.target)) return;
-      setNavOpen(false);
+    navSections.forEach((section) => {
+      section.addEventListener("toggle", () => {
+        if (section.open) closeNavSections(section);
+      });
     });
+
+    document.addEventListener("pointerdown", (event) => {
+      if (event.target.closest(".nav-section")) return;
+      closeNavSections();
+      if (!event.target.closest("#site-nav")) setNavOpen(false);
+    }, true);
 
     document.addEventListener("keydown", (event) => {
       if (event.key !== "Escape") return;
@@ -59,8 +94,24 @@
     narrowViewport.addEventListener?.("change", syncNavToViewport);
   }
 
+  const cardRevealSelector = [
+    ".home-project",
+    ".route-card",
+    ".project-item",
+    ".portal-grid > li",
+    ".partner-grid > li",
+    ".advantage-card",
+  ].join(",");
+
+  root.querySelectorAll(".reveal").forEach((element) => {
+    if (!element.matches(cardRevealSelector)) return;
+    element.dataset.ptCardReveal = "true";
+    element.style.transitionDuration = "420ms, 340ms, 420ms";
+  });
+
   root.querySelectorAll("[data-pt-stagger]").forEach((group) => {
-    const step = group.hasAttribute("data-pt-stagger-fast") ? 45 : 110;
+    const containsCards = Boolean(group.querySelector(cardRevealSelector));
+    const step = group.hasAttribute("data-pt-stagger-fast") || containsCards ? 45 : 110;
     group.querySelectorAll(".reveal").forEach((element, index) => {
       element.style.setProperty(
         "--pt-reveal-delay",
@@ -187,15 +238,9 @@
   };
 
   const updateHeaderState = () => {
-    const headerHeight = header?.offsetHeight || 72;
-    // Sticky hero stays full-viewport under the cover sheet, so use the
-    // next panel's top edge (or scroll fallback) to swap header styles.
-    const coverTop = heroCover?.getBoundingClientRect().top;
-    const coveredBySheet =
-      typeof coverTop === "number"
-        ? coverTop <= headerHeight + 8
-        : window.scrollY > headerHeight;
-    header?.classList.toggle("is-scrolled", coveredBySheet);
+    // Keep the transparent treatment through the first 50px, then switch to
+    // the solid, readable header state.
+    header?.classList.toggle("is-scrolled", window.scrollY > 50);
   };
 
   const updateMotion = () => {
@@ -517,4 +562,12 @@
     root.classList.add("is-ready");
     updateMotion();
   });
+  };
+
+  const headerReady = window.ptHeaderReady;
+  if (headerReady && typeof headerReady.then === "function") {
+    headerReady.then(startPage);
+  } else {
+    startPage();
+  }
 })();

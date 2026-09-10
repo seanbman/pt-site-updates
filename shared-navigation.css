@@ -114,3 +114,60 @@
 
 [data-pt-page] :is(h1,h2,h3) { text-wrap:balance; }
 [data-pt-page] p { text-wrap:pretty; }
+
+/* Our Work uses a photographic hero, so the canonical menu remains in its
+   readable solid-header state from first paint at every viewport. */
+[data-pt-page].pt-page--our-work .site-header { background:#fff !important; border-bottom-color:rgba(8,19,25,.1) !important; box-shadow:0 10px 28px rgba(8,19,25,.08) !important; }
+[data-pt-page].pt-page--our-work .site-header .brand-logo--light { opacity:0 !important; }
+[data-pt-page].pt-page--our-work .site-header .brand-logo--dark { opacity:1 !important; }
+[data-pt-page].pt-page--our-work .header-nav-link,
+[data-pt-page].pt-page--our-work .nav-section summary { color:#314149 !important; }
+[data-pt-page].pt-page--our-work .header-cta { border-color:var(--cyan) !important; color:#00516f !important; }
+[data-pt-page].pt-page--our-work .header-menu-toggle { border-color:rgba(8,19,25,.22) !important; color:#061015 !important; }
+
+@media (max-width:1240px) {
+  [data-pt-page].pt-page--our-work .header-nav { background:#fff !important; border-bottom-color:rgba(8,19,25,.1) !important; box-shadow:0 16px 32px rgba(8,19,25,.1) !important; }
+  [data-pt-page].pt-page--our-work .header-nav .header-nav-link,
+  [data-pt-page].pt-page--our-work .nav-section summary { border-bottom-color:rgba(8,19,25,.08) !important; color:#314149 !important; }
+  [data-pt-page].pt-page--our-work .nav-flyout { background:transparent !important; box-shadow:none !important; }
+  [data-pt-page].pt-page--our-work .nav-flyout span { color:#53636a !important; }
+  [data-pt-page].pt-page--our-work .nav-flyout a,
+  [data-pt-page].pt-page--our-work .nav-flyout span:first-child { color:#00516f !important; }
+}
+
+/* One menu contract for every page shell. These declarations intentionally
+   use the same values and precedence at every route. */
+[data-pt-page] .site-header { align-items:center !important; display:flex !important; justify-content:space-between !important; left:0 !important; position:fixed !important; right:0 !important; top:0 !important; z-index:50 !important; }
+[data-pt-page] .site-header .brand { display:block !important; line-height:0 !important; max-width:300px !important; }
+[data-pt-page] .site-header .brand-logo { display:block !important; height:auto !important; width:clamp(220px,22vw,300px) !important; }
+[data-pt-page] .header-actions { align-items:center !important; display:flex !important; gap:clamp(1rem,2.5vw,1.75rem) !important; }
+[data-pt-page] .header-nav { align-items:center !important; display:flex !important; gap:clamp(1rem,2.5vw,1.75rem) !important; }
+[data-pt-page] .header-nav-link,
+[data-pt-page] .nav-section summary { flex-shrink:0 !important; font-size:.88rem !important; line-height:1.25 !important; white-space:nowrap !important; }
+[data-pt-page] .header-cta { align-items:center !important; display:inline-flex !important; flex-shrink:0 !important; justify-content:center !important; min-height:42px !important; padding:.75rem 1rem !important; white-space:nowrap !important; }
+[data-pt-page] .header-menu-toggle { display:none !important; }
+[data-pt-page] .site-header.is-nav-open { background:#fff !important; border-bottom-color:rgba(8,19,25,.1) !important; }
+[data-pt-page] .site-header.is-nav-open .header-nav-link,
+[data-pt-page] .site-header.is-nav-open .nav-section summary { color:#314149 !important; }
+
+@media (max-width:1240px) {
+  [data-pt-page] .site-header { gap:.85rem !important; height:68px !important; padding:0 1.1rem !important; }
+  [data-pt-page] .site-header .brand-logo { width:min(168px,42vw) !important; }
+  [data-pt-page] .header-actions { flex-shrink:0 !important; gap:.85rem !important; }
+  [data-pt-page] .header-menu-toggle { align-items:center !important; display:inline-flex !important; flex-shrink:0 !important; height:2.4rem !important; justify-content:center !important; padding:0 !important; width:2.4rem !important; }
+  [data-pt-page] .header-nav { align-items:stretch !important; background:var(--ink) !important; border-bottom:1px solid rgba(255,255,255,.12) !important; box-shadow:0 16px 32px rgba(0,0,0,.28) !important; display:none !important; flex-direction:column !important; gap:0 !important; left:0 !important; padding:.85rem 1.1rem 1.1rem !important; position:absolute !important; right:0 !important; top:100% !important; }
+  [data-pt-page] .site-header.is-nav-open .header-nav { display:flex !important; }
+  [data-pt-page] .site-header.is-nav-open .header-nav { background:#fff !important; border-bottom-color:rgba(8,19,25,.1) !important; box-shadow:0 16px 32px rgba(8,19,25,.1) !important; }
+  [data-pt-page] .header-nav .header-nav-link,
+  [data-pt-page] .nav-section summary { border-bottom:1px solid rgba(255,255,255,.1) !important; font-size:1rem !important; padding:.85rem 0 !important; width:100% !important; }
+  [data-pt-page] .site-header.is-nav-open .header-nav .header-nav-link,
+  [data-pt-page] .site-header.is-nav-open .nav-section summary { border-bottom-color:rgba(8,19,25,.08) !important; color:#314149 !important; }
+  [data-pt-page] .nav-section { width:100% !important; }
+  [data-pt-page] .nav-flyout { background:transparent !important; box-shadow:none !important; gap:.1rem !important; padding:.2rem 0 .55rem 1rem !important; position:static !important; }
+  [data-pt-page] .nav-flyout span,
+  [data-pt-page] .nav-flyout a { font-size:.82rem !important; padding:.2rem 0 !important; }
+  [data-pt-page] .site-header.is-nav-open .nav-flyout span { color:#53636a !important; }
+  [data-pt-page] .site-header.is-nav-open .nav-flyout a,
+  [data-pt-page] .site-header.is-nav-open .nav-flyout span:first-child { color:#00516f !important; }
+  [data-pt-page] .header-nav .header-nav-cta { display:inline-flex !important; justify-content:center !important; margin-top:.85rem !important; text-align:center !important; width:100% !important; }
+}

@@ -12,6 +12,12 @@ The design plan remains the target architecture. This document reflects the actu
 
 This merge does not close the remaining Wave 1 hardening items below. Production analytics, assessment API behaviour, responsive/accessibility review, source-fact review, and final static-serving regression remain follow-up work.
 
+## Correction record — shared-shell fidelity failure — 2026-09-09
+
+The earlier Wave 1 hardening pass was incorrect in claiming that shared header/footer fragments were visually consistent. Page-specific inline CSS continued to override the canonical shell at mobile widths, producing divergent menu states and footer geometry on pages including Our Work. The mobile comparison table also stacked its three cells without preserving the Conventional / Plumbing Track relationship, making the content difficult to interpret.
+
+The correction centralizes final header/footer precedence in `shared-navigation.css`, keeps the canonical fragments as the only menu/footer markup source, restores a readable solid header for the photographic Our Work hero, prevents heading/paragraph orphaning with balanced text wrapping, and presents comparison rows as a labeled decision row with two comparable values on mobile. The corrected implementation must be judged by rendered browser output, not by fragment mounts or source inspection alone.
+
 ## Main sync evaluation — 2026-09-09
 
 `main` was recently synchronized with `dev/updates`. The substantive planning addition on `main` is the expanded **Book an Assessment — Detailed Conversion Task** in `docs/WEBSITE_DESIGN_PLAN.md`.

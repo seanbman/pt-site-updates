@@ -1729,6 +1729,46 @@
         "outcome": "pass"
       },
       "scope": {}
+    },
+    "failure-2026-09-09-shared-shell-fidelity": {
+      "id": "failure-2026-09-09-shared-shell-fidelity",
+      "type": "failure",
+      "title": "Egregious shared-shell fidelity failure",
+      "content": "{\"failure\":\"The prior implementation did not deliver consistent mobile shell fidelity.\",\"observed_behavior\":\"Page-specific CSS overrode canonical fragment styles at mobile widths. Our Work showed a divergent, low-contrast menu/header state; footer geometry differed; and the mobile comparison table lost the relationship between its compared columns. The correction centralizes final shell precedence, restores readable Our Work contrast, balances text wrapping, and preserves labeled comparison rows.\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "failure",
+        "egregious",
+        "mobile",
+        "fidelity",
+        "header",
+        "footer",
+        "comparison-table"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T04:46:46+00:00",
+      "updated_at": "2026-09-10T04:46:46+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "implementation-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T04:46:46+00:00"
+      },
+      "semantic": {
+        "failure": "The prior implementation did not deliver consistent mobile shell fidelity.",
+        "observed_behavior": "Page-specific CSS overrode canonical fragment styles at mobile widths. Our Work showed a divergent, low-contrast menu/header state; footer geometry differed; and the mobile comparison table lost the relationship between its compared columns. The correction centralizes final shell precedence, restores readable Our Work contrast, balances text wrapping, and preserves labeled comparison rows."
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -2129,6 +2169,20 @@
       "rel": "satisfies",
       "created_at": "2026-09-10T04:39:33+00:00",
       "note": "Mobile sweep verifies synchronized shared shell styling"
+    },
+    {
+      "from": "failure-2026-09-09-shared-shell-fidelity",
+      "to": "implementation-shared-chrome",
+      "rel": "deviates_from",
+      "created_at": "2026-09-10T04:46:47+00:00",
+      "note": "Earlier shared-shell implementation claim was disproved by rendered mobile divergence"
+    },
+    {
+      "from": "failure-2026-09-09-shared-shell-fidelity",
+      "to": "test-mobile-shell-sweep-20260909",
+      "rel": "related",
+      "created_at": "2026-09-10T04:46:48+00:00",
+      "note": "Corrective sweep supplies rendered verification after the failure"
     }
   ]
 }

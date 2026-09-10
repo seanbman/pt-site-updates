@@ -203,12 +203,10 @@ main[data-pt-page] .site-header.is-nav-open .header-menu-toggle { border-color: 
   }
   main[data-pt-page] .site-header.is-nav-open .header-nav { display: flex; }
   main[data-pt-page] .header-nav .header-nav-link,
-  main[data-pt-page] .nav-section summary,
-  main[data-pt-page] .nav-flyout a {
+  main[data-pt-page] .nav-section summary {
     border-bottom: 1px solid rgba(8, 19, 25, .08);
     color: #314149;
     font-size: 1rem;
-    margin-block: .5em;
     padding: .85rem 0;
     width: 100%;
   }
@@ -222,6 +220,7 @@ main[data-pt-page] .site-header.is-nav-open .header-menu-toggle { border-color: 
   }
   main[data-pt-page] .nav-flyout a,
   main[data-pt-page] .nav-flyout span { font-size: .82rem; padding: .2rem 0; }
+  main[data-pt-page] .nav-flyout a { margin-block: .5em; }
   main[data-pt-page] .nav-flyout span { color: #53666e; }
   main[data-pt-page] .nav-flyout a { color: #00516f; }
   main[data-pt-page] .header-nav .header-nav-cta {

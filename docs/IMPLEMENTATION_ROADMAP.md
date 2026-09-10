@@ -6,6 +6,38 @@ This roadmap is the living execution/status companion to `docs/WEBSITE_DESIGN_PL
 
 The design plan remains the target architecture. This document reflects the actual state of `dev/updates` and accepts the operator's manual adjustments as the current implementation baseline.
 
+## Main sync evaluation — 2026-09-09
+
+`main` was recently synchronized with `dev/updates`. The substantive planning addition on `main` is the expanded **Book an Assessment — Detailed Conversion Task** in `docs/WEBSITE_DESIGN_PLAN.md`.
+
+That expanded section is useful as an acceptance and verification specification, but it must **not** be interpreted as an instruction to rebuild the current assessment experience from scratch. Source review of the current implementation already confirms the major structural requirements:
+
+- dedicated `/assessment/` route;
+- progressive Building → Project → Contact → Review flow;
+- structured building, project, contact, and attribution data;
+- normal `Unsure`/unknown states rather than forcing diagnosis;
+- only name and email required for follow-up;
+- review and explicit success state;
+- API error/retry handling and duplicate-submit guard;
+- source page / CTA attribution support;
+- `assessment_started`, `assessment_step_completed`, and `assessment_submitted` event emission;
+- non-PII categorical parameters in the assessment-event code.
+
+The assessment plan is therefore classified as **implemented at the source/interaction-design level, with production verification still required**. Remaining work belongs in Wave 1 hardening: production API behavior, actual GA4 initialization and DebugView verification, current CTA attribution coverage, no-PII verification, cross-device behavior, keyboard/focus/validation review, and confirmation that the live experience matches the intended visual standard.
+
+### Shared-fragment implementation rule
+
+The site now has an established lightweight fragment system. Shared header, footer, and testimonial-card markup are loaded from canonical templates rather than copied independently into every page.
+
+Going forward:
+
+- use a shared fragment when the **same markup and behavior** must stay synchronized across multiple pages;
+- keep page-specific content local when it is genuinely unique;
+- extend an existing fragment before creating competing copies of shared chrome or repeated proof components;
+- verify fragment loading and fallback/static-serving behavior as part of Wave 1 hardening.
+
+This is an implementation rule, not a mandate to turn every repeated sentence or page section into a fragment.
+
 ## Scope rule
 
 **Menu clickability does not define wave membership.**
@@ -65,6 +97,7 @@ Wave 1 is the current implemented site experience and the architecture already e
 - ~~Introduce routing/exploration cards on Home to represent the broader site architecture.~~
 - ~~Establish the primary navigation hierarchy: About, Our Work, Solutions, How It Works, Our Technology, Resources.~~
 - ~~Create shared header/navigation and footer fragments.~~
+- ~~Create shared testimonial-card markup/styles for repeated proof sections rather than maintaining divergent copies.~~
 - ~~Implement responsive navigation, click-away behaviour, mobile menu corrections, scroll-state behaviour, and reduced-motion handling.~~
 - ~~Create `/how-it-works/` as a standalone explanatory page.~~
 - ~~Route the homepage How It Works entry points to `/how-it-works/` rather than directly to Assessment.~~
@@ -74,12 +107,12 @@ Wave 1 is the current implemented site experience and the architecture already e
 - ~~Rework **Our Work** into a stronger responsive proof/portfolio page.~~
 - ~~Retain the Client Portal and align it with the shared site shell.~~
 - ~~Create the dedicated **Book an Assessment** route.~~
-- ~~Implement the multi-step assessment form, review step, API submission, success state, source attribution, and duplicate-submission protection.~~
+- ~~Implement the detailed assessment structure: Building → Project → Contact → Review, structured payload, unsure states, minimal required contact fields, attribution, review/success state, API error handling, and duplicate-submit protection.~~
 - ~~Instrument assessment CTA clicks, starts, step completion, and successful submissions at the event-emission level.~~
 - ~~Build/revise the Affordable Housing / BC Housing audience page.~~
 - ~~Apply current visual hygiene across Home, Our Work, BC Housing, Assessment, and Client Portal surfaces.~~
 - ~~Add initial SEO metadata/canonical/schema treatment to major Wave 1 pages.~~
-- ~~Create reusable templates/scaffolding for future detailed installation, Technology, project-proof, header, and footer work.~~
+- ~~Create reusable templates/scaffolding for future detailed installation, Technology, project-proof, header, footer, and repeated proof-card work.~~
 - ~~Reduce Resources intentionally to FAQ + Client Portal until remaining guides are ready.~~
 - ~~Initialize and synchronize Grapher implementation/test records for the branch.~~
 
@@ -88,12 +121,14 @@ Wave 1 is the current implemented site experience and the architecture already e
 - [ ] Verify homepage video behaviour on desktop, tablet, and mobile, including reduced-motion/fallback behaviour.
 - [ ] Perform final responsive QA across Home, How It Works, Our Work, Affordable Housing, Assessment, and Client Portal.
 - [ ] Verify `/how-it-works/` at desktop, tablet, and mobile widths and confirm no broken shared-header/footer behavior.
-- [ ] Verify the shared header/footer is consistently applied to all intended Wave 1 public pages.
+- [ ] Verify shared header/footer/testimonial fragments are consistently applied where intended and load correctly under production/static-serving conditions.
 - [ ] Verify non-clickable navigation labels/flyouts are intentional and visually understandable rather than appearing broken.
 - [ ] Verify all active Wave 1 links, anchors, asset paths, and CTA destinations.
-- [ ] Verify the production assessment API end-to-end, including error handling and confirmation state.
+- [ ] Verify every current Wave 1 assessment CTA reaches the unified assessment flow and preserves useful source-page / CTA attribution.
+- [ ] Verify the production assessment API end-to-end, including structured payload acceptance, compatibility fields, error handling, confirmation state, and retry behavior.
+- [ ] Verify keyboard flow, focus movement, labels, validation messaging, and mobile/desktop usability of the assessment flow.
 - [ ] Verify GA4 initialization exactly once on intended public pages; event-emission code alone does not complete analytics.
-- [ ] Verify assessment events in GA4 DebugView/production-equivalent testing and confirm no sensitive form values are transmitted.
+- [ ] Verify assessment events in GA4 DebugView/production-equivalent testing and confirm no names, email addresses, phone numbers, addresses, free text, or other sensitive form values are transmitted.
 - [ ] Add/verify page-view, primary-navigation, How It Works engagement, contact/phone, Our Work engagement, and other intentional Wave 1 events required by `INSTRUCTIONS.md`.
 - [ ] Verify canonical URLs, titles, meta descriptions, OG metadata, structured data, alt text, sitemap, and robots behaviour for Wave 1 indexable pages.
 - [ ] Review Affordable Housing claims against authoritative source material, especially displacement, asbestos, dust, cost, and regulatory language.
@@ -264,16 +299,18 @@ The current branch is the implementation baseline. Future work should **extend i
 2. Preserve the established Wave 1 navigation architecture unless a deliberate later decision changes it.
 3. Do not infer scope solely from whether a menu item currently has an `href`.
 4. Route explanation before conversion when the visitor is still learning how Plumbing Track works.
-5. Reuse shared components/templates where useful.
-6. Keep pages focused and indexable rather than returning to epic-scroll architecture.
-7. Treat verified current implementation as truth unless a concrete defect is found.
-8. Keep Grapher synchronized with implementation decisions and verification results.
-9. Do not mark analytics, SEO, accessibility, or responsive work complete without verification.
+5. Reuse shared components/templates/fragments where the same markup or behavior must stay synchronized across pages.
+6. Keep page-specific content local when sharing it would create unnecessary coupling.
+7. Keep pages focused and indexable rather than returning to epic-scroll architecture.
+8. Treat verified current implementation as truth unless a concrete defect is found.
+9. Keep Grapher synchronized with implementation decisions and verification results continuously, not only at the end of a documentation session.
+10. Do not mark analytics, SEO, accessibility, responsive, or production integration work complete without verification.
+11. Treat the expanded Assessment design section as a verification/hardening specification for the existing flow unless a later operator decision explicitly calls for redesign.
 
 Practical order:
 
 ```text
-Wave 1: finish and harden current first draft, including /how-it-works/
+Wave 1: verify and harden the current first draft; do not rebuild already-implemented Assessment/How It Works work
         ↓
 Wave 2A: add dedicated routes for the remaining established sections
         ↓

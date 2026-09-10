@@ -1689,6 +1689,46 @@
         "recorded_at": "2026-09-10T04:19:41+00:00"
       },
       "scope": {}
+    },
+    "test-mobile-shell-sweep-20260909": {
+      "id": "test-mobile-shell-sweep-20260909",
+      "type": "test",
+      "title": "Verified mobile shell and comparison sweep",
+      "content": "{\"test\":\"Swept all 17 public routes at the local static server and verified canonical header/footer mounts; browser checks at 560px confirmed Home and Our Work share the mobile shell, footer geometry, menu button, and no horizontal overflow; the comparison table keeps decision labels across two value columns.\",\"method\":\"curl route loop; terminal-browser computed-style checks at 560px; git diff --check\",\"outcome\":\"pass\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "mobile",
+        "sweep",
+        "header",
+        "footer",
+        "comparison-table",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T04:39:31+00:00",
+      "updated_at": "2026-09-10T04:39:31+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "implementation-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T04:39:31+00:00"
+      },
+      "semantic": {
+        "test": "Swept all 17 public routes at the local static server and verified canonical header/footer mounts; browser checks at 560px confirmed Home and Our Work share the mobile shell, footer geometry, menu button, and no horizontal overflow; the comparison table keeps decision labels across two value columns.",
+        "method": "curl route loop; terminal-browser computed-style checks at 560px; git diff --check",
+        "outcome": "pass"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -2082,6 +2122,13 @@
       "rel": "related",
       "created_at": "2026-09-10T04:19:51+00:00",
       "note": "Handoff relies on existing live route and shared-shell verification"
+    },
+    {
+      "from": "test-mobile-shell-sweep-20260909",
+      "to": "requirement-shared-fragment-reuse",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T04:39:33+00:00",
+      "note": "Mobile sweep verifies synchronized shared shell styling"
     }
   ]
 }

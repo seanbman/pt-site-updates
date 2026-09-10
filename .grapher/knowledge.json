@@ -1287,6 +1287,97 @@
       },
       "stage": null,
       "scope": {}
+    },
+    "implementation-installation-family": {
+      "id": "implementation-installation-family",
+      "type": "implementation",
+      "title": "Built the Wave 1 detailed installation page",
+      "content": "{\"change\":\"Created /how-it-works/installation/ as the detailed eight-step installation story, using existing process photography, shared page styling, canonical metadata, internal technology links, and assessment attribution.\",\"component\":\"how-it-works/installation/index.html, page-family.css, templates/site-header.html\"}",
+      "path": "how-it-works/installation/index.html",
+      "tags": [
+        "plumbing-track",
+        "how-it-works",
+        "installation",
+        "wave-1",
+        "process"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:02:49+00:00",
+      "updated_at": "2026-09-10T01:02:49+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/WEBSITE_DESIGN_PLAN.md",
+        "docs/IMPLEMENTATION_ROADMAP.md",
+        "templates/how-it-works/project-process.html",
+        "img/completed-work/web"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:02:49+00:00"
+      },
+      "semantic": {
+        "change": "Created /how-it-works/installation/ as the detailed eight-step installation story, using existing process photography, shared page styling, canonical metadata, internal technology links, and assessment attribution.",
+        "component": "how-it-works/installation/index.html, page-family.css, templates/site-header.html"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "test-installation-family-static-integrity": {
+      "id": "test-installation-family-static-integrity",
+      "type": "test",
+      "title": "Verified detailed installation route static integrity",
+      "content": "{\"test\":\"Checked the detailed installation route, JavaScript syntax, process image assets, and patch whitespace after implementation.\",\"method\":\"git diff --check; node --check app.js; node --check site-header.js; filesystem route and asset existence checks\",\"outcome\":\"pass\"}",
+      "path": "how-it-works/installation/index.html",
+      "tags": [
+        "plumbing-track",
+        "how-it-works",
+        "installation",
+        "wave-1",
+        "test",
+        "static-integrity"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:02:58+00:00",
+      "updated_at": "2026-09-10T01:02:58+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "git diff --check; node --check app.js; node --check site-header.js",
+          "summary": "Detailed installation route and shared runtime pass deterministic static checks."
+        }
+      ],
+      "source_refs": [
+        "how-it-works/installation/index.html",
+        "page-family.css",
+        "img/completed-work/web"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verifier",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:02:58+00:00"
+      },
+      "semantic": {
+        "test": "Checked the detailed installation route, JavaScript syntax, process image assets, and patch whitespace after implementation.",
+        "method": "git diff --check; node --check app.js; node --check site-header.js; filesystem route and asset existence checks",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {}
     }
   },
   "edges": [
@@ -1610,6 +1701,20 @@
       "rel": "related",
       "created_at": "2026-09-10T01:01:40+00:00",
       "note": "Deterministic static checks for the Technology family."
+    },
+    {
+      "from": "implementation-installation-family",
+      "to": "decision-wave1-complete-placeholder-destinations",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T01:03:07+00:00",
+      "note": "Implements the promoted Detailed Installation destination in current Wave 1 scope."
+    },
+    {
+      "from": "implementation-installation-family",
+      "to": "test-installation-family-static-integrity",
+      "rel": "related",
+      "created_at": "2026-09-10T01:03:07+00:00",
+      "note": "Deterministic static checks for the detailed installation route."
     }
   ]
 }

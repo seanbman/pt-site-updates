@@ -554,7 +554,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:19+00:00",
+      "updated_at": "2026-09-10T00:36:09+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -569,7 +569,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:19+00:00"
+        "recorded_at": "2026-09-10T00:36:09+00:00"
       }
     },
     "docs-instructions": {
@@ -586,7 +586,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:19+00:00",
+      "updated_at": "2026-09-10T00:36:10+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "completed",
@@ -601,24 +601,25 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:19+00:00"
+        "recorded_at": "2026-09-10T00:36:10+00:00"
       }
     },
     "docs-website-design-plan": {
       "id": "docs-website-design-plan",
       "type": "document",
       "title": "Plumbing Track website design plan",
-      "content": "Target information architecture and design plan: preserve the existing visual identity and homepage video while expanding into focused, indexable pages.",
+      "content": "Target information architecture and design plan: preserve the existing visual identity and homepage video while expanding into focused, indexable pages. The current plan includes the detailed Book an Assessment conversion specification.",
       "path": "docs/WEBSITE_DESIGN_PLAN.md",
       "tags": [
         "plumbing-track",
         "docs",
         "design",
-        "architecture"
+        "architecture",
+        "assessment"
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:10+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -633,24 +634,26 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:10+00:00"
       }
     },
     "docs-implementation-roadmap": {
       "id": "docs-implementation-roadmap",
       "type": "document",
       "title": "Plumbing Track implementation roadmap",
-      "content": "Living Wave 1/Wave 2 status companion to the design plan. Menu clickability does not define wave membership; current implementation is the baseline.",
+      "content": "Living Wave 1/Wave 2 status companion to the design plan. Current implementation is the baseline; the expanded Assessment specification is treated as verification/hardening for the existing flow, and shared fragments are the preferred synchronization mechanism for repeated cross-page markup.",
       "path": "docs/IMPLEMENTATION_ROADMAP.md",
       "tags": [
         "plumbing-track",
         "docs",
         "roadmap",
-        "waves"
+        "waves",
+        "assessment",
+        "fragments"
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:10+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -665,7 +668,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:10+00:00"
       }
     },
     "docs-decision-how-it-works-routing": {
@@ -683,7 +686,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -698,7 +701,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "docs-web-work-sheet": {
@@ -715,7 +718,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -730,7 +733,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "docs-site-export": {
@@ -747,7 +750,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -762,7 +765,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "decision-how-it-works-routing": {
@@ -779,7 +782,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -794,7 +797,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "requirement-explain-before-assessment": {
@@ -811,7 +814,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -826,7 +829,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "component-how-it-works-page": {
@@ -843,7 +846,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -858,7 +861,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "agents-instructions": {
@@ -876,7 +879,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T00:35:19+00:00",
+      "updated_at": "2026-09-10T00:36:10+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -891,7 +894,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:19+00:00"
+        "recorded_at": "2026-09-10T00:36:10+00:00"
       }
     },
     "decision-continuous-documentation-grapher": {
@@ -909,7 +912,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -924,7 +927,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "requirement-continuous-documentation-grapher": {
@@ -942,7 +945,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:19+00:00",
-      "updated_at": "2026-09-10T00:35:20+00:00",
+      "updated_at": "2026-09-10T00:36:11+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -957,7 +960,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T00:35:20+00:00"
+        "recorded_at": "2026-09-10T00:36:11+00:00"
       }
     },
     "implementation-client-portal": {
@@ -1006,6 +1009,106 @@
       "semantic": {
         "change": "Removed the Newbury building card from the Client Portal listing while preserving the remaining building access flow and shared footer fragment.",
         "component": "client-portal/index.html building card grid"
+      },
+      "scope": {}
+    },
+    "requirement-assessment-detailed-conversion": {
+      "id": "requirement-assessment-detailed-conversion",
+      "type": "requirement",
+      "title": "Assessment flow must be a structured building conversion experience",
+      "content": "{\"requirement\":\"The unified assessment route must progressively capture building, project, contact, review, attribution, submission, confirmation, and CRM-ready structured data without forcing visitors to diagnose unknown plumbing conditions.\",\"acceptance_condition\":\"Current assessment flow satisfies the source-level structure; production API behavior, GA4 initialization and no-PII behavior, CTA attribution coverage, cross-device usability, and accessibility remain explicitly verified before launch.\"}",
+      "path": "docs/WEBSITE_DESIGN_PLAN.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "assessment",
+        "conversion",
+        "crm",
+        "ga4"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T00:36:12+00:00",
+      "updated_at": "2026-09-10T00:36:12+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T00:36:12+00:00"
+      },
+      "scope": {}
+    },
+    "decision-assessment-hardening-not-rebuild": {
+      "id": "decision-assessment-hardening-not-rebuild",
+      "type": "decision",
+      "title": "Treat expanded Assessment plan as hardening, not a rebuild",
+      "content": "{\"decision\":\"The expanded Book an Assessment design section is a verification and hardening specification for the existing assessment implementation, not a greenfield rebuild instruction.\",\"rationale\":\"Source review confirms the dedicated route, four-step flow, structured payload, unsure states, minimal required contact fields, attribution support, review/success/error handling, duplicate-submit guard, and assessment event emission already exist.\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "assessment",
+        "roadmap",
+        "hardening",
+        "decision"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T00:36:12+00:00",
+      "updated_at": "2026-09-10T00:36:12+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T00:36:12+00:00"
+      },
+      "scope": {}
+    },
+    "requirement-shared-fragment-reuse": {
+      "id": "requirement-shared-fragment-reuse",
+      "type": "requirement",
+      "title": "Use shared fragments for synchronized cross-page markup",
+      "content": "{\"requirement\":\"When identical markup and behavior must stay synchronized across multiple pages, extend or create a shared fragment instead of maintaining divergent copies; genuinely page-specific content should remain local.\",\"acceptance_condition\":\"Shared header, footer, and testimonial-card patterns remain canonical; future repeated cross-page components reuse the fragment approach where it reduces drift without creating unnecessary coupling.\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "requirement",
+        "fragments",
+        "shared-components",
+        "maintenance"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T00:36:12+00:00",
+      "updated_at": "2026-09-10T00:36:12+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T00:36:12+00:00"
       },
       "scope": {}
     }
@@ -1247,6 +1350,62 @@
       "to": "docs-instructions",
       "rel": "constrains",
       "created_at": "2026-09-09T10:58:20+00:00"
+    },
+    {
+      "from": "requirement-assessment-detailed-conversion",
+      "to": "docs-website-design-plan",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T00:36:13+00:00",
+      "note": "Detailed conversion requirement is specified in the design plan"
+    },
+    {
+      "from": "decision-assessment-hardening-not-rebuild",
+      "to": "requirement-assessment-detailed-conversion",
+      "rel": "applies_to",
+      "created_at": "2026-09-10T00:36:13+00:00",
+      "note": "Roadmap evaluation classifies the existing implementation against the expanded requirement"
+    },
+    {
+      "from": "decision-assessment-hardening-not-rebuild",
+      "to": "docs-implementation-roadmap",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T00:36:14+00:00",
+      "note": "The post-main-sync evaluation is recorded in the roadmap"
+    },
+    {
+      "from": "requirement-shared-fragment-reuse",
+      "to": "docs-implementation-roadmap",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T00:36:14+00:00",
+      "note": "Fragment reuse rule is recorded in the roadmap"
+    },
+    {
+      "from": "implementation-assessment-flow",
+      "to": "requirement-assessment-detailed-conversion",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T00:36:14+00:00",
+      "note": "Existing assessment implementation satisfies the source-level structure; launch verification remains open"
+    },
+    {
+      "from": "implementation-assessment-flow",
+      "to": "decision-assessment-hardening-not-rebuild",
+      "rel": "applies_to",
+      "created_at": "2026-09-10T00:36:14+00:00",
+      "note": "Existing implementation is the baseline to harden rather than rebuild"
+    },
+    {
+      "from": "implementation-shared-chrome",
+      "to": "requirement-shared-fragment-reuse",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T00:36:14+00:00",
+      "note": "Shared header/footer implementation establishes the fragment pattern"
+    },
+    {
+      "from": "implementation-visual-hygiene",
+      "to": "requirement-shared-fragment-reuse",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T00:36:14+00:00",
+      "note": "Shared testimonial-card implementation extends the fragment pattern beyond chrome"
     }
   ]
 }

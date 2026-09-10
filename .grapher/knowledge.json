@@ -1111,6 +1111,182 @@
         "recorded_at": "2026-09-10T00:36:12+00:00"
       },
       "scope": {}
+    },
+    "session-2026-09-09-dev-updates-roadmap-ack": {
+      "id": "session-2026-09-09-dev-updates-roadmap-ack",
+      "type": "session",
+      "title": "Acknowledged dev/updates roadmap review — 2026-09-09",
+      "content": "{\"acknowledgement\":\"Reviewed the pulled dev/updates state and docs/IMPLEMENTATION_ROADMAP.md. The roadmap is accepted as the current working plan: preserve the existing Wave 1 implementation, perform verification/hardening first, then expand dedicated Wave 2 routes. The expanded assessment section is correctly treated as a verification specification rather than a rebuild mandate. No contradiction found between the roadmap, the current branch history, and origin/main merge baseline.\",\"branch\":\"dev/updates\",\"head\":\"0d564f4\",\"reviewed_commits\":\"594f1fb,0ce5b7e,857cc9c,a964e26,0d564f4\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "roadmap",
+        "review",
+        "acknowledgement",
+        "dev-updates"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T00:50:49+00:00",
+      "updated_at": "2026-09-10T00:51:22+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "git diff --check HEAD~5..HEAD",
+          "summary": "Reviewed roadmap and the five commits on dev/updates beyond origin/main."
+        }
+      ],
+      "source_refs": [
+        "docs/IMPLEMENTATION_ROADMAP.md",
+        "docs/WEBSITE_DESIGN_PLAN.md",
+        "docs/INSTRUCTIONS.md"
+      ],
+      "owners": [],
+      "scope": {},
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "reviewer",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T00:51:22+00:00"
+      },
+      "stage": null
+    },
+    "decision-wave1-complete-placeholder-destinations": {
+      "id": "decision-wave1-complete-placeholder-destinations",
+      "type": "decision",
+      "title": "Promote placeholder menu destinations into Wave 1 completion",
+      "content": "{\"decision\":\"For the current dev/updates cycle, Wave 1 completion includes creating the real pages currently represented by placeholder menu items, while retaining the existing Wave 1 implementation as the baseline. Scope includes /about/, /solutions/ and its Poly-B, Kitec, occupied-building-repiping children, /how-it-works/installation/, /technology/ and its accessible-plumbing and conventional-vs-plumbing-track children, plus /resources/ and FAQ. Affordable Housing should link to the verified existing /bchousing/ route unless source reconciliation supports an intentional canonical migration.\",\"rationale\":\"A menu that advertises destinations as spans creates an incomplete visitor experience; completing the routes is now an explicit operator scope decision even though the prior roadmap placed several of them in Wave 2. Preserve the visual language, homepage video, shared fragments, and verified factual claims; the Brandt source directory is not present in this checkout and must be reconciled before substantive factual copy is finalized.\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "wave-1",
+        "scope",
+        "placeholder-routes",
+        "operator-decision"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T00:55:07+00:00",
+      "updated_at": "2026-09-10T00:55:07+00:00",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/IMPLEMENTATION_ROADMAP.md",
+        "docs/WEBSITE_DESIGN_PLAN.md",
+        "docs/INSTRUCTIONS.md",
+        "templates/site-header.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "reviewer",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T00:55:07+00:00"
+      },
+      "semantic": {
+        "decision": "For the current dev/updates cycle, Wave 1 completion includes creating the real pages currently represented by placeholder menu items, while retaining the existing Wave 1 implementation as the baseline. Scope includes /about/, /solutions/ and its Poly-B, Kitec, occupied-building-repiping children, /how-it-works/installation/, /technology/ and its accessible-plumbing and conventional-vs-plumbing-track children, plus /resources/ and FAQ. Affordable Housing should link to the verified existing /bchousing/ route unless source reconciliation supports an intentional canonical migration.",
+        "rationale": "A menu that advertises destinations as spans creates an incomplete visitor experience; completing the routes is now an explicit operator scope decision even though the prior roadmap placed several of them in Wave 2. Preserve the visual language, homepage video, shared fragments, and verified factual claims; the Brandt source directory is not present in this checkout and must be reconciled before substantive factual copy is finalized."
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "implementation-technology-family": {
+      "id": "implementation-technology-family",
+      "type": "implementation",
+      "title": "Built the Wave 1 Technology page family",
+      "content": "{\"change\":\"Created /technology/, /technology/accessible-plumbing/, and /technology/conventional-vs-plumbing-track/ as a coherent, indexable family using shared page styling, canonical metadata, accessible comparison markup, internal links, and assessment attribution hooks.\",\"component\":\"technology/index.html, technology/accessible-plumbing/index.html, technology/conventional-vs-plumbing-track/index.html, page-family.css, templates/site-header.html\"}",
+      "path": "technology/index.html",
+      "tags": [
+        "plumbing-track",
+        "technology",
+        "wave-1",
+        "accessible-plumbing",
+        "comparison"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:01:26+00:00",
+      "updated_at": "2026-09-10T01:01:26+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/WEBSITE_DESIGN_PLAN.md",
+        "docs/IMPLEMENTATION_ROADMAP.md",
+        "templates/technology/accessible-plumbing.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:01:26+00:00"
+      },
+      "semantic": {
+        "change": "Created /technology/, /technology/accessible-plumbing/, and /technology/conventional-vs-plumbing-track/ as a coherent, indexable family using shared page styling, canonical metadata, accessible comparison markup, internal links, and assessment attribution hooks.",
+        "component": "technology/index.html, technology/accessible-plumbing/index.html, technology/conventional-vs-plumbing-track/index.html, page-family.css, templates/site-header.html"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "test-technology-family-static-integrity": {
+      "id": "test-technology-family-static-integrity",
+      "type": "test",
+      "title": "Verified Technology family static integrity",
+      "content": "{\"test\":\"Checked the Technology family routes, JavaScript syntax, navigation targets, and patch whitespace after implementation.\",\"method\":\"git diff --check; node --check app.js; node --check site-header.js; filesystem route existence checks\",\"outcome\":\"pass\"}",
+      "path": "technology/index.html",
+      "tags": [
+        "plumbing-track",
+        "technology",
+        "wave-1",
+        "test",
+        "static-integrity"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T01:01:34+00:00",
+      "updated_at": "2026-09-10T01:01:34+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "git diff --check; node --check app.js; node --check site-header.js",
+          "summary": "Technology family and shared navigation pass deterministic static checks."
+        }
+      ],
+      "source_refs": [
+        "technology/index.html",
+        "technology/accessible-plumbing/index.html",
+        "technology/conventional-vs-plumbing-track/index.html",
+        "templates/site-header.html",
+        "page-family.css"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verifier",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T01:01:34+00:00"
+      },
+      "semantic": {
+        "test": "Checked the Technology family routes, JavaScript syntax, navigation targets, and patch whitespace after implementation.",
+        "method": "git diff --check; node --check app.js; node --check site-header.js; filesystem route existence checks",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {}
     }
   },
   "edges": [
@@ -1406,6 +1582,34 @@
       "rel": "satisfies",
       "created_at": "2026-09-10T00:36:14+00:00",
       "note": "Shared testimonial-card implementation extends the fragment pattern beyond chrome"
+    },
+    {
+      "from": "session-2026-09-09-dev-updates-roadmap-ack",
+      "to": "docs-implementation-roadmap",
+      "rel": "related",
+      "created_at": "2026-09-10T00:51:04+00:00",
+      "note": "Acknowledges the current roadmap and accepts its Wave 1 hardening then Wave 2 expansion order."
+    },
+    {
+      "from": "decision-wave1-complete-placeholder-destinations",
+      "to": "docs-implementation-roadmap",
+      "rel": "deviates_from",
+      "created_at": "2026-09-10T00:55:14+00:00",
+      "note": "Promotes selected placeholder destinations from the roadmap's Wave 2 expansion into the current Wave 1 completion scope by explicit operator instruction."
+    },
+    {
+      "from": "implementation-technology-family",
+      "to": "decision-wave1-complete-placeholder-destinations",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T01:01:40+00:00",
+      "note": "Implements the promoted Technology destinations in the current Wave 1 scope."
+    },
+    {
+      "from": "implementation-technology-family",
+      "to": "test-technology-family-static-integrity",
+      "rel": "related",
+      "created_at": "2026-09-10T01:01:40+00:00",
+      "note": "Deterministic static checks for the Technology family."
     }
   ]
 }

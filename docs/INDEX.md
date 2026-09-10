@@ -10,6 +10,8 @@ Grapher records should reference these paths rather than duplicating full docume
 | `docs-website-design-plan` | `docs/WEBSITE_DESIGN_PLAN.md` | Target website architecture and design plan | Current |
 | `docs-implementation-roadmap` | `docs/IMPLEMENTATION_ROADMAP.md` | Living execution status and Wave rebaseline | Current |
 | `docs-dev-updates-review` | `docs/DEV_UPDATES_REVIEW_2026-09-10.md` | Source-level branch review: strengths, defects, route status, production gates, and plan re-evaluation | Current |
+| `docs-partials-implementation-plan` | `docs/PARTIALS_IMPLEMENTATION_PLAN.md` | Safe staged migration from runtime fragments to Ruby/ERB build-time partials | Current |
+| `docs-decision-partials-typography-palette` | `docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md` | Operator decisions: build-time partials, Geist retained, cyan remains removed | Current |
 | `docs-decision-how-it-works-routing` | `docs/DECISION_HOW_IT_WORKS_ROUTING.md` | Current routing decision: explain before assessment | Current |
 | `docs-web-work-sheet` | `docs/plumbing track web work sheet.pdf` | Earlier source / supporting website worksheet | Source evidence |
 | `docs-site-export` | `docs/site-export/` | Archived Squarespace material | Historical source evidence |
@@ -22,6 +24,8 @@ flowchart TD
     D[docs/WEBSITE_DESIGN_PLAN.md]
     R[docs/IMPLEMENTATION_ROADMAP.md]
     V[docs/DEV_UPDATES_REVIEW_2026-09-10.md]
+    P[docs/PARTIALS_IMPLEMENTATION_PLAN.md]
+    PT[docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md]
     H[docs/DECISION_HOW_IT_WORKS_ROUTING.md]
     W[docs/plumbing track web work sheet.pdf]
     S[docs/site-export/]
@@ -32,6 +36,9 @@ flowchart TD
     D --> V
     I --> V
     V --> R
+    PT --> P
+    PT --> R
+    P --> R
     H --> R
     H --> D
     W --> D
@@ -45,11 +52,22 @@ For current implementation decisions:
 1. explicit current operator decisions recorded in a current decision document;
 2. `docs/INSTRUCTIONS.md`;
 3. `docs/IMPLEMENTATION_ROADMAP.md` for current implementation/wave status;
-4. `docs/DEV_UPDATES_REVIEW_2026-09-10.md` for the evidence and reasoning behind the current branch rebaseline;
-5. `docs/WEBSITE_DESIGN_PLAN.md` for target architecture and design intent;
-6. source/supporting documents and archived exports.
+4. dedicated implementation plans such as `docs/PARTIALS_IMPLEMENTATION_PLAN.md`;
+5. `docs/DEV_UPDATES_REVIEW_2026-09-10.md` for the evidence and reasoning behind the current branch rebaseline;
+6. `docs/WEBSITE_DESIGN_PLAN.md` for target architecture and design intent;
+7. source/supporting documents and archived exports.
 
 This local ordering does not replace the broader source-precedence rules in `docs/INSTRUCTIONS.md`; it clarifies how tracked project documentation relates to itself.
+
+## Current shared-chrome / typography / palette decision
+
+The runtime fragment loader is scheduled to be replaced by **build-time rendered partials**. The first implementation must preserve all current public paths, generate into an isolated `dist/` directory, and pass parity verification before deployment changes. See `docs/PARTIALS_IMPLEMENTATION_PLAN.md`.
+
+**Geist remains the canonical site typeface.**
+
+**Cyan remains intentionally removed.** Any remaining `--cyan` / `--cyan-soft` references are stale artifacts to remove or replace with the current palette rather than reasons to restore cyan.
+
+See `docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md`.
 
 ## Current implementation note
 

@@ -1769,6 +1769,264 @@
         "observed_behavior": "Page-specific CSS overrode canonical fragment styles at mobile widths. Our Work showed a divergent, low-contrast menu/header state; footer geometry differed; and the mobile comparison table lost the relationship between its compared columns. The correction centralizes final shell precedence, restores readable Our Work contrast, balances text wrapping, and preserves labeled comparison rows."
       },
       "scope": {}
+    },
+    "failure-menu-cascade-20260909": {
+      "id": "failure-menu-cascade-20260909",
+      "type": "failure",
+      "title": "Contradictory canonical menu cascade",
+      "content": "{\"failure\":\"The shared menu stylesheet accumulated overlapping canonical-shell blocks and high-specificity overrides.\",\"observed_behavior\":\"The prior cascade produced divergent page header states, duplicate-looking logo rendering, inconsistent menu contrast, and incorrect ownership of responsive layout rules. The correction was to replace the accumulated blocks with one scoped shared-navigation.css contract. Evidence: commit 03a3b52 and live browser checks at 550px and 1440px.\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "failure",
+        "menu",
+        "header",
+        "css",
+        "cascade",
+        "mobile"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:01:45+00:00",
+      "updated_at": "2026-09-10T06:01:45+00:00",
+      "status": "historical",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "failure": "The shared menu stylesheet accumulated overlapping canonical-shell blocks and high-specificity overrides.",
+        "observed_behavior": "The prior cascade produced divergent page header states, duplicate-looking logo rendering, inconsistent menu contrast, and incorrect ownership of responsive layout rules. The correction was to replace the accumulated blocks with one scoped shared-navigation.css contract. Evidence: commit 03a3b52 and live browser checks at 550px and 1440px."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "implementation-shared-shell-recovery-20260909": {
+      "id": "implementation-shared-shell-recovery-20260909",
+      "type": "implementation",
+      "title": "Replaced contradictory menu cascade with one shell contract",
+      "content": "{\"change\":\"Replaced the accumulated shared-navigation.css overrides with one scoped contract for the canonical header and footer fragments.\",\"component\":\"The contract preserves left-aligned branding, vertically centers the logo/action cluster in the 68px mobile bar, swaps logo variants with opacity in one grid cell, and gives the mobile drawer one white full-width state. Footer geometry remains centralized and responsive. Evidence: commit 03a3b52; live browser computed geometry and screenshot checks on Home, Our Work, and Technology.\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "menu",
+        "header",
+        "footer",
+        "shared-fragment",
+        "responsive",
+        "canonical-shell"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:01:46+00:00",
+      "updated_at": "2026-09-10T06:01:46+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Replaced the accumulated shared-navigation.css overrides with one scoped contract for the canonical header and footer fragments.",
+        "component": "The contract preserves left-aligned branding, vertically centers the logo/action cluster in the 68px mobile bar, swaps logo variants with opacity in one grid cell, and gives the mobile drawer one white full-width state. Footer geometry remains centralized and responsive. Evidence: commit 03a3b52; live browser computed geometry and screenshot checks on Home, Our Work, and Technology."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "implementation-desktop-logo-scale-20260909": {
+      "id": "implementation-desktop-logo-scale-20260909",
+      "type": "implementation",
+      "title": "Reduced desktop header logo by twenty percent",
+      "content": "{\"change\":\"Reduced the desktop header logo clamp from 220px/22vw/300px to 176px/17.6vw/240px while preserving the mobile media-rule width of 168px.\",\"component\":\"Desktop-only header branding scale revision. Evidence: commit bb7a709 and live 1440px browser check measured 240px logo width with 40px header center alignment.\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "header",
+        "logo",
+        "desktop",
+        "responsive"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:01:48+00:00",
+      "updated_at": "2026-09-10T06:01:48+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Reduced the desktop header logo clamp from 220px/22vw/300px to 176px/17.6vw/240px while preserving the mobile media-rule width of 168px.",
+        "component": "Desktop-only header branding scale revision. Evidence: commit bb7a709 and live 1440px browser check measured 240px logo width with 40px header center alignment."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "decision-mobile-submenu-spacing-20260910": {
+      "id": "decision-mobile-submenu-spacing-20260910",
+      "type": "decision",
+      "title": "Space only expanded mobile submenu links",
+      "content": "{\"decision\":\"The requested 0.5em top and bottom spacing applies to nested submenu links such as Accessible Plumbing and Conventional vs Plumbing Track, not to the primary menu rows.\",\"rationale\":\"About, Our Work, Solutions, How It Works, Our Technology, and Resources retain their original row spacing. Operator clarification was recorded on 2026-09-10; final implementation is commit b7a2c89.\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "decision",
+        "menu",
+        "mobile",
+        "submenu",
+        "spacing"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:01:49+00:00",
+      "updated_at": "2026-09-10T06:01:49+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "decision": "The requested 0.5em top and bottom spacing applies to nested submenu links such as Accessible Plumbing and Conventional vs Plumbing Track, not to the primary menu rows.",
+        "rationale": "About, Our Work, Solutions, How It Works, Our Technology, and Resources retain their original row spacing. Operator clarification was recorded on 2026-09-10; final implementation is commit b7a2c89."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "failure-primary-menu-spacing-20260910": {
+      "id": "failure-primary-menu-spacing-20260910",
+      "type": "failure",
+      "title": "Extra spacing was first applied to primary mobile menu rows",
+      "content": "{\"failure\":\"The first spacing revision applied 0.5em top and bottom margins to top-level mobile menu labels as well as submenu links.\",\"observed_behavior\":\"Primary rows became more widely spaced than requested. Correction: remove the margin from primary links and summaries and apply it only to nested .nav-flyout a links. Intermediate commit 4881d81 was superseded by b7a2c89.\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "failure",
+        "menu",
+        "mobile",
+        "spacing",
+        "revision"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:01:51+00:00",
+      "updated_at": "2026-09-10T06:01:51+00:00",
+      "status": "historical",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "failure": "The first spacing revision applied 0.5em top and bottom margins to top-level mobile menu labels as well as submenu links.",
+        "observed_behavior": "Primary rows became more widely spaced than requested. Correction: remove the margin from primary links and summaries and apply it only to nested .nav-flyout a links. Intermediate commit 4881d81 was superseded by b7a2c89."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "implementation-mobile-submenu-spacing-20260910": {
+      "id": "implementation-mobile-submenu-spacing-20260910",
+      "type": "implementation",
+      "title": "Applied spacing only to mobile submenu links",
+      "content": "{\"change\":\"Added margin-block: 0.5em to mobile .nav-flyout a links only.\",\"component\":\"Top-level menu row margins remain 0 while nested submenu link margins are 0.5em on both sides. Evidence: commit b7a2c89 and live 550px browser computed-style check measured 0px on primary rows and 6.56px on each side of nested links.\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "menu",
+        "mobile",
+        "submenu",
+        "spacing",
+        "responsive"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:01:52+00:00",
+      "updated_at": "2026-09-10T06:01:52+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Added margin-block: 0.5em to mobile .nav-flyout a links only.",
+        "component": "Top-level menu row margins remain 0 while nested submenu link margins are 0.5em on both sides. Evidence: commit b7a2c89 and live 550px browser computed-style check measured 0px on primary rows and 6.56px on each side of nested links."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "test-canonical-menu-recovery-20260910": {
+      "id": "test-canonical-menu-recovery-20260910",
+      "type": "test",
+      "title": "Verified canonical menu recovery and spacing revisions",
+      "content": "{\"test\":\"Verified the canonical menu and submenu-spacing revisions in the live browser at 550px and 1440px. At 550px the header is 68px high, logo/action centers align, one logo is visible, the drawer is white and full-width, primary menu margins are 0, and nested submenu margins are 0.5em. At 1440px the logo width is 240px and the desktop menu remains visible.\",\"method\":\"Live browser computed styles and screenshots; route source audit; git diff --check.\",\"outcome\":\"pass\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "menu",
+        "header",
+        "footer",
+        "mobile",
+        "desktop",
+        "submenu",
+        "spacing"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:02:33+00:00",
+      "updated_at": "2026-09-10T06:02:33+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "test": "Verified the canonical menu and submenu-spacing revisions in the live browser at 550px and 1440px. At 550px the header is 68px high, logo/action centers align, one logo is visible, the drawer is white and full-width, primary menu margins are 0, and nested submenu margins are 0.5em. At 1440px the logo width is 240px and the desktop menu remains visible.",
+        "method": "Live browser computed styles and screenshots; route source audit; git diff --check.",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "failure-logo-horizontal-centering-20260909": {
+      "id": "failure-logo-horizontal-centering-20260909",
+      "type": "failure",
+      "title": "Mobile logo was incorrectly horizontally centered",
+      "content": "{\"failure\":\"The initial logo stabilization revision positioned the mobile brand at 50% with an absolute transform, changing the required left-aligned menu-bar layout.\",\"observed_behavior\":\"The change also depended on high-specificity overrides and was part of the cascade that led to the later canonical-shell rewrite. Roadmap chronology records commit f99c49b and its correction in 03a3b52.\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "failure",
+        "menu",
+        "header",
+        "logo",
+        "mobile",
+        "alignment",
+        "revision"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:04:01+00:00",
+      "updated_at": "2026-09-10T06:04:01+00:00",
+      "status": "historical",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "failure": "The initial logo stabilization revision positioned the mobile brand at 50% with an absolute transform, changing the required left-aligned menu-bar layout.",
+        "observed_behavior": "The change also depended on high-specificity overrides and was part of the cascade that led to the later canonical-shell rewrite. Roadmap chronology records commit f99c49b and its correction in 03a3b52."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
     }
   },
   "edges": [
@@ -2183,6 +2441,111 @@
       "rel": "related",
       "created_at": "2026-09-10T04:46:48+00:00",
       "note": "Corrective sweep supplies rendered verification after the failure"
+    },
+    {
+      "from": "failure-menu-cascade-20260909",
+      "to": "implementation-shared-shell-recovery-20260909",
+      "rel": "deviates_from",
+      "created_at": "2026-09-10T06:02:48+00:00",
+      "note": "The recovery replaces the contradictory cascade"
+    },
+    {
+      "from": "implementation-shared-shell-recovery-20260909",
+      "to": "failure-2026-09-09-shared-shell-fidelity",
+      "rel": "related",
+      "created_at": "2026-09-10T06:02:48+00:00",
+      "note": "Detailed correction of the previously recorded shell fidelity failure"
+    },
+    {
+      "from": "implementation-shared-shell-recovery-20260909",
+      "to": "requirement-shared-fragment-reuse",
+      "rel": "satisfies",
+      "created_at": "2026-09-10T06:02:48+00:00",
+      "note": "Keeps canonical header/footer fragments under one shared stylesheet contract"
+    },
+    {
+      "from": "implementation-shared-shell-recovery-20260909",
+      "to": "test-canonical-menu-recovery-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:02:48+00:00",
+      "note": "Live browser verification of the recovered shell"
+    },
+    {
+      "from": "implementation-desktop-logo-scale-20260909",
+      "to": "implementation-shared-shell-recovery-20260909",
+      "rel": "related",
+      "created_at": "2026-09-10T06:02:49+00:00",
+      "note": "Desktop logo scale is a follow-up revision to the recovered shell"
+    },
+    {
+      "from": "failure-primary-menu-spacing-20260910",
+      "to": "decision-mobile-submenu-spacing-20260910",
+      "rel": "deviates_from",
+      "created_at": "2026-09-10T06:02:49+00:00",
+      "note": "Intermediate change did not match the clarified target"
+    },
+    {
+      "from": "decision-mobile-submenu-spacing-20260910",
+      "to": "implementation-mobile-submenu-spacing-20260910",
+      "rel": "implements",
+      "created_at": "2026-09-10T06:02:49+00:00",
+      "note": "Final CSS implements the clarified submenu-only spacing decision"
+    },
+    {
+      "from": "implementation-mobile-submenu-spacing-20260910",
+      "to": "test-canonical-menu-recovery-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:02:49+00:00",
+      "note": "Computed-style test confirms primary rows unchanged and nested links spaced"
+    },
+    {
+      "from": "implementation-mobile-submenu-spacing-20260910",
+      "to": "failure-primary-menu-spacing-20260910",
+      "rel": "related",
+      "created_at": "2026-09-10T06:02:49+00:00",
+      "note": "Final revision records the correction of the intermediate mistake"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "failure-menu-cascade-20260909",
+      "rel": "references",
+      "created_at": "2026-09-10T06:02:50+00:00",
+      "note": "Roadmap records the menu cascade failure and recovery"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "implementation-desktop-logo-scale-20260909",
+      "rel": "references",
+      "created_at": "2026-09-10T06:02:50+00:00",
+      "note": "Roadmap records the desktop logo scale change"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "decision-mobile-submenu-spacing-20260910",
+      "rel": "references",
+      "created_at": "2026-09-10T06:02:50+00:00",
+      "note": "Roadmap records the submenu-only spacing decision"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "failure-primary-menu-spacing-20260910",
+      "rel": "references",
+      "created_at": "2026-09-10T06:02:50+00:00",
+      "note": "Roadmap records the incorrect intermediate spacing revision"
+    },
+    {
+      "from": "failure-logo-horizontal-centering-20260909",
+      "to": "implementation-shared-shell-recovery-20260909",
+      "rel": "deviates_from",
+      "created_at": "2026-09-10T06:04:03+00:00",
+      "note": "The canonical-shell recovery removes the incorrect absolute centering rule"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "failure-logo-horizontal-centering-20260909",
+      "rel": "references",
+      "created_at": "2026-09-10T06:04:03+00:00",
+      "note": "Roadmap records the initial logo alignment mistake and correction"
     }
   ]
 }

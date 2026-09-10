@@ -18,6 +18,18 @@ The earlier Wave 1 hardening pass was incorrect in claiming that shared header/f
 
 The correction centralizes final header/footer precedence in `shared-navigation.css`, keeps the canonical fragments as the only menu/footer markup source, restores a readable solid header for the photographic Our Work hero, prevents heading/paragraph orphaning with balanced text wrapping, and presents comparison rows as a labeled decision row with two comparable values on mobile. The corrected implementation must be judged by rendered browser output, not by fragment mounts or source inspection alone.
 
+## Revision ledger — canonical menu and logo corrections — 2026-09-09 to 2026-09-10
+
+The following sequence records the menu-related implementation history that was not represented by the earlier broad shared-shell records:
+
+1. `f99c49b` attempted to stabilize the two logo variants by overlapping them in one grid cell and adding mobile positioning. The positioning rule horizontally centered the mobile logo, which did not match the required left-aligned menu-bar layout and continued the stylesheet's high-specificity override problem.
+2. `03a3b52` replaced the accumulated/conflicting `shared-navigation.css` blocks with one scoped canonical header/footer contract. The final contract keeps the logo on the left, vertically centers the logo and action cluster in the 68px mobile bar, swaps logo variants through opacity in one grid cell, and gives every page the same white mobile drawer state.
+3. `bb7a709` reduced the desktop logo clamp by 20%, from `220px / 22vw / 300px` to `176px / 17.6vw / 240px`. The mobile rule remained `168px`.
+4. `4881d81` was an incorrect spacing revision: it applied `0.5em` top and bottom margins to primary mobile menu rows as well as nested submenu links.
+5. After the operator clarified that only expanded submenu entries such as **Accessible Plumbing** and **Conventional vs Plumbing Track** should change, `b7a2c89` removed the margins from primary rows and applied `margin-block: 0.5em` only to nested `.nav-flyout a` links.
+
+The final state is verified at 550px and 1440px in the live browser: the mobile logo/action centers align within the header, exactly one logo variant is visible, the drawer is full-width and readable, primary menu margins are unchanged, nested submenu links receive the requested spacing, and the desktop logo measures 240px at a 1440px viewport. This ledger intentionally preserves the incorrect intermediate revisions instead of presenting the final CSS as if it had been correct on the first attempt.
+
 ## Main sync evaluation — 2026-09-09
 
 `main` was recently synchronized with `dev/updates`. The substantive planning addition on `main` is the expanded **Book an Assessment — Detailed Conversion Task** in `docs/WEBSITE_DESIGN_PLAN.md`.

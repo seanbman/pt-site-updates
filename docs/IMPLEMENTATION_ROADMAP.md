@@ -2,93 +2,147 @@
 
 ## Status basis
 
-This roadmap is the living execution/status companion to `docs/WEBSITE_DESIGN_PLAN.md` and `docs/INSTRUCTIONS.md`.
+This is the living execution/status companion to `docs/WEBSITE_DESIGN_PLAN.md` and `docs/INSTRUCTIONS.md`.
 
-The design plan remains the target architecture. This document reflects the actual state of `dev/updates` and accepts the operator's manual adjustments as the current implementation baseline.
+The design plan remains the target architecture. This roadmap reflects the actual state of `dev/updates` and accepts the operator's manual adjustments as the current implementation baseline.
 
-## Branch handoff — 2026-09-09
+For the detailed 2026-09-10 branch review, evidence, route matrix, risks, and re-evaluation, see `docs/DEV_UPDATES_REVIEW_2026-09-10.md`.
 
-`dev/updates` is ready to merge into `main` for the current Wave 1 implementation baseline. Since the existing `main` merge baseline, this branch adds the Wave 1 Technology, detailed Installation, Solutions, About, and Resources page families, shared-shell and route hardening, and the associated Grapher synchronization records. The latest branch verification covers the public route set, shared header/footer loading, navigation targets, JavaScript syntax, whitespace, and the live browser-rendered shell.
+---
 
-This merge does not close the remaining Wave 1 hardening items below. Production analytics, assessment API behaviour, responsive/accessibility review, source-fact review, and final static-serving regression remain follow-up work.
+# Current re-evaluation — 2026-09-10
 
-## Correction record — shared-shell fidelity failure — 2026-09-09
+The older roadmap understated how much of the dedicated page architecture has already been implemented.
+
+`dev/updates` now contains real first-draft routes for:
+
+- `/about/`
+- `/solutions/`
+- `/solutions/poly-b/`
+- `/solutions/kitec/`
+- `/solutions/occupied-building-repiping/`
+- `/how-it-works/installation/`
+- `/technology/`
+- `/technology/accessible-plumbing/`
+- `/technology/conventional-vs-plumbing-track/`
+- `/resources/`
+- `/resources/faq/`
+
+These routes are not empty placeholders. They have page-specific copy, titles/descriptions, canonical URLs, shared-shell mounts, internal links, and conversion CTAs.
+
+Therefore:
+
+> **Wave 2A route creation is largely complete. The current priority is production hardening and content/source depth, not rebuilding those pages.**
+
+The public route set has expanded, so Wave 1 hardening must now cover the whole current site rather than only Home, How It Works, Our Work, Affordable Housing, Assessment, and Client Portal.
+
+## Production-readiness correction
+
+The previous branch-handoff language that described `dev/updates` as ready to merge should be read narrowly as **ready to preserve as the current implementation baseline**, not as proof that the branch is production-ready.
+
+The 2026-09-10 review identified concrete pre-production issues:
+
+1. primary shared navigation/footer markup is loaded client-side by `site-header.js`, while project instructions require crawlable navigation and no important content exclusively behind JavaScript;
+2. root `sitemap.xml` is absent;
+3. root `robots.txt` is absent;
+4. `shared-navigation.css` uses `--cyan` / `--cyan-soft`, but the new `page-family.css` routes do not define those tokens;
+5. the page family falls back to Arial/Helvetica rather than consuming the homepage's existing Geist typography treatment;
+6. production assessment API, GA4, no-PII, CTA attribution, and whole-route deployment verification remain open.
+
+Do not mark the current branch production-ready until the P0 gates below are closed.
+
+---
+
+# Historical correction record — shared-shell fidelity failure — 2026-09-09
 
 The earlier Wave 1 hardening pass was incorrect in claiming that shared header/footer fragments were visually consistent. Page-specific inline CSS continued to override the canonical shell at mobile widths, producing divergent menu states and footer geometry on pages including Our Work. The mobile comparison table also stacked its three cells without preserving the Conventional / Plumbing Track relationship, making the content difficult to interpret.
 
-The correction centralizes final header/footer precedence in `shared-navigation.css`, keeps the canonical fragments as the only menu/footer markup source, restores a readable solid header for the photographic Our Work hero, prevents heading/paragraph orphaning with balanced text wrapping, and presents comparison rows as a labeled decision row with two comparable values on mobile. The corrected implementation must be judged by rendered browser output, not by fragment mounts or source inspection alone.
+The correction centralized final header/footer precedence in `shared-navigation.css`, kept canonical fragments as the only menu/footer markup source, restored a readable solid header for the photographic Our Work hero, improved text wrapping, and made the mobile comparison relationship clearer.
+
+The lesson remains current: **shared source files are not proof of shared rendered behavior. Verify the output.**
 
 ## Revision ledger — canonical menu and logo corrections — 2026-09-09 to 2026-09-10
-
-The following sequence records the menu-related implementation history that was not represented by the earlier broad shared-shell records:
 
 1. `f99c49b` attempted to stabilize the two logo variants by overlapping them in one grid cell and adding mobile positioning. The positioning rule horizontally centered the mobile logo, which did not match the required left-aligned menu-bar layout and continued the stylesheet's high-specificity override problem.
 2. `03a3b52` replaced the accumulated/conflicting `shared-navigation.css` blocks with one scoped canonical header/footer contract. The final contract keeps the logo on the left, vertically centers the logo and action cluster in the 68px mobile bar, swaps logo variants through opacity in one grid cell, and gives every page the same white mobile drawer state.
 3. `bb7a709` reduced the desktop logo clamp by 20%, from `220px / 22vw / 300px` to `176px / 17.6vw / 240px`. The mobile rule remained `168px`.
 4. `4881d81` was an incorrect spacing revision: it applied `0.5em` top and bottom margins to primary mobile menu rows as well as nested submenu links.
-5. After the operator clarified that only expanded submenu entries such as **Accessible Plumbing** and **Conventional vs Plumbing Track** should change, `b7a2c89` removed the margins from primary rows and applied `margin-block: 0.5em` only to nested `.nav-flyout a` links.
+5. `b7a2c89` corrected that interpretation after operator clarification: primary rows returned to their prior spacing and `margin-block: 0.5em` applies only to nested `.nav-flyout a` links.
 
-The final state is verified at 550px and 1440px in the live browser: the mobile logo/action centers align within the header, exactly one logo variant is visible, the drawer is full-width and readable, primary menu margins are unchanged, nested submenu links receive the requested spacing, and the desktop logo measures 240px at a 1440px viewport. This ledger intentionally preserves the incorrect intermediate revisions instead of presenting the final CSS as if it had been correct on the first attempt.
+The previously recorded live-browser evidence at 550px and 1440px verified the final menu/logo state. That evidence is retained as historical verification; the 2026-09-10 source review did not independently repeat the full browser matrix.
 
-## Main sync evaluation — 2026-09-09
+---
 
-`main` was recently synchronized with `dev/updates`. The substantive planning addition on `main` is the expanded **Book an Assessment — Detailed Conversion Task** in `docs/WEBSITE_DESIGN_PLAN.md`.
+# Assessment status
 
-That expanded section is useful as an acceptance and verification specification, but it must **not** be interpreted as an instruction to rebuild the current assessment experience from scratch. Source review of the current implementation already confirms the major structural requirements:
+The expanded **Book an Assessment — Detailed Conversion Task** in `docs/WEBSITE_DESIGN_PLAN.md` remains a hardening/acceptance specification for the existing flow, not an instruction to rebuild it.
+
+Source review already confirms the major structural requirements:
 
 - dedicated `/assessment/` route;
-- progressive Building → Project → Contact → Review flow;
-- structured building, project, contact, and attribution data;
-- normal `Unsure`/unknown states rather than forcing diagnosis;
-- only name and email required for follow-up;
-- review and explicit success state;
-- API error/retry handling and duplicate-submit guard;
-- source page / CTA attribution support;
-- `assessment_started`, `assessment_step_completed`, and `assessment_submitted` event emission;
-- non-PII categorical parameters in the assessment-event code.
+- Building → Project → Contact → Review progression;
+- structured building/project/contact/attribution data;
+- `Unsure`/unknown states;
+- minimal required contact data;
+- review + explicit success state;
+- API error/retry handling and duplicate-submit protection;
+- source-page / CTA attribution support;
+- assessment CTA/start/step/submit event-emission logic.
 
-The assessment plan is therefore classified as **implemented at the source/interaction-design level, with production verification still required**. Remaining work belongs in Wave 1 hardening: production API behavior, actual GA4 initialization and DebugView verification, current CTA attribution coverage, no-PII verification, cross-device behavior, keyboard/focus/validation review, and confirmation that the live experience matches the intended visual standard.
+**Classification:** implemented at the source/interaction-design level; production integration verification remains P0.
 
-### Shared-fragment implementation rule
+---
 
-The site now has an established lightweight fragment system. Shared header, footer, and testimonial-card markup are loaded from canonical templates rather than copied independently into every page.
+# Shared-fragment implementation rule
 
-Going forward:
+Shared source fragments remain the preferred way to prevent markup drift when identical chrome/behavior must stay synchronized.
 
-- use a shared fragment when the **same markup and behavior** must stay synchronized across multiple pages;
-- keep page-specific content local when it is genuinely unique;
-- extend an existing fragment before creating competing copies of shared chrome or repeated proof components;
-- verify fragment loading and fallback/static-serving behavior as part of Wave 1 hardening.
+Use them for canonical ownership, but distinguish **source reuse** from **deploy-time delivery**:
 
-This is an implementation rule, not a mandate to turn every repeated sentence or page section into a fragment.
+- canonical header/footer/testimonial markup should remain centralized;
+- deployable public HTML should contain crawlable primary navigation and important shared content without requiring client JavaScript to create it;
+- build/export-time fragment injection is preferred over duplicating manually maintained markup;
+- page-specific content should stay local where sharing would create unnecessary coupling.
 
-## Scope rule
+---
 
-**Menu clickability does not define wave membership.**
+# Current navigation architecture
 
-Grapher records the current navigation architecture as:
+The current canonical menu is:
 
 ```text
-About
-Our Work
-Solutions
-How It Works
-Our Technology
-Resources
-[ Book an Assessment ]
+ABOUT → /about/
+OUR WORK → /our-work/
+SOLUTIONS
+  Solutions → /solutions/
+  Poly-B Replacement → /solutions/poly-b/
+  Kitec Replacement → /solutions/kitec/
+  Occupied Building Repiping → /solutions/occupied-building-repiping/
+  Affordable Housing → /bchousing/
+HOW IT WORKS
+  How It Works → /how-it-works/
+  Project Process → /how-it-works/#process
+  Detailed Installation → /how-it-works/installation/
+OUR TECHNOLOGY
+  Our Technology → /technology/
+  Accessible Plumbing → /technology/accessible-plumbing/
+  Conventional vs Plumbing Track → /technology/conventional-vs-plumbing-track/
+RESOURCES
+  Resources → /resources/
+  FAQ → /resources/faq/
+  Client Portal → /client-portal/
+[ BOOK AN ASSESSMENT ] → /assessment/
 ```
 
-That architecture is already part of the current implementation. A section can therefore be **Wave 1** even when its menu item is currently a label/flyout rather than a standalone routed page.
+The section `<summary>` controls do not need to become links merely for clickability; each flyout now exposes the corresponding hub route explicitly.
 
-Wave 2 is primarily the expansion of these already-established sections into additional dedicated, indexable pages and deeper content.
+Resources remains intentionally narrowed to ready material. Omitted Problem/Decision/Project Guides stay in Wave 2 rather than being treated as cancelled.
 
-The one explicit current scope reduction recorded in Grapher is **Resources**: the menu was intentionally limited to FAQ and Client Portal until the remaining guides are ready. That reduction does not remove Resources from Wave 1.
+---
 
-## Current How It Works routing decision
+# How It Works decision
 
-`How It Works` is a Wave 1 explanatory destination, not a shortcut to the assessment form.
-
-The intended first-draft flow is now:
+`How It Works` remains an explanatory destination, not a shortcut to Assessment.
 
 ```text
 Home
@@ -99,125 +153,150 @@ Accessible plumbing explanation
   ↓
 Five-phase project process
   ↓
-Our Work / proof
+Detailed Installation / Our Work / Technology as useful
   ↓
 Book an Assessment when the visitor is ready
 ```
 
-The standalone `/how-it-works/` page should explain both the project sequence and why accessible routing matters. Assessment remains available as a downstream CTA, but it must not replace the explanatory step.
+Keep this decision.
 
 ---
 
-# Wave 1 — Current First Draft
-
-Wave 1 is the current implemented site experience and the architecture already expressed through the homepage, navigation, existing public pages, shared components, and conversion flow.
+# Wave 1 — Current Public First Draft + Production Hardening
 
 ## Completed or substantially implemented
 
 - ~~Preserve the existing Plumbing Track visual identity rather than rebrand the site.~~
 - ~~Preserve the homepage video/hero experience.~~
 - ~~Restructure Home into a compact conversion journey rather than an epic-scroll copy dump.~~
-- ~~Introduce accessible-plumbing/product explanation on Home.~~
-- ~~Introduce routing/exploration cards on Home to represent the broader site architecture.~~
+- ~~Introduce accessible-plumbing/product explanation and routing on Home.~~
 - ~~Establish the primary navigation hierarchy: About, Our Work, Solutions, How It Works, Our Technology, Resources.~~
-- ~~Create shared header/navigation and footer fragments.~~
-- ~~Create shared testimonial-card markup/styles for repeated proof sections rather than maintaining divergent copies.~~
-- ~~Implement responsive navigation, click-away behaviour, mobile menu corrections, scroll-state behaviour, and reduced-motion handling.~~
-- ~~Create `/how-it-works/` as a standalone explanatory page.~~
-- ~~Route the homepage How It Works entry points to `/how-it-works/` rather than directly to Assessment.~~
-- ~~Explain accessible plumbing as part of How It Works: deliberate enclosed routing, reduced unnecessary demolition, and future service access.~~
-- ~~Present the five-phase project process on the How It Works page.~~
-- ~~Keep Assessment as a downstream CTA after explanation/proof rather than the explanation itself.~~
-- ~~Rework **Our Work** into a stronger responsive proof/portfolio page.~~
-- ~~Retain the Client Portal and align it with the shared site shell.~~
-- ~~Create the dedicated **Book an Assessment** route.~~
-- ~~Implement the detailed assessment structure: Building → Project → Contact → Review, structured payload, unsure states, minimal required contact fields, attribution, review/success state, API error handling, and duplicate-submit protection.~~
-- ~~Instrument assessment CTA clicks, starts, step completion, and successful submissions at the event-emission level.~~
-- ~~Build/revise the Affordable Housing / BC Housing audience page.~~
-- ~~Apply current visual hygiene across Home, Our Work, BC Housing, Assessment, and Client Portal surfaces.~~
-- ~~Add initial SEO metadata/canonical/schema treatment to major Wave 1 pages.~~
-- ~~Create reusable templates/scaffolding for future detailed installation, Technology, project-proof, header, footer, and repeated proof-card work.~~
-- ~~Reduce Resources intentionally to FAQ + Client Portal until remaining guides are ready.~~
-- ~~Initialize and synchronize Grapher implementation/test records for the branch.~~
+- ~~Create canonical shared header/navigation and footer source fragments.~~
+- ~~Create shared testimonial-card markup/styles for repeated proof sections.~~
+- ~~Correct the shared mobile/desktop navigation shell and preserve the correction history.~~
+- ~~Create `/how-it-works/` and route explanation before conversion.~~
+- ~~Present the five-phase project process on How It Works.~~
+- ~~Create `/how-it-works/installation/` as a real eight-step detailed child page using completed-work imagery.~~
+- ~~Rework Our Work into a stronger proof/portfolio page.~~
+- ~~Retain Client Portal in the current architecture.~~
+- ~~Create and structurally implement the dedicated assessment flow.~~
+- ~~Instrument assessment CTA/start/step/submit behavior at the source-event level.~~
+- ~~Build/revise Affordable Housing / BC Housing.~~
+- ~~Create `/about/` first draft.~~
+- ~~Create `/solutions/` hub first draft.~~
+- ~~Create Poly-B, Kitec, and Occupied Building Repiping solution-page first drafts.~~
+- ~~Create `/technology/`, Accessible Plumbing, and Conventional-vs-Plumbing-Track first drafts.~~
+- ~~Create `/resources/` and `/resources/faq/` first drafts while intentionally deferring unready guides.~~
+- ~~Add basic title/meta-description/robots/canonical treatment across the new page family.~~
+- ~~Apply current CTA attribution pattern to the new commercial pages.~~
+- ~~Keep Grapher/documentation synchronization active and preserve correction history.~~
 
-## Wave 1 still needs hardening
+## P0 hardening gates
 
-- [ ] Verify homepage video behaviour on desktop, tablet, and mobile, including reduced-motion/fallback behaviour.
-- [ ] Perform final responsive QA across Home, How It Works, Our Work, Affordable Housing, Assessment, and Client Portal.
-- [ ] Verify `/how-it-works/` at desktop, tablet, and mobile widths and confirm no broken shared-header/footer behavior.
-- [ ] Verify shared header/footer/testimonial fragments are consistently applied where intended and load correctly under production/static-serving conditions.
-- [ ] Verify non-clickable navigation labels/flyouts are intentional and visually understandable rather than appearing broken.
-- [ ] Verify all active Wave 1 links, anchors, asset paths, and CTA destinations.
-- [ ] Verify every current Wave 1 assessment CTA reaches the unified assessment flow and preserves useful source-page / CTA attribution.
-- [ ] Verify the production assessment API end-to-end, including structured payload acceptance, compatibility fields, error handling, confirmation state, and retry behavior.
-- [ ] Verify keyboard flow, focus movement, labels, validation messaging, and mobile/desktop usability of the assessment flow.
-- [ ] Verify GA4 initialization exactly once on intended public pages; event-emission code alone does not complete analytics.
-- [ ] Verify assessment events in GA4 DebugView/production-equivalent testing and confirm no names, email addresses, phone numbers, addresses, free text, or other sensitive form values are transmitted.
-- [ ] Add/verify page-view, primary-navigation, How It Works engagement, contact/phone, Our Work engagement, and other intentional Wave 1 events required by `INSTRUCTIONS.md`.
-- [ ] Verify canonical URLs, titles, meta descriptions, OG metadata, structured data, alt text, sitemap, and robots behaviour for Wave 1 indexable pages.
-- [ ] Review Affordable Housing claims against authoritative source material, especially displacement, asbestos, dust, cost, and regulatory language.
-- [ ] Review project facts/testimonials displayed in Our Work against verified source evidence.
-- [ ] Run final broken-link, console-error, accessibility-basics, performance, and static-serving regression checks.
+- [ ] Make primary navigation/footer crawlable in deployable/static HTML without requiring client JavaScript to create them; preserve canonical fragment source ownership through build/export injection or an equivalent static fallback.
+- [ ] Add and verify root `sitemap.xml` for the intended public/indexable route set.
+- [ ] Add and verify root `robots.txt`, including production-appropriate sitemap reference and deliberate handling of non-public/utility routes.
+- [ ] Unify design tokens so all page-family routes define/use the variables expected by `shared-navigation.css`, including `--cyan` and `--cyan-soft`.
+- [ ] Restore shared typography parity: new page-family routes should consume the existing site typography contract rather than drifting to Arial/Helvetica as the primary treatment.
+- [ ] Verify every current public route by direct URL and refresh under the real static/server deployment configuration, including trailing-slash behavior, fragments, assets, links, and 404 handling.
+- [ ] Perform final responsive QA across the **expanded** public route set, not only the original Wave 1 pages.
+- [ ] Verify shared nav flyouts/mobile drawer/header/footer keyboard, focus, Escape, click-away, scrolled, and reduced-motion behavior.
+- [ ] Verify homepage video on desktop/tablet/mobile and reduced-motion/fallback behavior.
+- [ ] Verify production assessment API end to end, including structured payload, confirmation, failure, retry, duplicate-submit protection, and CRM/backend persistence.
+- [ ] Verify every assessment CTA reaches the unified flow and preserves correct source-page/source-CTA attribution.
+- [ ] Verify GA4 initializes exactly once on intended pages and the current event taxonomy behaves correctly in DebugView/production-equivalent testing.
+- [ ] Confirm analytics receives no names, emails, phone numbers, addresses, free text, or other sensitive form values.
+- [ ] Run final broken-link, missing-asset, console-error, accessibility-basics, performance, and static-serving regression checks.
+
+## P1 hardening / quality
+
+- [ ] Review About origin/founder/manufacturing claims against authoritative company material and add verified team/credibility depth from the design plan.
+- [ ] Deepen Poly-B page with verified problem education, relevant FAQ, project proof, and richer internal linking.
+- [ ] Deepen Kitec page with verified problem education, relevant FAQ, project proof, and richer internal linking.
+- [ ] Deepen Occupied Building Repiping page with verified operational claims, resident/property-manager coordination detail, and proof.
+- [ ] Add Affordable Housing as a first-class card/path on `/solutions/` while preserving `/bchousing/` unless a deliberate URL migration is approved.
+- [ ] Review Affordable Housing displacement, asbestos, dust, cost, restoration, and regulatory language against authoritative source material.
+- [ ] Review Technology and comparison claims against source/project evidence; add proof links where available.
+- [ ] Review the comparison component for semantic table/screen-reader clarity in addition to visual mobile behavior.
+- [ ] Expand FAQ from real verified customer questions; add FAQ structured data only if the visible content and implementation justify it.
+- [ ] Add consistent OG/social metadata across public routes where useful.
+- [ ] Add page-type-appropriate structured data/breadcrumbs where accurate; do not copy generic schema indiscriminately.
+- [ ] Review image alt text and actual crop/quality on Detailed Installation and other real-project imagery.
+- [ ] Review Our Work project facts/testimonials against verified source evidence.
+- [ ] Connect solution/technology claims to relevant real projects and educational resources as those are published.
+- [ ] Continue tightening CSS ownership so shared chrome lives in shared-shell CSS and page-family CSS remains page-focused.
+- [ ] Make an explicit indexing decision for any route that remains too thin or unverified; do not accidentally publish unfinished pages as `index, follow`.
 
 ---
 
-# Wave 2 — Dedicated Page Expansion
+# Wave 2 — Depth Expansion After Current Draft Is Hardened
 
-Wave 2 does **not** introduce the missing concepts from scratch. It expands the Wave 1 architecture into the fuller set of dedicated, indexable pages set out in the design plan.
-
-## Wave 2A — Standalone destinations for established Wave 1 sections
+## Wave 2A — Dedicated route status: largely implemented
 
 ### About
 
-- [ ] `/about/`
-- [ ] Company history / origin story
-- [ ] Development of Plumbing Track
-- [ ] Mission, values, credibility, founder/team material
-- [ ] Assessment CTA
+- ~~`/about/` route~~ — implemented draft.
+- ~~Origin / development / mission framing~~ — implemented at first-draft level.
+- ~~Assessment CTA~~ — implemented.
+- [ ] Add verified team, founder depth, credibility/system-evolution material and other approved proof from the design plan.
 
 ### Solutions
 
-- [ ] `/solutions/` hub
-- [ ] `/solutions/poly-b/`
-- [ ] `/solutions/kitec/`
-- [ ] `/solutions/occupied-building-repiping/`
-- [ ] Integrate the existing Affordable Housing / BC Housing work into the Solutions architecture without discarding the current page
+- ~~`/solutions/` hub~~ — implemented draft.
+- ~~`/solutions/poly-b/`~~ — implemented draft.
+- ~~`/solutions/kitec/`~~ — implemented draft.
+- ~~`/solutions/occupied-building-repiping/`~~ — implemented draft.
+- [ ] Integrate Affordable Housing into the Solutions hub body while preserving the current `/bchousing/` route unless an intentional migration is approved.
+- [ ] Deepen all commercial routes with source-backed education, FAQs, proof, and internal linking.
 
-### How It Works expansion
+### How It Works
 
-- ~~`/how-it-works/` high-level explanation and five-phase process — promoted into Wave 1.~~
-- [ ] `/how-it-works/installation/` detailed installation process
-- [ ] Reuse/refine the existing project-process template for the detailed child page where useful
+- ~~`/how-it-works/` high-level explanation and five-phase process~~ — implemented.
+- ~~`/how-it-works/installation/` detailed eight-step process~~ — implemented draft with real job imagery.
+- [ ] Verify/refine detailed process sequencing and project evidence rather than rebuilding the route.
 
 ### Our Technology
 
-- [ ] `/technology/` or equivalent Technology landing page
-- [ ] Accessible Plumbing deep-dive page
-- [ ] Conventional vs Plumbing Track comparison page
-- [ ] Reuse/refine the existing accessible-plumbing template
+- ~~`/technology/` landing page~~ — implemented draft.
+- ~~`/technology/accessible-plumbing/`~~ — implemented draft.
+- ~~`/technology/conventional-vs-plumbing-track/`~~ — implemented draft.
+- [ ] Deepen with verified diagrams, jobsite proof, objections, evidence links, and final accessibility/metadata treatment.
 
-### Resources / Learn
+### Resources
 
-- [ ] `/learn/` or `/resources/` crawlable hub
-- [ ] Expand FAQ
-- [ ] Problem Guides
-- [ ] Decision Guides
-- [ ] Project Guides
-- [ ] Keep Client Portal integrated into this architecture
+- ~~`/resources/` crawlable hub~~ — implemented lean first draft.
+- ~~`/resources/faq/` initial FAQ~~ — implemented.
+- ~~Client Portal retained in Resources architecture.~~
+- [ ] Expand FAQ from verified real questions.
+- [ ] Problem Guides — intentionally deferred.
+- [ ] Decision Guides — intentionally deferred.
+- [ ] Project Guides — intentionally deferred.
 
-## Wave 2B — Commercial and decision child pages
+## Wave 2B — Commercial / decision-page depth
 
-- [ ] Poly-B replacement page
-- [ ] Kitec replacement page
-- [ ] Occupied-building repiping page
-- [ ] Conventional vs Plumbing Track buying comparison
-- [ ] Detailed installation page
-- [ ] Full FAQ destination
-- [ ] Deep internal linking from Home, How It Works, Affordable Housing, Our Work, and Assessment completion state
+The route-creation portion of this wave is largely complete:
+
+- ~~Poly-B replacement route~~ — first draft exists.
+- ~~Kitec replacement route~~ — first draft exists.
+- ~~Occupied-building repiping route~~ — first draft exists.
+- ~~Conventional vs Plumbing Track comparison route~~ — first draft exists.
+- ~~Detailed installation route~~ — first draft exists.
+- ~~FAQ route~~ — initial first draft exists.
+
+Still required:
+
+- [ ] verified technical/problem content;
+- [ ] stronger project proof;
+- [ ] richer FAQ support;
+- [ ] deeper internal linking from Home, How It Works, Affordable Housing, Our Work, solution pages, Technology, and Assessment completion state;
+- [ ] accessibility + metadata polish;
+- [ ] source reconciliation before strong quantitative/absolute claims.
 
 ## Wave 2C — SEO / educational funnel pages
 
-Retain the compositional SEO strategy: multiple focused articles that act as landing/funnel points and link into deeper technical, proof, and commercial pages.
+Retain the compositional SEO strategy: multiple focused articles act as landing/funnel points and link into deeper technical, proof, and commercial pages.
+
+These remain planned even though they were intentionally omitted from the first-draft menu:
 
 - [ ] What Is Poly-B?
 - [ ] What Is Kitec?
@@ -233,116 +312,61 @@ Retain the compositional SEO strategy: multiple focused articles that act as lan
 - [ ] What Happens After Installation?
 - [ ] Why Future Access Matters
 
+Do not collapse these into one giant Learn article. Their value is focused search intent, useful internal linking, and compositional coverage.
+
 ## Wave 2D — Our Work expansion
 
-The current Our Work page remains Wave 1. Wave 2 deepens it into a project-proof library.
+The current Our Work page remains part of the current draft. The project-proof library remains genuinely open:
 
-- [ ] Create reusable individual project-page implementation from the existing project-proof template
-- [ ] Initial verified project detail pages
-- [ ] Project gallery treatment using real completed Plumbing Track photography
-- [ ] Project-to-solution and project-to-technology internal linking
-- [ ] Filter/group portfolio only where project data is verified and sufficiently complete
-
----
-
-# Wave 3 — Expansion After Core Architecture
-
-- [ ] Remaining verified project pages
-- [ ] Deeper educational/editorial content after review and approval
-- [ ] Downloadable lead resources
-- [ ] Building-risk / assessment tools beyond the current form
-- [ ] Geographic SEO landing pages where justified by actual service coverage and search strategy
-- [ ] Additional CRM/GA4 enrichment once the basic event model is stable
+- [ ] create/reconcile the reusable individual project-page implementation;
+- [ ] publish initial verified project detail pages;
+- [ ] build project galleries using real completed Plumbing Track photography;
+- [ ] link projects directly to the solution/technology claims they prove;
+- [ ] add filters/grouping only where verified project data is sufficiently complete.
 
 ---
 
-# Navigation rollout
+# Wave 3 — Growth After Core Architecture
 
-## Wave 1
-
-The current navigation hierarchy itself is already implemented:
-
-```text
-ABOUT
-OUR WORK
-SOLUTIONS
-HOW IT WORKS → /how-it-works/
-OUR TECHNOLOGY
-RESOURCES
-[ BOOK AN ASSESSMENT ]
-```
-
-Some entries currently function as labels/flyouts rather than standalone routes. That is a current implementation choice, not evidence that the section is outside Wave 1.
-
-`How It Works` is now an active standalone destination because it carries explanatory content that should precede conversion.
-
-Resources is deliberately narrowed to the ready subset while maintaining its place in the architecture.
-
-Do not fabricate thin/empty pages simply to make every label clickable.
-
-## Wave 2
-
-Wave 2 makes more of the established hierarchy independently routable and indexable:
-
-```text
-SOLUTIONS
-  Poly-B Replacement
-  Kitec Replacement
-  Occupied Building Repiping
-  Affordable Housing
-
-HOW IT WORKS
-  How It Works / Accessible Plumbing overview   [Wave 1]
-  Detailed Installation                         [Wave 2]
-
-OUR TECHNOLOGY
-  Accessible Plumbing deep dive
-  Conventional vs Plumbing Track
-
-OUR WORK
-  Project Portfolio
-  Individual Projects
-
-LEARN / RESOURCES
-  Problem Guides
-  Decision Guides
-  Project Guides
-  FAQ
-  Client Portal
-
-ABOUT
-```
+- [ ] Remaining verified project pages.
+- [ ] Deeper educational/editorial content after review and approval.
+- [ ] Downloadable lead resources.
+- [ ] Building-risk / assessment tools beyond the current form.
+- [ ] Geographic SEO landing pages where justified by actual service coverage and search strategy.
+- [ ] Additional CRM/GA4 enrichment once the basic event model is stable.
 
 ---
 
 # Acceptance rule going forward
 
-The current branch is the implementation baseline. Future work should **extend it rather than restart it**.
+The current branch is the implementation baseline. Future work should **extend and harden it rather than restart it**.
 
 1. Preserve the current visual language and homepage video.
-2. Preserve the established Wave 1 navigation architecture unless a deliberate later decision changes it.
-3. Do not infer scope solely from whether a menu item currently has an `href`.
-4. Route explanation before conversion when the visitor is still learning how Plumbing Track works.
-5. Reuse shared components/templates/fragments where the same markup or behavior must stay synchronized across pages.
-6. Keep page-specific content local when sharing it would create unnecessary coupling.
+2. Preserve the established navigation architecture unless a deliberate later decision changes it.
+3. Keep How It Works explanatory before conversion.
+4. Keep canonical shared fragments/components where synchronized source ownership prevents drift.
+5. Do not make primary navigation or other important public content dependent exclusively on client JavaScript; generate or provide static deployable markup.
+6. Keep page-specific content local when sharing would create unnecessary coupling.
 7. Keep pages focused and indexable rather than returning to epic-scroll architecture.
-8. Treat verified current implementation as truth unless a concrete defect is found.
-9. Keep Grapher synchronized with implementation decisions and verification results continuously, not only at the end of a documentation session.
-10. Do not mark analytics, SEO, accessibility, responsive, or production integration work complete without verification.
-11. Treat the expanded Assessment design section as a verification/hardening specification for the existing flow unless a later operator decision explicitly calls for redesign.
+8. Treat route existence as implementation progress, not automatic SEO/content completion.
+9. Treat verified current implementation as truth unless a concrete defect or later decision supersedes it.
+10. Keep Grapher synchronized continuously with implementation decisions, defects, reclassification, evidence, and verification results.
+11. Do not mark analytics, SEO, accessibility, responsive behavior, source claims, or production integration complete without verification.
+12. Treat the expanded Assessment section as hardening/acceptance criteria for the existing flow unless a later operator decision explicitly requests redesign.
+13. Preserve intentionally deferred menu/content items in the later-wave plan rather than silently dropping them.
 
-Practical order:
+## Practical order
 
 ```text
-Wave 1: verify and harden the current first draft; do not rebuild already-implemented Assessment/How It Works work
-        ↓
-Wave 2A: add dedicated routes for the remaining established sections
-        ↓
-Wave 2B: deepen commercial/decision pages
-        ↓
-Wave 2C: expand SEO/education funnels
-        ↓
-Wave 2D: deepen project proof library
-        ↓
-Wave 3: growth features and long-tail expansion
+P0 production blockers
+  ↓
+Whole-site Wave 1 hardening of the expanded current route set
+  ↓
+P1 source/content/proof/SEO depth on implemented commercial pages
+  ↓
+Wave 2C educational funnel library
+  ↓
+Wave 2D project-proof library
+  ↓
+Wave 3 growth features and long-tail expansion
 ```

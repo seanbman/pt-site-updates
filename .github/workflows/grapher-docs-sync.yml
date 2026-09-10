@@ -13,6 +13,7 @@ on:
       - "templates/site-header.html"
       - "scripts/apply-how-it-works-routing.py"
       - "scripts/grapher-docs-sync.sh"
+      - "scripts/grapher-dev-updates-review-sync.sh"
       - ".github/workflows/grapher-docs-sync.yml"
 
 permissions:
@@ -42,6 +43,9 @@ jobs:
 
       - name: Synchronize docs and routing state into Grapher
         run: bash scripts/grapher-docs-sync.sh
+
+      - name: Synchronize dev/updates review findings into Grapher
+        run: bash scripts/grapher-dev-updates-review-sync.sh
 
       - name: Commit routed site, agent policy, docs, and Grapher state if changed
         shell: bash

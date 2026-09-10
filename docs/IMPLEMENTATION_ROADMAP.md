@@ -6,6 +6,12 @@ This roadmap is the living execution/status companion to `docs/WEBSITE_DESIGN_PL
 
 The design plan remains the target architecture. This document reflects the actual state of `dev/updates` and accepts the operator's manual adjustments as the current implementation baseline.
 
+## Branch handoff — 2026-09-09
+
+`dev/updates` is ready to merge into `main` for the current Wave 1 implementation baseline. Since the existing `main` merge baseline, this branch adds the Wave 1 Technology, detailed Installation, Solutions, About, and Resources page families, shared-shell and route hardening, and the associated Grapher synchronization records. The latest branch verification covers the public route set, shared header/footer loading, navigation targets, JavaScript syntax, whitespace, and the live browser-rendered shell.
+
+This merge does not close the remaining Wave 1 hardening items below. Production analytics, assessment API behaviour, responsive/accessibility review, source-fact review, and final static-serving regression remain follow-up work.
+
 ## Main sync evaluation — 2026-09-09
 
 `main` was recently synchronized with `dev/updates`. The substantive planning addition on `main` is the expanded **Book an Assessment — Detailed Conversion Task** in `docs/WEBSITE_DESIGN_PLAN.md`.

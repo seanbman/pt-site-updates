@@ -554,7 +554,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:19+00:00",
+      "updated_at": "2026-09-10T04:19:22+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -569,7 +569,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:19+00:00"
+        "recorded_at": "2026-09-10T04:19:22+00:00"
       }
     },
     "docs-instructions": {
@@ -586,7 +586,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:22+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "completed",
@@ -601,7 +601,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:22+00:00"
       }
     },
     "docs-website-design-plan": {
@@ -619,7 +619,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:23+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -634,7 +634,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:23+00:00"
       }
     },
     "docs-implementation-roadmap": {
@@ -653,7 +653,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:23+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -668,7 +668,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:23+00:00"
       }
     },
     "docs-decision-how-it-works-routing": {
@@ -686,7 +686,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:23+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -701,7 +701,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:23+00:00"
       }
     },
     "docs-web-work-sheet": {
@@ -718,7 +718,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:23+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -733,7 +733,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:23+00:00"
       }
     },
     "docs-site-export": {
@@ -750,7 +750,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:23+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -765,7 +765,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:23+00:00"
       }
     },
     "decision-how-it-works-routing": {
@@ -782,7 +782,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:24+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -797,7 +797,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:24+00:00"
       }
     },
     "requirement-explain-before-assessment": {
@@ -814,7 +814,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:24+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -829,7 +829,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:24+00:00"
       }
     },
     "component-how-it-works-page": {
@@ -846,7 +846,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:25+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -861,7 +861,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:25+00:00"
       }
     },
     "agents-instructions": {
@@ -879,7 +879,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T01:04:19+00:00",
+      "updated_at": "2026-09-10T04:19:22+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -894,7 +894,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:19+00:00"
+        "recorded_at": "2026-09-10T04:19:22+00:00"
       }
     },
     "decision-continuous-documentation-grapher": {
@@ -912,7 +912,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:24+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -927,7 +927,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:24+00:00"
       }
     },
     "requirement-continuous-documentation-grapher": {
@@ -945,7 +945,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:19+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:24+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -960,7 +960,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:24+00:00"
       }
     },
     "implementation-client-portal": {
@@ -1028,7 +1028,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:25+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -1043,7 +1043,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:25+00:00"
       }
     },
     "decision-assessment-hardening-not-rebuild": {
@@ -1061,7 +1061,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:25+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -1076,7 +1076,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:25+00:00"
       }
     },
     "requirement-shared-fragment-reuse": {
@@ -1094,7 +1094,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T01:04:20+00:00",
+      "updated_at": "2026-09-10T04:19:25+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -1109,7 +1109,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T01:04:20+00:00"
+        "recorded_at": "2026-09-10T04:19:25+00:00"
       }
     },
     "session-2026-09-09-dev-updates-roadmap-ack": {
@@ -1656,6 +1656,39 @@
       },
       "stage": null,
       "scope": {}
+    },
+    "session-2026-09-09-dev-updates-merge-handoff": {
+      "id": "session-2026-09-09-dev-updates-merge-handoff",
+      "type": "session",
+      "title": "dev/updates merge handoff — 2026-09-09",
+      "content": "{\"branch\":\"dev/updates\",\"head\":\"f96136e\",\"target\":\"main\",\"scope\":\"Wave 1 route/page-family completion and shared-shell hardening\",\"decision\":\"Merge the current branch into main while retaining the documented Wave 1 hardening follow-up list\",\"verification\":\"Existing Grapher route-hardening test records pass; live homepage browser load verified in this session.\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "dev-updates",
+        "merge",
+        "handoff",
+        "wave-1"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T04:19:41+00:00",
+      "updated_at": "2026-09-10T04:19:41+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T04:19:41+00:00"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -2035,6 +2068,20 @@
       "rel": "related",
       "created_at": "2026-09-10T01:09:20+00:00",
       "note": "Includes live shared-shell verification after Technology family implementation."
+    },
+    {
+      "from": "session-2026-09-09-dev-updates-merge-handoff",
+      "to": "docs-implementation-roadmap",
+      "rel": "related",
+      "created_at": "2026-09-10T04:19:51+00:00",
+      "note": "Roadmap records the merge scope and remaining hardening work"
+    },
+    {
+      "from": "session-2026-09-09-dev-updates-merge-handoff",
+      "to": "test-wave1-route-hardening",
+      "rel": "related",
+      "created_at": "2026-09-10T04:19:51+00:00",
+      "note": "Handoff relies on existing live route and shared-shell verification"
     }
   ]
 }

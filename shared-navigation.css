@@ -46,7 +46,7 @@ main[data-pt-page] .site-header .brand-logo {
   height: auto;
   max-width: 100%;
   transition: opacity var(--header-swap-duration) ease;
-  width: clamp(220px, 22vw, 300px);
+  width: clamp(176px, 17.6vw, 240px);
 }
 main[data-pt-page] .site-header .brand-logo--light { opacity: 1; }
 main[data-pt-page] .site-header .brand-logo--dark { opacity: 0; }

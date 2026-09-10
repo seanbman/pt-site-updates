@@ -554,7 +554,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:18+00:00",
+      "updated_at": "2026-09-10T06:38:07+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -569,7 +569,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:18+00:00"
+        "recorded_at": "2026-09-10T06:38:07+00:00"
       }
     },
     "docs-instructions": {
@@ -586,7 +586,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:18+00:00",
+      "updated_at": "2026-09-10T06:38:07+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "completed",
@@ -601,7 +601,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:18+00:00"
+        "recorded_at": "2026-09-10T06:38:07+00:00"
       }
     },
     "docs-website-design-plan": {
@@ -619,7 +619,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:18+00:00",
+      "updated_at": "2026-09-10T06:38:07+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -634,7 +634,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:18+00:00"
+        "recorded_at": "2026-09-10T06:38:07+00:00"
       }
     },
     "docs-implementation-roadmap": {
@@ -653,7 +653,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:18+00:00",
+      "updated_at": "2026-09-10T06:38:07+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -668,7 +668,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:18+00:00"
+        "recorded_at": "2026-09-10T06:38:07+00:00"
       }
     },
     "docs-decision-how-it-works-routing": {
@@ -686,7 +686,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:18+00:00",
+      "updated_at": "2026-09-10T06:38:07+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -701,7 +701,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:18+00:00"
+        "recorded_at": "2026-09-10T06:38:07+00:00"
       }
     },
     "docs-web-work-sheet": {
@@ -718,7 +718,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:18+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -733,7 +733,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:18+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "docs-site-export": {
@@ -750,7 +750,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "historical",
       "workflow_state": "not_applicable",
@@ -765,7 +765,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "decision-how-it-works-routing": {
@@ -782,7 +782,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -797,7 +797,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "requirement-explain-before-assessment": {
@@ -814,7 +814,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -829,7 +829,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "component-how-it-works-page": {
@@ -846,7 +846,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:09:55+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -861,7 +861,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "agents-instructions": {
@@ -879,7 +879,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T06:37:18+00:00",
+      "updated_at": "2026-09-10T06:38:07+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -894,7 +894,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:18+00:00"
+        "recorded_at": "2026-09-10T06:38:07+00:00"
       }
     },
     "decision-continuous-documentation-grapher": {
@@ -912,7 +912,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:18+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -927,7 +927,7 @@
         "actor_role": "operator",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "requirement-continuous-documentation-grapher": {
@@ -945,7 +945,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-09T10:58:19+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "canonical_spec",
       "workflow_state": "active",
@@ -960,7 +960,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "implementation-client-portal": {
@@ -1028,7 +1028,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -1043,7 +1043,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "decision-assessment-hardening-not-rebuild": {
@@ -1061,7 +1061,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -1076,7 +1076,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "requirement-shared-fragment-reuse": {
@@ -1094,7 +1094,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T00:36:12+00:00",
-      "updated_at": "2026-09-10T06:37:19+00:00",
+      "updated_at": "2026-09-10T06:38:08+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -1109,7 +1109,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:19+00:00"
+        "recorded_at": "2026-09-10T06:38:08+00:00"
       }
     },
     "session-2026-09-09-dev-updates-roadmap-ack": {
@@ -2044,7 +2044,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T06:13:38+00:00",
-      "updated_at": "2026-09-10T06:37:21+00:00",
+      "updated_at": "2026-09-10T06:38:11+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -2059,7 +2059,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:21+00:00"
+        "recorded_at": "2026-09-10T06:38:11+00:00"
       }
     },
     "decision-page-family-rebaseline": {
@@ -2077,7 +2077,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T06:13:38+00:00",
-      "updated_at": "2026-09-10T06:37:21+00:00",
+      "updated_at": "2026-09-10T06:38:11+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "completed",
@@ -2092,26 +2092,26 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:21+00:00"
+        "recorded_at": "2026-09-10T06:38:11+00:00"
       }
     },
     "requirement-static-crawlable-shared-shell": {
       "id": "requirement-static-crawlable-shared-shell",
       "type": "requirement",
-      "title": "Deployable primary navigation must not depend exclusively on client JavaScript",
-      "content": "{\"requirement\":\"Canonical shared fragment files may remain the source of truth, but deployable public HTML must expose primary navigation and important shared content without requiring client JavaScript to create it.\",\"acceptance_condition\":\"Production/static output contains crawlable primary navigation and footer content through build/export injection or an equivalent static fallback; JavaScript enhances interaction rather than being the sole source of the menu; direct routes remain usable when fragment fetch fails or JavaScript is unavailable.\"}",
-      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "title": "Render primary shared chrome into deployable HTML",
+      "content": "{\"requirement\":\"Header, footer, and other important shared public markup must have one canonical source and be rendered into deployable HTML at build time; client JavaScript may enhance behavior but must not be required to create primary navigation/footer content.\",\"acceptance_condition\":\"A staged Ruby/ERB build generates complete HTML into dist/ while preserving existing route paths; parity is verified before deployment switches; runtime fragment fetch creation is removed only after generated output is proven.\"}",
+      "path": "docs/PARTIALS_IMPLEMENTATION_PLAN.md",
       "tags": [
         "plumbing-track",
         "requirement",
         "seo",
         "crawlability",
-        "fragments",
-        "static"
+        "partials",
+        "static-build"
       ],
       "meta": {},
       "created_at": "2026-09-10T06:13:38+00:00",
-      "updated_at": "2026-09-10T06:37:22+00:00",
+      "updated_at": "2026-09-10T06:38:12+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -2126,7 +2126,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:22+00:00"
+        "recorded_at": "2026-09-10T06:38:12+00:00"
       }
     },
     "requirement-seo-discovery-files": {
@@ -2145,7 +2145,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T06:13:38+00:00",
-      "updated_at": "2026-09-10T06:37:22+00:00",
+      "updated_at": "2026-09-10T06:38:12+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -2160,26 +2160,27 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:22+00:00"
+        "recorded_at": "2026-09-10T06:38:12+00:00"
       }
     },
     "requirement-page-family-design-parity": {
       "id": "requirement-page-family-design-parity",
       "type": "requirement",
-      "title": "New page family must consume the canonical visual token and typography contract",
-      "content": "{\"requirement\":\"New page-family routes must preserve the established Plumbing Track visual identity by using compatible shared color tokens and typography rather than relying on undefined custom properties or an unrelated primary fallback font.\",\"acceptance_condition\":\"All variables used by shared-navigation.css are defined through a canonical token source or explicit fallbacks; page-family routes use the intended shared typography; normal/hover/focus/scrolled/mobile states are visually verified across page families.\"}",
-      "path": "docs/DEV_UPDATES_REVIEW_2026-09-10.md",
+      "title": "Use Geist and the current palette consistently across page families",
+      "content": "{\"requirement\":\"New page-family routes must preserve the established Plumbing Track visual identity by using the canonical Geist typography contract and current non-cyan palette; obsolete cyan variable references must be removed rather than satisfied by restoring cyan.\",\"acceptance_condition\":\"Geist is centralized and used across page families; stale --cyan/--cyan-soft references are gone or replaced with current palette tokens; normal/hover/focus/scrolled/mobile states are visually verified.\"}",
+      "path": "docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md",
       "tags": [
         "plumbing-track",
         "requirement",
         "design-system",
-        "tokens",
+        "geist",
         "typography",
+        "palette",
         "css"
       ],
       "meta": {},
       "created_at": "2026-09-10T06:13:38+00:00",
-      "updated_at": "2026-09-10T06:37:22+00:00",
+      "updated_at": "2026-09-10T06:38:12+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -2194,7 +2195,7 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:22+00:00"
+        "recorded_at": "2026-09-10T06:38:12+00:00"
       }
     },
     "requirement-implemented-page-depth-and-proof": {
@@ -2213,7 +2214,7 @@
       ],
       "meta": {},
       "created_at": "2026-09-10T06:13:38+00:00",
-      "updated_at": "2026-09-10T06:37:22+00:00",
+      "updated_at": "2026-09-10T06:38:12+00:00",
       "stage": "developing",
       "status": "current",
       "workflow_state": "active",
@@ -2228,8 +2229,177 @@
         "actor_role": "planning-agent",
         "source": "chatgpt",
         "integrity": "declared",
-        "recorded_at": "2026-09-10T06:37:22+00:00"
+        "recorded_at": "2026-09-10T06:38:12+00:00"
       }
+    },
+    "docs-partials-implementation-plan": {
+      "id": "docs-partials-implementation-plan",
+      "type": "document",
+      "title": "Build-time partials implementation plan",
+      "content": "Staged Ruby/ERB migration from runtime-fetched header/footer/testimonial fragments to build-time rendered static HTML in dist/, preserving current routes and retaining the existing runtime site as fallback until parity verification passes.",
+      "path": "docs/PARTIALS_IMPLEMENTATION_PLAN.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "partials",
+        "erb",
+        "ruby",
+        "static-build",
+        "shared-chrome"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:38:11+00:00",
+      "updated_at": "2026-09-10T06:38:11+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:38:11+00:00"
+      },
+      "scope": {}
+    },
+    "docs-decision-partials-typography-palette": {
+      "id": "docs-decision-partials-typography-palette",
+      "type": "document",
+      "title": "Decision: build-time partials, Geist, and palette cleanup",
+      "content": "Operator decisions: replace runtime fragment delivery with build-time partial rendering, retain Geist as the canonical site typeface, and keep cyan removed while cleaning stale cyan CSS references.",
+      "path": "docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "decision",
+        "partials",
+        "geist",
+        "palette"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:38:11+00:00",
+      "updated_at": "2026-09-10T06:38:11+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "not_applicable",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:38:11+00:00"
+      },
+      "scope": {}
+    },
+    "decision-build-time-partials": {
+      "id": "decision-build-time-partials",
+      "type": "decision",
+      "title": "Render shared chrome with build-time partials",
+      "content": "{\"decision\":\"Header, footer, and other truly shared fragment pieces will retain one canonical source but be rendered into deployable HTML at build time rather than fetched to create shared chrome in the browser.\",\"rationale\":\"The current runtime fragment mechanism is difficult to maintain and debug, weakens static/crawlable output, and makes shared chrome depend on JavaScript and fragment fetch success. A staged Ruby/ERB build preserves centralized editing while producing ordinary static HTML.\"}",
+      "path": "docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md",
+      "tags": [
+        "plumbing-track",
+        "decision",
+        "partials",
+        "shared-chrome",
+        "ruby",
+        "erb"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:38:11+00:00",
+      "updated_at": "2026-09-10T06:38:11+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:38:11+00:00"
+      },
+      "scope": {}
+    },
+    "decision-geist-canonical-typeface": {
+      "id": "decision-geist-canonical-typeface",
+      "type": "decision",
+      "title": "Retain Geist as canonical site typeface",
+      "content": "{\"decision\":\"Geist remains the canonical Plumbing Track site typeface.\",\"rationale\":\"The operator explicitly prefers the existing Geist typography and wants new page families normalized to that contract rather than drifting to Arial/Helvetica.\"}",
+      "path": "docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md",
+      "tags": [
+        "plumbing-track",
+        "decision",
+        "typography",
+        "geist",
+        "design-system"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:38:12+00:00",
+      "updated_at": "2026-09-10T06:38:12+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:38:12+00:00"
+      },
+      "scope": {}
+    },
+    "decision-cyan-remains-removed": {
+      "id": "decision-cyan-remains-removed",
+      "type": "decision",
+      "title": "Keep cyan removed and clean stale references",
+      "content": "{\"decision\":\"Cyan remains removed from the current Plumbing Track design; stale --cyan and --cyan-soft references must be removed or replaced with the current palette rather than restoring cyan.\",\"rationale\":\"The operator confirmed cyan removal was intentional and identified remaining references as cleanup artifacts.\"}",
+      "path": "docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md",
+      "tags": [
+        "plumbing-track",
+        "decision",
+        "palette",
+        "css",
+        "cleanup"
+      ],
+      "meta": {},
+      "created_at": "2026-09-10T06:38:12+00:00",
+      "updated_at": "2026-09-10T06:38:12+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "planning-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-10T06:38:12+00:00"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -2847,6 +3017,83 @@
       "rel": "applies_to",
       "created_at": "2026-09-10T06:13:40+00:00",
       "note": "Design plan specifies deeper source-backed commercial, educational, proof, and internal-linking content"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-partials-implementation-plan",
+      "rel": "references",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Safe implementation plan for build-time shared partials"
+    },
+    {
+      "from": "docs-index",
+      "to": "docs-decision-partials-typography-palette",
+      "rel": "references",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Current operator decisions for partial rendering, Geist, and palette cleanup"
+    },
+    {
+      "from": "docs-partials-implementation-plan",
+      "to": "docs-decision-partials-typography-palette",
+      "rel": "decided_by",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Implementation plan follows the operator-approved shared-rendering and visual-contract decisions"
+    },
+    {
+      "from": "decision-build-time-partials",
+      "to": "docs-decision-partials-typography-palette",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Operator decision is recorded in the current decision document"
+    },
+    {
+      "from": "decision-build-time-partials",
+      "to": "docs-partials-implementation-plan",
+      "rel": "implements",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Staged Ruby/ERB plan implements the build-time partial decision"
+    },
+    {
+      "from": "decision-geist-canonical-typeface",
+      "to": "docs-decision-partials-typography-palette",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Operator typography decision is recorded explicitly"
+    },
+    {
+      "from": "decision-cyan-remains-removed",
+      "to": "docs-decision-partials-typography-palette",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Operator palette decision corrects the earlier missing-token interpretation"
+    },
+    {
+      "from": "requirement-static-crawlable-shared-shell",
+      "to": "decision-build-time-partials",
+      "rel": "decided_by",
+      "created_at": "2026-09-10T06:38:13+00:00",
+      "note": "Build-time partial rendering is the selected implementation for crawlable shared chrome"
+    },
+    {
+      "from": "requirement-static-crawlable-shared-shell",
+      "to": "docs-partials-implementation-plan",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-10T06:38:14+00:00",
+      "note": "Implementation and parity requirements are documented in the migration plan"
+    },
+    {
+      "from": "requirement-page-family-design-parity",
+      "to": "decision-geist-canonical-typeface",
+      "rel": "decided_by",
+      "created_at": "2026-09-10T06:38:14+00:00",
+      "note": "Geist is the chosen canonical typography contract"
+    },
+    {
+      "from": "requirement-page-family-design-parity",
+      "to": "decision-cyan-remains-removed",
+      "rel": "decided_by",
+      "created_at": "2026-09-10T06:38:14+00:00",
+      "note": "Current palette excludes cyan and stale references must be cleaned"
     }
   ]
 }

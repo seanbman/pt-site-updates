@@ -61,7 +61,7 @@ grapher add "${common[@]}" \
   --tags plumbing-track,requirement,seo,sitemap,robots,crawlability \
   --status current \
   --workflow-state active \
-  --verification contradicted \
+  --verification failed \
   --reason "Source review found no root sitemap.xml or robots.txt on dev/updates"
 
 grapher add "${common[@]}" \
@@ -73,7 +73,7 @@ grapher add "${common[@]}" \
   --tags plumbing-track,requirement,design-system,tokens,typography,css \
   --status current \
   --workflow-state active \
-  --verification contradicted \
+  --verification failed \
   --reason "page-family.css does not define --cyan/--cyan-soft used by shared-navigation.css and currently defaults the page family to Arial/Helvetica"
 
 grapher add "${common[@]}" \

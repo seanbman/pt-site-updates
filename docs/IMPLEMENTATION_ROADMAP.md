@@ -254,7 +254,7 @@ Keep this decision.
 - [ ] Deepen Kitec with verified education, FAQ, project proof, and internal linking.
 - [ ] Deepen Occupied Building Repiping with verified operational claims, resident/property-manager coordination detail, and proof.
 - [x] Add source-backed visual proof modules to Technology, Accessible Plumbing, Detailed Installation, and Our Work using the existing web derivatives; preserve the curated-media evidence boundary and do not imply project identity or long-term service history.
-- [ ] Add Affordable Housing as a first-class path in `/solutions/` while preserving `/bchousing/` unless a deliberate URL migration is approved.
+- [x] Add Affordable Housing as a first-class path in `/solutions/` while preserving the existing `/bchousing/` route and separate canonical host.
 - [ ] Review Affordable Housing displacement, asbestos, dust, cost, restoration, and regulatory language against authoritative source material.
 - [ ] Review Technology and comparison claims against source/project evidence and add proof links where available.
 - [ ] Review comparison semantics for screen-reader/table clarity in addition to visual mobile behavior.
@@ -286,7 +286,7 @@ Keep this decision.
 - ~~`/solutions/poly-b/`~~ — implemented draft.
 - ~~`/solutions/kitec/`~~ — implemented draft.
 - ~~`/solutions/occupied-building-repiping/`~~ — implemented draft.
-- [ ] Integrate Affordable Housing into the Solutions hub body while preserving `/bchousing/` unless an intentional migration is approved.
+- [x] Integrate Affordable Housing into the Solutions hub body while preserving `/bchousing/` unless an intentional migration is approved.
 - [ ] Deepen all commercial routes with source-backed education, FAQs, proof, and internal linking.
 
 ### How It Works

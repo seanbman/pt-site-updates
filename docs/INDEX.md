@@ -14,6 +14,7 @@ Grapher records should reference these paths rather than duplicating full docume
 | `docs-decision-partials-typography-palette` | `docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md` | Operator decisions: build-time partials, Geist retained, cyan remains removed | Current |
 | `docs-decision-how-it-works-routing` | `docs/DECISION_HOW_IT_WORKS_ROUTING.md` | Current routing decision: explain before assessment | Current |
 | `docs-media-resource-reference` | `docs/media/RESOURCE_REFERENCE.md` | Curated website media handoff, priority assets, placement guidance, and evidence/privacy limits | Current reference |
+| `docs-media-video-curation` | `docs/media/video-curation/README.md` | Detailed 88-video audit, grades, page mapping, evidence limits, and implementation shortlist | Current reference |
 | `docs-grok-review-2026-09-10` | `docs/qa-review/GROK_REPO_REVIEW_2026-09-10.md` | Advisory Grok QA source plus branch/doc reconciliation | Reconciled |
 | `docs-hardening-plan-2026-09-10` | `docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` | Follow-up production hardening plan covering delivery, SEO, funnel, GA4, CRM, media, IA, and QA | Revision 1 current |
 | `docs-web-work-sheet` | `docs/plumbing track web work sheet.pdf` | Earlier source / supporting website worksheet | Source evidence |
@@ -31,6 +32,7 @@ flowchart TD
     PT[docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md]
     H[docs/DECISION_HOW_IT_WORKS_ROUTING.md]
     M[docs/media/RESOURCE_REFERENCE.md]
+    MV[docs/media/video-curation/README.md]
     G[docs/qa-review/GROK_REPO_REVIEW_2026-09-10.md]
     Q[docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md]
     W[docs/plumbing track web work sheet.pdf]
@@ -55,6 +57,8 @@ flowchart TD
     D --> Q
     P --> Q
     M --> Q
+    M --> MV
+    MV --> Q
     G --> Q
 ```
 
@@ -103,6 +107,8 @@ The local repo-root static-server QA reported 200 responses for all public route
 ## Current media reference
 
 `docs/media/RESOURCE_REFERENCE.md` indexes the September 2026 curated media handoff. It is the reference for priority website photos/video, recommended page placement, review limitations, privacy checks, and claim-evidence boundaries. Media should strengthen the existing **Problem → System → Proof → Action** journey without replacing the homepage hero video or manufacturing project/material/future-access claims.
+
+`docs/media/video-curation/README.md` is the detailed in-repository video audit. It records all 88 source MP4s, the 66 visually reviewed files, the 22 connector-blocked files, per-video grades and placement notes, a priority shortlist, and agent rules for derivative creation and publication. Use it when selecting or implementing video; do not infer content from blocked filenames or derive claims from unverified presenter speech.
 
 ## Current routing note
 

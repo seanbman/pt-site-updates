@@ -19,3 +19,48 @@
   --font-geist-sans: "Geist", Arial, Helvetica, sans-serif;
   --font-geist-mono: "Geist Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
+
+/*
+ * Homepage comparison correction.
+ * Keep the contrast in the content and gold rule instead of using a large dark-blue
+ * "winner" block for the Plumbing Track column.
+ */
+.home-thesis .plumbing-comparison {
+  background: #f4f7f7;
+  border: 1px solid rgba(8, 19, 25, .14);
+  gap: 0;
+}
+
+.home-thesis .comparison-column {
+  background: transparent;
+}
+
+.home-thesis .comparison-column--track {
+  background: transparent;
+  border-left: 2px solid var(--gold, #d2b985);
+  color: #061015;
+}
+
+.home-thesis .comparison-column--track .comparison-column__label {
+  color: #173945;
+}
+
+.home-thesis .comparison-column--track .comparison-route li {
+  border-color: rgba(8, 19, 25, .16);
+  color: #061015;
+}
+
+.home-thesis .comparison-column--track .comparison-route li::before {
+  color: var(--gold, #d2b985);
+}
+
+.home-thesis .comparison-column--track .comparison-close {
+  color: #53666e;
+}
+
+@media (max-width: 760px) {
+  .home-thesis .comparison-column--track {
+    border-left: 0;
+    border-top: 2px solid var(--gold, #d2b985);
+  }
+}

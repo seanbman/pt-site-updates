@@ -39,7 +39,7 @@ Do not serve the large original HEVC/4K files as routine inline assets. Keep ori
 ## Files in this audit
 
 - `AGENTS.md` — implementation-agent rules for source selection, claims, editing, privacy and documentation.
-- `inventory.csv` / `inventory.json` — all 88 source videos and their review status.
+- `inventory.csv` — machine-readable inventory of all 88 source videos and their review status.
 - `PRIORITY_SHORTLIST.md` — strongest immediately useful clips and page mapping.
 
 ## Repository relationship

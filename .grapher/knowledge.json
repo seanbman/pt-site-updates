@@ -2930,6 +2930,45 @@
         "component": "Shared static analytics bootstrap and Assessment funnel instrumentation."
       },
       "scope": {}
+    },
+    "test-assessment-analytics-no-pii-20260910": {
+      "id": "test-assessment-analytics-no-pii-20260910",
+      "type": "test",
+      "title": "Verified local analytics no-PII dispatch",
+      "content": "{\"test\":\"Loaded the Assessment route and invoked the shared analytics emitter with both allowed and intentionally sensitive fields.\",\"method\":\"Live localhost browser evaluation at /assessment/; checked optional GA4 bootstrap state and inspected the queued dataLayer event. No measurement ID or external GA4 script was active locally; the queued event retained only allowlisted pipe_material and building_type fields and excluded name, email, and exact unit count.\",\"outcome\":\"pass\"}",
+      "path": "analytics.js",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "assessment",
+        "ga4",
+        "privacy",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:59:00+00:00",
+      "updated_at": "2026-09-11T02:59:00+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "verification-agent",
+        "source": "terminal-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T02:59:00+00:00"
+      },
+      "semantic": {
+        "test": "Loaded the Assessment route and invoked the shared analytics emitter with both allowed and intentionally sensitive fields.",
+        "method": "Live localhost browser evaluation at /assessment/; checked optional GA4 bootstrap state and inspected the queued dataLayer event. No measurement ID or external GA4 script was active locally; the queued event retained only allowlisted pipe_material and building_type fields and excluded name, email, and exact unit count.",
+        "outcome": "pass"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -3820,6 +3859,20 @@
       "rel": "applies_to",
       "created_at": "2026-09-11T02:57:53+00:00",
       "note": "Assessment funnel events and structured attribution cover the unified flow"
+    },
+    {
+      "from": "implementation-assessment-analytics-contract-20260910",
+      "to": "test-assessment-analytics-no-pii-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T02:59:01+00:00",
+      "note": "Live browser evaluation verified the allowlist and local opt-in behavior"
+    },
+    {
+      "from": "test-assessment-analytics-no-pii-20260910",
+      "to": "requirement-ga4-crm-measurement-contract",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T02:59:01+00:00",
+      "note": "Local no-PII dispatch passes; production DebugView and CRM acceptance remain open"
     }
   ]
 }

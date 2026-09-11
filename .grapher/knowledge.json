@@ -2762,6 +2762,72 @@
       },
       "scope": {},
       "provenance": {}
+    },
+    "implementation-responsive-sweep-corrections-20260910": {
+      "id": "implementation-responsive-sweep-corrections-20260910",
+      "type": "implementation",
+      "title": "Corrected responsive sweep regressions",
+      "content": "{\"change\":\"Removed malformed @font@font selectors left by the shared-font extraction and restored valid root selectors; added the missing Client Portal H1 without changing its layout or portal behavior.\",\"component\":\"Public legacy shell pages and Client Portal document structure. Browser rerun at 660px reports valid loaded styles, no horizontal overflow, one header, one footer where designed, and one H1 on all 18 route entrypoints.\"}",
+      "path": "client-portal/index.html",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "responsive",
+        "accessibility",
+        "h1",
+        "hardening"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:50:10+00:00",
+      "updated_at": "2026-09-11T02:50:10+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Removed malformed @font@font selectors left by the shared-font extraction and restored valid root selectors; added the missing Client Portal H1 without changing its layout or portal behavior.",
+        "component": "Public legacy shell pages and Client Portal document structure. Browser rerun at 660px reports valid loaded styles, no horizontal overflow, one header, one footer where designed, and one H1 on all 18 route entrypoints."
+      },
+      "scope": {},
+      "provenance": {}
+    },
+    "test-responsive-route-fidelity-20260910": {
+      "id": "test-responsive-route-fidelity-20260910",
+      "type": "test",
+      "title": "Verified responsive route fidelity sweep",
+      "content": "{\"test\":\"Swept all 18 local public HTML entrypoints in a live browser after shared-font and H1 corrections.\",\"method\":\"terminal-browser navigation loop at 660px plus prior 550px checks; normalized canonical header/footer innerHTML hashes; checked horizontal overflow, font readiness, header/footer counts, and H1 count.\",\"outcome\":\"pass\"}",
+      "path": "shared-navigation.css",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "responsive",
+        "mobile",
+        "header",
+        "footer",
+        "menu",
+        "accessibility",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:50:21+00:00",
+      "updated_at": "2026-09-11T02:50:21+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "test": "Swept all 18 local public HTML entrypoints in a live browser after shared-font and H1 corrections.",
+        "method": "terminal-browser navigation loop at 660px plus prior 550px checks; normalized canonical header/footer innerHTML hashes; checked horizontal overflow, font readiness, header/footer counts, and H1 count.",
+        "outcome": "pass"
+      },
+      "scope": {},
+      "provenance": {}
     }
   },
   "edges": [
@@ -3610,6 +3676,20 @@
       "rel": "satisfies",
       "created_at": "2026-09-11T02:46:08+00:00",
       "note": "All public pages now load the shared Geist source; visual route regression remains a separate acceptance gate"
+    },
+    {
+      "from": "implementation-responsive-sweep-corrections-20260910",
+      "to": "test-responsive-route-fidelity-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T02:50:23+00:00",
+      "note": "The corrected source was rerun through the route-wide browser sweep"
+    },
+    {
+      "from": "test-responsive-route-fidelity-20260910",
+      "to": "requirement-shared-fragment-reuse",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T02:50:23+00:00",
+      "note": "The sweep confirms canonical header/footer reuse across the current local route set"
     }
   ]
 }

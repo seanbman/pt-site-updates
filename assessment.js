@@ -8,8 +8,15 @@
   const status = form.querySelector("[data-status]");
   const success = document.querySelector("[data-success]");
   const params = new URLSearchParams(window.location.search);
-  const sourcePage = params.get("source_page") || sessionStorage.getItem("assessment_source_page") || window.location.pathname;
-  const sourceCta = params.get("source_cta") || sessionStorage.getItem("assessment_source_cta") || "direct";
+  const normalizePath = (candidate) => {
+    try {
+      const parsed = new URL(candidate || window.location.pathname, window.location.origin);
+      return parsed.origin === window.location.origin ? parsed.pathname || "/" : window.location.pathname;
+    } catch (_) { return window.location.pathname; }
+  };
+  const normalizeCta = (candidate) => /^[a-z0-9][a-z0-9_-]{0,63}$/i.test(candidate || "") ? candidate : "direct";
+  const sourcePage = normalizePath(params.get("source_page") || sessionStorage.getItem("assessment_source_page"));
+  const sourceCta = normalizeCta(params.get("source_cta") || sessionStorage.getItem("assessment_source_cta"));
   let currentStep = 0;
   let started = false;
   let submitting = false;
@@ -20,11 +27,7 @@
       assessment_source_cta: sourceCta,
       ...extra,
     };
-    if (typeof window.gtag === "function") window.gtag("event", eventName, eventParams);
-    else {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: eventName, ...eventParams });
-    }
+    if (typeof window.ptTrack === "function") window.ptTrack(eventName, eventParams);
   };
 
   const value = (name) => String(new FormData(form).get(name) || "").trim();
@@ -97,6 +100,7 @@
     if (submitting) return;
     if (!validateStep()) return;
     submitting = true;
+    track("assessment_submit_attempt", { assessment_step: currentStep + 1 });
     const submit = form.querySelector('button[type="submit"]');
     if (submit instanceof HTMLButtonElement) submit.disabled = true;
     status.textContent = "Sending your assessment request…";
@@ -109,11 +113,13 @@
         throw new Error(message);
       }
       track("assessment_submitted", { pipe_material: radioValue("pipe_material") || "unspecified", building_type: value("building_type") || "unspecified" });
+      track("generate_lead", { pipe_material: radioValue("pipe_material") || "unspecified", building_type: value("building_type") || "unspecified" });
       sessionStorage.setItem("assessment_submitted", "true");
       form.hidden = true;
       success.hidden = false;
       success.focus();
     } catch (error) {
+      track("assessment_submit_error", { assessment_step: currentStep + 1 });
       status.textContent = error instanceof Error ? error.message : "Something went wrong. Please try again.";
       status.className = "status is-error";
       submitting = false;

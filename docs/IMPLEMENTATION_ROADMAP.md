@@ -40,7 +40,7 @@ The public route set has expanded, so Wave 1 hardening now applies to the whole 
 
 # Current operator decisions
 
-## Build-time partials replace runtime fragment delivery
+## Build-time partials replace runtime fragment delivery — deferred execution
 
 The current fragment system has the correct centralized-source idea but the wrong delivery mechanism for this site.
 
@@ -62,6 +62,10 @@ Do not move routes or rewrite the site architecture as part of the first partial
 
 See `docs/PARTIALS_IMPLEMENTATION_PLAN.md` for the full implementation and rollback contract.
 
+### Current time-box decision — 2026-09-10
+
+The Ruby/ERB partial migration and `dist/` generation are explicitly deferred for the current time-box. Do not begin that migration or remove the existing runtime fragment loader yet. The current static/runtime-fragment architecture remains the working implementation while immediate effort goes to higher-value site hardening. The build-time partial plan remains an approved future migration, not a cancelled decision.
+
 ## Geist remains canonical
 
 **Geist is the canonical Plumbing Track site typeface.**
@@ -82,7 +86,7 @@ The current branch is a strong implementation baseline, not yet a production-com
 
 Current P0 issues are:
 
-1. header/footer/testimonial shared markup is still created through browser-time fragment fetching rather than build-time/static rendering;
+1. header/footer/testimonial shared markup is still created through browser-time fragment fetching rather than build-time/static rendering; this is a deferred migration for the current time-box;
 2. root `sitemap.xml` is absent;
 3. root `robots.txt` is absent;
 4. stale cyan variable references remain after intentional cyan removal;
@@ -223,22 +227,23 @@ Keep this decision.
 
 ## P0 hardening gates
 
-- [ ] Implement Stage 1 of `docs/PARTIALS_IMPLEMENTATION_PLAN.md`: add Ruby/ERB partial sources and build script without changing production behavior.
-- [ ] Generate the first complete `dist/` output while preserving all existing public paths.
-- [ ] Verify generated output parity before changing deployment.
-- [ ] Switch deployment to generated HTML only after parity checks pass.
-- [ ] Remove runtime header/footer/testimonial fragment creation only after generated deployment is verified.
-- [ ] Remove stale `--cyan` / `--cyan-soft` references and align shared navigation with the current palette.
-- [ ] Centralize Geist font-face/type variables and apply them consistently to new page families.
-- [ ] Add and verify root `sitemap.xml` for the intended public/indexable route set.
-- [ ] Add and verify root `robots.txt`, including production sitemap reference and deliberate treatment of utility/private routes.
+- [ ] **Deferred:** Implement Stage 1 of `docs/PARTIALS_IMPLEMENTATION_PLAN.md`: add Ruby/ERB partial sources and build script without changing production behavior.
+- [ ] **Deferred:** Generate the first complete `dist/` output while preserving all existing public paths.
+- [ ] **Deferred:** Verify generated output parity before changing deployment.
+- [ ] **Deferred:** Switch deployment to generated HTML only after parity checks pass.
+- [ ] **Deferred:** Remove runtime header/footer/testimonial fragment creation only after generated deployment is verified.
+- [x] Remove stale `--cyan` / `--cyan-soft` references and align shared navigation with the current palette.
+- [x] Centralize Geist font-face/type variables and apply them consistently to new page families, including Assessment.
+- [x] Add and verify root `sitemap.xml` for the intended public/indexable route set. The main-domain sitemap contains the 14 canonical public routes; `/assessment/` is an explicit `noindex, follow` utility funnel, `/bchousing/` remains on its separate canonical host, and client-portal routes are excluded.
+- [x] Add and verify root `robots.txt`, including the production sitemap reference and deliberate disallowance of the client-portal utility subtree.
+- [x] Add a shared, optional GA4 bootstrap with a no-PII parameter allowlist, canonical assessment event names, submit-attempt/error events, and `generate_lead` only after an accepted Assessment response. Production measurement-ID, DebugView, API, CRM, and payload verification remain open.
 - [ ] Verify every current public route by direct URL and refresh under the actual production/static deployment configuration.
 - [ ] Perform final responsive QA across the expanded public route set.
 - [ ] Verify shared nav flyouts/mobile drawer/header/footer keyboard, focus, Escape, click-away, scrolled, and reduced-motion behavior.
 - [ ] Verify homepage video on desktop/tablet/mobile and reduced-motion/fallback behavior.
 - [ ] Verify production Assessment API end to end, including persistence/CRM handoff, confirmation, failure, retry, and duplicate-submit protection.
 - [ ] Verify every assessment CTA preserves correct source-page/source-CTA attribution.
-- [ ] Verify GA4 initializes exactly once where intended and current events behave correctly in DebugView/production-equivalent testing.
+- [ ] Verify the GA4 bootstrap initializes exactly once where intended and current events behave correctly in DebugView/production-equivalent testing.
 - [ ] Confirm analytics receives no names, emails, phone numbers, addresses, free text, or other sensitive form values.
 - [ ] Run final broken-link, missing-asset, console-error, accessibility-basics, performance, and static-serving regression checks.
 
@@ -248,7 +253,8 @@ Keep this decision.
 - [ ] Deepen Poly-B with verified education, FAQ, project proof, and internal linking.
 - [ ] Deepen Kitec with verified education, FAQ, project proof, and internal linking.
 - [ ] Deepen Occupied Building Repiping with verified operational claims, resident/property-manager coordination detail, and proof.
-- [ ] Add Affordable Housing as a first-class path in `/solutions/` while preserving `/bchousing/` unless a deliberate URL migration is approved.
+- [x] Add source-backed visual proof modules to Technology, Accessible Plumbing, Detailed Installation, and Our Work using the existing web derivatives; preserve the curated-media evidence boundary and do not imply project identity or long-term service history.
+- [x] Add Affordable Housing as a first-class path in `/solutions/` while preserving the existing `/bchousing/` route and separate canonical host.
 - [ ] Review Affordable Housing displacement, asbestos, dust, cost, restoration, and regulatory language against authoritative source material.
 - [ ] Review Technology and comparison claims against source/project evidence and add proof links where available.
 - [ ] Review comparison semantics for screen-reader/table clarity in addition to visual mobile behavior.
@@ -280,7 +286,7 @@ Keep this decision.
 - ~~`/solutions/poly-b/`~~ — implemented draft.
 - ~~`/solutions/kitec/`~~ — implemented draft.
 - ~~`/solutions/occupied-building-repiping/`~~ — implemented draft.
-- [ ] Integrate Affordable Housing into the Solutions hub body while preserving `/bchousing/` unless an intentional migration is approved.
+- [x] Integrate Affordable Housing into the Solutions hub body while preserving `/bchousing/` unless an intentional migration is approved.
 - [ ] Deepen all commercial routes with source-backed education, FAQs, proof, and internal linking.
 
 ### How It Works
@@ -394,10 +400,6 @@ The current branch is the implementation baseline. Future work should **extend a
 ## Practical order
 
 ```text
-Build-time partial migration in isolated dist/
-  ↓
-Generated-output parity verification
-  ↓
 Palette + Geist normalization
   ↓
 Sitemap / robots / whole-site production hardening
@@ -411,4 +413,6 @@ Wave 2C educational funnel library
 Wave 2D project-proof library
   ↓
 Wave 3 growth features
+  ↓
+Build-time partial migration in isolated dist/ when the time-box allows
 ```

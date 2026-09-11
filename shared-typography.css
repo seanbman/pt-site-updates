@@ -1,0 +1,255 @@
+/* Canonical type contract for every public Plumbing Track page. */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/geist.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/geist-mono.woff2") format("woff2");
+}
+
+:root {
+  --font-geist-sans: "Geist", Arial, Helvetica, sans-serif;
+  --font-geist-mono: "Geist Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+/*
+ * Homepage comparison correction.
+ * Keep the contrast in the content and gold rule instead of using a large dark-blue
+ * "winner" block for the Plumbing Track column.
+ */
+.home-thesis .plumbing-comparison {
+  background: #f4f7f7;
+  border: 1px solid rgba(8, 19, 25, .14);
+  gap: 0;
+}
+
+.home-thesis .comparison-column {
+  background: transparent;
+}
+
+.home-thesis .comparison-column--track {
+  background: transparent;
+  border-left: 2px solid var(--gold, #d2b985);
+  color: #061015;
+}
+
+.home-thesis .comparison-column--track .comparison-column__label {
+  color: #173945;
+}
+
+.home-thesis .comparison-column--track .comparison-route li {
+  border-color: rgba(8, 19, 25, .16);
+  color: #061015;
+}
+
+.home-thesis .comparison-column--track .comparison-route li::before {
+  color: var(--gold, #d2b985);
+}
+
+.home-thesis .comparison-column--track .comparison-close {
+  color: #53666e;
+}
+
+/*
+ * Dense content-page refinements. These selectors are intentionally page-specific;
+ * the homepage hero and its breathing room are not part of this pass.
+ */
+.benefits-section,
+.trust-section,
+.contact-section {
+  gap: clamp(2rem, 4vw, 4.5rem);
+  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.supporting-section {
+  padding-block: clamp(2.75rem, 5vw, 4rem);
+}
+
+/* "Tagline options" are source notes, not three simultaneous live taglines. */
+.supporting-section .taglines {
+  display: none;
+}
+
+.pt-page--our-work .work-section {
+  padding-block: clamp(3.25rem, 6vw, 5.5rem);
+}
+
+.pt-page--our-work .work-section__intro {
+  margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
+}
+
+@media (max-width: 760px) {
+  .home-thesis .comparison-column--track {
+    border-left: 0;
+    border-top: 2px solid var(--gold, #d2b985);
+  }
+
+  .benefits-section,
+  .trust-section,
+  .contact-section,
+  .supporting-section,
+  .pt-page--our-work .work-section {
+    padding-block: 2.75rem;
+  }
+}
+
+/* Site-wide density contract: keep the type hierarchy strong without letting
+ * display copy consume the page or strand short final lines. */
+.family-hero {
+  min-height: 50vh;
+  padding-bottom: 2.75rem;
+  padding-top: 5.75rem;
+}
+
+.family-hero h1 {
+  font-size: clamp(2.4rem, 4.4vw, 4.8rem);
+  max-width: 14ch;
+}
+
+.family-section { padding-block: clamp(2rem, 3vw, 3rem); }
+
+.family-section h2 {
+  font-size: clamp(2rem, 3.2vw, 3.5rem);
+  max-width: none;
+}
+
+.family-section .feature-grid,
+.family-section .proof-strip {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+@media (max-width: 900px) {
+  .feature-grid,
+  .installation-grid { grid-template-columns: 1fr; }
+}
+
+.work-hero,
+.work-hero__content,
+.stack-panel--ink,
+.stack-panel--ink .stack-panel__content,
+.stack-panel-visual,
+.stack-panel .system-visual,
+.stack-panel-visual .visual-scene {
+  min-height: 82svh;
+}
+
+.work-hero__content,
+.stack-panel--ink .stack-panel__content {
+  padding-bottom: clamp(1.75rem, 3.5vh, 2.5rem);
+  padding-top: clamp(4.5rem, 8vh, 5.75rem);
+}
+
+.work-section {
+  padding-block: clamp(3rem, 5vw, 5rem);
+}
+
+main.pt-page > .hero {
+  min-height: 50vh;
+  padding-bottom: 2.75rem;
+  padding-top: 5.75rem;
+}
+
+main.pt-page > .hero h1 {
+  font-size: clamp(2.4rem, 4.4vw, 4.8rem);
+  max-width: 14ch;
+}
+
+.family-section .faq-intro h2 { max-width: none; }
+
+/* Keep comparison content legible at narrow widths instead of forcing a
+ * desktop table into cramped columns. */
+.comparison-table { font-size: clamp(.9rem, 1.1vw, 1rem); }
+.comparison-row { grid-template-columns: minmax(9rem, .7fr) minmax(0, 1fr) minmax(0, 1fr); }
+.comparison-row > * { overflow-wrap: anywhere; }
+
+.pt-page .stack-panel--ink h1,
+.pt-page .work-hero h1 {
+  font-size: clamp(2.25rem, 4.4vw, 4.8rem);
+  max-width: 16ch;
+}
+
+.pt-page .stack-panel--paper h2,
+main.pt-page > .section h2 {
+  font-size: clamp(2rem, 3.2vw, 3.5rem);
+  max-width: none;
+}
+
+main.assessment-page h1 {
+  font-size: clamp(1.85rem, 4.4vw, 4rem);
+  max-width: none;
+}
+
+@media (max-width: 760px) {
+  .family-hero { min-height: 46vh; }
+  .family-hero h1,
+  main.pt-page > .hero h1 {
+    font-size: clamp(1.75rem, 7vw, 3.4rem);
+    max-width: none;
+  }
+  .stack-panel--ink h1,
+  .work-hero h1 {
+    font-size: clamp(1.75rem, 7vw, 2.55rem);
+    max-width: none;
+    text-wrap: balance;
+  }
+  .eyebrow { white-space: nowrap !important; }
+  .family-section h3,
+  .work-section h3 { font-size: clamp(1rem, 3.2vw, 1.45rem); }
+  .installation-step { grid-template-columns: 1fr; }
+  .installation-step > div,
+  .installation-step__number { grid-column: 1; }
+  .installation-step h3 { font-size: 1rem; }
+  .family-hero .hero-copy { font-size: clamp(.9rem, 3.9vw, 1.15rem); }
+  .family-section p,
+  .family-section li,
+  .family-section figcaption,
+  .family-section .lead,
+  .work-section p,
+  .work-section li,
+  .work-section figcaption {
+    font-size: clamp(.9rem, 2.5vw, 1.05rem);
+    text-wrap: pretty;
+  }
+  .feature p,
+  .family-section .lead { font-size: clamp(.9rem, 2.5vw, 1.05rem); }
+  .feature-list li {
+    column-gap: .65rem;
+    font-size: .9rem;
+    grid-template-columns: 28px 1fr;
+  }
+  #top.stack-panel--ink h1 {
+    font-size: clamp(1.65rem, 7vw, 2.15rem);
+    max-width: none;
+  }
+  .phase {
+    gap: .55rem;
+    grid-template-columns: 1fr;
+  }
+  .phase-number,
+  .phase h3,
+  .phase p { grid-column: 1; }
+  .phase h3 { font-size: 1.05rem; }
+  .phase p,
+  .next p { font-size: .9rem; }
+  main.assessment-page h1 {
+    font-size: clamp(1.4rem, 6.4vw, 3rem);
+    max-width: none;
+  }
+  .assessment-page .step-help { font-size: .82rem; }
+  .coordination-media figcaption { font-size: .8rem; }
+  .work-hero,
+  .work-hero__content,
+  .stack-panel--ink,
+  .stack-panel--ink .stack-panel__content,
+  .stack-panel-visual,
+  .stack-panel .system-visual,
+  .stack-panel-visual .visual-scene { min-height: 78svh; }
+}

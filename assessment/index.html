@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Book an Assessment | Plumbing Track</title>
     <meta name="description" content="Tell Plumbing Track about your multifamily building and repiping project.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.plumbingtrack.com/assessment/">
     <link rel="icon" href="/favicons/favicon.ico" sizes="any">
     <style>
-      :root { --ink:#061015; --panel:#0b171d; --panel-soft:#10242d; --cyan:#d2b985; --cyan-soft:#e0c99a; --paper:#f1f5f6; --steel:#a8b5ba; --line:rgba(157,170,176,.3); }
+      :root { --ink:#061015; --panel:#0b171d; --panel-soft:#10242d; --gold:#d2b985; --gold-soft:#e0c99a; --paper:#f1f5f6; --steel:#a8b5ba; --line:rgba(157,170,176,.3); }
       * { box-sizing:border-box; }
       html { scroll-behavior:smooth; }
-      body { background:var(--ink); color:#fff; font-family:Arial,Helvetica,sans-serif; margin:0; }
+      body { background:var(--ink); color:#fff; font-family:var(--font-geist-sans); margin:0; }
       a { color:inherit; text-decoration:none; }
       .site-header { align-items:center; display:flex; height:80px; justify-content:space-between; padding:0 clamp(1.2rem,4vw,4.5rem); }
       .brand { display:block; line-height:0; max-width:min(300px,52vw); }
       .brand img { height:auto; width:100%; }
-      .back-link { border-bottom:1px solid rgba(255,255,255,.55); color:var(--cyan-soft); font-size:.9rem; font-weight:700; padding-bottom:.3rem; }
+      .back-link { border-bottom:1px solid rgba(255,255,255,.55); color:var(--gold-soft); font-size:.9rem; font-weight:700; padding-bottom:.3rem; }
       .assessment-page { min-height:100vh; padding:clamp(2rem,5vw,5rem) clamp(1.2rem,7vw,8rem) clamp(5rem,10vw,8rem); }
       .assessment-shell { display:grid; gap:clamp(2.5rem,8vw,9rem); grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr); margin:0 auto; max-width:1240px; }
-      .eyebrow { color:var(--cyan-soft); font-size:.72rem; font-weight:750; letter-spacing:.15em; margin:0 0 1.2rem; text-transform:uppercase; }
+      .eyebrow { color:var(--gold-soft); font-size:.72rem; font-weight:750; letter-spacing:.15em; margin:0 0 1.2rem; text-transform:uppercase; }
       h1 { font-size:clamp(2.7rem,5.2vw,5.6rem); letter-spacing:-.07em; line-height:.92; margin:0; max-width:9ch; }
       .intro { color:var(--steel); font-size:1.08rem; line-height:1.6; margin:1.5rem 0 0; max-width:37ch; }
       .assessment-form { background:var(--paper); color:var(--ink); padding:clamp(1.2rem,2.2vw,2rem); }
       .progress { display:grid; gap:.45rem; grid-template-columns:repeat(4,minmax(0,1fr)); list-style:none; margin:0 0 1.25rem; padding:0; }
       .progress li { border-top:2px solid #becbd0; color:#697b82; font-size:.7rem; font-weight:700; letter-spacing:.04em; padding-top:.7rem; text-transform:uppercase; }
       .progress li.is-active { border-color:#00516f; color:#00516f; }
-      .progress li.is-complete { border-color:var(--cyan); color:#254650; }
+      .progress li.is-complete { border-color:var(--gold); color:#254650; }
       .step-panel { border:0; margin:0; min-width:0; padding:0; }
       .step-panel[hidden] { display:none; }
       .step-panel legend { font-size:clamp(1.7rem,3vw,2.5rem); font-weight:750; letter-spacing:-.055em; line-height:1; margin:0 0 .7rem; padding:0; }
@@ -66,6 +68,7 @@
       @media (max-width:560px) { .site-header { height:72px; } .assessment-page { padding-inline:1rem; } .field-grid, .choice-grid, .choice-grid--two { grid-template-columns:1fr; } .progress { gap:.25rem; } .progress li { font-size:.58rem; line-height:1.25; } .review-list div { grid-template-columns:1fr; gap:.3rem; } .actions { align-items:stretch; flex-direction:column-reverse; } .button-primary { margin-left:0; } }
     :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
+      <link rel="stylesheet" href="/shared-typography.css?v=density-15">
   </head>
   <body>
     <header class="site-header">
@@ -77,13 +80,13 @@
         <section>
           <p class="eyebrow">Book an Assessment</p>
           <h1>Tell us about your building.</h1>
-          <p class="intro">A few details help us understand your building and project before the first conversation. If you are unsure, that is useful to know too.</p>
+        <p class="intro">A few details help us understand your building and project before the first conversation. If you’re unsure about something, tell us that too.</p>
         </section>
         <section>
           <form class="assessment-form" data-assessment-flow novalidate>
             <ol class="progress" aria-label="Assessment progress"><li class="is-active">Building</li><li>Project</li><li>Contact</li><li>Review</li></ol>
             <fieldset class="step-panel" data-step="0">
-              <legend tabindex="-1">About the building</legend><p class="step-help">Share whatever you know. All building details are optional.</p>
+              <legend tabindex="-1">About the building</legend><p class="step-help">Share the building details you know.</p>
               <div class="field-grid">
                 <label class="field field--full">Building or property name<input name="building_name" autocomplete="organization"></label>
                 <label class="field">Street address or location<input name="building_location" autocomplete="street-address"></label>
@@ -94,7 +97,7 @@
               </div><div class="actions"><button class="button-primary" type="button" data-next>Continue</button></div>
             </fieldset>
             <fieldset class="step-panel" data-step="1" hidden>
-              <legend tabindex="-1">Plumbing &amp; project</legend><p class="step-help">You do not need to diagnose the building to request an assessment.</p>
+              <legend tabindex="-1">Plumbing &amp; project</legend><p class="step-help">You can request an assessment even if the building's pipe material is not known.</p>
               <div class="field-grid">
                 <div class="field field--full"><span class="field-label">Known pipe material</span><div class="choice-grid"><label class="choice"><input type="radio" name="pipe_material" value="Poly-B"><span>Poly-B</span></label><label class="choice"><input type="radio" name="pipe_material" value="Kitec"><span>Kitec</span></label><label class="choice"><input type="radio" name="pipe_material" value="Copper"><span>Copper</span></label><label class="choice"><input type="radio" name="pipe_material" value="Other"><span>Other</span></label><label class="choice"><input type="radio" name="pipe_material" value="Unsure"><span>Unsure</span></label></div></div>
                 <label class="field field--full">Reason for assessment<select name="issue_type"><option value="">Select if known</option><option>Known failing material</option><option>Leak/failure history</option><option>Insurance concern</option><option>Planned repipe</option><option>Renovation/capital planning</option><option>Other</option><option>Unsure</option></select></label>
@@ -123,6 +126,8 @@
         </section>
       </div>
     </main>
+    <script src="/analytics-config.js" defer></script>
+    <script src="/analytics.js" defer></script>
     <script src="/assessment.js" defer></script>
   </body>
 </html>

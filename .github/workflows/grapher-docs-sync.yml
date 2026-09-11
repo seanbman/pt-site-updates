@@ -14,6 +14,7 @@ on:
       - "scripts/apply-how-it-works-routing.py"
       - "scripts/grapher-docs-sync.sh"
       - "scripts/grapher-dev-updates-review-sync.sh"
+      - "scripts/grapher-qa-review-sync.sh"
       - ".github/workflows/grapher-docs-sync.yml"
 
 permissions:
@@ -46,6 +47,9 @@ jobs:
 
       - name: Synchronize dev/updates review findings into Grapher
         run: bash scripts/grapher-dev-updates-review-sync.sh
+
+      - name: Synchronize QA review and hardening plan into Grapher
+        run: bash scripts/grapher-qa-review-sync.sh
 
       - name: Commit routed site, agent policy, docs, and Grapher state if changed
         shell: bash

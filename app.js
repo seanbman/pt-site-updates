@@ -44,7 +44,7 @@
     "/resources/faq/": "/img/our-work/the-newbury.webp",
     "/solutions/": "/img/our-work/brandts-crossing.webp",
     "/solutions/poly-b/": "/img/our-work/kelvin-court.webp",
-    "/solutions/kitec/": "/img/our-work/peregrine-point.webp",
+    "/solutions/kitec/": "/img/our-work/wilson-court.webp",
     "/how-it-works/installation/": "/img/our-work/rutland-house.webp",
     "/technology/": "/img/completed-work/web/step-03-ceiling.webp",
     "/technology/accessible-plumbing/": "/img/completed-work/web/step-07-access.webp",

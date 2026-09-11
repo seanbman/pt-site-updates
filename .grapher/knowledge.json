@@ -3632,6 +3632,133 @@
         "recorded_at": "2026-09-11T06:46:43+00:00"
       },
       "stage": null
+    },
+    "docs-decision-launch-cutline-2026-09-11": {
+      "id": "docs-decision-launch-cutline-2026-09-11",
+      "type": "document",
+      "title": "Launch Cutline Decision — 2026-09-11",
+      "content": "Current operator directive for the September 11 launch time-box. It prioritizes deployment integrity, Assessment backend acceptance, production GA4 configuration and verification, complete release QA, and the factual Kitec hero correction before merge or release.",
+      "path": "docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md",
+      "tags": [
+        "plumbing-track",
+        "documentation",
+        "launch",
+        "ga4",
+        "assessment",
+        "release-qa"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T09:51:54+00:00",
+      "updated_at": "2026-09-11T09:51:54+00:00",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {
+        "workspace_id": "csw-070926",
+        "project_id": "pt-site-updates"
+      },
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T09:51:54+00:00"
+      },
+      "stage": null
+    },
+    "implementation-production-ga4-and-kitec-correction-20260911": {
+      "id": "implementation-production-ga4-and-kitec-correction-20260911",
+      "type": "implementation",
+      "title": "Configured production GA4 and corrected Kitec proof imagery",
+      "content": "{\"change\":\"Added analytics-config.js with production measurement ID G-RJ5JBVNB45 and loaded it before app.js or analytics.js across all 18 current entrypoints. Preserved the existing exactly-once bootstrap, allowlisted analytics parameters, and accepted-submission-only generate_lead behavior. Corrected the Kitec family hero mapping from Peregrine Point to verified Wilson Court imagery per the current launch cutline.\",\"component\":\"analytics-config.js, app.js, assessment/index.html, solutions/kitec/index.html\"}",
+      "path": "analytics-config.js,app.js,assessment/index.html,solutions/kitec/index.html",
+      "tags": [
+        "plumbing-track",
+        "ga4",
+        "analytics",
+        "privacy",
+        "measurement-id",
+        "kitec",
+        "proof-media",
+        "launch"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T09:52:13+00:00",
+      "updated_at": "2026-09-11T09:52:13+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md"
+      ],
+      "owners": [],
+      "scope": {
+        "workspace_id": "csw-070926",
+        "project_id": "pt-site-updates"
+      },
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T09:52:13+00:00"
+      },
+      "semantic": {
+        "change": "Added analytics-config.js with production measurement ID G-RJ5JBVNB45 and loaded it before app.js or analytics.js across all 18 current entrypoints. Preserved the existing exactly-once bootstrap, allowlisted analytics parameters, and accepted-submission-only generate_lead behavior. Corrected the Kitec family hero mapping from Peregrine Point to verified Wilson Court imagery per the current launch cutline.",
+        "component": "analytics-config.js, app.js, assessment/index.html, solutions/kitec/index.html"
+      },
+      "stage": null
+    },
+    "test-production-ga4-static-contract-20260911": {
+      "id": "test-production-ga4-static-contract-20260911",
+      "type": "test",
+      "title": "Verified production GA4 static contract and Kitec correction",
+      "content": "{\"test\":\"Ran node syntax checks for app.js, analytics.js, assessment.js, and analytics-config.js; verified all 18 entrypoints load analytics-config.js before their analytics bootstrap; confirmed the measurement ID is present in the served config; verified 18 public routes and 14 sitemap URLs return successfully; and confirmed the Kitec mapping points to Wilson Court. Static checks cannot replace production Realtime/DebugView or backend acceptance verification.\",\"method\":\"node --check, route verifier, local HTTP requests, entrypoint coverage scan\",\"outcome\":\"pass\"}",
+      "path": "scripts/verify-static-site.sh,analytics-config.js",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "ga4",
+        "analytics",
+        "no-pii",
+        "static-qa",
+        "launch"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T09:52:25+00:00",
+      "updated_at": "2026-09-11T09:52:25+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md"
+      ],
+      "owners": [],
+      "scope": {
+        "workspace_id": "csw-070926",
+        "project_id": "pt-site-updates"
+      },
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verification",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T09:52:25+00:00"
+      },
+      "semantic": {
+        "test": "Ran node syntax checks for app.js, analytics.js, assessment.js, and analytics-config.js; verified all 18 entrypoints load analytics-config.js before their analytics bootstrap; confirmed the measurement ID is present in the served config; verified 18 public routes and 14 sitemap URLs return successfully; and confirmed the Kitec mapping points to Wilson Court. Static checks cannot replace production Realtime/DebugView or backend acceptance verification.",
+        "method": "node --check, route verifier, local HTTP requests, entrypoint coverage scan",
+        "outcome": "pass"
+      },
+      "stage": null
     }
   },
   "edges": [
@@ -4718,6 +4845,20 @@
       "rel": "supersedes",
       "created_at": "2026-09-11T06:46:44+00:00",
       "note": "This current review supersedes the earlier broad hygiene result where the live visual outcome was still unacceptable."
+    },
+    {
+      "from": "docs-decision-launch-cutline-2026-09-11",
+      "to": "implementation-production-ga4-and-kitec-correction-20260911",
+      "rel": "constrains",
+      "created_at": "2026-09-11T09:52:27+00:00",
+      "note": "The implementation follows the current launch-cutline GA4 and Kitec requirements."
+    },
+    {
+      "from": "implementation-production-ga4-and-kitec-correction-20260911",
+      "to": "test-production-ga4-static-contract-20260911",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T09:52:27+00:00",
+      "note": "Static route, syntax, configuration, and media mapping checks support the implementation."
     }
   ]
 }

@@ -10,7 +10,7 @@
       :root { --ink:#061015; --panel:#0b171d; --panel-soft:#10242d; --gold:#d2b985; --gold-soft:#e0c99a; --paper:#f1f5f6; --steel:#a8b5ba; --line:rgba(157,170,176,.3); }
       * { box-sizing:border-box; }
       html { scroll-behavior:smooth; }
-      body { background:var(--ink); color:#fff; font-family:Arial,Helvetica,sans-serif; margin:0; }
+      body { background:var(--ink); color:#fff; font-family:var(--font-geist-sans); margin:0; }
       a { color:inherit; text-decoration:none; }
       .site-header { align-items:center; display:flex; height:80px; justify-content:space-between; padding:0 clamp(1.2rem,4vw,4.5rem); }
       .brand { display:block; line-height:0; max-width:min(300px,52vw); }
@@ -66,6 +66,7 @@
       @media (max-width:560px) { .site-header { height:72px; } .assessment-page { padding-inline:1rem; } .field-grid, .choice-grid, .choice-grid--two { grid-template-columns:1fr; } .progress { gap:.25rem; } .progress li { font-size:.58rem; line-height:1.25; } .review-list div { grid-template-columns:1fr; gap:.3rem; } .actions { align-items:stretch; flex-direction:column-reverse; } .button-primary { margin-left:0; } }
     :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
+      <link rel="stylesheet" href="/shared-typography.css">
   </head>
   <body>
     <header class="site-header">

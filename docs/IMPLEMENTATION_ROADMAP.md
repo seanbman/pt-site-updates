@@ -233,7 +233,7 @@ Keep this decision.
 - [ ] **Deferred:** Switch deployment to generated HTML only after parity checks pass.
 - [ ] **Deferred:** Remove runtime header/footer/testimonial fragment creation only after generated deployment is verified.
 - [x] Remove stale `--cyan` / `--cyan-soft` references and align shared navigation with the current palette.
-- [ ] Centralize Geist font-face/type variables and apply them consistently to new page families.
+- [x] Centralize Geist font-face/type variables and apply them consistently to new page families, including Assessment.
 - [x] Add and verify root `sitemap.xml` for the intended public/indexable route set. The main-domain sitemap contains the 15 canonical public routes; `/bchousing/` remains on its separate canonical host and client-portal routes are excluded.
 - [x] Add and verify root `robots.txt`, including the production sitemap reference and deliberate disallowance of the client-portal utility subtree.
 - [ ] Verify every current public route by direct URL and refresh under the actual production/static deployment configuration.

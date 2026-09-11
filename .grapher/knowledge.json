@@ -2730,6 +2730,38 @@
       },
       "scope": {},
       "provenance": {}
+    },
+    "implementation-shared-geist-font-contract-20260910": {
+      "id": "implementation-shared-geist-font-contract-20260910",
+      "type": "implementation",
+      "title": "Centralized shared Geist font contract",
+      "content": "{\"change\":\"Added shared-typography.css with local Geist and Geist Mono font-face definitions and linked it from all 18 public HTML entrypoints. Removed duplicate embedded font-face blocks and moved Assessment body typography onto the shared Geist variable.\",\"component\":\"Shared public typography source and font assets. Browser verification reports document.fonts.status loaded, Geist and Geist Mono checks true on a family page, and Geist loaded on Assessment at 660px viewport.\"}",
+      "path": "shared-typography.css",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "typography",
+        "geist",
+        "font-face",
+        "assessment",
+        "hardening"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:46:06+00:00",
+      "updated_at": "2026-09-11T02:46:06+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Added shared-typography.css with local Geist and Geist Mono font-face definitions and linked it from all 18 public HTML entrypoints. Removed duplicate embedded font-face blocks and moved Assessment body typography onto the shared Geist variable.",
+        "component": "Shared public typography source and font assets. Browser verification reports document.fonts.status loaded, Geist and Geist Mono checks true on a family page, and Geist loaded on Assessment at 660px viewport."
+      },
+      "scope": {},
+      "provenance": {}
     }
   },
   "edges": [
@@ -3571,6 +3603,13 @@
       "rel": "satisfies",
       "created_at": "2026-09-11T02:16:43+00:00",
       "note": "Source baseline now contains the canonical sitemap and deliberate robots policy; production Search Console verification remains open"
+    },
+    {
+      "from": "implementation-shared-geist-font-contract-20260910",
+      "to": "requirement-page-family-design-parity",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T02:46:08+00:00",
+      "note": "All public pages now load the shared Geist source; visual route regression remains a separate acceptance gate"
     }
   ]
 }

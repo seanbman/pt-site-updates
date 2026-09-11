@@ -41,7 +41,7 @@ Validated open defects/gaps:
 - shared chrome is still fetched at runtime;
 - `/how-it-works/` contains its own header CSS while also mounting the shared header fragment;
 - family pages use `--gold` while shared navigation still calls unresolved `--cyan` / `--cyan-soft` tokens;
-- family pages do not actually load the canonical Geist font contract;
+- family pages previously did not load the canonical Geist font contract; the shared font source is now implemented, with full visual regression still open;
 - root `sitemap.xml` and `robots.txt` were absent at review time; the source baseline now includes both, with production verification still open;
 - Affordable Housing is present in navigation but absent from the Solutions hub body;
 - current planning language still drifts between **Learn** and the live **Resources** label;
@@ -107,13 +107,13 @@ Follow `docs/PARTIALS_IMPLEMENTATION_PLAN.md` rather than rewriting the shell ag
 
 ## A2. Normalize design-system ownership — P0
 
-- [ ] Move the page family onto canonical Geist typography.
-- [ ] Centralize one shared font-face/type token source instead of letting variables claim Geist while resolving to Arial.
+- [x] Move the page family onto canonical Geist typography.
+- [x] Centralize one shared font-face/type token source instead of letting variables claim Geist while resolving to Arial.
 - [x] Replace stale `--cyan` / `--cyan-soft` references with the current gold/accent contract; do not resurrect cyan.
 - [x] Treat shared-navigation unresolved accent variables as a live hover/focus/border rendering bug.
 - [x] Normalize testimonial accent tokens to the same contract rather than relying on fallback values.
 - [ ] Reduce page-specific shell overrides and keep shared chrome ownership centralized.
-- [ ] Bring `/assessment/` onto the same typography/token contract without unnecessarily redesigning the form.
+- [x] Bring `/assessment/` onto the same typography/token contract without unnecessarily redesigning the form.
 
 ---
 

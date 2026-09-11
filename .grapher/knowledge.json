@@ -2969,6 +2969,84 @@
         "outcome": "pass"
       },
       "scope": {}
+    },
+    "implementation-media-proof-modules-20260910": {
+      "id": "implementation-media-proof-modules-20260910",
+      "type": "implementation",
+      "title": "Integrated verified installation proof media",
+      "content": "{\"change\":\"Added responsive proof modules to Technology and Accessible Plumbing and a dedicated installation-evidence band to Our Work, reusing the existing completed-work web derivatives already used by Detailed Installation.\",\"component\":\"Technology, Accessible Plumbing, Detailed Installation, and Our Work media surfaces.\"}",
+      "path": "technology/index.html",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "media",
+        "proof",
+        "technology",
+        "our-work",
+        "installation"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T03:02:18+00:00",
+      "updated_at": "2026-09-11T03:02:18+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "implementation-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T03:02:18+00:00"
+      },
+      "semantic": {
+        "change": "Added responsive proof modules to Technology and Accessible Plumbing and a dedicated installation-evidence band to Our Work, reusing the existing completed-work web derivatives already used by Detailed Installation.",
+        "component": "Technology, Accessible Plumbing, Detailed Installation, and Our Work media surfaces."
+      },
+      "scope": {}
+    },
+    "test-media-proof-responsive-20260910": {
+      "id": "test-media-proof-responsive-20260910",
+      "type": "test",
+      "title": "Verified responsive proof media surfaces",
+      "content": "{\"test\":\"Loaded the Technology, Accessible Plumbing, Detailed Installation, and Our Work routes after proof-media integration.\",\"method\":\"Live localhost browser navigation at 660px; checked horizontal overflow, proof-module count where applicable, and natural image dimensions for all page images.\",\"outcome\":\"pass\"}",
+      "path": "page-family.css",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "media",
+        "proof",
+        "responsive",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T03:02:38+00:00",
+      "updated_at": "2026-09-11T03:02:38+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "verification-agent",
+        "source": "terminal-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T03:02:38+00:00"
+      },
+      "semantic": {
+        "test": "Loaded the Technology, Accessible Plumbing, Detailed Installation, and Our Work routes after proof-media integration.",
+        "method": "Live localhost browser navigation at 660px; checked horizontal overflow, proof-module count where applicable, and natural image dimensions for all page images.",
+        "outcome": "pass"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -3873,6 +3951,41 @@
       "rel": "satisfies",
       "created_at": "2026-09-11T02:59:01+00:00",
       "note": "Local no-PII dispatch passes; production DebugView and CRM acceptance remain open"
+    },
+    {
+      "from": "implementation-media-proof-modules-20260910",
+      "to": "docs-media-resource-reference",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T03:02:19+00:00",
+      "note": "Placement follows the curated media resource map and its claim/privacy boundary"
+    },
+    {
+      "from": "implementation-media-proof-modules-20260910",
+      "to": "docs-media-video-curation",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T03:02:20+00:00",
+      "note": "Uses reviewed installation-proof direction while excluding unreviewed presenter footage"
+    },
+    {
+      "from": "implementation-media-proof-modules-20260910",
+      "to": "requirement-destination-page-differentiation",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T03:02:20+00:00",
+      "note": "Technology and Our Work now carry distinct source-backed visual proof modules"
+    },
+    {
+      "from": "implementation-media-proof-modules-20260910",
+      "to": "test-media-proof-responsive-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T03:02:40+00:00",
+      "note": "Live browser checks passed across all four media-bearing page families"
+    },
+    {
+      "from": "test-media-proof-responsive-20260910",
+      "to": "requirement-destination-page-differentiation",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T03:02:40+00:00",
+      "note": "All four target routes render proof media without horizontal overflow"
     }
   ]
 }

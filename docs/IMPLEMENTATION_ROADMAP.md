@@ -253,6 +253,7 @@ Keep this decision.
 - [ ] Deepen Poly-B with verified education, FAQ, project proof, and internal linking.
 - [ ] Deepen Kitec with verified education, FAQ, project proof, and internal linking.
 - [ ] Deepen Occupied Building Repiping with verified operational claims, resident/property-manager coordination detail, and proof.
+- [x] Add source-backed visual proof modules to Technology, Accessible Plumbing, Detailed Installation, and Our Work using the existing web derivatives; preserve the curated-media evidence boundary and do not imply project identity or long-term service history.
 - [ ] Add Affordable Housing as a first-class path in `/solutions/` while preserving `/bchousing/` unless a deliberate URL migration is approved.
 - [ ] Review Affordable Housing displacement, asbestos, dust, cost, restoration, and regulatory language against authoritative source material.
 - [ ] Review Technology and comparison claims against source/project evidence and add proof links where available.

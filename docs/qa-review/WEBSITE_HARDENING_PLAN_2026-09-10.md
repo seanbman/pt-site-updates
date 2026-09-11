@@ -550,7 +550,7 @@ Do not declare production-ready until:
 
 1. Add Affordable Housing visibly to the Solutions hub.
 2. Normalize Resources/Learn terminology in current docs.
-3. Deploy curated media to Technology/Installation/Occupied pages.
+3. Deploy verified web derivatives to Technology, Accessible Plumbing, Detailed Installation, and Our Work; keep Drive-only originals and unreviewed/presenter footage out of the static build until derivative, privacy, permission, and claim checks are complete.
 4. Differentiate Poly-B/Kitec/Occupied/About with source-backed proof modules.
 5. Align each Solution narrative with the accessible-route thesis.
 6. Expand FAQ and internal proof links from real source material.

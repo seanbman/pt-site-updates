@@ -80,7 +80,7 @@ This local ordering does not replace the broader source-precedence rules in `doc
 
 ## Current shared-chrome / typography / palette decision
 
-The runtime fragment loader is scheduled to be replaced by **build-time rendered partials**. The first implementation must preserve all current public paths, generate into an isolated `dist/` directory, and pass parity verification before deployment changes. See `docs/PARTIALS_IMPLEMENTATION_PLAN.md`.
+The runtime fragment loader is planned to be replaced by **build-time rendered partials**, but that migration is explicitly deferred for the current time-box. The current static/runtime-fragment implementation remains in use until there is time to generate an isolated `dist/` directory and pass parity verification before deployment changes. See `docs/PARTIALS_IMPLEMENTATION_PLAN.md`.
 
 The reconciled QA review adds one explicit implementation requirement: `/how-it-works/` currently carries page-local header styling while also mounting the shared fragment. That competing chrome contract must be removed during the partial migration rather than preserved in generated output.
 
@@ -100,7 +100,7 @@ The live public hub/navigation label is currently **Resources**. Older **Learn**
 
 ## Current QA / hardening note
 
-`docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` is now revised after reconciliation of the supplied Grok review. Its priority remains production hardening before route sprawl: build-time delivery, shared token/font cleanup, technical SEO, whole-route regression, lead-funnel reliability, GA4 event-contract cleanup, privacy-safe behavioral profiling, CRM attribution/persistence, curated proof media, destination-page differentiation, and browser/accessibility/performance QA.
+`docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` is now revised after reconciliation of the supplied Grok review. Its long-term priority remains production hardening before route sprawl: build-time delivery, shared token/font cleanup, technical SEO, whole-route regression, lead-funnel reliability, GA4 event-contract cleanup, privacy-safe behavioral profiling, CRM attribution/persistence, curated proof media, destination-page differentiation, and browser/accessibility/performance QA. Build-time delivery is deferred in the current time-box; the roadmap records the immediate order.
 
 The local repo-root static-server QA reported 200 responses for all public routes tested. Keep that as baseline evidence only; generated `dist/` and production-equivalent route tests still remain launch gates.
 

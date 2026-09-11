@@ -2607,6 +2607,65 @@
         "integrity": "declared",
         "recorded_at": "2026-09-11T00:40:34+00:00"
       }
+    },
+    "decision-defer-build-time-partials-20260910": {
+      "id": "decision-defer-build-time-partials-20260910",
+      "type": "decision",
+      "title": "Defer Ruby partial migration for current time-box",
+      "content": "{\"decision\":\"Do not begin the Ruby/ERB build-time partial migration or create dist/ during the current time-box.\",\"rationale\":\"The site does not have time for that migration right now. Keep the existing static source and runtime fragment loader operational while immediate development focuses on higher-value hardening work. This defers execution and does not reverse the approved long-term build-time partial decision; revisit after the current hardening block.\"}",
+      "path": "docs/IMPLEMENTATION_ROADMAP.md",
+      "tags": [
+        "plumbing-track",
+        "decision",
+        "partials",
+        "ruby",
+        "scope",
+        "deferred",
+        "dev-updates"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T01:54:42+00:00",
+      "updated_at": "2026-09-11T01:54:42+00:00",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "decision": "Do not begin the Ruby/ERB build-time partial migration or create dist/ during the current time-box.",
+        "rationale": "The site does not have time for that migration right now. Keep the existing static source and runtime fragment loader operational while immediate development focuses on higher-value hardening work. This defers execution and does not reverse the approved long-term build-time partial decision; revisit after the current hardening block."
+      },
+      "stage": null,
+      "scope": {},
+      "provenance": {}
+    },
+    "docs-media-video-curation": {
+      "id": "docs-media-video-curation",
+      "type": "document",
+      "title": "Plumbing Track video curation audit",
+      "content": "Detailed audit of 88 source MP4 videos: 66 visually reviewed, 22 blocked by connector size limits, priority shortlist and page-placement guidance, evidence/privacy boundaries, and derivative policy. It supplements the top-level media resource reference and must be used conservatively for Technology, Accessible Plumbing, Detailed Installation, Occupied Building Repiping, and Our Work.",
+      "path": "docs/media/video-curation/README.md",
+      "tags": [
+        "plumbing-track",
+        "docs",
+        "media",
+        "video",
+        "curation",
+        "proof"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T01:55:15+00:00",
+      "updated_at": "2026-09-11T01:55:15+00:00",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "stage": null,
+      "scope": {},
+      "provenance": {}
     }
   },
   "edges": [
@@ -3399,6 +3458,41 @@
       "rel": "deviates_from",
       "created_at": "2026-09-10T21:56:00+00:00",
       "note": "Current Resources label refines older Learn terminology without discarding the educational-content strategy"
+    },
+    {
+      "from": "decision-defer-build-time-partials-20260910",
+      "to": "decision-build-time-partials",
+      "rel": "constrains",
+      "created_at": "2026-09-11T01:54:43+00:00",
+      "note": "Current time-box defers execution of the approved long-term migration"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "decision-defer-build-time-partials-20260910",
+      "rel": "references",
+      "created_at": "2026-09-11T01:54:44+00:00",
+      "note": "Roadmap records the current time-box and reordered next steps"
+    },
+    {
+      "from": "docs-media-resource-reference",
+      "to": "docs-website-design-plan",
+      "rel": "references",
+      "created_at": "2026-09-11T01:54:44+00:00",
+      "note": "Curated media handoff is explicitly evaluated against the approved design direction"
+    },
+    {
+      "from": "docs-media-video-curation",
+      "to": "docs-website-design-plan",
+      "rel": "references",
+      "created_at": "2026-09-11T01:55:16+00:00",
+      "note": "Video placement guidance follows the approved visual and information architecture plan"
+    },
+    {
+      "from": "docs-media-resource-reference",
+      "to": "docs-media-video-curation",
+      "rel": "references",
+      "created_at": "2026-09-11T01:55:16+00:00",
+      "note": "Top-level media handoff points to the detailed video audit"
     }
   ]
 }

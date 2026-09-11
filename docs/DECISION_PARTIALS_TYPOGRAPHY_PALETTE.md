@@ -22,3 +22,7 @@ Date: 2026-09-10
 ## Scope
 
 These decisions refine implementation and maintenance. They do not authorize a redesign, URL restructure, framework rewrite, or copy overhaul.
+
+## Execution timing clarification — 2026-09-10
+
+The build-time partial decision is approved as a future migration, but Ruby/ERB and `dist/` work are explicitly deferred for the current time-box because there is not time to undertake that migration now. The existing runtime fragment architecture remains active until the migration is deliberately resumed and parity-verified.

@@ -1041,23 +1041,6 @@ a {
   padding-left: 0.6rem;
 }
 
-.feature-list li::after {
-  background: linear-gradient(90deg, var(--gold), transparent);
-  bottom: -1px;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
-  width: 100%;
-}
-
-.feature-list li.is-visible::after {
-  transform: scaleX(1);
-}
-
 .feature-list li:last-child {
   border-bottom: 1px solid var(--line);
 }
@@ -1962,7 +1945,7 @@ footer.site-footer p {
     :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
     <link rel="stylesheet" href="/shared-navigation.css">
-      <link rel="stylesheet" href="/shared-typography.css">
+      <link rel="stylesheet" href="/shared-typography.css?v=density-15">
   </head>
   <body>
     <main class="pt-page" data-pt-page>
@@ -1983,7 +1966,7 @@ footer.site-footer p {
           </div>
           <div class="stack-panel__content" data-pt-stack-content>
             <p class="hero-subtitle hero-load">Poly B &amp; Kitec Replacement for BC Housing Authorities &amp; Low-Income Properties</p>
-            <h1 class="hero-load">Affordable Repiping Without Displacement</h1>
+            <h1 class="hero-load">Affordable Repiping for BC Housing</h1>
             <p class="hero-statement hero-load">Keep Tenants in Their Homes. Protect Your Budget. Eliminate Risk.</p>
             <div class="hero-introduction hero-load">
               <p>At Plumbing Track, we understand the unique pressures facing BC Housing Authorities and non-profit providers: aging Poly B and Kitec systems, tight budgets, tenant safety, and the constant challenge of minimizing disruption.</p>
@@ -2023,10 +2006,10 @@ footer.site-footer p {
                   <h3>No Dust. No Mess. Minimal Disruption</h3>
                   <p>Our surface-mounted track system installs along ceilings and corridors like modern crown molding. We avoid opening walls and ceilings in living spaces, which means:</p>
                   <ul>
-                    <li>Dramatically reduced dust and debris</li>
+                    <li>Less dust and debris</li>
                     <li>Faster project timelines</li>
-                    <li>Happier tenants and fewer complaints</li>
-                    <li>Lower cleaning and restoration costs</li>
+                    <li>Fewer resident complaints</li>
+                    <li>Lower cleanup costs</li>
                   </ul>
                 </div>
                 <div class="advantage-card-visual">
@@ -2063,13 +2046,13 @@ footer.site-footer p {
 
       <section class="benefits-section" data-pt-benefits>
         <div class="benefits-heading reveal">
-          <h2>Additional Benefits Built for Housing Authorities</h2>
+          <h2>Housing benefits.</h2>
         </div>
         <ul class="feature-list" data-pt-stagger>
-          <li class="reveal"><span>01</span>Future-proof, accessible piping with easy maintenance for decades to come</li>
-          <li class="reveal"><span>02</span>Full turnkey service: assessment, planning, installation, and post-project support</li>
-          <li class="reveal"><span>03</span>Proven results in occupied multifamily buildings across Western Canada</li>
-          <li class="reveal"><span>04</span>Cost-effective and budget-friendly compared to conventional methods</li>
+          <li class="reveal"><span>01</span>Accessible piping</li>
+          <li class="reveal"><span>02</span>Turnkey support, start to finish.</li>
+          <li class="reveal"><span>03</span>Proven occupied-building results</li>
+          <li class="reveal"><span>04</span>Lower-cost repiping.</li>
           <li class="reveal"><span>05</span>Minimal impact on daily operations and tenant quality of life</li>
         </ul>
       </section>
@@ -2078,7 +2061,7 @@ footer.site-footer p {
         <div class="proof-media reveal" data-pt-parallax-media>
           <div class="media-stack" data-pt-media-layer>
             <div class="testimonial-media" data-pt-testimonial-media aria-hidden="true">
-              <img class="is-active" src="/img/mosaic.webp" alt="The Mosaic, four-story beige apartment building with balconies and landscaped grounds" width="1200" height="800" loading="eager">
+              <img class="is-active" src="/img/the-bench.webp" alt="The Bench, multifamily building with balconies and landscaped grounds" width="1011" height="618" loading="eager">
               <img src="/img/stellar-place.webp" alt="Stellar Place, multi-story residential complex with green exterior walls and balconies" width="630" height="405" loading="lazy">
               <img src="/img/wildwood-ii.webp" alt="Wildwood II, multi-story residential complex with balconies and landscaped courtyard" width="1200" height="800" loading="lazy">
               <img src="/img/wildwood-iii.webp" alt="Wildwood III, multi-story residential building with autumn trees and street parking" width="1013" height="543" loading="lazy">
@@ -2140,7 +2123,7 @@ footer.site-footer p {
 
       <section class="contact-section" id="assessment">
         <div class="contact-copy reveal">
-          <h2>Ready to Protect Your Properties Without Displacing Tenants?</h2>
+          <h2>Protect Properties Without Displacing Tenants</h2>
           <p>Tell us about the property and project so we can understand the assessment need.</p>
           <a href="https://www.plumbingtrack.com/about" target="_blank" rel="noreferrer">Learn More About the Plumbing Track System <span aria-hidden="true">›</span></a>
         </div>
@@ -2152,6 +2135,6 @@ footer.site-footer p {
     </main>
 
     <script src="/site-header.js" defer></script>
-    <script src="/app.js" defer></script>
+    <script src="/app.js?v=hero-images-3" defer></script>
   </body>
 </html>

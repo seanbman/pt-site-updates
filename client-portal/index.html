@@ -27,7 +27,7 @@
       content="Select your building and enter the password to access project resources."
     >
     <meta property="og:url" content="https://www.plumbingtrack.com/client-portal/">
-    <meta property="og:image" content="https://www.plumbingtrack.com/img/mosaic.webp">
+    <meta property="og:image" content="https://www.plumbingtrack.com/img/completed-work/web/step-08-finished.webp">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Client Portal — Plumbing Track">
@@ -35,7 +35,7 @@
       name="twitter:description"
       content="Select your building and enter the password to access project resources."
     >
-    <meta name="twitter:image" content="https://www.plumbingtrack.com/img/mosaic.webp">
+    <meta name="twitter:image" content="https://www.plumbingtrack.com/img/completed-work/web/step-08-finished.webp">
 
     <style>
 :root {
@@ -1091,6 +1091,19 @@ footer.site-footer .brand-logo {
   width: 100%;
 }
 
+.portal-tile__media-placeholder {
+  align-items: center;
+  background: linear-gradient(135deg, #173945, #0d1f28);
+  color: #e0c99a;
+  display: flex;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  min-height: 100%;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
 .portal-tile:hover .portal-tile__media img,
 .portal-tile:focus-visible .portal-tile__media img {
   transform: scale(1.03);
@@ -1318,7 +1331,7 @@ body.portal-modal-open {
     :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
     <link rel="stylesheet" href="/shared-navigation.css">
-      <link rel="stylesheet" href="/shared-typography.css">
+      <link rel="stylesheet" href="/shared-typography.css?v=density-15">
   </head>
   <body>
     <main class="pt-page portal-page" data-pt-page data-pt-early-lazy>
@@ -1462,7 +1475,7 @@ body.portal-modal-open {
               data-portal-hash="f7864c481164817095229b593d757f895ae90fcd89fc743fc650850a25a27f1f"
             >
               <div class="portal-tile__media">
-                <img src="/img/our-work/wilson-court.webp" alt="Wilson Court" width="1400" height="875" loading="lazy">
+                <div class="portal-tile__media-placeholder" aria-hidden="true">Wilson Court</div>
               </div>
               <div class="portal-tile__copy">
                 <h3>Wilson Court</h3>
@@ -1513,7 +1526,7 @@ body.portal-modal-open {
               data-portal-hash="60ab65e05dff2f31ef5d7696321a781d6f7936d4a0f2ba15a58b8ee6b2728276"
             >
               <div class="portal-tile__media">
-                <img src="/img/mosaic.webp" alt="The Mosaic" width="1400" height="875" loading="lazy">
+                <img src="/img/completed-work/web/step-08-finished.webp" alt="Completed Plumbing Track installation" width="1600" height="855" loading="lazy">
               </div>
               <div class="portal-tile__copy">
                 <h3>The Mosaic</h3>
@@ -1659,7 +1672,7 @@ body.portal-modal-open {
     </div>
 
     <script src="/site-header.js" defer></script>
-    <script src="/app.js" defer></script>
+    <script src="/app.js?v=hero-images-3" defer></script>
     <script>
 (() => {
   const STORAGE_KEY = "pt-portal-unlocks";

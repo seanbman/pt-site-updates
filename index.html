@@ -1166,23 +1166,6 @@ a {
   padding-left: 0.6rem;
 }
 
-.feature-list li::after {
-  background: linear-gradient(90deg, var(--gold), transparent);
-  bottom: -1px;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
-  width: 100%;
-}
-
-.feature-list li.is-visible::after {
-  transform: scaleX(1);
-}
-
 .feature-list li:last-child {
   border-bottom: 1px solid var(--line);
 }
@@ -2659,15 +2642,6 @@ footer.site-footer .brand-logo {
 .site-header.is-scrolled .nav-section summary::after { color:#00516f; }
 .home-assessment .primary-cta { background:#001118; border-color:#001118; color:#fff; }
 .home-assessment .primary-cta:hover, .home-assessment .primary-cta:focus-visible { background:#fff; color:#001118; }
-.social-links { display:flex; flex-wrap:wrap; gap:.55rem; justify-content:center; }
-.social-links a { align-items:center; border:1px solid rgba(8,19,25,.25); color:#35515b; display:inline-flex; height:2.35rem; justify-content:center; transition:border-color 160ms ease, color 160ms ease, transform 160ms ease; width:2.35rem; }
-.social-links svg { fill:currentColor; height:1rem; width:1rem; }
-.social-links span { font-family:Arial,Helvetica,sans-serif; font-size:.9rem; font-weight:700; line-height:1; }
-.social-links .social-icon--instagram { border:1.5px solid currentColor; border-radius:.28rem; height:.9rem; position:relative; width:.9rem; }
-.social-links .social-icon--instagram::before { border:1.5px solid currentColor; border-radius:50%; content:""; height:.36rem; left:50%; position:absolute; top:50%; transform:translate(-50%,-50%); width:.36rem; }
-.social-links .social-icon--instagram::after { background:currentColor; border-radius:50%; content:""; height:.13rem; position:absolute; right:.1rem; top:.1rem; width:.13rem; }
-.social-links a:hover, .social-links a:focus-visible { border-color:#00516f; color:#00516f; transform:translateY(-2px); }
-
 :is(a, button, .project-card-link):not(.header-menu-toggle) > span[aria-hidden="true"] {
   display: inline-block;
   margin-left: .35em;
@@ -3047,7 +3021,7 @@ footer.site-footer .brand-logo {
 
     </style>
     <link rel="stylesheet" href="/shared-navigation.css">
-      <link rel="stylesheet" href="/shared-typography.css">
+      <link rel="stylesheet" href="/shared-typography.css?v=density-15">
   </head>
   <body>
     <main class="pt-page" data-pt-page>
@@ -3146,6 +3120,6 @@ footer.site-footer .brand-logo {
     </main>
 
     <script src="/site-header.js" defer></script>
-    <script src="/app.js" defer></script>
+    <script src="/app.js?v=hero-images-3" defer></script>
   </body>
 </html>

@@ -38,8 +38,7 @@
       .header-cta { align-items:center; background:var(--gold); color:#10242d; display:inline-flex; font-size:.84rem; font-weight:750; min-height:42px; padding:.75rem 1rem; }
       .header-menu-toggle { display:none; }
       main { overflow:hidden; }
-      .hero { align-items:end; background:linear-gradient(135deg,#071318 0%,#10242d 68%,#183845 100%); display:grid; min-height:62vh; padding:8rem clamp(1.25rem,7vw,8rem) 4rem; position:relative; }
-      .hero::after { background:linear-gradient(90deg,transparent,rgba(210,185,133,.15)); content:""; height:1px; left:clamp(1.25rem,7vw,8rem); position:absolute; right:0; top:44%; }
+      .hero { align-items:end; background:linear-gradient(100deg,rgba(7,19,24,.94) 0%,rgba(7,19,24,.82) 42%,rgba(7,19,24,.52) 76%,rgba(7,19,24,.3) 100%),url('/img/completed-work/web/step-01-occupied.webp') center / cover no-repeat; display:grid; min-height:62vh; padding:8rem clamp(1.25rem,7vw,8rem) 4rem; }
       .hero-inner { margin:0 auto; max-width:1240px; width:100%; }
       .kicker { color:var(--gold-soft); font-family:var(--font-geist-mono); font-size:.72rem; font-weight:700; letter-spacing:.13em; margin:0 0 1rem; text-transform:uppercase; }
       h1,h2,h3 { text-wrap:balance; }
@@ -49,13 +48,18 @@
       .section-inner { margin:0 auto; max-width:1240px; }
       .intro-grid { display:grid; gap:clamp(1.75rem,4.5vw,5rem); grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); }
       h2 { font-size:clamp(2.4rem,4.5vw,4.8rem); letter-spacing:-.06em; line-height:.95; margin:0; }
+      .accessible h2 { font-size:clamp(2.6rem,3.7vw,4rem); }
       .lead { color:#52656d; font-size:clamp(1.05rem,1.35vw,1.2rem); line-height:1.65; margin:0; max-width:58ch; }
-      .accessible { background:var(--paper); color:var(--ink); }
+      .accessible { background:var(--paper); color:var(--ink); padding-block:clamp(3rem,4.5vw,4.25rem); }
       .route-note { border-left:2px solid var(--gold); color:#354b54; font-size:1rem; line-height:1.6; margin:1.5rem 0 0; max-width:70ch; padding-left:1.2rem; }
       .inline-route { border-bottom:1px solid rgba(8,19,25,.25); color:#173945; display:inline-flex; font-weight:720; margin-top:1.35rem; padding-bottom:.2rem; }
+      .system-media { margin:2rem 0 0; }
+      .system-media figure { margin:0; }
+      .system-media img { display:block; height:clamp(15rem,17vw,18rem); object-fit:cover; object-position:72% 72%; width:100%; }
+      .system-media figcaption { color:#566970; font-size:.85rem; line-height:1.5; margin-top:.65rem; }
       .process {
         background:
-          linear-gradient(rgba(16,36,45,.94),rgba(16,36,45,.97)),
+          linear-gradient(rgba(16,36,45,.84),rgba(16,36,45,.91)),
           url('/img/completed-work/web/step-02-routing.webp') center / cover no-repeat;
       }
       .process .lead { color:#bdccd1; }
@@ -64,25 +68,32 @@
       .phase-number { color:var(--gold); font-family:var(--font-geist-mono); font-size:.78rem; }
       .phase h3 { font-size:clamp(1.2rem,1.9vw,1.7rem); letter-spacing:-.045em; line-height:1.05; margin:0; }
       .phase p { color:#aebec4; line-height:1.55; margin:0; max-width:58ch; }
-      .why-route { background:#fff; color:var(--ink); }
+      .why-route { background:var(--paper); color:var(--ink); padding-block:clamp(3rem,4.5vw,4.5rem); }
+      .coordination-media { margin-top:clamp(1.5rem,3vw,2.25rem); }
+      .coordination-media figure { margin:0; }
+      .coordination-media img { display:block; height:clamp(15rem,26vw,22rem); object-fit:cover; object-position:center 58%; width:100%; }
+      .coordination-media figcaption { color:#566970; font-size:.9rem; line-height:1.5; margin-top:.7rem; }
       .points { display:grid; gap:1px; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:clamp(2rem,4vw,3.25rem); }
-      .point { background:#f1f5f6; min-height:190px; padding:1.45rem; }
+      .point { background:#fff; min-height:190px; padding:1.45rem; }
       .point span { color:#00516f; font-family:var(--font-geist-mono); font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; }
       .point h3 { font-size:clamp(1.25rem,2vw,1.8rem); letter-spacing:-.045em; line-height:1.05; margin:1.55rem 0 .75rem; }
       .point p { color:#566970; line-height:1.55; margin:0; }
-      .next { background:var(--gold); color:#061015; }
-      .next-grid { align-items:end; display:grid; gap:2rem; grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr); }
+      .next { background:var(--gold); color:#061015; padding-block:clamp(3rem,4.5vw,4rem); }
+      .next-grid { align-items:center; display:grid; gap:2rem; grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr); }
       .next h2 { max-width:12ch; }
       .next p { color:#173945; line-height:1.6; margin:1rem 0 0; max-width:46ch; }
       .actions { align-items:stretch; display:flex; flex-wrap:wrap; gap:.75rem; justify-content:flex-end; }
-      .button { align-items:center; display:inline-flex; font-weight:760; justify-content:center; min-height:48px; padding:.8rem 1.05rem; }
+      .button { align-items:center; display:inline-flex; font-weight:760; justify-content:center; min-height:48px; padding:.8rem 1.05rem; transition:background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, color 180ms ease, transform 180ms ease; }
       .button-primary { background:#061015; color:#fff; }
       .button-secondary { border:1px solid rgba(6,16,21,.42); color:#061015; }
+      .button-primary:hover, .button-primary:focus-visible { background:#00516f; box-shadow:0 10px 28px rgba(0,81,111,.22); transform:translateY(-1px); }
+      .button-secondary:hover, .button-secondary:focus-visible { border-color:#00516f; color:#00516f; transform:translateY(-1px); }
       footer.site-footer { align-items:center; background:#fff; color:#53636a; display:flex; justify-content:space-between; padding:2.25rem clamp(1.25rem,7vw,8rem); }
       @media (max-width:900px) {
         .intro-grid,.next-grid { grid-template-columns:1fr; }
         .points { grid-template-columns:1fr; }
         .point { min-height:0; }
+        .coordination-media img { height:auto; object-position:center; }
         .phase { grid-template-columns:54px 1fr; }
         .phase p { grid-column:2; }
         .actions { justify-content:flex-start; }
@@ -94,7 +105,7 @@
       }
     </style>
     <link rel="stylesheet" href="/shared-navigation.css">
-    <link rel="stylesheet" href="/shared-typography.css">
+    <link rel="stylesheet" href="/shared-typography.css?v=density-15">
   </head>
   <body>
     <main class="pt-page" data-pt-page>
@@ -119,6 +130,12 @@
               <p class="lead">Plumbing Track uses an enclosed, accessible route rather than automatically returning new pipe to concealed walls and ceilings. That routing decision shapes how the rest of the project is planned.</p>
               <p class="route-note">Accessible does not mean exposed. The new pipe is enclosed within the Plumbing Track system and finished as part of the building.</p>
               <a class="inline-route" href="/technology/conventional-vs-plumbing-track/">Compare the two approaches&nbsp;›</a>
+              <div class="system-media">
+                <figure>
+                  <img src="/img/completed-work/web/step-07-access.webp" alt="Finished access panel for a Plumbing Track route" width="1600" height="1107" loading="lazy">
+                  <figcaption>Service access stays available.</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -129,14 +146,14 @@
           <div class="intro-grid">
             <div>
               <p class="kicker">Project process</p>
-              <h2>From assessment to a finished, accessible system.</h2>
+              <h2>Assessment through handoff.</h2>
             </div>
             <p class="lead">The project sequence is designed around occupied multifamily buildings. Assessment, resident coordination, installation, finishing, and handoff are treated as one connected job rather than separate problems.</p>
           </div>
 
           <div class="phase-list">
             <article class="phase"><span class="phase-number">01</span><h3>Assessment &amp; Proposal</h3><p>Understand the building, existing pipe, constraints, occupancy, and the route that will support the replacement system.</p></article>
-            <article class="phase"><span class="phase-number">02</span><h3>Prepare the Building &amp; Residents</h3><p>Coordinate access, communication, protection, staging, and the practical details required to work in occupied homes.</p></article>
+            <article class="phase"><span class="phase-number">02</span><h3>Prepare the building.</h3><p>Coordinate access, communication, protection, staging, and the practical details required to work in occupied homes.</p></article>
             <article class="phase"><span class="phase-number">03</span><h3>Install Around Occupied Homes</h3><p>Install the replacement system through the planned route while keeping the work focused on the spaces that actually require access.</p></article>
             <article class="phase"><span class="phase-number">04</span><h3>Finish the Building</h3><p>Complete the architectural treatment and leave each work area as a finished part of the building, not an ongoing construction zone.</p></article>
             <article class="phase"><span class="phase-number">05</span><h3>Handoff With Future Access</h3><p>Close the project with a known enclosed route that remains serviceable when the plumbing needs attention later.</p></article>
@@ -151,12 +168,20 @@
               <p class="kicker">Occupied-building coordination</p>
               <h2>The process is more than the pipe install.</h2>
             </div>
-            <p class="lead">In an occupied property, the schedule only works when resident communication, suite access, protection, staging, and finishing are built into the same sequence.</p>
+            <div>
+              <p class="lead">In an occupied property, the schedule only works when resident communication, suite access, protection, staging, and finishing are built into the same sequence.</p>
+              <div class="coordination-media">
+                <figure>
+                  <img src="/img/completed-work/web/step-04-cabinets.webp" alt="Plumbing Track enclosure routed above kitchen cabinets in a finished room" width="1600" height="853" loading="lazy">
+                  <figcaption>Work around finished rooms.</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
           <div class="points">
             <article class="point"><span>Before work</span><h3>Residents know what to expect.</h3><p>Communication, suite access, protection, and practical preparation are established before crews begin the in-suite work.</p></article>
             <article class="point"><span>During work</span><h3>Keep each visit focused.</h3><p>Staging and route planning keep the crew focused on the areas that need access instead of turning the entire home into the work area.</p></article>
-            <article class="point"><span>At handoff</span><h3>Finish the room and retain the route.</h3><p>Closeout includes the finished architectural treatment and a known path back to the replacement plumbing.</p></article>
+            <article class="point"><span>At handoff</span><h3>Finish the room and retain the route.</h3><p>Closeout leaves a finished route.</p></article>
           </div>
         </div>
       </section>
@@ -178,6 +203,6 @@
       <div data-pt-footer-fragment></div>
     </main>
     <script src="/site-header.js" defer></script>
-    <script src="/app.js" defer></script>
+    <script src="/app.js?v=hero-images-3" defer></script>
   </body>
 </html>

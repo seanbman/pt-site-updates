@@ -68,7 +68,7 @@
       @media (max-width:560px) { .site-header { height:72px; } .assessment-page { padding-inline:1rem; } .field-grid, .choice-grid, .choice-grid--two { grid-template-columns:1fr; } .progress { gap:.25rem; } .progress li { font-size:.58rem; line-height:1.25; } .review-list div { grid-template-columns:1fr; gap:.3rem; } .actions { align-items:stretch; flex-direction:column-reverse; } .button-primary { margin-left:0; } }
     :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
-      <link rel="stylesheet" href="/shared-typography.css">
+      <link rel="stylesheet" href="/shared-typography.css?v=density-15">
   </head>
   <body>
     <header class="site-header">
@@ -80,13 +80,13 @@
         <section>
           <p class="eyebrow">Book an Assessment</p>
           <h1>Tell us about your building.</h1>
-          <p class="intro">A few details help us understand your building and project before the first conversation. If you are unsure, that is useful to know too.</p>
+        <p class="intro">A few details help us understand your building and project before the first conversation. If you’re unsure about something, tell us that too.</p>
         </section>
         <section>
           <form class="assessment-form" data-assessment-flow novalidate>
             <ol class="progress" aria-label="Assessment progress"><li class="is-active">Building</li><li>Project</li><li>Contact</li><li>Review</li></ol>
             <fieldset class="step-panel" data-step="0">
-              <legend tabindex="-1">About the building</legend><p class="step-help">Share whatever you know. All building details are optional.</p>
+              <legend tabindex="-1">About the building</legend><p class="step-help">Share the building details you know.</p>
               <div class="field-grid">
                 <label class="field field--full">Building or property name<input name="building_name" autocomplete="organization"></label>
                 <label class="field">Street address or location<input name="building_location" autocomplete="street-address"></label>

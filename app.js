@@ -38,6 +38,25 @@
   root.dataset.ptReady = "true";
   root.classList.add("pt-js");
 
+  const familyHeroImages = {
+    "/about/": "/img/about-building.png",
+    "/resources/": "/img/our-work/dover-pointe.webp",
+    "/resources/faq/": "/img/our-work/the-newbury.webp",
+    "/solutions/": "/img/our-work/brandts-crossing.webp",
+    "/solutions/poly-b/": "/img/our-work/kelvin-court.webp",
+    "/solutions/kitec/": "/img/our-work/peregrine-point.webp",
+    "/how-it-works/installation/": "/img/our-work/rutland-house.webp",
+    "/technology/": "/img/completed-work/web/step-03-ceiling.webp",
+    "/technology/accessible-plumbing/": "/img/completed-work/web/step-07-access.webp",
+    "/technology/conventional-vs-plumbing-track/": "/img/completed-work/web/step-02-routing.webp",
+  };
+  const familyHero = root.querySelector(".family-hero:not(.family-hero--photo)");
+  const familyHeroImage = familyHeroImages[window.location.pathname];
+  if (familyHero && familyHeroImage) {
+    familyHero.classList.add("family-hero--photo");
+    familyHero.style.setProperty("--family-hero-image", `url('${familyHeroImage}')`);
+  }
+
   root.querySelectorAll("[data-assessment-cta]").forEach((cta) => {
     cta.addEventListener("click", () => {
       const sourceCta = cta.getAttribute("data-assessment-cta") || "unknown";

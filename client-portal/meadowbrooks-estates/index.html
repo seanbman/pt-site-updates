@@ -27,7 +27,7 @@
       content="Meadowbrooks Estates project schedule, townhall presentation, and representative contact."
     >
     <meta property="og:url" content="https://www.plumbingtrack.com/client-portal/meadowbrooks-estates/">
-    <meta property="og:image" content="https://www.plumbingtrack.com/img/mosaic.webp">
+    <meta property="og:image" content="https://www.plumbingtrack.com/img/completed-work/web/step-08-finished.webp">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Meadowbrooks Estates — Client Portal | Plumbing Track">
@@ -35,7 +35,7 @@
       name="twitter:description"
       content="Meadowbrooks Estates project schedule, townhall presentation, and representative contact."
     >
-    <meta name="twitter:image" content="https://www.plumbingtrack.com/img/mosaic.webp">
+    <meta name="twitter:image" content="https://www.plumbingtrack.com/img/completed-work/web/step-08-finished.webp">
 
     <style>
 :root {
@@ -1373,6 +1373,10 @@ body.portal-modal-open {
   margin: 0;
 }
 
+@media (max-width: 400px) {
+  .building-hero__content h1 { font-size: 1.5rem; white-space: nowrap; }
+}
+
 .building-hero__content p {
   color: #d5dee2;
   font-size: 1.05rem;
@@ -1537,7 +1541,7 @@ body.portal-modal-open {
     :where(h1, h2, h3) { text-wrap: pretty; }
     </style>
     <link rel="stylesheet" href="/shared-navigation.css">
-      <link rel="stylesheet" href="/shared-typography.css">
+      <link rel="stylesheet" href="/shared-typography.css?v=density-15">
   </head>
     <body>
     <main class="pt-page portal-page" data-pt-page>
@@ -1608,7 +1612,7 @@ body.portal-modal-open {
     <div class="portal-modal" data-portal-modal aria-hidden="true">
       <div class="portal-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="portal-modal-title">
         <h2 id="portal-modal-title">Meadowbrooks Estates</h2>
-        <p>Enter the password to access project resources.</p>
+        <p>Enter the password to continue.</p>
         <form data-portal-form novalidate>
           <div class="portal-modal__field">
             <label for="portal-password">Password</label>
@@ -1624,7 +1628,7 @@ body.portal-modal-open {
     </div>
 
     <script src="/site-header.js" defer></script>
-    <script src="/app.js" defer></script>
+    <script src="/app.js?v=hero-images-3" defer></script>
     <script>
 (() => {
   const STORAGE_KEY = "pt-portal-unlocks";

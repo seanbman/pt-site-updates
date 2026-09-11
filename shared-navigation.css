@@ -260,7 +260,9 @@ main[data-pt-page] footer.site-footer p {
   text-transform: uppercase;
 }
 main[data-pt-page] footer.site-footer .social-links { align-items: center; display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; }
-main[data-pt-page] footer.site-footer .social-links a { align-items: center; border: 1px solid rgba(8, 19, 25, .22); color: #35515b; display: inline-flex; height: 2.35rem; justify-content: center; width: 2.35rem; }
+main[data-pt-page] footer.site-footer .social-links a { align-items: center; border: 1px solid rgba(8, 19, 25, .22); color: #35515b; display: inline-flex; height: 2.35rem; justify-content: center; transition: border-color 160ms ease, color 160ms ease, transform 160ms ease; width: 2.35rem; }
+main[data-pt-page] footer.site-footer .social-links a:hover,
+main[data-pt-page] footer.site-footer .social-links a:focus-visible { border-color: #00516f; color: #00516f; transform: translateY(-2px); }
 main[data-pt-page] footer.site-footer .social-links span { font-family: Arial, Helvetica, sans-serif; font-size: .9rem; font-weight: 700; line-height: 1; }
 main[data-pt-page] footer.site-footer .social-icon--instagram { border: 1.5px solid currentColor; border-radius: .28rem; height: .9rem; position: relative; width: .9rem; }
 main[data-pt-page] footer.site-footer .social-icon--instagram::before { border: 1.5px solid currentColor; border-radius: 50%; content: ""; height: .36rem; left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); width: .36rem; }

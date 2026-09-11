@@ -3162,6 +3162,476 @@
         "outcome": "pass"
       },
       "scope": {}
+    },
+    "audit-space-content-ratio-20260910": {
+      "id": "audit-space-content-ratio-20260910",
+      "type": "test",
+      "title": "Space-to-content pixel audit across public routes",
+      "content": "{\"test\":\"Space-to-content pixel audit across the 18 public route entrypoints at a 790 CSS-pixel browser width.\",\"method\":\"For each route, total_pixels = 790 * rendered document scrollHeight; content_pixels is the 2D union of visible bounding rectangles for headings, paragraphs, lists, links, controls, tables, figures, images, video, forms, articles, header/footer, and computed background-image elements; empty_pixels = total_pixels - content_pixels; ratio = empty_pixels / content_pixels. Aggregate: total 40085390px, content 23291924px, empty 16793466px, ratio 0.72, content 58.1%. Full table columns are route | scroll_height_px | total_px | content_px | empty_px | empty/content | content_percent. Rows: / | 4682 | 3698780 | 1603085 | 2095695 | 1.31 | 43.3%; /about/ | 2204 | 1741160 | 838492 | 902668 | 1.08 | 48.2%; /our-work/ | 5793 | 4576470 | 2709970 | 1866500 | 0.69 | 59.2%; /solutions/ | 1969 | 1555510 | 811959 | 743551 | 0.92 | 52.2%; /solutions/poly-b/ | 2096 | 1655840 | 821675 | 834165 | 1.02 | 49.6%; /solutions/kitec/ | 2156 | 1703240 | 865003 | 838237 | 0.97 | 50.8%; /solutions/occupied-building-repiping/ | 3704 | 2926160 | 2091297 | 834863 | 0.40 | 71.5%; /bchousing/ | 4621 | 3650590 | 2158247 | 1492343 | 0.69 | 59.1%; /client-portal/ | 2927 | 2312330 | 1802286 | 510044 | 0.28 | 77.9%; /client-portal/meadowbrooks-estates/ | 888 | 701520 | 272871 | 428649 | 1.57 | 38.9%; /how-it-works/ | 4184 | 3305360 | 2507242 | 798118 | 0.32 | 75.9%; /how-it-works/installation/ | 3256 | 2572240 | 1641642 | 930598 | 0.57 | 63.8%; /resources/ | 1729 | 1365910 | 658118 | 707792 | 1.08 | 48.2%; /resources/faq/ | 2457 | 1941030 | 1095368 | 845662 | 0.77 | 56.4%; /technology/ | 2032 | 1605280 | 1072055 | 533225 | 0.50 | 66.8%; /technology/accessible-plumbing/ | 2844 | 2246760 | 1317739 | 929021 | 0.71 | 58.7%; /technology/conventional-vs-plumbing-track/ | 2104 | 1662160 | 482528 | 1179632 | 2.44 | 29.0%; /assessment/ | 1095 | 865050 | 542347 | 322703 | 0.60 | 62.7%.\",\"outcome\":\"pass\"}\n",
+      "path": "terminal-browser://pt-site-updates/space-content-ratio/2026-09-10",
+      "tags": [
+        "plumbing-track",
+        "audit",
+        "visual-design",
+        "space-content",
+        "pixels",
+        "responsive",
+        "egregious-error"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T04:57:09+00:00",
+      "updated_at": "2026-09-11T04:57:09+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live audit at 790 CSS px",
+          "summary": "Measured rendered document height and the 2D union of visible content rectangles across 18 public route entrypoints."
+        }
+      ],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "verification-agent",
+        "source": "terminal-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T04:57:09+00:00"
+      },
+      "semantic": {
+        "test": "Space-to-content pixel audit across the 18 public route entrypoints at a 790 CSS-pixel browser width.",
+        "method": "For each route, total_pixels = 790 * rendered document scrollHeight; content_pixels is the 2D union of visible bounding rectangles for headings, paragraphs, lists, links, controls, tables, figures, images, video, forms, articles, header/footer, and computed background-image elements; empty_pixels = total_pixels - content_pixels; ratio = empty_pixels / content_pixels. Aggregate: total 40085390px, content 23291924px, empty 16793466px, ratio 0.72, content 58.1%. Full table columns are route | scroll_height_px | total_px | content_px | empty_px | empty/content | content_percent. Rows: / | 4682 | 3698780 | 1603085 | 2095695 | 1.31 | 43.3%; /about/ | 2204 | 1741160 | 838492 | 902668 | 1.08 | 48.2%; /our-work/ | 5793 | 4576470 | 2709970 | 1866500 | 0.69 | 59.2%; /solutions/ | 1969 | 1555510 | 811959 | 743551 | 0.92 | 52.2%; /solutions/poly-b/ | 2096 | 1655840 | 821675 | 834165 | 1.02 | 49.6%; /solutions/kitec/ | 2156 | 1703240 | 865003 | 838237 | 0.97 | 50.8%; /solutions/occupied-building-repiping/ | 3704 | 2926160 | 2091297 | 834863 | 0.40 | 71.5%; /bchousing/ | 4621 | 3650590 | 2158247 | 1492343 | 0.69 | 59.1%; /client-portal/ | 2927 | 2312330 | 1802286 | 510044 | 0.28 | 77.9%; /client-portal/meadowbrooks-estates/ | 888 | 701520 | 272871 | 428649 | 1.57 | 38.9%; /how-it-works/ | 4184 | 3305360 | 2507242 | 798118 | 0.32 | 75.9%; /how-it-works/installation/ | 3256 | 2572240 | 1641642 | 930598 | 0.57 | 63.8%; /resources/ | 1729 | 1365910 | 658118 | 707792 | 1.08 | 48.2%; /resources/faq/ | 2457 | 1941030 | 1095368 | 845662 | 0.77 | 56.4%; /technology/ | 2032 | 1605280 | 1072055 | 533225 | 0.50 | 66.8%; /technology/accessible-plumbing/ | 2844 | 2246760 | 1317739 | 929021 | 0.71 | 58.7%; /technology/conventional-vs-plumbing-track/ | 2104 | 1662160 | 482528 | 1179632 | 2.44 | 29.0%; /assessment/ | 1095 | 865050 | 542347 | 322703 | 0.60 | 62.7%.",
+        "outcome": "pass"
+      },
+      "scope": {}
+    },
+    "failure-egregious-space-content-audit-omission-20260910": {
+      "id": "failure-egregious-space-content-audit-omission-20260910",
+      "type": "failure",
+      "title": "Egregious agent error: space-to-content audit omitted",
+      "content": "{\"failure\":\"The agent omitted the required space-to-content audit from the implementation loop and shipped low-density, generic visual compositions despite the project design plan calling for strong project photography and concise, deliberately designed pages.\",\"observed_behavior\":\"The 18-route audit later measured severe empty space, including /technology/conventional-vs-plumbing-track/ at 2.44 empty pixels per content pixel, /client-portal/meadowbrooks-estates/ at 1.57, and the home route at 1.31. About and FAQ presented gradient-led heroes with oversized type and large unused areas instead of using the supplied photo library as visual proof; similar text-heavy treatment appeared elsewhere. Severity: egregious. The omission was corrected only after operator escalation by recording the audit, adding route-specific real photography and proof media, and making browser density and visual review explicit acceptance checks.\"}\n",
+      "path": "terminal-browser://pt-site-updates/visual-review/2026-09-10",
+      "tags": [
+        "plumbing-track",
+        "failure",
+        "egregious",
+        "agent-error",
+        "visual-design",
+        "space-content",
+        "photography",
+        "whitespace"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T04:57:31+00:00",
+      "updated_at": "2026-09-11T04:57:31+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "observation",
+          "ref": "audit-space-content-ratio-20260910",
+          "summary": "The recorded 18-route pixel audit identified severe low-density layouts, including a 2.44 empty/content ratio on the comparison route."
+        },
+        {
+          "type": "observation",
+          "ref": "terminal-browser screenshots for /about/ and /resources/faq/",
+          "summary": "Rendered review showed gradient-led, text-heavy hero compositions with unused space and insufficient use of the supplied project photography."
+        }
+      ],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "retrospective-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T04:57:31+00:00"
+      },
+      "semantic": {
+        "failure": "The agent omitted the required space-to-content audit from the implementation loop and shipped low-density, generic visual compositions despite the project design plan calling for strong project photography and concise, deliberately designed pages.",
+        "observed_behavior": "The 18-route audit later measured severe empty space, including /technology/conventional-vs-plumbing-track/ at 2.44 empty pixels per content pixel, /client-portal/meadowbrooks-estates/ at 1.57, and the home route at 1.31. About and FAQ presented gradient-led heroes with oversized type and large unused areas instead of using the supplied photo library as visual proof; similar text-heavy treatment appeared elsewhere. Severity: egregious. The omission was corrected only after operator escalation by recording the audit, adding route-specific real photography and proof media, and making browser density and visual review explicit acceptance checks."
+      },
+      "scope": {}
+    },
+    "implementation-photo-led-family-corrections-20260910": {
+      "id": "implementation-photo-led-family-corrections-20260910",
+      "type": "implementation",
+      "title": "Applied photo-led corrections to low-density page families",
+      "content": "{\"change\":\"Replaced generic family-hero gradients with route-specific existing project photography across the generic family routes, added a high-resolution building hero and distinct finished-installation image to FAQ, and added finished-room proof media to About. The homepage video remains unchanged.\",\"component\":\"app.js familyHeroImages map; page-family.css photo fallback and overlay; about/index.html; resources/faq/index.html; cache-busted app.js references across active HTML routes. Mapped imagery covers About, Resources, FAQ, Solutions, Poly-B, Kitec, Detailed Installation, Technology, Accessible Plumbing, and Conventional vs Plumbing Track.\"}\n",
+      "path": "app.js",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "visual-design",
+        "photography",
+        "space-content",
+        "hero",
+        "proof-media"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T04:57:51+00:00",
+      "updated_at": "2026-09-11T04:57:51+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live route sweep at 790 CSS px",
+          "summary": "Ten generic family routes rendered route-specific photo backgrounds with loaded image URLs and no horizontal overflow; About and FAQ spot checks rendered the new proof imagery."
+        }
+      ],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation-agent",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T04:57:51+00:00"
+      },
+      "semantic": {
+        "change": "Replaced generic family-hero gradients with route-specific existing project photography across the generic family routes, added a high-resolution building hero and distinct finished-installation image to FAQ, and added finished-room proof media to About. The homepage video remains unchanged.",
+        "component": "app.js familyHeroImages map; page-family.css photo fallback and overlay; about/index.html; resources/faq/index.html; cache-busted app.js references across active HTML routes. Mapped imagery covers About, Resources, FAQ, Solutions, Poly-B, Kitec, Detailed Installation, Technology, Accessible Plumbing, and Conventional vs Plumbing Track."
+      },
+      "scope": {}
+    },
+    "test-faq-heading-orphan-correction-20260910": {
+      "id": "test-faq-heading-orphan-correction-20260910",
+      "type": "test",
+      "title": "Verified FAQ heading orphan correction",
+      "content": "{\"test\":\"Verify the FAQ intro heading does not produce an orphaned final word.\",\"method\":\"Loaded /resources/faq/ in the live browser at 790 CSS px after removing the inherited 12ch max-width. Checked the rendered heading text, computed max-width, bounding height, and document overflow; the heading renders in two balanced lines with max-width none and the document remains within the viewport width.\",\"outcome\":\"pass\"}\n",
+      "path": "resources/faq/index.html",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "typography",
+        "orphan",
+        "heading",
+        "responsive",
+        "visual-design"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T04:59:48+00:00",
+      "updated_at": "2026-09-11T04:59:48+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live check at 790 CSS px",
+          "summary": "The FAQ intro heading computes with max-width none, renders without horizontal overflow, and no longer isolates the final word as an orphan line."
+        }
+      ],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "verification-agent",
+        "source": "terminal-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T04:59:48+00:00"
+      },
+      "semantic": {
+        "test": "Verify the FAQ intro heading does not produce an orphaned final word.",
+        "method": "Loaded /resources/faq/ in the live browser at 790 CSS px after removing the inherited 12ch max-width. Checked the rendered heading text, computed max-width, bounding height, and document overflow; the heading renders in two balanced lines with max-width none and the document remains within the viewport width.",
+        "outcome": "pass"
+      },
+      "scope": {}
+    },
+    "implementation-media-led-family-sweep-20260910": {
+      "id": "implementation-media-led-family-sweep-20260910",
+      "type": "implementation",
+      "title": "Expanded photo-led media across image-light page families",
+      "content": "{\"change\":\"Added real existing project and installation photography to five previously image-light page families: Resources, Solutions, Poly-B, Kitec, and Conventional vs Plumbing Track. Each new media-proof module pairs a relevant image with concise context; the broken route-during-installation asset was replaced with the valid step-02-routing derivative.\",\"component\":\"resources/index.html, solutions/index.html, solutions/poly-b/index.html, solutions/kitec/index.html, technology/conventional-vs-plumbing-track/index.html, and shared media-proof styles in page-family.css.\"}\n",
+      "path": "resources/index.html",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "visual-design",
+        "photography",
+        "space-content",
+        "proof-media",
+        "resources",
+        "solutions"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T05:03:51+00:00",
+      "updated_at": "2026-09-11T05:03:51+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [
+        {
+          "type": "test",
+          "ref": "terminal-browser live route sweep at 790 CSS px",
+          "summary": "Resources, Solutions, Poly-B, Kitec, and Conventional vs Plumbing Track each render a media-proof module with a loaded image and no horizontal overflow."
+        }
+      ],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "Codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation-agent",
+        "source": "terminal-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T05:03:51+00:00"
+      },
+      "semantic": {
+        "change": "Added real existing project and installation photography to five previously image-light page families: Resources, Solutions, Poly-B, Kitec, and Conventional vs Plumbing Track. Each new media-proof module pairs a relevant image with concise context; the broken route-during-installation asset was replaced with the valid step-02-routing derivative.",
+        "component": "resources/index.html, solutions/index.html, solutions/poly-b/index.html, solutions/kitec/index.html, technology/conventional-vs-plumbing-track/index.html, and shared media-proof styles in page-family.css."
+      },
+      "scope": {}
+    },
+    "implementation-four-pass-density-correction-20260910": {
+      "id": "implementation-four-pass-density-correction-20260910",
+      "type": "implementation",
+      "title": "Applied four-pass site density correction",
+      "content": "{\"change\":\"Applied a shared density contract across every public route: reduced oversized family display headings, removed max-width constraints that stranded final lines, tightened hero and section padding, shortened minimum-height commitments, and retained route-specific photography and content hierarchy. Legacy home, work, housing, portal, and assessment layouts remain covered by targeted shared overrides without replacing their page-specific structure.\",\"component\":\"shared-typography.css plus all 18 active HTML route entrypoints\"}",
+      "path": "shared-typography.css",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "visual-design",
+        "space-content",
+        "density",
+        "typography",
+        "responsive"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T05:15:16+00:00",
+      "updated_at": "2026-09-11T05:15:16+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "source": "live-browser-and-repository",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T05:15:16+00:00"
+      },
+      "semantic": {
+        "change": "Applied a shared density contract across every public route: reduced oversized family display headings, removed max-width constraints that stranded final lines, tightened hero and section padding, shortened minimum-height commitments, and retained route-specific photography and content hierarchy. Legacy home, work, housing, portal, and assessment layouts remain covered by targeted shared overrides without replacing their page-specific structure.",
+        "component": "shared-typography.css plus all 18 active HTML route entrypoints"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "test-four-pass-density-sweep-20260910": {
+      "id": "test-four-pass-density-sweep-20260910",
+      "type": "test",
+      "title": "Verified four-pass density sweep across all public routes",
+      "content": "{\"test\":\"Live-browser density and fidelity sweep over all 18 public route entrypoints.\",\"method\":\"Scanned every route four times at the active 800px browser viewport (775px document width): pass 1 baseline, pass 2 after the global density contract, pass 3 after targeted legacy-page overrides, and pass 4 final verification. Each pass checked document height, heading sizes, hero height where present, image count, one-h1 structure, and horizontal overflow.\",\"outcome\":\"pass\"}",
+      "path": "terminal-browser://pt-site-updates/density-sweep/2026-09-10",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "visual-design",
+        "space-content",
+        "density",
+        "typography",
+        "responsive",
+        "full-sweep"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T05:15:37+00:00",
+      "updated_at": "2026-09-11T05:15:37+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verifier",
+        "source": "live-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T05:15:37+00:00"
+      },
+      "semantic": {
+        "test": "Live-browser density and fidelity sweep over all 18 public route entrypoints.",
+        "method": "Scanned every route four times at the active 800px browser viewport (775px document width): pass 1 baseline, pass 2 after the global density contract, pass 3 after targeted legacy-page overrides, and pass 4 final verification. Each pass checked document height, heading sizes, hero height where present, image count, one-h1 structure, and horizontal overflow.",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "test-orphan-line-sweep-20260910": {
+      "id": "test-orphan-line-sweep-20260910",
+      "type": "test",
+      "title": "Verified no orphaned final lines across public copy",
+      "content": "{\"test\":\"Dedicated browser line-layout scan for orphaned final words.\",\"method\":\"Visited all 18 public routes at the active 800px browser viewport and inspected visible h1-h4, paragraphs, list items, captions, buttons, and shared link buttons. Each text element was reconstructed into rendered line boxes and flagged if a multi-line element ended with one word.\",\"outcome\":\"pass\"}",
+      "path": "terminal-browser://pt-site-updates/orphan-scan/2026-09-10",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "visual-design",
+        "typography",
+        "orphan-prevention",
+        "responsive",
+        "full-sweep"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T05:17:52+00:00",
+      "updated_at": "2026-09-11T05:17:52+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verifier",
+        "source": "live-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T05:17:52+00:00"
+      },
+      "semantic": {
+        "test": "Dedicated browser line-layout scan for orphaned final words.",
+        "method": "Visited all 18 public routes at the active 800px browser viewport and inspected visible h1-h4, paragraphs, list items, captions, buttons, and shared link buttons. Each text element was reconstructed into rendered line boxes and flagged if a multi-line element ended with one word.",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "implementation-faq-photo-replacement-20260910": {
+      "id": "implementation-faq-photo-replacement-20260910",
+      "type": "implementation",
+      "title": "Replaced weak FAQ image with real project photography",
+      "content": "{\"change\":\"Replaced the FAQ intro image that showed an unhelpful carport view with the stronger Wildwood III multifamily-building photograph. Updated the alt text and intrinsic dimensions to match the selected asset.\",\"component\":\"resources/faq/index.html .faq-intro figure\"}",
+      "path": "resources/faq/index.html",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "visual-design",
+        "photography",
+        "resources",
+        "faq"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T05:19:18+00:00",
+      "updated_at": "2026-09-11T05:19:18+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementer",
+        "source": "live-browser-and-repository",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T05:19:18+00:00"
+      },
+      "semantic": {
+        "change": "Replaced the FAQ intro image that showed an unhelpful carport view with the stronger Wildwood III multifamily-building photograph. Updated the alt text and intrinsic dimensions to match the selected asset.",
+        "component": "resources/faq/index.html .faq-intro figure"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "test-faq-photo-render-20260910": {
+      "id": "test-faq-photo-render-20260910",
+      "type": "test",
+      "title": "Verified FAQ project photograph renders at full dimensions",
+      "content": "{\"test\":\"FAQ intro image asset and live rendering.\",\"method\":\"Loaded /resources/faq/ in the live browser and inspected the .faq-intro image currentSrc, natural dimensions, rendered dimensions, completion state, and page overflow.\",\"outcome\":\"pass\"}",
+      "path": "terminal-browser://pt-site-updates/resources/faq/photo-check/2026-09-10",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "visual-design",
+        "photography",
+        "faq",
+        "responsive"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T05:19:26+00:00",
+      "updated_at": "2026-09-11T05:19:26+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "verifier",
+        "source": "live-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T05:19:26+00:00"
+      },
+      "semantic": {
+        "test": "FAQ intro image asset and live rendering.",
+        "method": "Loaded /resources/faq/ in the live browser and inspected the .faq-intro image currentSrc, natural dimensions, rendered dimensions, completion state, and page overflow.",
+        "outcome": "pass"
+      },
+      "stage": null,
+      "scope": {}
+    },
+    "finding-visual-corrections-20260911": {
+      "id": "finding-visual-corrections-20260911",
+      "type": "finding",
+      "title": "Visual review found repeated-image and contrast regressions",
+      "content": "Current visual review found that the shared family hero defaulted to The Mosaic image outside Our Work, FAQ used a weakly contextual building image, About reused a generic process image, light-page copy was too light, the comparison treatment was cramped, and spacing remained excessive. Corrected by removing the shared Mosaic default, replacing non-Our-Work Mosaic references, selecting distinct contextual assets for About and FAQ, darkening light-page text, tightening sections, and making comparison rows wrap safely. Verified source asset references and static HTTP responses for representative routes.",
+      "path": "page-family.css,shared-typography.css,about/index.html,resources/faq/index.html,templates/testimonial-cards.html,bchousing/index.html,client-portal/index.html,client-portal/meadowbrooks-estates/index.html",
+      "tags": [
+        "plumbing-track",
+        "visual-design",
+        "accessibility",
+        "media-curation",
+        "repeated-images",
+        "contrast",
+        "copy",
+        "qa"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T06:46:43+00:00",
+      "updated_at": "2026-09-11T06:46:43+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "scope": {
+        "workspace_id": "csw-070926",
+        "project_id": "pt-site-updates"
+      },
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T06:46:43+00:00"
+      },
+      "stage": null
     }
   },
   "edges": [
@@ -4150,6 +4620,104 @@
       "rel": "satisfies",
       "created_at": "2026-09-11T03:19:21+00:00",
       "note": "Client-facing copy now describes each page purpose directly"
+    },
+    {
+      "from": "audit-space-content-ratio-20260910",
+      "to": "failure-egregious-space-content-audit-omission-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T04:58:05+00:00",
+      "note": "The measured route audit is the direct evidence for the recorded egregious density and visual-review failure."
+    },
+    {
+      "from": "implementation-photo-led-family-corrections-20260910",
+      "to": "failure-egregious-space-content-audit-omission-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T04:58:05+00:00",
+      "note": "The photo-led family correction responds to the recorded omission and its client-facing visual impact."
+    },
+    {
+      "from": "implementation-photo-led-family-corrections-20260910",
+      "to": "audit-space-content-ratio-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T04:58:05+00:00",
+      "note": "The correction follows the recorded baseline density audit and its route-level findings."
+    },
+    {
+      "from": "implementation-photo-led-family-corrections-20260910",
+      "to": "docs-media-resource-reference",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T04:58:05+00:00",
+      "note": "Route-specific image selection follows the curated media reference and its evidence/privacy boundaries."
+    },
+    {
+      "from": "test-faq-heading-orphan-correction-20260910",
+      "to": "failure-egregious-space-content-audit-omission-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T04:59:50+00:00",
+      "note": "The orphan correction addresses the typography and density quality failure documented after visual review."
+    },
+    {
+      "from": "implementation-media-led-family-sweep-20260910",
+      "to": "audit-space-content-ratio-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T05:03:53+00:00",
+      "note": "This sweep addresses the image-light and low-density routes identified by the baseline pixel audit."
+    },
+    {
+      "from": "implementation-media-led-family-sweep-20260910",
+      "to": "failure-egregious-space-content-audit-omission-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T05:03:53+00:00",
+      "note": "This implementation responds to the recorded egregious omission of the photo library from the visual treatment."
+    },
+    {
+      "from": "implementation-four-pass-density-correction-20260910",
+      "to": "test-four-pass-density-sweep-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T05:15:47+00:00",
+      "note": "The final density implementation is verified by the four-pass live-browser sweep."
+    },
+    {
+      "from": "implementation-four-pass-density-correction-20260910",
+      "to": "failure-egregious-space-content-audit-omission-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T05:15:47+00:00",
+      "note": "This correction addresses the previously recorded egregious space-content and visual-density failure."
+    },
+    {
+      "from": "test-four-pass-density-sweep-20260910",
+      "to": "audit-space-content-ratio-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T05:15:47+00:00",
+      "note": "The four-pass sweep is the post-correction verification of the earlier route-level pixel audit."
+    },
+    {
+      "from": "test-orphan-line-sweep-20260910",
+      "to": "implementation-four-pass-density-correction-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T05:17:59+00:00",
+      "note": "The orphan scan confirms the density correction does not leave a single-word final line in visible public copy."
+    },
+    {
+      "from": "implementation-faq-photo-replacement-20260910",
+      "to": "test-faq-photo-render-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T05:19:34+00:00",
+      "note": "The live render confirms the replacement asset loads at 1013x543 and does not create overflow."
+    },
+    {
+      "from": "implementation-faq-photo-replacement-20260910",
+      "to": "implementation-four-pass-density-correction-20260910",
+      "rel": "related",
+      "created_at": "2026-09-11T05:19:35+00:00",
+      "note": "The stronger FAQ project image complements the site-wide density and content-quality correction."
+    },
+    {
+      "from": "finding-visual-corrections-20260911",
+      "to": "implementation-visual-hygiene",
+      "rel": "supersedes",
+      "created_at": "2026-09-11T06:46:44+00:00",
+      "note": "This current review supersedes the earlier broad hygiene result where the live visual outcome was still unacceptable."
     }
   ]
 }

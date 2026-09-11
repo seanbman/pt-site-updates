@@ -1,4 +1,4 @@
-:root { --ink:#061015; --panel:#10242d; --paper:#eef3f4; --steel:#52656d; --gold:#d2b985; --gold-soft:#e0c99a; --line:rgba(255,255,255,.15); --sans:Arial,Helvetica,sans-serif; --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+:root { --ink:#061015; --panel:#10242d; --paper:#eef3f4; --steel:#52656d; --gold:#d2b985; --gold-soft:#e0c99a; --line:rgba(255,255,255,.15); --font-geist-sans:"Geist",Arial,Helvetica,sans-serif; --font-geist-mono:"Geist Mono","SFMono-Regular",Consolas,"Liberation Mono",monospace; --sans:var(--font-geist-sans); --mono:var(--font-geist-mono); }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { background:var(--ink); color:#fff; font-family:var(--sans); margin:0; }

@@ -2666,6 +2666,38 @@
       "stage": null,
       "scope": {},
       "provenance": {}
+    },
+    "implementation-palette-geist-token-normalization-20260910": {
+      "id": "implementation-palette-geist-token-normalization-20260910",
+      "type": "implementation",
+      "title": "Normalized public palette token names and page-family typography contract",
+      "content": "{\"change\":\"Renamed obsolete --cyan and --cyan-soft tokens to --gold and --gold-soft across public source; page-family.css now exposes the canonical --font-geist-sans and --font-geist-mono variables through its shared --sans and --mono aliases.\",\"component\":\"Public static page-family CSS and shared navigation token references. Source scan returns no obsolete palette tokens outside documentation; browser check at 550px on /technology/accessible-plumbing/ reports body font stack Geist, Arial, Helvetica, sans-serif, --gold #d2b985, empty --cyan, and 68px shared header.\"}",
+      "path": "page-family.css",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "typography",
+        "palette",
+        "geist",
+        "css",
+        "hardening"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:13:22+00:00",
+      "updated_at": "2026-09-11T02:13:22+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Renamed obsolete --cyan and --cyan-soft tokens to --gold and --gold-soft across public source; page-family.css now exposes the canonical --font-geist-sans and --font-geist-mono variables through its shared --sans and --mono aliases.",
+        "component": "Public static page-family CSS and shared navigation token references. Source scan returns no obsolete palette tokens outside documentation; browser check at 550px on /technology/accessible-plumbing/ reports body font stack Geist, Arial, Helvetica, sans-serif, --gold #d2b985, empty --cyan, and 68px shared header."
+      },
+      "scope": {},
+      "provenance": {}
     }
   },
   "edges": [
@@ -3493,6 +3525,13 @@
       "rel": "references",
       "created_at": "2026-09-11T01:55:16+00:00",
       "note": "Top-level media handoff points to the detailed video audit"
+    },
+    {
+      "from": "implementation-palette-geist-token-normalization-20260910",
+      "to": "requirement-page-family-design-parity",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T02:13:24+00:00",
+      "note": "Public token names and the page-family typography aliases now follow the current design-system requirement"
     }
   ]
 }

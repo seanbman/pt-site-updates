@@ -81,7 +81,7 @@ main[data-pt-page] .nav-section summary {
 main[data-pt-page] .nav-section { position: relative; }
 main[data-pt-page] .nav-section summary::-webkit-details-marker { display: none; }
 main[data-pt-page] .nav-section summary::after {
-  color: var(--cyan-soft);
+  color: var(--gold-soft);
   content: "⌄";
   display: inline-block;
   line-height: 1;
@@ -112,9 +112,9 @@ main[data-pt-page] .header-nav .header-nav-cta { display: none; }
 main[data-pt-page] .header-nav-link:hover,
 main[data-pt-page] .header-nav-link:focus-visible,
 main[data-pt-page] .nav-section summary:hover,
-main[data-pt-page] .nav-section summary:focus-visible { color: var(--cyan-soft); outline: none; }
+main[data-pt-page] .nav-section summary:focus-visible { color: var(--gold-soft); outline: none; }
 main[data-pt-page] .header-cta:hover,
-main[data-pt-page] .header-cta:focus-visible { background: var(--cyan); border-color: var(--cyan); color: #10242d; outline: none; }
+main[data-pt-page] .header-cta:focus-visible { background: var(--gold); border-color: var(--gold); color: #10242d; outline: none; }
 
 main[data-pt-page] .site-header.is-scrolled .header-nav-link,
 main[data-pt-page] .site-header.is-scrolled .nav-section summary,
@@ -124,7 +124,7 @@ main[data-pt-page] .site-header.is-nav-open .header-nav-link,
 main[data-pt-page] .site-header.is-nav-open .nav-section summary { color: #314149; }
 main[data-pt-page] .site-header.is-scrolled .header-cta,
 main.pt-page--our-work[data-pt-page] .header-cta,
-main[data-pt-page] .site-header.is-nav-open > .header-actions > .header-cta { border-color: var(--cyan); color: #00516f; }
+main[data-pt-page] .site-header.is-nav-open > .header-actions > .header-cta { border-color: var(--gold); color: #00516f; }
 
 main[data-pt-page] .nav-flyout {
   background: #fff;
@@ -224,7 +224,7 @@ main[data-pt-page] .site-header.is-nav-open .header-menu-toggle { border-color: 
   main[data-pt-page] .nav-flyout span { color: #53666e; }
   main[data-pt-page] .nav-flyout a { color: #00516f; }
   main[data-pt-page] .header-nav .header-nav-cta {
-    border-color: var(--cyan);
+    border-color: var(--gold);
     color: #00516f;
     display: inline-flex;
     justify-content: center;

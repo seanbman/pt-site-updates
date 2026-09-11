@@ -122,6 +122,17 @@ h3 { font-size: clamp(1.3rem, 2vw, 2rem); letter-spacing: -.045em; line-height: 
 .family-section--panel .feature p,
 .family-section--photo .feature p { color: #bfd0d5; }
 
+.proof-strip {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(2rem, 4vw, 3.25rem);
+}
+
+.proof-strip figure { background: #f1f5f6; margin: 0; }
+.proof-strip img { aspect-ratio: 4 / 3; display: block; height: auto; object-fit: cover; width: 100%; }
+.proof-strip figcaption { color: #53666e; font-size: .9rem; line-height: 1.5; padding: .8rem 1rem 1rem; }
+
 /* Comparison treatment: neutral columns with a restrained gold rule instead of a large "winner" fill. */
 .comparison-table {
   border-top: 1px solid rgba(8, 19, 25, .18);
@@ -186,6 +197,7 @@ footer.site-footer {
 @media (max-width: 900px) {
   .family-section__grid { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .proof-strip { grid-template-columns: 1fr; }
   .media-proof { grid-template-columns: 1fr; }
   .feature { min-height: 0; }
   .comparison-row { grid-template-columns: 1fr 1fr; }

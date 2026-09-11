@@ -52,3 +52,11 @@ The automated `Grapher docs sync` workflow is a safety net that keeps stable tra
 ## Documentation authority
 
 Follow the source-precedence and verification rules in `docs/INSTRUCTIONS.md`. Do not use Grapher as permission to invent facts: graph records must remain grounded in operator decisions, verified implementation, and the authoritative sources defined by the project instructions.
+
+## Media curation and implementation
+
+Before selecting, editing, captioning, exporting, or placing project video, read `docs/media/video-curation/AGENTS.md` and `docs/media/video-curation/README.md`.
+
+The video audit is an evidence reference, not permission to manufacture claims. Preserve the existing homepage hero video unless the operator explicitly directs otherwise. Keep source-to-derivative traceability, verify presenter audio before deriving claims, inspect selected media for resident/project privacy risks, and do not present installation-stage accessibility as proof of years-later service history.
+
+The detailed video audit currently records 88 source MP4s: 66 visually reviewed and 22 explicitly blocked by the Drive connector size limit. Blocked videos remain unreviewed until independently opened through another path.

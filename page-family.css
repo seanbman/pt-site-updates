@@ -102,7 +102,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 2rem); letter-spacing: -.045em; line-height: 
   margin-top: clamp(2rem, 4vw, 3.25rem);
 }
 
-.feature { background: #f1f5f6; min-height: 190px; padding: 1.45rem; }
+.feature { background: #f1f5f6; display: flex; flex-direction: column; min-height: 190px; padding: 1.45rem; }
 .family-section--panel .feature,
 .family-section--photo .feature { background: rgba(255, 255, 255, .07); }
 
@@ -118,6 +118,8 @@ h3 { font-size: clamp(1.3rem, 2vw, 2rem); letter-spacing: -.045em; line-height: 
 
 .family-section--panel .feature__label,
 .family-section--photo .feature__label { color: var(--gold-soft); }
+
+.feature > .family-actions { margin-top: auto; }
 .feature p { color: #566970; line-height: 1.55; margin: 0; }
 .family-section--panel .feature p,
 .family-section--photo .feature p { color: #bfd0d5; }

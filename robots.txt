@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /client-portal/
+
+Sitemap: https://www.plumbingtrack.com/sitemap.xml

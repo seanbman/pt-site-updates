@@ -42,14 +42,15 @@ Validated open defects/gaps:
 - `/how-it-works/` contains its own header CSS while also mounting the shared header fragment;
 - family pages use `--gold` while shared navigation still calls unresolved `--cyan` / `--cyan-soft` tokens;
 - family pages do not actually load the canonical Geist font contract;
-- root `sitemap.xml` and `robots.txt` are absent;
+- root `sitemap.xml` and `robots.txt` were absent at review time; the source baseline now includes both, with production verification still open;
 - Affordable Housing is present in navigation but absent from the Solutions hub body;
 - current planning language still drifts between **Learn** and the live **Resources** label;
 - comparison content is visually tabular but not encoded as a semantic table;
 - GA4 event names drift from the existing measurement workbook;
 - representative pages contain event-emission code but no visible common GA4 bootstrap;
 - Assessment persistence/CRM delivery is not yet production-verified;
-- family pages are consistent but too mechanically templated to function as memorable destinations yet.
+- family pages are consistent but too mechanically templated to function as memorable destinations yet;
+- the stale cyan-token and unresolved shared-navigation accent defects have since been corrected in the source baseline, while the full typography/font-face and cross-route verification work remains open;
 
 A local repo-root static-server smoke test reported 200 responses for every public route tested. Retain that result as baseline evidence only; rerun against generated `dist/` and the production-equivalent environment before closing routing QA.
 
@@ -108,9 +109,9 @@ Follow `docs/PARTIALS_IMPLEMENTATION_PLAN.md` rather than rewriting the shell ag
 
 - [ ] Move the page family onto canonical Geist typography.
 - [ ] Centralize one shared font-face/type token source instead of letting variables claim Geist while resolving to Arial.
-- [ ] Replace stale `--cyan` / `--cyan-soft` references with the current gold/accent contract; do not resurrect cyan.
-- [ ] Treat shared-navigation unresolved accent variables as a live hover/focus/border rendering bug.
-- [ ] Normalize testimonial accent tokens to the same contract rather than relying on fallback values.
+- [x] Replace stale `--cyan` / `--cyan-soft` references with the current gold/accent contract; do not resurrect cyan.
+- [x] Treat shared-navigation unresolved accent variables as a live hover/focus/border rendering bug.
+- [x] Normalize testimonial accent tokens to the same contract rather than relying on fallback values.
 - [ ] Reduce page-specific shell overrides and keep shared chrome ownership centralized.
 - [ ] Bring `/assessment/` onto the same typography/token contract without unnecessarily redesigning the form.
 
@@ -120,8 +121,8 @@ Follow `docs/PARTIALS_IMPLEMENTATION_PLAN.md` rather than rewriting the shell ag
 
 ## B1. Crawl/index foundation — P0
 
-- [ ] Add root `sitemap.xml` containing only canonical, intended public/indexable routes.
-- [ ] Add root `robots.txt` with the production sitemap reference and deliberate treatment of utility/private routes.
+- [x] Add root `sitemap.xml` containing only canonical, intended public/indexable routes. The main-domain source contains 15 canonical public routes; the separate bchousing host and client-portal utility routes are excluded.
+- [x] Add root `robots.txt` with the production sitemap reference and deliberate treatment of utility/private routes. `/client-portal/` is disallowed while the public assessment funnel remains crawlable.
 - [ ] Verify canonical URLs and trailing-slash behavior for every public route.
 - [ ] Verify exactly one meaningful H1, unique title and unique meta description per indexable page.
 - [ ] Make an explicit index/noindex decision for `/assessment/`; substantive commercial/educational pages should do the search discovery work.

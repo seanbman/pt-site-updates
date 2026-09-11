@@ -2698,6 +2698,38 @@
       },
       "scope": {},
       "provenance": {}
+    },
+    "implementation-seo-discovery-files-20260910": {
+      "id": "implementation-seo-discovery-files-20260910",
+      "type": "implementation",
+      "title": "Added canonical sitemap and robots policy",
+      "content": "{\"change\":\"Added root sitemap.xml with the 15 canonical public www.plumbingtrack.com routes and root robots.txt referencing that sitemap while disallowing /client-portal/. The separate bchousing canonical host and client-portal utility routes are excluded from the main sitemap.\",\"component\":\"Deployable root discovery files. Local static-server checks return 200 for /sitemap.xml and /robots.txt; XML parses successfully and the sitemap contains 15 canonical locations.\"}",
+      "path": "sitemap.xml",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "seo",
+        "sitemap",
+        "robots",
+        "crawlability",
+        "hardening"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:16:41+00:00",
+      "updated_at": "2026-09-11T02:16:41+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Added root sitemap.xml with the 15 canonical public www.plumbingtrack.com routes and root robots.txt referencing that sitemap while disallowing /client-portal/. The separate bchousing canonical host and client-portal utility routes are excluded from the main sitemap.",
+        "component": "Deployable root discovery files. Local static-server checks return 200 for /sitemap.xml and /robots.txt; XML parses successfully and the sitemap contains 15 canonical locations."
+      },
+      "scope": {},
+      "provenance": {}
     }
   },
   "edges": [
@@ -3532,6 +3564,13 @@
       "rel": "satisfies",
       "created_at": "2026-09-11T02:13:24+00:00",
       "note": "Public token names and the page-family typography aliases now follow the current design-system requirement"
+    },
+    {
+      "from": "implementation-seo-discovery-files-20260910",
+      "to": "requirement-seo-discovery-files",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T02:16:43+00:00",
+      "note": "Source baseline now contains the canonical sitemap and deliberate robots policy; production Search Console verification remains open"
     }
   ]
 }

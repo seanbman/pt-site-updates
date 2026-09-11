@@ -235,10 +235,10 @@ A future checklist/risk-assessment lead magnet remains an experiment, not a P0 d
 
 ## D1. One analytics bootstrap — P0
 
-Representative pages inspected in this review contain event-emission code but no visible shared GA4 bootstrap. Production must prove the actual initialization contract.
+The static pages now expose one optional GA4 bootstrap contract through `app.js` and `analytics.js`. It remains disabled until a production measurement ID is configured, which prevents local/test traffic from silently leaving the machine. Production must still prove the actual initialization contract.
 
-- [ ] Initialize GA4 exactly once across all public/generated pages.
-- [ ] Ensure queued `dataLayer` events are consumed after initialization.
+- [x] Define an exactly-once GA4 initializer with a `dataLayer` queue across all current static entrypoints.
+- [x] Ensure queued `dataLayer` events are consumed after initialization when a measurement ID is configured.
 - [ ] Confirm production measurement ID/environment configuration.
 - [ ] Confirm no duplicate page views caused by shell/build logic.
 - [ ] Validate in Realtime/DebugView before launch.
@@ -253,16 +253,16 @@ The existing measurement workbook is the vocabulary reference. Current code has 
 | Form starts | `assessment_started` | `assessment_started` |
 | Step completion | `assessment_step_completed` | `assessment_step_completed` |
 | Submit attempt | not explicit | `assessment_submit_attempt` |
-| Accepted qualified lead | `assessment_submitted` | `generate_lead` + optional diagnostic `assessment_submitted` |
+| Accepted qualified lead | `assessment_submitted` | `generate_lead` + diagnostic `assessment_submitted` |
 | Failed submit | no explicit event | `assessment_submit_error` |
 
-`generate_lead` should be the primary GA4 key event for a successfully accepted assessment lead. Do not double-count generic Enhanced Measurement form events as equivalent conversions.
+The implementation now emits the canonical CTA name, explicit submit-attempt/error events, and `generate_lead` only after the Assessment API returns success. Do not double-count generic Enhanced Measurement form events as equivalent conversions. No historical production alias has been silently removed from the source because production analytics is not configured in this checkout; reconcile any deployed legacy event separately.
 
 If historical production data exists under old custom names, document a migration/alias period instead of silently breaking reports.
 
 ## D3. GA4 event parameters — P0/P1
 
-Use controlled dimensions from the existing measurement plan:
+Use the following controlled, allowlisted dimensions from the existing measurement plan. The current client implementation permits only these keys and truncates values before dispatch:
 
 - `content_type`
 - `content_topic`

@@ -1,4 +1,36 @@
 (() => {
+  const allowedAnalyticsParams = new Set([
+    "assessment_source_page", "assessment_source_cta", "assessment_step",
+    "pipe_material", "building_type", "content_type", "content_topic",
+    "site_section", "audience_type", "cta_id", "cta_location", "form_type",
+    "resource_type", "case_study_id", "process_step", "unit_count_bucket",
+  ]);
+  const cleanAnalyticsValue = (value) => String(value ?? "").replace(/[\u0000-\u001f\u007f]/g, "").trim().slice(0, 100);
+  const track = (eventName, params = {}) => {
+    if (!/^[a-z][a-z0-9_]{0,63}$/.test(eventName)) return;
+    const safeParams = Object.fromEntries(Object.entries(params)
+      .filter(([key, value]) => allowedAnalyticsParams.has(key) && value !== undefined && value !== null)
+      .map(([key, value]) => [key, cleanAnalyticsValue(value)]));
+    if (typeof window.gtag === "function") window.gtag("event", eventName, safeParams);
+    else {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: eventName, ...safeParams });
+    }
+  };
+  window.ptTrack = window.ptTrack || track;
+  const measurementId = document.documentElement.dataset.ga4MeasurementId || window.PT_GA4_MEASUREMENT_ID;
+  if (measurementId && !window.__ptGa4Initialized) {
+    window.__ptGa4Initialized = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", cleanAnalyticsValue(measurementId), { send_page_view: true });
+    const analyticsScript = document.createElement("script");
+    analyticsScript.async = true;
+    analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(cleanAnalyticsValue(measurementId))}`;
+    document.head.append(analyticsScript);
+  }
+
   const startPage = () => {
   const root = document.querySelector("[data-pt-page]");
   if (!root || root.dataset.ptReady === "true") return;
@@ -15,12 +47,7 @@
         assessment_source_page: window.location.pathname,
         assessment_source_cta: sourceCta,
       };
-      if (typeof window.gtag === "function") {
-        window.gtag("event", "assessment_cta_clicked", eventParams);
-      } else {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: "assessment_cta_clicked", ...eventParams });
-      }
+      if (typeof window.ptTrack === "function") window.ptTrack("assessment_cta_click", eventParams);
     });
   });
 

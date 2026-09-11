@@ -236,13 +236,14 @@ Keep this decision.
 - [x] Centralize Geist font-face/type variables and apply them consistently to new page families, including Assessment.
 - [x] Add and verify root `sitemap.xml` for the intended public/indexable route set. The main-domain sitemap contains the 14 canonical public routes; `/assessment/` is an explicit `noindex, follow` utility funnel, `/bchousing/` remains on its separate canonical host, and client-portal routes are excluded.
 - [x] Add and verify root `robots.txt`, including the production sitemap reference and deliberate disallowance of the client-portal utility subtree.
+- [x] Add a shared, optional GA4 bootstrap with a no-PII parameter allowlist, canonical assessment event names, submit-attempt/error events, and `generate_lead` only after an accepted Assessment response. Production measurement-ID, DebugView, API, CRM, and payload verification remain open.
 - [ ] Verify every current public route by direct URL and refresh under the actual production/static deployment configuration.
 - [ ] Perform final responsive QA across the expanded public route set.
 - [ ] Verify shared nav flyouts/mobile drawer/header/footer keyboard, focus, Escape, click-away, scrolled, and reduced-motion behavior.
 - [ ] Verify homepage video on desktop/tablet/mobile and reduced-motion/fallback behavior.
 - [ ] Verify production Assessment API end to end, including persistence/CRM handoff, confirmation, failure, retry, and duplicate-submit protection.
 - [ ] Verify every assessment CTA preserves correct source-page/source-CTA attribution.
-- [ ] Verify GA4 initializes exactly once where intended and current events behave correctly in DebugView/production-equivalent testing.
+- [ ] Verify the GA4 bootstrap initializes exactly once where intended and current events behave correctly in DebugView/production-equivalent testing.
 - [ ] Confirm analytics receives no names, emails, phone numbers, addresses, free text, or other sensitive form values.
 - [ ] Run final broken-link, missing-asset, console-error, accessibility-basics, performance, and static-serving regression checks.
 

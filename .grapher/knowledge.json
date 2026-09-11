@@ -2892,6 +2892,44 @@
       },
       "scope": {},
       "provenance": {}
+    },
+    "implementation-assessment-analytics-contract-20260910": {
+      "id": "implementation-assessment-analytics-contract-20260910",
+      "type": "implementation",
+      "title": "Assessment analytics contract hardening",
+      "content": "{\"change\":\"Added an optional exactly-once GA4 bootstrap for the static entrypoints, canonicalized the assessment CTA event, normalized attribution paths/CTA IDs, added submit-attempt/error events, and emits generate_lead only after accepted API response. Analytics dispatch allowlists controlled dimensions and excludes contact names, organization, email, phone, address, notes, concerns, and exact unit count. Production measurement ID, DebugView, API persistence, deduplication, and CRM handoff remain unverified.\",\"component\":\"Shared static analytics bootstrap and Assessment funnel instrumentation.\"}",
+      "path": "analytics.js",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "assessment",
+        "ga4",
+        "privacy",
+        "crm"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:57:51+00:00",
+      "updated_at": "2026-09-11T02:57:51+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "active",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "implementation-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T02:57:51+00:00"
+      },
+      "semantic": {
+        "change": "Added an optional exactly-once GA4 bootstrap for the static entrypoints, canonicalized the assessment CTA event, normalized attribution paths/CTA IDs, added submit-attempt/error events, and emits generate_lead only after accepted API response. Analytics dispatch allowlists controlled dimensions and excludes contact names, organization, email, phone, address, notes, concerns, and exact unit count. Production measurement ID, DebugView, API persistence, deduplication, and CRM handoff remain unverified.",
+        "component": "Shared static analytics bootstrap and Assessment funnel instrumentation."
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -3768,6 +3806,20 @@
       "rel": "satisfies",
       "created_at": "2026-09-11T02:51:56+00:00",
       "note": "The local regression script verifies the source-level discovery files and policy"
+    },
+    {
+      "from": "implementation-assessment-analytics-contract-20260910",
+      "to": "requirement-ga4-crm-measurement-contract",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T02:57:53+00:00",
+      "note": "Source implementation now matches canonical event and no-PII contract"
+    },
+    {
+      "from": "implementation-assessment-analytics-contract-20260910",
+      "to": "requirement-assessment-detailed-conversion",
+      "rel": "applies_to",
+      "created_at": "2026-09-11T02:57:53+00:00",
+      "note": "Assessment funnel events and structured attribution cover the unified flow"
     }
   ]
 }

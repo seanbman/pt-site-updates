@@ -3085,6 +3085,83 @@
         "component": "Solutions hub information architecture and internal linking."
       },
       "scope": {}
+    },
+    "implementation-client-copy-naturalization-20260910": {
+      "id": "implementation-client-copy-naturalization-20260910",
+      "type": "implementation",
+      "title": "Naturalized client-facing proof and process copy",
+      "content": "{\"change\":\"Removed internal-sounding labels and editorial caveats from visible copy, including installation evidence, visual proof, source/verification language, and defensive implementation phrasing. Rewrote the affected sections to describe the building, route, installation, and next step directly without adding unsupported claims.\",\"component\":\"Client-visible copy across Home, Assessment, Kitec, Detailed Installation, Accessible Plumbing, Technology, and Our Work.\"}",
+      "path": "our-work/index.html",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "copy",
+        "content",
+        "proof",
+        "editorial"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T03:19:07+00:00",
+      "updated_at": "2026-09-11T03:19:07+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "implementation-agent",
+        "source": "chatgpt",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T03:19:07+00:00"
+      },
+      "semantic": {
+        "change": "Removed internal-sounding labels and editorial caveats from visible copy, including installation evidence, visual proof, source/verification language, and defensive implementation phrasing. Rewrote the affected sections to describe the building, route, installation, and next step directly without adding unsupported claims.",
+        "component": "Client-visible copy across Home, Assessment, Kitec, Detailed Installation, Accessible Plumbing, Technology, and Our Work."
+      },
+      "scope": {}
+    },
+    "test-client-copy-robotic-language-scan-20260910": {
+      "id": "test-client-copy-robotic-language-scan-20260910",
+      "type": "test",
+      "title": "Verified client-facing copy language scan",
+      "content": "{\"test\":\"Scanned the live rendered text for the recently introduced internal labels and caveats after rewriting the affected pages.\",\"method\":\"Live localhost browser reloads across Home, Poly-B, Kitec, Detailed Installation, Our Work, Technology, Accessible Plumbing, and Assessment, plus a source scan of all public HTML entrypoints.\",\"outcome\":\"pass\"}",
+      "path": "our-work/index.html",
+      "tags": [
+        "plumbing-track",
+        "test",
+        "copy",
+        "content",
+        "editorial",
+        "verification"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T03:19:19+00:00",
+      "updated_at": "2026-09-11T03:19:19+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "provenance": {
+        "actor_id": "ChatGPT",
+        "actor_kind": "agent",
+        "actor_role": "verification-agent",
+        "source": "terminal-browser",
+        "integrity": "declared",
+        "recorded_at": "2026-09-11T03:19:19+00:00"
+      },
+      "semantic": {
+        "test": "Scanned the live rendered text for the recently introduced internal labels and caveats after rewriting the affected pages.",
+        "method": "Live localhost browser reloads across Home, Poly-B, Kitec, Detailed Installation, Our Work, Technology, Accessible Plumbing, and Assessment, plus a source scan of all public HTML entrypoints.",
+        "outcome": "pass"
+      },
+      "scope": {}
     }
   },
   "edges": [
@@ -4045,6 +4122,34 @@
       "rel": "evidenced_by",
       "created_at": "2026-09-11T03:03:50+00:00",
       "note": "Preserves the approved Affordable Housing navigation and canonical-host treatment"
+    },
+    {
+      "from": "implementation-client-copy-naturalization-20260910",
+      "to": "requirement-destination-page-differentiation",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T03:19:09+00:00",
+      "note": "Natural page copy strengthens differentiated destinations without exposing internal evidence language"
+    },
+    {
+      "from": "implementation-client-copy-naturalization-20260910",
+      "to": "requirement-website-design-plan",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T03:19:09+00:00",
+      "note": "Copy remains concise, human-first, source-conscious, and conversion-oriented"
+    },
+    {
+      "from": "implementation-client-copy-naturalization-20260910",
+      "to": "test-client-copy-robotic-language-scan-20260910",
+      "rel": "evidenced_by",
+      "created_at": "2026-09-11T03:19:20+00:00",
+      "note": "Live browser and source scans found no stale internal proof-language phrases"
+    },
+    {
+      "from": "test-client-copy-robotic-language-scan-20260910",
+      "to": "requirement-destination-page-differentiation",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T03:19:21+00:00",
+      "note": "Client-facing copy now describes each page purpose directly"
     }
   ]
 }

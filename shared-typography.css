@@ -58,9 +58,45 @@
   color: #53666e;
 }
 
+/*
+ * Dense content-page refinements. These selectors are intentionally page-specific;
+ * the homepage hero and its breathing room are not part of this pass.
+ */
+.benefits-section,
+.trust-section,
+.contact-section {
+  gap: clamp(2rem, 4vw, 4.5rem);
+  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.supporting-section {
+  padding-block: clamp(2.75rem, 5vw, 4rem);
+}
+
+/* "Tagline options" are source notes, not three simultaneous live taglines. */
+.supporting-section .taglines {
+  display: none;
+}
+
+.pt-page--our-work .work-section {
+  padding-block: clamp(3.25rem, 6vw, 5.5rem);
+}
+
+.pt-page--our-work .work-section__intro {
+  margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
+}
+
 @media (max-width: 760px) {
   .home-thesis .comparison-column--track {
     border-left: 0;
     border-top: 2px solid var(--gold, #d2b985);
+  }
+
+  .benefits-section,
+  .trust-section,
+  .contact-section,
+  .supporting-section,
+  .pt-page--our-work .work-section {
+    padding-block: 2.75rem;
   }
 }

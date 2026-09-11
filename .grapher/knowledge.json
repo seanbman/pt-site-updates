@@ -2828,6 +2828,70 @@
       },
       "scope": {},
       "provenance": {}
+    },
+    "decision-assessment-noindex-20260910": {
+      "id": "decision-assessment-noindex-20260910",
+      "type": "decision",
+      "title": "Keep Assessment and client portal out of search discovery",
+      "content": "{\"decision\":\"Treat /assessment/ as noindex, follow and client-portal routes as noindex, nofollow; keep Assessment reachable from attributed CTAs but exclude utility/private routes from the main sitemap.\",\"rationale\":\"The assessment form and client portal are task-oriented utility surfaces. Substantive commercial and educational pages should carry search discovery, while the main sitemap must contain only canonical indexable public routes.\"}",
+      "path": "docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md",
+      "tags": [
+        "plumbing-track",
+        "decision",
+        "seo",
+        "indexing",
+        "assessment",
+        "client-portal",
+        "sitemap"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:51:53+00:00",
+      "updated_at": "2026-09-11T02:51:53+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "decision": "Treat /assessment/ as noindex, follow and client-portal routes as noindex, nofollow; keep Assessment reachable from attributed CTAs but exclude utility/private routes from the main sitemap.",
+        "rationale": "The assessment form and client portal are task-oriented utility surfaces. Substantive commercial and educational pages should carry search discovery, while the main sitemap must contain only canonical indexable public routes."
+      },
+      "scope": {},
+      "provenance": {}
+    },
+    "implementation-static-regression-script-20260910": {
+      "id": "implementation-static-regression-script-20260910",
+      "type": "implementation",
+      "title": "Added repeatable static-site regression check",
+      "content": "{\"change\":\"Added scripts/verify-static-site.sh to check all 18 local entrypoints, root sitemap and robots responses, sitemap XML shape/count/host policy, and client-portal exclusion.\",\"component\":\"Static serving and crawl-foundation regression. Local execution passed with routes=18 and sitemap_urls=14; XML parsing and robots assertions passed.\"}",
+      "path": "scripts/verify-static-site.sh",
+      "tags": [
+        "plumbing-track",
+        "implementation",
+        "static",
+        "seo",
+        "regression",
+        "verification",
+        "hardening"
+      ],
+      "meta": {},
+      "created_at": "2026-09-11T02:51:54+00:00",
+      "updated_at": "2026-09-11T02:51:54+00:00",
+      "stage": "developing",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "verified",
+      "evidence": [],
+      "source_refs": [],
+      "owners": [],
+      "semantic": {
+        "change": "Added scripts/verify-static-site.sh to check all 18 local entrypoints, root sitemap and robots responses, sitemap XML shape/count/host policy, and client-portal exclusion.",
+        "component": "Static serving and crawl-foundation regression. Local execution passed with routes=18 and sitemap_urls=14; XML parsing and robots assertions passed."
+      },
+      "scope": {},
+      "provenance": {}
     }
   },
   "edges": [
@@ -3690,6 +3754,20 @@
       "rel": "satisfies",
       "created_at": "2026-09-11T02:50:23+00:00",
       "note": "The sweep confirms canonical header/footer reuse across the current local route set"
+    },
+    {
+      "from": "docs-implementation-roadmap",
+      "to": "decision-assessment-noindex-20260910",
+      "rel": "references",
+      "created_at": "2026-09-11T02:51:54+00:00",
+      "note": "Roadmap records the explicit utility-route indexing policy"
+    },
+    {
+      "from": "implementation-static-regression-script-20260910",
+      "to": "requirement-seo-discovery-files",
+      "rel": "satisfies",
+      "created_at": "2026-09-11T02:51:56+00:00",
+      "note": "The local regression script verifies the source-level discovery files and policy"
     }
   ]
 }

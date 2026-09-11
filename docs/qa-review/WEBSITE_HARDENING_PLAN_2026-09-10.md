@@ -121,11 +121,11 @@ Follow `docs/PARTIALS_IMPLEMENTATION_PLAN.md` rather than rewriting the shell ag
 
 ## B1. Crawl/index foundation — P0
 
-- [x] Add root `sitemap.xml` containing only canonical, intended public/indexable routes. The main-domain source contains 15 canonical public routes; the separate bchousing host and client-portal utility routes are excluded.
-- [x] Add root `robots.txt` with the production sitemap reference and deliberate treatment of utility/private routes. `/client-portal/` is disallowed while the public assessment funnel remains crawlable.
+- [x] Add root `sitemap.xml` containing only canonical, intended public/indexable routes. The main-domain source contains 14 canonical public routes; the separate bchousing host, noindex assessment funnel, and client-portal utility routes are excluded.
+- [x] Add root `robots.txt` with the production sitemap reference and deliberate treatment of utility/private routes. `/client-portal/` is disallowed; Assessment remains reachable for attributed CTAs but is explicitly `noindex, follow`.
 - [ ] Verify canonical URLs and trailing-slash behavior for every public route.
 - [ ] Verify exactly one meaningful H1, unique title and unique meta description per indexable page.
-- [ ] Make an explicit index/noindex decision for `/assessment/`; substantive commercial/educational pages should do the search discovery work.
+- [x] Make an explicit index/noindex decision for `/assessment/`; it is a `noindex, follow` utility funnel while substantive commercial/educational pages do the search discovery work.
 - [ ] Ensure 404 behavior returns the correct status and useful navigation.
 - [ ] Submit and verify the sitemap in Google Search Console after production deployment.
 

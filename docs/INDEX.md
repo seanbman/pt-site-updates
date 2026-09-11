@@ -7,16 +7,17 @@ Grapher records should reference these paths rather than duplicating full docume
 | Grapher ID | Path | Role | Current status |
 |---|---|---|---|
 | `docs-instructions` | `docs/INSTRUCTIONS.md` | Governing implementation instructions and source precedence | Current |
+| `docs-decision-launch-cutline-2026-09-11` | `docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md` | Current September 11 launch cutline: deployment integrity, Assessment backend, GA4, release QA, then merge/release | **Current operator directive** |
 | `docs-website-design-plan` | `docs/WEBSITE_DESIGN_PLAN.md` | Target website architecture and design plan | Current; some Learn/Resources wording needs normalization |
 | `docs-implementation-roadmap` | `docs/IMPLEMENTATION_ROADMAP.md` | Living execution status and Wave rebaseline | Current |
 | `docs-dev-updates-review` | `docs/DEV_UPDATES_REVIEW_2026-09-10.md` | Source-level branch review: strengths, defects, route status, production gates, and plan re-evaluation | Current |
-| `docs-partials-implementation-plan` | `docs/PARTIALS_IMPLEMENTATION_PLAN.md` | Safe staged migration from runtime fragments to Ruby/ERB build-time partials | Current |
+| `docs-partials-implementation-plan` | `docs/PARTIALS_IMPLEMENTATION_PLAN.md` | Safe staged migration from runtime fragments to Ruby/ERB build-time partials | Current; deferred by current launch cutline |
 | `docs-decision-partials-typography-palette` | `docs/DECISION_PARTIALS_TYPOGRAPHY_PALETTE.md` | Operator decisions: build-time partials, Geist retained, cyan remains removed | Current |
 | `docs-decision-how-it-works-routing` | `docs/DECISION_HOW_IT_WORKS_ROUTING.md` | Current routing decision: explain before assessment | Current |
 | `docs-media-resource-reference` | `docs/media/RESOURCE_REFERENCE.md` | Curated website media handoff, priority assets, placement guidance, and evidence/privacy limits | Current reference |
 | `docs-media-video-curation` | `docs/media/video-curation/README.md` | Detailed 88-video audit, grades, page mapping, evidence limits, and implementation shortlist | Current reference |
 | `docs-grok-review-2026-09-10` | `docs/qa-review/GROK_REPO_REVIEW_2026-09-10.md` | Advisory Grok QA source plus branch/doc reconciliation | Reconciled |
-| `docs-hardening-plan-2026-09-10` | `docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` | Follow-up production hardening plan covering delivery, SEO, funnel, GA4, CRM, media, IA, and QA | Revision 1 current |
+| `docs-hardening-plan-2026-09-10` | `docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` | Follow-up production hardening plan covering delivery, SEO, funnel, GA4, CRM, media, IA, and QA | Revision 1 current; execution order overridden by launch cutline where explicitly stated |
 | `docs-web-work-sheet` | `docs/plumbing track web work sheet.pdf` | Earlier source / supporting website worksheet | Source evidence |
 | `docs-site-export` | `docs/site-export/` | Archived Squarespace material | Historical source evidence |
 
@@ -25,6 +26,7 @@ Grapher records should reference these paths rather than duplicating full docume
 ```mermaid
 flowchart TD
     I[docs/INSTRUCTIONS.md]
+    L[docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md]
     D[docs/WEBSITE_DESIGN_PLAN.md]
     R[docs/IMPLEMENTATION_ROADMAP.md]
     V[docs/DEV_UPDATES_REVIEW_2026-09-10.md]
@@ -38,6 +40,9 @@ flowchart TD
     W[docs/plumbing track web work sheet.pdf]
     S[docs/site-export/]
 
+    I --> L
+    L --> R
+    L --> Q
     I --> D
     D --> R
     I --> R
@@ -66,7 +71,7 @@ flowchart TD
 
 For current implementation decisions:
 
-1. explicit current operator decisions recorded in a current decision document;
+1. explicit current operator decisions recorded in a current decision document, with `docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md` currently governing the launch time-box;
 2. `docs/INSTRUCTIONS.md`;
 3. `docs/IMPLEMENTATION_ROADMAP.md` for current implementation/wave status;
 4. dedicated implementation plans such as `docs/PARTIALS_IMPLEMENTATION_PLAN.md`;
@@ -74,9 +79,23 @@ For current implementation decisions:
 6. `docs/WEBSITE_DESIGN_PLAN.md` for target architecture and design intent;
 7. source/supporting documents and archived exports.
 
-QA-review documents do not silently override this order. `docs/qa-review/GROK_REPO_REVIEW_2026-09-10.md` preserves an external/advisory review and classifies its findings against the current project truth. `docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` is the reconciled execution plan derived from the authoritative docs, current implementation, media reference, GA4 measurement plan, and validated QA findings.
+QA-review documents do not silently override this order. `docs/qa-review/GROK_REPO_REVIEW_2026-09-10.md` preserves an external/advisory review and classifies its findings against the current project truth. `docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` is the reconciled execution plan derived from the authoritative docs, current implementation, media reference, GA4 measurement plan, and validated QA findings. The September 11 launch-cutline decision narrows its execution order for the current time-box without erasing the broader hardening plan.
 
 This local ordering does not replace the broader source-precedence rules in `docs/INSTRUCTIONS.md`; it clarifies how tracked project documentation relates to itself.
+
+## Current launch cutline — 2026-09-11
+
+General visual iteration is stopped for the current launch time-box unless required to correct a release defect. The current priority order is:
+
+1. repair the canonical deployment/synchronization path so `pt-site-updates` cannot be replaced by stale `plumbing-track-static` content;
+2. harden the `bman-platform` Assessment backend so the current structured form data and attribution are not silently discarded;
+3. configure and verify the production GA4 measurement contract, including no-PII inspection and accepted-lead conversion behavior;
+4. run complete route, deployment, device, sitemap/robots, asset, and end-to-end funnel QA;
+5. only then merge/release the current branch.
+
+The current Kitec hero/project-image mismatch is a small factual/proof correction to make before release. Ruby/ERB build-time partial migration, Wave 2C content expansion, and further non-blocking visual refinement remain valid but deferred until the launch-critical sequence is closed.
+
+See `docs/DECISION_LAUNCH_CUTLINE_2026-09-11.md`.
 
 ## Current shared-chrome / typography / palette decision
 
@@ -100,9 +119,9 @@ The live public hub/navigation label is currently **Resources**. Older **Learn**
 
 ## Current QA / hardening note
 
-`docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` is now revised after reconciliation of the supplied Grok review. Its long-term priority remains production hardening before route sprawl: build-time delivery, shared token/font cleanup, technical SEO, whole-route regression, lead-funnel reliability, GA4 event-contract cleanup, privacy-safe behavioral profiling, CRM attribution/persistence, curated proof media, destination-page differentiation, and browser/accessibility/performance QA. Build-time delivery is deferred in the current time-box; the roadmap records the immediate order.
+`docs/qa-review/WEBSITE_HARDENING_PLAN_2026-09-10.md` is now revised after reconciliation of the supplied Grok review. Its long-term priority remains production hardening before route sprawl: build-time delivery, shared token/font cleanup, technical SEO, whole-route regression, lead-funnel reliability, GA4 event-contract cleanup, privacy-safe behavioral profiling, CRM attribution/persistence, curated proof media, destination-page differentiation, and browser/accessibility/performance QA. Build-time delivery is deferred in the current time-box; the September 11 launch cutline records the immediate order.
 
-The local repo-root static-server QA reported 200 responses for all public routes tested. Keep that as baseline evidence only; generated `dist/` and production-equivalent route tests still remain launch gates.
+The local repo-root static-server QA reported 200 responses for all public routes tested. Keep that as baseline evidence only; production-equivalent route tests still remain launch gates.
 
 ## Current media reference
 

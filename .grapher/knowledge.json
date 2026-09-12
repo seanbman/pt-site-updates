@@ -3800,6 +3800,47 @@
         "recorded_at": "2026-09-12T04:15:09+00:00"
       },
       "stage": null
+    },
+    "decision-five-phase-installation-20260911": {
+      "id": "decision-five-phase-installation-20260911",
+      "type": "decision",
+      "title": "Keep the installation route at five phases",
+      "content": "{\"decision\":\"Keep /how-it-works/installation/ aligned with the public five-phase process: Assessment & Proposal; Preparing the Building & Residents; Installation Around Occupied Homes; A Finished Result, Not a Construction Zone; Built for Future Access.\",\"rationale\":\"The previous eight-step child page expanded a public five-phase process into a separate narrative and contradicted the operator-directed experience.\"}",
+      "path": "docs/WEBSITE_DESIGN_PLAN.md",
+      "tags": [
+        "plumbing-track",
+        "how-it-works",
+        "installation",
+        "process",
+        "routing"
+      ],
+      "meta": {},
+      "created_at": "2026-09-12T04:24:23+00:00",
+      "updated_at": "2026-09-12T04:24:23+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/WEBSITE_DESIGN_PLAN.md",
+        "docs/IMPLEMENTATION_ROADMAP.md",
+        "how-it-works/installation/index.html"
+      ],
+      "owners": [],
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-12T04:24:23+00:00"
+      },
+      "semantic": {
+        "decision": "Keep /how-it-works/installation/ aligned with the public five-phase process: Assessment & Proposal; Preparing the Building & Residents; Installation Around Occupied Homes; A Finished Result, Not a Construction Zone; Built for Future Access.",
+        "rationale": "The previous eight-step child page expanded a public five-phase process into a separate narrative and contradicted the operator-directed experience."
+      },
+      "stage": null,
+      "scope": {}
     }
   },
   "edges": [
@@ -4900,6 +4941,13 @@
       "rel": "evidenced_by",
       "created_at": "2026-09-11T09:52:27+00:00",
       "note": "Static route, syntax, configuration, and media mapping checks support the implementation."
+    },
+    {
+      "from": "decision-five-phase-installation-20260911",
+      "to": "implementation-installation-family",
+      "rel": "supersedes",
+      "created_at": "2026-09-12T04:24:26+00:00",
+      "note": "Supersedes the earlier eight-step installation-page decision."
     }
   ]
 }

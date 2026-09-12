@@ -483,7 +483,7 @@ All precise production claims must remain tied to verified source/project eviden
 
 # 9. How It Works
 
-Keep the distinction between the high-level five-phase project story and the detailed installation story.
+Keep the installation route aligned with the high-level five-phase project story while using jobsite photography to add evidence and texture.
 
 ```text
 How It Works
@@ -518,7 +518,7 @@ Five phases:
 
 ## `/how-it-works/installation`
 
-Detailed eight-step installation story based on the current process material.
+Five-phase installation story aligned with the public project process. Keep the route focused on assessment, preparation, installation, finishing, and future access rather than expanding it into a separate eight-step narrative.
 
 Use real jobsite photography rather than relying entirely on icons.
 

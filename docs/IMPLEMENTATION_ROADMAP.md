@@ -207,7 +207,7 @@ Keep this decision.
 - ~~Correct the shared mobile/desktop navigation shell and preserve correction history.~~
 - ~~Create `/how-it-works/` and route explanation before conversion.~~
 - ~~Present the five-phase project process on How It Works.~~
-- ~~Create `/how-it-works/installation/` as a real eight-step child page using completed-work imagery.~~
+- ~~Create `/how-it-works/installation/` as a five-phase child page using completed-work imagery.~~
 - ~~Rework Our Work into a stronger proof/portfolio page.~~
 - ~~Retain Client Portal in the current architecture.~~
 - ~~Create and structurally implement the dedicated Assessment flow.~~
@@ -292,7 +292,7 @@ Keep this decision.
 ### How It Works
 
 - ~~`/how-it-works/` high-level explanation and five-phase process~~ — implemented.
-- ~~`/how-it-works/installation/` detailed eight-step process~~ — implemented draft with real job imagery.
+- ~~`/how-it-works/installation/` five-phase process~~ — implemented with real job imagery.
 - [ ] Verify/refine detailed process sequencing and project evidence rather than rebuilding the route.
 
 ### Our Technology

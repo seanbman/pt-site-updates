@@ -41,7 +41,7 @@
   const familyHeroImages = {
     "/about/": "/img/about-building.png",
     "/resources/": "/img/our-work/dover-pointe.webp",
-    "/resources/faq/": "/img/our-work/the-newbury.webp",
+    "/resources/faq/": "/img/completed-work/web/step-01-occupied.webp",
     "/solutions/": "/img/our-work/brandts-crossing.webp",
     "/solutions/poly-b/": "/img/our-work/kelvin-court.webp",
     "/solutions/kitec/": "/img/our-work/wilson-court.webp",

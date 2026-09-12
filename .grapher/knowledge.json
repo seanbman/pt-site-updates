@@ -3759,6 +3759,47 @@
         "outcome": "pass"
       },
       "stage": null
+    },
+    "finding-image-crop-corrections-20260911": {
+      "id": "finding-image-crop-corrections-20260911",
+      "type": "finding",
+      "title": "Corrected low-resolution FAQ hero and hidden access-panel proof",
+      "content": "{\"finding\":\"The live FAQ hero used a 381x225 building derivative that rendered visibly pixelated, and the installation future-access card used a skewed finished-wall image that did not show the access panel.\",\"correction\":\"Mapped FAQ to high-resolution step-01-occupied.webp and mapped installation step 07 to step-05-integrated.webp and step 08 to step-07-access.webp with a panel-focused object position.\",\"verification\":\"Source and local HTTP checks pass; live browser visual verification remains required after deployment.\"}",
+      "path": "app.js,how-it-works/installation/index.html",
+      "tags": [
+        "plumbing-track",
+        "media",
+        "visual-qa",
+        "faq",
+        "installation",
+        "access-panel",
+        "image-quality"
+      ],
+      "meta": {},
+      "created_at": "2026-09-12T04:15:09+00:00",
+      "updated_at": "2026-09-12T04:15:09+00:00",
+      "status": "current",
+      "workflow_state": "completed",
+      "verification": "partially_verified",
+      "evidence": [],
+      "source_refs": [
+        "docs/media/RESOURCE_REFERENCE.md",
+        "docs/media/video-curation/README.md"
+      ],
+      "owners": [],
+      "scope": {
+        "workspace_id": "csw-070926",
+        "project_id": "pt-site-updates"
+      },
+      "provenance": {
+        "actor_id": "codex",
+        "actor_kind": "agent",
+        "actor_role": "implementation",
+        "source": "cli",
+        "integrity": "declared",
+        "recorded_at": "2026-09-12T04:15:09+00:00"
+      },
+      "stage": null
     }
   },
   "edges": [
